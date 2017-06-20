@@ -1,0 +1,124 @@
+(ExpressProject "higgs_power_board"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "C:\Program Files\OrCAD\CAPTURE\LIBRARY\Connector.olb"
+        (Type "Schematic Library"))
+      (File "C:\Program Files\OrCAD\CAPTURE\LIBRARY\MECHANICAL.OLB"
+        (Type "Schematic Library"))
+      (File "C:\Program Files\OrCAD\CAPTURE\LIBRARY\Transistor.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\higgs_power_board.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (BOM_Scope "0")
+    (BOM_Mode "1")
+    (BOM_Report_File
+       "C:\DOCUMENTS AND SETTINGS\PACO\ESCRITORIO\HIGGS_ORCAD\HIGGS_POWER_BOARD.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_Header "Item\tQuantity\tReference\tPart")
+    (BOM_Include_File
+       "C:\DOCUMENTS AND SETTINGS\PACO\ESCRITORIO\HIGGS_ORCAD\HIGGS_POWER_BOARD.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (BOM_View_Output "TRUE")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "0")
+    (ANNOTATE_Action "1")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (RootChangedForceReNetlist "x")
+    (DRC_Scope "0")
+    (DRC_Action "1")
+    (DRC_Create_Warnings "TRUE")
+    (DRC_Check_Ports "TRUE")
+    (DRC_Check_Off-Page_Connectors "TRUE")
+    (DRC_Identical_References "TRUE")
+    (DRC_Type_Mismatch "FALSE")
+    (DRC_Report_Ports_and_Off-page_Connectors "TRUE")
+    (DRC_SDT_Compatibility "FALSE")
+    (DRC_Report_Off-grid_Objects "TRUE")
+    (DRC_Check_Unconnected_Wires "TRUE")
+    (DRC_Report_Netnames "TRUE")
+    (DRC_View_Output "TRUE")
+    (DRC_Report_File
+       "C:\Documents and Settings\paco\Escritorio\OrCAD\HIGGS_POWER_BOARD.DRC")
+    (FLDSTUFF_Scope "0")
+    (FLDSTUFF_Action "0")
+    (FLDSTUFF_Report_File
+       "C:\Documents and Settings\paco\Escritorio\Higgs_OrCAD\higgs_power_board.RPT")
+    (FLDSTUFF_Update_File
+       "C:\Documents and Settings\paco\Escritorio\Higgs_OrCAD\higgs_power_board.UPD")
+    (FLDSTUFF__Uppercase_Result_Property "FALSE")
+    (FLDSTUFF_Uppercase_Update_Property "FALSE")
+    (FLDSTUFF_Uppercase_Unconditionally "FALSE")
+    (FLDSTUFF_Visibility "0")
+    (FLDSTUFF_inst_or_occurrence "1")
+    (FLDSTUFF_Create_Report_File "FALSE")
+    (GATE_&_PIN_SWAP_Scope "0")
+    (GATE_&_PIN_SWAP_File_Name
+       "C:\DOCUMENTS AND SETTINGS\PACO\ESCRITORIO\HIGGS_ORCAD\HIGGS_POWER_BOARD.SWP")
+    (Netlist_TAB "5")
+    (LAYOUT_Netlist_File
+       "C:\Documents and Settings\paco\Escritorio\OrCAD\HIGGS_POWER_BOARD.MNL")
+    (LAYOUT_PCB_Footprint "{PCB Footprint}")
+    (LAYOUT_Run_ECO "TRUE")
+    (LAYOUT_Units "0")
+    (CrossRef_Scope "0")
+    (Crossref__Mode "1")
+    (CrossRef_Sorting "0")
+    (CrossRef_Destination_File
+       "C:\DOCUMENTS AND SETTINGS\PACO\ESCRITORIO\ORCAD\HIGGS_POWER_BOARD.XRF")
+    (CrossRef_XY "FALSE")
+    (CrossRef_Unused "FALSE")
+    (XRF_View_Output "TRUE"))
+  (Folder "Outputs"
+    (File ".\higgs_power_board.bom"
+      (Type "Report"))
+    (File ".\higgs_power_board.drc"
+      (Type "Report"))
+    (File ".\higgs_power_board.mnl"
+      (Type "Report"))
+    (File ".\higgs_power_board.xrf"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (LastUsedLibraryBrowseDirectory "C:\Program Files\OrCAD\CAPTURE\LIBRARY")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 0 414 0 466"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 113 1085 7 719")
+        (Scroll "0 0")
+        (Zoom "97")
+        (Occurrence "/"))
+      (Path
+         "C:\DOCUMENTS AND SETTINGS\PACO\ESCRITORIO\ORCAD\HIGGS_POWER_BOARD.DSN")
+      (Schematic "board")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -30 39 1065 17 732")
+        (Scroll "160 192")
+        (Zoom "170")
+        (Occurrence "/12V-0"))
+      (Path
+         "C:\DOCUMENTS AND SETTINGS\PACO\ESCRITORIO\ORCAD\HIGGS_POWER_BOARD.DSN")
+      (Schematic "relay")
+      (Page "PAGE1"))))

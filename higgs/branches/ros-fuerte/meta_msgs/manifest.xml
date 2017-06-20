@@ -1,0 +1,14 @@
+<package>
+  <description brief="meta_msgs">
+
+     meta_msgs
+
+  </description>
+  <author>Carlos Hernandez Corbato</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/meta_msgs</url>
+
+</package>
+
+

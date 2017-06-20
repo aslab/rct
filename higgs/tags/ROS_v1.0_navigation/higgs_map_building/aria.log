@@ -1,0 +1,2129 @@
+Mon Mar 21 16:57:56 Could not connect to simulator, connecting to robot through serial port /dev/ttyUSB0.
+Mon Mar 21 16:57:56 ArSerialConnection::open: Connecting to serial port '/dev/ttyUSB0'
+Mon Mar 21 16:57:56 ArSerialConnection::open: Successfully opened and configured serial port '/dev/ttyUSB0'.
+Mon Mar 21 16:57:56 Syncing 0
+Mon Mar 21 16:57:56 Syncing 1
+Mon Mar 21 16:57:56 Syncing 2
+Mon Mar 21 16:57:56 Connected to robot.
+Mon Mar 21 16:57:56 Name: Madrid_1722
+Mon Mar 21 16:57:56 Type: Pioneer
+Mon Mar 21 16:57:56 Subtype: p2at8
+Mon Mar 21 16:57:56 keyword 'section' handler added
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section '' (for param)
+Mon Mar 21 16:57:56 keyword '' handler added
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'General settings' (for param)
+Mon Mar 21 16:57:56 keyword 'Class' handler added
+Mon Mar 21 16:57:56 keyword 'Subclass' handler added
+Mon Mar 21 16:57:56 keyword 'RobotRadius' handler added
+Mon Mar 21 16:57:56 keyword 'RobotDiagonal' handler added
+Mon Mar 21 16:57:56 keyword 'RobotWidth' handler added
+Mon Mar 21 16:57:56 keyword 'RobotLength' handler added
+Mon Mar 21 16:57:56 keyword 'RobotLengthFront' handler added
+Mon Mar 21 16:57:56 keyword 'RobotLengthRear' handler added
+Mon Mar 21 16:57:56 keyword 'Holonomic' handler added
+Mon Mar 21 16:57:56 keyword 'MaxRVelocity' handler added
+Mon Mar 21 16:57:56 keyword 'MaxVelocity' handler added
+Mon Mar 21 16:57:56 keyword 'MaxLatVelocity' handler added
+Mon Mar 21 16:57:56 keyword 'HasMoveCommand' handler added
+Mon Mar 21 16:57:56 keyword 'RequestIOPackets' handler added
+Mon Mar 21 16:57:56 keyword 'RequestEncoderPackets' handler added
+Mon Mar 21 16:57:56 keyword 'SwitchToBaudRate' handler added
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'Conversion factors' (for param)
+Mon Mar 21 16:57:56 keyword 'AngleConvFactor' handler added
+Mon Mar 21 16:57:56 keyword 'DistConvFactor' handler added
+Mon Mar 21 16:57:56 keyword 'VelConvFactor' handler added
+Mon Mar 21 16:57:56 keyword 'RangeConvFactor' handler added
+Mon Mar 21 16:57:56 keyword 'DiffConvFactor' handler added
+Mon Mar 21 16:57:56 keyword 'Vel2Divisor' handler added
+Mon Mar 21 16:57:56 keyword 'GyroScaler' handler added
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'Accessories the robot has' (for param)
+Mon Mar 21 16:57:56 keyword 'TableSensingIR' handler added
+Mon Mar 21 16:57:56 keyword 'NewTableSensingIR' handler added
+Mon Mar 21 16:57:56 keyword 'FrontBumpers' handler added
+Mon Mar 21 16:57:56 keyword 'NumFrontBumpers' handler added
+Mon Mar 21 16:57:56 keyword 'RearBumpers' handler added
+Mon Mar 21 16:57:56 keyword 'NumRearBumpers' handler added
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'Sonar parameters' (for param)
+Mon Mar 21 16:57:56 keyword 'SonarNum' handler added
+Mon Mar 21 16:57:56 keyword 'SonarUnit' handler added
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'IR parameters' (for param)
+Mon Mar 21 16:57:56 keyword 'IRNum' handler added
+Mon Mar 21 16:57:56 keyword 'IRUnit' handler added
+Mon Mar 21 16:57:56 ArConfig: Making new section 'Movement control parameters' (for comment)
+Mon Mar 21 16:57:56 keyword 'SettableVelMaxes' handler added
+Mon Mar 21 16:57:56 keyword 'TransVelMax' handler added
+Mon Mar 21 16:57:56 keyword 'RotVelMax' handler added
+Mon Mar 21 16:57:56 keyword 'SettableAccsDecs' handler added
+Mon Mar 21 16:57:56 keyword 'TransAccel' handler added
+Mon Mar 21 16:57:56 keyword 'TransDecel' handler added
+Mon Mar 21 16:57:56 keyword 'RotAccel' handler added
+Mon Mar 21 16:57:56 keyword 'RotDecel' handler added
+Mon Mar 21 16:57:56 keyword 'HasLatVel' handler added
+Mon Mar 21 16:57:56 keyword 'LatVelMax' handler added
+Mon Mar 21 16:57:56 keyword 'LatAccel' handler added
+Mon Mar 21 16:57:56 keyword 'LatDecel' handler added
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'GPS parameters' (for param)
+Mon Mar 21 16:57:56 keyword 'GPSPX' handler added
+Mon Mar 21 16:57:56 keyword 'GPSPY' handler added
+Mon Mar 21 16:57:56 keyword 'GPSType' handler added
+Mon Mar 21 16:57:56 keyword 'GPSPort' handler added
+Mon Mar 21 16:57:56 keyword 'GPSBaud' handler added
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'Compass parameters' (for param)
+Mon Mar 21 16:57:56 keyword 'CompassType' handler added
+Mon Mar 21 16:57:56 keyword 'CompassPort' handler added
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'Laser parameters' (for param)
+Mon Mar 21 16:57:56 keyword 'LaserType' handler added
+Mon Mar 21 16:57:56 keyword 'LaserPortType' handler added
+Mon Mar 21 16:57:56 keyword 'LaserPort' handler added
+Mon Mar 21 16:57:56 keyword 'LaserAutoConnect' handler added
+Mon Mar 21 16:57:56 keyword 'LaserFlipped' handler added
+Mon Mar 21 16:57:56 keyword 'LaserPowerControlled' handler added
+Mon Mar 21 16:57:56 keyword 'LaserMaxRange' handler added
+Mon Mar 21 16:57:56 keyword 'LaserCumulativeBufferSize' handler added
+Mon Mar 21 16:57:56 keyword 'LaserX' handler added
+Mon Mar 21 16:57:56 keyword 'LaserY' handler added
+Mon Mar 21 16:57:56 keyword 'LaserTh' handler added
+Mon Mar 21 16:57:56 keyword 'LaserZ' handler added
+Mon Mar 21 16:57:56 keyword 'LaserIgnore' handler added
+Mon Mar 21 16:57:56 keyword 'LaserStartDegrees' handler added
+Mon Mar 21 16:57:56 keyword 'LaserEndDegrees' handler added
+Mon Mar 21 16:57:56 keyword 'LaserDegreesChoice' handler added
+Mon Mar 21 16:57:56 keyword 'LaserIncrement' handler added
+Mon Mar 21 16:57:56 keyword 'LaserIncrementChoice' handler added
+Mon Mar 21 16:57:56 keyword 'LaserUnitsChoice' handler added
+Mon Mar 21 16:57:56 keyword 'LaserReflectorBitsChoice' handler added
+Mon Mar 21 16:57:56 keyword 'LaserStartingBaudChoice' handler added
+Mon Mar 21 16:57:56 keyword 'LaserAutoBaudChoice' handler added
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'Laser 2 parameters' (for param)
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPortType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPort'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoConnect'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserFlipped'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPowerControlled'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserMaxRange'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserX'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserY'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserTh'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserZ'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIgnore'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserEndDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserDegreesChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrement'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrementChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserUnitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 2 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'Laser 3 parameters' (for param)
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPortType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPort'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoConnect'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserFlipped'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPowerControlled'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserMaxRange'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserX'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserY'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserTh'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserZ'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIgnore'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserEndDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserDegreesChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrement'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrementChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserUnitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 2 parameters and Laser 3 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'Laser 4 parameters' (for param)
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPortType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPort'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoConnect'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserFlipped'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPowerControlled'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserMaxRange'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserX'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserY'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserTh'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserZ'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIgnore'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserEndDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserDegreesChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrement'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrementChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserUnitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 2 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 3 parameters and Laser 4 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'Laser 5 parameters' (for param)
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPortType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPort'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoConnect'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserFlipped'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPowerControlled'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserMaxRange'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserX'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserY'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserTh'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserZ'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIgnore'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserEndDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserDegreesChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrement'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrementChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserUnitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 2 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 3 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 4 parameters and Laser 5 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'Laser 6 parameters' (for param)
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPortType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPort'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoConnect'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserFlipped'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPowerControlled'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserMaxRange'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserX'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserY'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserTh'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserZ'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIgnore'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserEndDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserDegreesChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrement'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrementChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserUnitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 2 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 3 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 4 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 5 parameters and Laser 6 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'Laser 7 parameters' (for param)
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPortType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPort'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoConnect'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserFlipped'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPowerControlled'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserMaxRange'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserX'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserY'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserTh'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserZ'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIgnore'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserEndDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserDegreesChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrement'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrementChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserUnitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 2 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 3 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 4 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 5 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 6 parameters and Laser 7 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'Laser 8 parameters' (for param)
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPortType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPort'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoConnect'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserFlipped'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPowerControlled'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserMaxRange'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserX'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserY'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserTh'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserZ'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIgnore'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserEndDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserDegreesChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrement'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrementChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserUnitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 2 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 3 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 4 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 5 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 6 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 7 parameters and Laser 8 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfigArg ArConfig: : Making new section 'Laser 9 parameters' (for param)
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserType duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPortType duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPortType'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPort duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPort'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoConnect'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserFlipped duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserFlipped'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserPowerControlled'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserMaxRange duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserMaxRange'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserX duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserX'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserY duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserY'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserTh duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserTh'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserZ duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserZ'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIgnore duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIgnore'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserEndDegrees'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserDegreesChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrement duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrement'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserIncrementChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserUnitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 2 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 3 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 4 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 5 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 6 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 7 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 8 parameters and Laser 9 parameters
+Mon Mar 21 16:57:56 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Mon Mar 21 16:57:56 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Mon Mar 21 16:57:56 Starting parsing file /usr/local/ros_aslab/amor-ros-pkg/Aria/Aria/params/p2at8.p (/usr/local/ros_aslab/amor-ros-pkg/Aria/Aria/params/p2at8.p)
+Mon Mar 21 16:57:56 Will parse all sections
+Mon Mar 21 16:57:56 Opening file /usr/local/ros_aslab/amor-ros-pkg/Aria/Aria/params/p2at8.p from fileName given /usr/local/ros_aslab/amor-ros-pkg/Aria/Aria/params/p2at8.p and base directory 
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'General settings'
+Mon Mar 21 16:57:57 line 13: just white space at start of line
+Mon Mar 21 16:57:57 line 14: just white space at start of line
+Mon Mar 21 16:57:57 line 16: just white space at start of line
+Mon Mar 21 16:57:57 line 17: just white space at start of line
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'Conversion factors'
+Mon Mar 21 16:57:57 line 34: just white space at start of line
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'Accessories the robot has'
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'Sonar parameters'
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'IR parameters'
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'Movement control parameters'
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'GPS parameters'
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'Compass parameters'
+Mon Mar 21 16:57:57 line 103: just white space at start of line
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'Laser parameters'
+Mon Mar 21 16:57:57 line 112: just white space at start of line
+Mon Mar 21 16:57:57 line 116: just white space at start of line
+Mon Mar 21 16:57:57 line 117: just white space at start of line
+Mon Mar 21 16:57:57 line 119: just white space at start of line
+Mon Mar 21 16:57:57 line 124: just white space at start of line
+Mon Mar 21 16:57:57 line 126: just white space at start of line
+Mon Mar 21 16:57:57 line 128: just white space at start of line
+Mon Mar 21 16:57:57 line 130: just white space at start of line
+Mon Mar 21 16:57:57 line 132: just white space at start of line
+Mon Mar 21 16:57:57 line 134: just white space at start of line
+Mon Mar 21 16:57:57 line 136: just white space at start of line
+Mon Mar 21 16:57:57 line 138: just white space at start of line
+Mon Mar 21 16:57:57 line 140: just white space at start of line
+Mon Mar 21 16:57:57 line 142: just white space at start of line
+Mon Mar 21 16:57:57 line 144: just white space at start of line
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'Laser 2 parameters'
+Mon Mar 21 16:57:57 line 152: just white space at start of line
+Mon Mar 21 16:57:57 line 156: just white space at start of line
+Mon Mar 21 16:57:57 line 157: just white space at start of line
+Mon Mar 21 16:57:57 line 159: just white space at start of line
+Mon Mar 21 16:57:57 line 164: just white space at start of line
+Mon Mar 21 16:57:57 line 166: just white space at start of line
+Mon Mar 21 16:57:57 line 168: just white space at start of line
+Mon Mar 21 16:57:57 line 170: just white space at start of line
+Mon Mar 21 16:57:57 line 172: just white space at start of line
+Mon Mar 21 16:57:57 line 174: just white space at start of line
+Mon Mar 21 16:57:57 line 176: just white space at start of line
+Mon Mar 21 16:57:57 line 178: just white space at start of line
+Mon Mar 21 16:57:57 line 180: just white space at start of line
+Mon Mar 21 16:57:57 line 182: just white space at start of line
+Mon Mar 21 16:57:57 line 184: just white space at start of line
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'Laser 3 parameters'
+Mon Mar 21 16:57:57 line 192: just white space at start of line
+Mon Mar 21 16:57:57 line 196: just white space at start of line
+Mon Mar 21 16:57:57 line 197: just white space at start of line
+Mon Mar 21 16:57:57 line 199: just white space at start of line
+Mon Mar 21 16:57:57 line 204: just white space at start of line
+Mon Mar 21 16:57:57 line 206: just white space at start of line
+Mon Mar 21 16:57:57 line 208: just white space at start of line
+Mon Mar 21 16:57:57 line 210: just white space at start of line
+Mon Mar 21 16:57:57 line 212: just white space at start of line
+Mon Mar 21 16:57:57 line 214: just white space at start of line
+Mon Mar 21 16:57:57 line 216: just white space at start of line
+Mon Mar 21 16:57:57 line 218: just white space at start of line
+Mon Mar 21 16:57:57 line 220: just white space at start of line
+Mon Mar 21 16:57:57 line 222: just white space at start of line
+Mon Mar 21 16:57:57 line 224: just white space at start of line
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'Laser 4 parameters'
+Mon Mar 21 16:57:57 line 232: just white space at start of line
+Mon Mar 21 16:57:57 line 236: just white space at start of line
+Mon Mar 21 16:57:57 line 237: just white space at start of line
+Mon Mar 21 16:57:57 line 239: just white space at start of line
+Mon Mar 21 16:57:57 line 244: just white space at start of line
+Mon Mar 21 16:57:57 line 246: just white space at start of line
+Mon Mar 21 16:57:57 line 248: just white space at start of line
+Mon Mar 21 16:57:57 line 250: just white space at start of line
+Mon Mar 21 16:57:57 line 252: just white space at start of line
+Mon Mar 21 16:57:57 line 254: just white space at start of line
+Mon Mar 21 16:57:57 line 256: just white space at start of line
+Mon Mar 21 16:57:57 line 258: just white space at start of line
+Mon Mar 21 16:57:57 line 260: just white space at start of line
+Mon Mar 21 16:57:57 line 262: just white space at start of line
+Mon Mar 21 16:57:57 line 264: just white space at start of line
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'Laser 5 parameters'
+Mon Mar 21 16:57:57 line 272: just white space at start of line
+Mon Mar 21 16:57:57 line 276: just white space at start of line
+Mon Mar 21 16:57:57 line 277: just white space at start of line
+Mon Mar 21 16:57:57 line 279: just white space at start of line
+Mon Mar 21 16:57:57 line 284: just white space at start of line
+Mon Mar 21 16:57:57 line 286: just white space at start of line
+Mon Mar 21 16:57:57 line 288: just white space at start of line
+Mon Mar 21 16:57:57 line 290: just white space at start of line
+Mon Mar 21 16:57:57 line 292: just white space at start of line
+Mon Mar 21 16:57:57 line 294: just white space at start of line
+Mon Mar 21 16:57:57 line 296: just white space at start of line
+Mon Mar 21 16:57:57 line 298: just white space at start of line
+Mon Mar 21 16:57:57 line 300: just white space at start of line
+Mon Mar 21 16:57:57 line 302: just white space at start of line
+Mon Mar 21 16:57:57 line 304: just white space at start of line
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'Laser 6 parameters'
+Mon Mar 21 16:57:57 line 312: just white space at start of line
+Mon Mar 21 16:57:57 line 316: just white space at start of line
+Mon Mar 21 16:57:57 line 317: just white space at start of line
+Mon Mar 21 16:57:57 line 319: just white space at start of line
+Mon Mar 21 16:57:57 line 324: just white space at start of line
+Mon Mar 21 16:57:57 line 326: just white space at start of line
+Mon Mar 21 16:57:57 line 328: just white space at start of line
+Mon Mar 21 16:57:57 line 330: just white space at start of line
+Mon Mar 21 16:57:57 line 332: just white space at start of line
+Mon Mar 21 16:57:57 line 334: just white space at start of line
+Mon Mar 21 16:57:57 line 336: just white space at start of line
+Mon Mar 21 16:57:57 line 338: just white space at start of line
+Mon Mar 21 16:57:57 line 340: just white space at start of line
+Mon Mar 21 16:57:57 line 342: just white space at start of line
+Mon Mar 21 16:57:57 line 344: just white space at start of line
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'Laser 7 parameters'
+Mon Mar 21 16:57:57 line 352: just white space at start of line
+Mon Mar 21 16:57:57 line 356: just white space at start of line
+Mon Mar 21 16:57:57 line 357: just white space at start of line
+Mon Mar 21 16:57:57 line 359: just white space at start of line
+Mon Mar 21 16:57:57 line 364: just white space at start of line
+Mon Mar 21 16:57:57 line 366: just white space at start of line
+Mon Mar 21 16:57:57 line 368: just white space at start of line
+Mon Mar 21 16:57:57 line 370: just white space at start of line
+Mon Mar 21 16:57:57 line 372: just white space at start of line
+Mon Mar 21 16:57:57 line 374: just white space at start of line
+Mon Mar 21 16:57:57 line 376: just white space at start of line
+Mon Mar 21 16:57:57 line 378: just white space at start of line
+Mon Mar 21 16:57:57 line 380: just white space at start of line
+Mon Mar 21 16:57:57 line 382: just white space at start of line
+Mon Mar 21 16:57:57 line 384: just white space at start of line
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'Laser 8 parameters'
+Mon Mar 21 16:57:57 line 392: just white space at start of line
+Mon Mar 21 16:57:57 line 396: just white space at start of line
+Mon Mar 21 16:57:57 line 397: just white space at start of line
+Mon Mar 21 16:57:57 line 399: just white space at start of line
+Mon Mar 21 16:57:57 line 404: just white space at start of line
+Mon Mar 21 16:57:57 line 406: just white space at start of line
+Mon Mar 21 16:57:57 line 408: just white space at start of line
+Mon Mar 21 16:57:57 line 410: just white space at start of line
+Mon Mar 21 16:57:57 line 412: just white space at start of line
+Mon Mar 21 16:57:57 line 414: just white space at start of line
+Mon Mar 21 16:57:57 line 416: just white space at start of line
+Mon Mar 21 16:57:57 line 418: just white space at start of line
+Mon Mar 21 16:57:57 line 420: just white space at start of line
+Mon Mar 21 16:57:57 line 422: just white space at start of line
+Mon Mar 21 16:57:57 line 424: just white space at start of line
+Mon Mar 21 16:57:57 ArConfig: Config switching to section 'Laser 9 parameters'
+Mon Mar 21 16:57:57 line 432: just white space at start of line
+Mon Mar 21 16:57:57 line 436: just white space at start of line
+Mon Mar 21 16:57:57 line 437: just white space at start of line
+Mon Mar 21 16:57:57 line 439: just white space at start of line
+Mon Mar 21 16:57:57 line 444: just white space at start of line
+Mon Mar 21 16:57:57 line 446: just white space at start of line
+Mon Mar 21 16:57:57 line 448: just white space at start of line
+Mon Mar 21 16:57:57 line 450: just white space at start of line
+Mon Mar 21 16:57:57 line 452: just white space at start of line
+Mon Mar 21 16:57:57 line 454: just white space at start of line
+Mon Mar 21 16:57:57 line 456: just white space at start of line
+Mon Mar 21 16:57:57 line 458: just white space at start of line
+Mon Mar 21 16:57:57 line 460: just white space at start of line
+Mon Mar 21 16:57:57 line 462: just white space at start of line
+Mon Mar 21 16:57:57 line 464: just white space at start of line
+Mon Mar 21 16:57:57 ArConfig: Processing file
+Mon Mar 21 16:57:57 ArConfig: Processing with own processFile
+Mon Mar 21 16:57:57 ArConfig: Done processing file, ret is true
+Mon Mar 21 16:57:57 Done parsing file /usr/local/ros_aslab/amor-ros-pkg/Aria/Aria/params/p2at8.p (ret true)
+Mon Mar 21 16:57:57 Loaded robot parameters from p2at8.p
+Mon Mar 21 16:57:57 Starting parsing file /usr/local/ros_aslab/amor-ros-pkg/Aria/Aria/params/Madrid_1722.p (/usr/local/ros_aslab/amor-ros-pkg/Aria/Aria/params/Madrid_1722.p)
+Mon Mar 21 16:57:57 Will parse all sections
+Mon Mar 21 16:57:57 Opening file /usr/local/ros_aslab/amor-ros-pkg/Aria/Aria/params/Madrid_1722.p from fileName given /usr/local/ros_aslab/amor-ros-pkg/Aria/Aria/params/Madrid_1722.p and base directory 
+Mon Mar 21 16:57:57 ArConfig: Processing file
+Mon Mar 21 16:57:57 ArConfig: Processing with own processFile
+Mon Mar 21 16:57:57 ArConfig: Done processing file, ret is true
+Mon Mar 21 16:57:57 Done parsing file /usr/local/ros_aslab/amor-ros-pkg/Aria/Aria/params/Madrid_1722.p (ret false)
+Mon Mar 21 16:57:57 Sent: comInt(18, 1)
+Mon Mar 21 16:57:57      TransVel:    2 RotVel:    0(   0) Heading    0 TransAcc    2 RotAcc    0(   0)
+Mon Mar 21 16:57:57 Sent: comInt(50, 2)
+Mon Mar 21 16:57:57 Sent: com(0)
+Mon Mar 21 16:57:57      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc   -2 RotAcc   -0(   0)
+Mon Mar 21 16:57:57 Sent: com(0)
+Mon Mar 21 16:57:57 Sent: comInt(4, 1)
+Mon Mar 21 16:57:57 Sent: comInt(28, 0)
+Mon Mar 21 16:57:57 Created ArSyncLoop thread with ID -1294136464
+Mon Mar 21 16:57:57 Thread ArSyncLoop (-1294136464) is running with pid 2817
+Mon Mar 21 16:57:57 Rcvd: Packet (0) 0x32 at 95 (747)
+Mon Mar 21 16:57:57      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:57 Rcvd: time taken 95
+Mon Mar 21 16:57:57 Sent: comInt(6, 697)
+Mon Mar 21 16:57:57 Sent: comInt(5, 400)
+Mon Mar 21 16:57:57 Sent: comInt(5, -400)
+Mon Mar 21 16:57:57 Sent: comInt(10, 200)
+Mon Mar 21 16:57:57 Sent: comInt(23, 80)
+Mon Mar 21 16:57:57 Sent: comInt(23, -80)
+Mon Mar 21 16:57:57 Sent: com(0)
+Mon Mar 21 16:57:57 Rcvd: Packet (1) 0x32 at 97 (846)
+Mon Mar 21 16:57:57      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:57 Rcvd: time taken 97
+Mon Mar 21 16:57:57 Rcvd: Packet (2) 0x32 at 99 (946)
+Mon Mar 21 16:57:57      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:57 Rcvd: time taken 99
+Mon Mar 21 16:57:57 Rcvd: Packet (3) 0x32 at 99 (1046)
+Mon Mar 21 16:57:57      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:57 Rcvd: time taken 99
+Mon Mar 21 16:57:57 Rcvd: Packet (4) 0x32 at 99 (1146)
+Mon Mar 21 16:57:57      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:57 Rcvd: time taken 99
+Mon Mar 21 16:57:57 Rcvd: Packet (5) 0x32 at 99 (1246)
+Mon Mar 21 16:57:57      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:57 Rcvd: time taken 99
+Mon Mar 21 16:57:57 Rcvd: Packet (6) 0x32 at 99 (1346)
+Mon Mar 21 16:57:57      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:57 Rcvd: time taken 99
+Mon Mar 21 16:57:57 Sent: com(0)
+Mon Mar 21 16:57:58 Rcvd: Packet (7) 0x32 at 99 (1446)
+Mon Mar 21 16:57:58      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:58 Rcvd: time taken 99
+Mon Mar 21 16:57:58 Rcvd: Packet (8) 0x32 at 98 (1545)
+Mon Mar 21 16:57:58      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:58 Rcvd: time taken 99
+Mon Mar 21 16:57:58 Rcvd: Packet (9) 0x32 at 99 (1646)
+Mon Mar 21 16:57:58      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:58 Rcvd: time taken 99
+Mon Mar 21 16:57:58 Rcvd: Packet (10) 0x32 at 99 (1746)
+Mon Mar 21 16:57:58      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:58 Rcvd: time taken 99
+Mon Mar 21 16:57:58 Rcvd: Packet (11) 0x32 at 99 (1846)
+Mon Mar 21 16:57:58      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:58 Rcvd: time taken 99
+Mon Mar 21 16:57:58 Rcvd: Packet (12) 0x32 at 99 (1946)
+Mon Mar 21 16:57:58      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:58 Rcvd: time taken 99
+Mon Mar 21 16:57:58 Sent: com(0)
+Mon Mar 21 16:57:58 Rcvd: Packet (13) 0x32 at 99 (2046)
+Mon Mar 21 16:57:58      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:58 Rcvd: time taken 99
+Mon Mar 21 16:57:58 Rcvd: Packet (14) 0x32 at 99 (2146)
+Mon Mar 21 16:57:58      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:58 Rcvd: time taken 99
+Mon Mar 21 16:57:58 Rcvd: Packet (15) 0x32 at 99 (2246)
+Mon Mar 21 16:57:58      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:58 Rcvd: time taken 99
+Mon Mar 21 16:57:58 Rcvd: Packet (16) 0x32 at 99 (2346)
+Mon Mar 21 16:57:58      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:58 Rcvd: time taken 99
+Mon Mar 21 16:57:59 Rcvd: Packet (17) 0x32 at 99 (2446)
+Mon Mar 21 16:57:59      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:59 Rcvd: time taken 99
+Mon Mar 21 16:57:59 Rcvd: Packet (18) 0x32 at 99 (2546)
+Mon Mar 21 16:57:59      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:59 Rcvd: time taken 99
+Mon Mar 21 16:57:59 Sent: com(0)
+Mon Mar 21 16:57:59 Rcvd: Packet (19) 0x32 at 99 (2646)
+Mon Mar 21 16:57:59      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:59 Rcvd: time taken 99
+Mon Mar 21 16:57:59 Rcvd: Packet (20) 0x32 at 99 (2746)
+Mon Mar 21 16:57:59      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:59 Rcvd: time taken 99
+Mon Mar 21 16:57:59 Rcvd: Packet (21) 0x32 at 99 (2846)
+Mon Mar 21 16:57:59      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:59 Rcvd: time taken 99
+Mon Mar 21 16:57:59 Rcvd: Packet (22) 0x32 at 99 (2946)
+Mon Mar 21 16:57:59      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:59 Rcvd: time taken 99
+Mon Mar 21 16:57:59 Rcvd: Packet (23) 0x32 at 99 (3046)
+Mon Mar 21 16:57:59      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:59 Rcvd: time taken 99
+Mon Mar 21 16:57:59 Rcvd: Packet (24) 0x32 at 99 (3146)
+Mon Mar 21 16:57:59      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:59 Rcvd: time taken 99
+Mon Mar 21 16:57:59 Sent: com(0)
+Mon Mar 21 16:57:59 Rcvd: Packet (25) 0x32 at 98 (3245)
+Mon Mar 21 16:57:59      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:59 Rcvd: time taken 98
+Mon Mar 21 16:57:59 Rcvd: Packet (26) 0x32 at 100 (3346)
+Mon Mar 21 16:57:59      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:57:59 Rcvd: time taken 100
+Mon Mar 21 16:58:00 Rcvd: Packet (27) 0x32 at 98 (3445)
+Mon Mar 21 16:58:00      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:00 Rcvd: time taken 98
+Mon Mar 21 16:58:00 Rcvd: Packet (28) 0x32 at 98 (3545)
+Mon Mar 21 16:58:00      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:00 Rcvd: time taken 98
+Mon Mar 21 16:58:00 Rcvd: Packet (29) 0x32 at 98 (3645)
+Mon Mar 21 16:58:00      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:00 Rcvd: time taken 98
+Mon Mar 21 16:58:00 Rcvd: Packet (30) 0x32 at 99 (3745)
+Mon Mar 21 16:58:00      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:00 Rcvd: time taken 99
+Mon Mar 21 16:58:00 Sent: com(0)
+Mon Mar 21 16:58:00 Rcvd: Packet (31) 0x32 at 99 (3845)
+Mon Mar 21 16:58:00      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:00 Rcvd: time taken 99
+Mon Mar 21 16:58:00 Rcvd: Packet (32) 0x32 at 99 (3945)
+Mon Mar 21 16:58:00      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:00 Rcvd: time taken 99
+Mon Mar 21 16:58:00 Rcvd: Packet (33) 0x32 at 99 (4045)
+Mon Mar 21 16:58:00      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:00 Rcvd: time taken 99
+Mon Mar 21 16:58:00 Rcvd: Packet (34) 0x32 at 99 (4145)
+Mon Mar 21 16:58:00      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:00 Rcvd: time taken 99
+Mon Mar 21 16:58:00 Rcvd: Packet (35) 0x32 at 99 (4245)
+Mon Mar 21 16:58:00      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:00 Rcvd: time taken 99
+Mon Mar 21 16:58:00 Sent: com(0)
+Mon Mar 21 16:58:00 Rcvd: Packet (36) 0x32 at 98 (4345)
+Mon Mar 21 16:58:00      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:00 Rcvd: time taken 98
+Mon Mar 21 16:58:01 Rcvd: Packet (37) 0x32 at 99 (4445)
+Mon Mar 21 16:58:01      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:01 Rcvd: time taken 99
+Mon Mar 21 16:58:01 Rcvd: Packet (38) 0x32 at 99 (4545)
+Mon Mar 21 16:58:01      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:01 Rcvd: time taken 99
+Mon Mar 21 16:58:01 Rcvd: Packet (39) 0x32 at 99 (4645)
+Mon Mar 21 16:58:01      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:01 Rcvd: time taken 99
+Mon Mar 21 16:58:01 Rcvd: Packet (40) 0x32 at 99 (4745)
+Mon Mar 21 16:58:01      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:01 Rcvd: time taken 99
+Mon Mar 21 16:58:01 Rcvd: Packet (41) 0x32 at 99 (4845)
+Mon Mar 21 16:58:01      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:01 Rcvd: time taken 99
+Mon Mar 21 16:58:01 Sent: com(0)
+Mon Mar 21 16:58:01 Rcvd: Packet (42) 0x32 at 99 (4945)
+Mon Mar 21 16:58:01      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:01 Rcvd: time taken 99
+Mon Mar 21 16:58:01 Rcvd: Packet (43) 0x32 at 98 (5045)
+Mon Mar 21 16:58:01      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:01 Rcvd: time taken 98
+Mon Mar 21 16:58:01 Rcvd: Packet (44) 0x32 at 98 (5145)
+Mon Mar 21 16:58:01      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:01 Rcvd: time taken 98
+Mon Mar 21 16:58:01 Rcvd: Packet (45) 0x32 at 98 (5245)
+Mon Mar 21 16:58:01      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:01 Rcvd: time taken 98
+Mon Mar 21 16:58:01 Rcvd: Packet (46) 0x32 at 98 (5345)
+Mon Mar 21 16:58:01      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:01 Rcvd: time taken 98
+Mon Mar 21 16:58:01 Sent: com(0)
+Mon Mar 21 16:58:02 Rcvd: Packet (47) 0x32 at 98 (5445)
+Mon Mar 21 16:58:02      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:02 Rcvd: time taken 98
+Mon Mar 21 16:58:02 Rcvd: Packet (48) 0x32 at 98 (5545)
+Mon Mar 21 16:58:02      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:02 Rcvd: time taken 98
+Mon Mar 21 16:58:02 Rcvd: Packet (49) 0x32 at 99 (5645)
+Mon Mar 21 16:58:02      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:02 Rcvd: time taken 99
+Mon Mar 21 16:58:02 Rcvd: Packet (50) 0x32 at 99 (5745)
+Mon Mar 21 16:58:02      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:02 Rcvd: time taken 99
+Mon Mar 21 16:58:02 Rcvd: Packet (51) 0x32 at 99 (5845)
+Mon Mar 21 16:58:02      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:02 Rcvd: time taken 99
+Mon Mar 21 16:58:02 Rcvd: Packet (52) 0x32 at 99 (5945)
+Mon Mar 21 16:58:02      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:02 Rcvd: time taken 99
+Mon Mar 21 16:58:02 Sent: com(0)
+Mon Mar 21 16:58:02 Rcvd: Packet (53) 0x32 at 99 (6045)
+Mon Mar 21 16:58:02      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:02 Rcvd: time taken 99
+Mon Mar 21 16:58:02 Rcvd: Packet (54) 0x32 at 99 (6145)
+Mon Mar 21 16:58:02      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:02 Rcvd: time taken 99
+Mon Mar 21 16:58:02 Rcvd: Packet (55) 0x32 at 99 (6245)
+Mon Mar 21 16:58:02      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:02 Rcvd: time taken 99
+Mon Mar 21 16:58:02 Rcvd: Packet (56) 0x32 at 99 (6345)
+Mon Mar 21 16:58:02      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:02 Rcvd: time taken 99
+Mon Mar 21 16:58:03 Rcvd: Packet (57) 0x32 at 99 (6445)
+Mon Mar 21 16:58:03      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:03 Rcvd: time taken 99
+Mon Mar 21 16:58:03 Rcvd: Packet (58) 0x32 at 99 (6545)
+Mon Mar 21 16:58:03      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:03 Rcvd: time taken 99
+Mon Mar 21 16:58:03 Sent: com(0)
+Mon Mar 21 16:58:03 Rcvd: Packet (59) 0x32 at 99 (6645)
+Mon Mar 21 16:58:03      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:03 Rcvd: time taken 99
+Mon Mar 21 16:58:03 Rcvd: Packet (60) 0x32 at 98 (6744)
+Mon Mar 21 16:58:03      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:03 Rcvd: time taken 98
+Mon Mar 21 16:58:03 Rcvd: Packet (61) 0x32 at 99 (6844)
+Mon Mar 21 16:58:03      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:03 Rcvd: time taken 99
+Mon Mar 21 16:58:03 Rcvd: Packet (62) 0x32 at 99 (6944)
+Mon Mar 21 16:58:03      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:03 Rcvd: time taken 99
+Mon Mar 21 16:58:03 Rcvd: Packet (63) 0x32 at 99 (7044)
+Mon Mar 21 16:58:03      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:03 Rcvd: time taken 99
+Mon Mar 21 16:58:03 Rcvd: Packet (64) 0x32 at 99 (7144)
+Mon Mar 21 16:58:03      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:03 Rcvd: time taken 99
+Mon Mar 21 16:58:03 Sent: com(0)
+Mon Mar 21 16:58:03 Rcvd: Packet (65) 0x32 at 99 (7244)
+Mon Mar 21 16:58:03      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:03 Rcvd: time taken 99
+Mon Mar 21 16:58:03 Rcvd: Packet (66) 0x32 at 99 (7344)
+Mon Mar 21 16:58:03      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:03 Rcvd: time taken 99
+Mon Mar 21 16:58:04 Rcvd: Packet (67) 0x32 at 99 (7444)
+Mon Mar 21 16:58:04      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:04 Rcvd: time taken 99
+Mon Mar 21 16:58:04 Rcvd: Packet (68) 0x32 at 99 (7544)
+Mon Mar 21 16:58:04      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:04 Rcvd: time taken 99
+Mon Mar 21 16:58:04 Rcvd: Packet (69) 0x32 at 98 (7644)
+Mon Mar 21 16:58:04      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:04 Rcvd: time taken 98
+Mon Mar 21 16:58:04 Rcvd: Packet (70) 0x32 at 99 (7744)
+Mon Mar 21 16:58:04      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:04 Rcvd: time taken 99
+Mon Mar 21 16:58:04 Sent: com(0)
+Mon Mar 21 16:58:04 Rcvd: Packet (71) 0x32 at 99 (7844)
+Mon Mar 21 16:58:04      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:04 Rcvd: time taken 99
+Mon Mar 21 16:58:04 Rcvd: Packet (72) 0x32 at 99 (7944)
+Mon Mar 21 16:58:04      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:04 Rcvd: time taken 99
+Mon Mar 21 16:58:04 Rcvd: Packet (73) 0x32 at 99 (8044)
+Mon Mar 21 16:58:04      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:04 Rcvd: time taken 99
+Mon Mar 21 16:58:04 Rcvd: Packet (74) 0x32 at 99 (8144)
+Mon Mar 21 16:58:04      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:04 Rcvd: time taken 99
+Mon Mar 21 16:58:04 Rcvd: Packet (75) 0x32 at 99 (8244)
+Mon Mar 21 16:58:04      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:04 Rcvd: time taken 99
+Mon Mar 21 16:58:04 Rcvd: Packet (76) 0x32 at 99 (8344)
+Mon Mar 21 16:58:04      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:04 Rcvd: time taken 99
+Mon Mar 21 16:58:04 Sent: com(0)
+Mon Mar 21 16:58:05 Rcvd: Packet (77) 0x32 at 99 (8444)
+Mon Mar 21 16:58:05      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:05 Rcvd: time taken 99
+Mon Mar 21 16:58:05 Rcvd: Packet (78) 0x32 at 99 (8544)
+Mon Mar 21 16:58:05      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:05 Rcvd: time taken 99
+Mon Mar 21 16:58:05 Rcvd: Packet (79) 0x32 at 99 (8644)
+Mon Mar 21 16:58:05      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:05 Rcvd: time taken 99
+Mon Mar 21 16:58:05 Rcvd: Packet (80) 0x32 at 99 (8744)
+Mon Mar 21 16:58:05      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:05 Rcvd: time taken 99
+Mon Mar 21 16:58:05 Rcvd: Packet (81) 0x32 at 99 (8844)
+Mon Mar 21 16:58:05      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:05 Rcvd: time taken 99
+Mon Mar 21 16:58:05 Rcvd: Packet (82) 0x32 at 99 (8944)
+Mon Mar 21 16:58:05      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:05 Rcvd: time taken 99
+Mon Mar 21 16:58:05 Sent: com(0)
+Mon Mar 21 16:58:05 Rcvd: Packet (83) 0x32 at 99 (9044)
+Mon Mar 21 16:58:05      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:05 Rcvd: time taken 99
+Mon Mar 21 16:58:05 Rcvd: Packet (84) 0x32 at 99 (9144)
+Mon Mar 21 16:58:05      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:05 Rcvd: time taken 99
+Mon Mar 21 16:58:05 Rcvd: Packet (85) 0x32 at 99 (9244)
+Mon Mar 21 16:58:05      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:05 Rcvd: time taken 99
+Mon Mar 21 16:58:05 Rcvd: Packet (86) 0x32 at 99 (9344)
+Mon Mar 21 16:58:05      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:05 Rcvd: time taken 99
+Mon Mar 21 16:58:06 Rcvd: Packet (87) 0x32 at 99 (9444)
+Mon Mar 21 16:58:06      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:06 Rcvd: time taken 99
+Mon Mar 21 16:58:06 Rcvd: Packet (88) 0x32 at 98 (9543)
+Mon Mar 21 16:58:06      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:06 Rcvd: time taken 98
+Mon Mar 21 16:58:06 Sent: com(0)
+Mon Mar 21 16:58:06 Rcvd: Packet (89) 0x32 at 98 (9643)
+Mon Mar 21 16:58:06      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:06 Rcvd: time taken 98
+Mon Mar 21 16:58:06 Rcvd: Packet (90) 0x32 at 99 (9743)
+Mon Mar 21 16:58:06      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:06 Rcvd: time taken 99
+Mon Mar 21 16:58:06 Rcvd: Packet (91) 0x32 at 99 (9843)
+Mon Mar 21 16:58:06      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:06 Rcvd: time taken 99
+Mon Mar 21 16:58:06 Rcvd: Packet (92) 0x32 at 99 (9943)
+Mon Mar 21 16:58:06      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:06 Rcvd: time taken 99
+Mon Mar 21 16:58:06 Rcvd: Packet (93) 0x32 at 98 (10043)
+Mon Mar 21 16:58:06      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:06 Rcvd: time taken 98
+Mon Mar 21 16:58:06 Rcvd: Packet (94) 0x32 at 98 (10143)
+Mon Mar 21 16:58:06      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:06 Rcvd: time taken 98
+Mon Mar 21 16:58:06 Sent: com(0)
+Mon Mar 21 16:58:06 Rcvd: Packet (95) 0x32 at 98 (10243)
+Mon Mar 21 16:58:06      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:06 Rcvd: time taken 98
+Mon Mar 21 16:58:06 Rcvd: Packet (96) 0x32 at 99 (10343)
+Mon Mar 21 16:58:06      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:06 Rcvd: time taken 99
+Mon Mar 21 16:58:07 Rcvd: Packet (97) 0x32 at 99 (10443)
+Mon Mar 21 16:58:07      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:07 Rcvd: time taken 99
+Mon Mar 21 16:58:07 Rcvd: Packet (98) 0x32 at 98 (10543)
+Mon Mar 21 16:58:07      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:07 Rcvd: time taken 98
+Mon Mar 21 16:58:07 Rcvd: Packet (99) 0x32 at 98 (10643)
+Mon Mar 21 16:58:07      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:07 Rcvd: time taken 98
+Mon Mar 21 16:58:07 Rcvd: Packet (100) 0x32 at 99 (10743)
+Mon Mar 21 16:58:07      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:07 Rcvd: time taken 99
+Mon Mar 21 16:58:07 Sent: com(0)
+Mon Mar 21 16:58:07 Rcvd: Packet (101) 0x32 at 98 (10843)
+Mon Mar 21 16:58:07      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:07 Rcvd: time taken 98
+Mon Mar 21 16:58:07 Rcvd: Packet (102) 0x32 at 99 (10943)
+Mon Mar 21 16:58:07      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:07 Rcvd: time taken 99
+Mon Mar 21 16:58:07 Rcvd: Packet (103) 0x32 at 99 (11043)
+Mon Mar 21 16:58:07      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:07 Rcvd: time taken 99
+Mon Mar 21 16:58:07 Rcvd: Packet (104) 0x32 at 98 (11143)
+Mon Mar 21 16:58:07      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:07 Rcvd: time taken 98
+Mon Mar 21 16:58:07 Rcvd: Packet (105) 0x32 at 98 (11243)
+Mon Mar 21 16:58:07      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:07 Rcvd: time taken 98
+Mon Mar 21 16:58:07 Rcvd: Packet (106) 0x32 at 99 (11343)
+Mon Mar 21 16:58:07      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:07 Rcvd: time taken 99
+Mon Mar 21 16:58:07 Sent: com(0)
+Mon Mar 21 16:58:08 Rcvd: Packet (107) 0x32 at 98 (11443)
+Mon Mar 21 16:58:08      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:08 Rcvd: time taken 98
+Mon Mar 21 16:58:08 Rcvd: Packet (108) 0x32 at 98 (11543)
+Mon Mar 21 16:58:08      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:08 Rcvd: time taken 98
+Mon Mar 21 16:58:08 Rcvd: Packet (109) 0x32 at 98 (11643)
+Mon Mar 21 16:58:08      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:08 Rcvd: time taken 98
+Mon Mar 21 16:58:08 Rcvd: Packet (110) 0x32 at 99 (11743)
+Mon Mar 21 16:58:08      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:08 Rcvd: time taken 99
+Mon Mar 21 16:58:08 Rcvd: Packet (111) 0x32 at 99 (11843)
+Mon Mar 21 16:58:08      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:08 Rcvd: time taken 99
+Mon Mar 21 16:58:08 Rcvd: Packet (112) 0x32 at 99 (11943)
+Mon Mar 21 16:58:08      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:08 Rcvd: time taken 99
+Mon Mar 21 16:58:08 Sent: com(0)
+Mon Mar 21 16:58:08 Rcvd: Packet (113) 0x32 at 99 (12043)
+Mon Mar 21 16:58:08      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:08 Rcvd: time taken 99
+Mon Mar 21 16:58:08 Rcvd: Packet (114) 0x32 at 99 (12143)
+Mon Mar 21 16:58:08      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:08 Rcvd: time taken 99
+Mon Mar 21 16:58:08 Rcvd: Packet (115) 0x32 at 99 (12243)
+Mon Mar 21 16:58:08      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:08 Rcvd: time taken 99
+Mon Mar 21 16:58:08 Rcvd: Packet (116) 0x32 at 99 (12343)
+Mon Mar 21 16:58:08      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:08 Rcvd: time taken 99
+Mon Mar 21 16:58:09 Rcvd: Packet (117) 0x32 at 99 (12443)
+Mon Mar 21 16:58:09      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:09 Rcvd: time taken 99
+Mon Mar 21 16:58:09 Rcvd: Packet (118) 0x32 at 99 (12543)
+Mon Mar 21 16:58:09      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:09 Rcvd: time taken 99
+Mon Mar 21 16:58:09 Sent: com(0)
+Mon Mar 21 16:58:09 Rcvd: Packet (119) 0x32 at 99 (12643)
+Mon Mar 21 16:58:09      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:09 Rcvd: time taken 99
+Mon Mar 21 16:58:09 Rcvd: Packet (120) 0x32 at 99 (12743)
+Mon Mar 21 16:58:09      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:09 Rcvd: time taken 99
+Mon Mar 21 16:58:09 Rcvd: Packet (121) 0x32 at 99 (12843)
+Mon Mar 21 16:58:09      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:09 Rcvd: time taken 99
+Mon Mar 21 16:58:09 Rcvd: Packet (122) 0x32 at 99 (12943)
+Mon Mar 21 16:58:09      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:09 Rcvd: time taken 99
+Mon Mar 21 16:58:09 Rcvd: Packet (123) 0x32 at 99 (13043)
+Mon Mar 21 16:58:09      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:09 Rcvd: time taken 99
+Mon Mar 21 16:58:09 Rcvd: Packet (124) 0x32 at 99 (13143)
+Mon Mar 21 16:58:09      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:09 Rcvd: time taken 99
+Mon Mar 21 16:58:09 Sent: com(0)
+Mon Mar 21 16:58:09 Rcvd: Packet (125) 0x32 at 99 (13243)
+Mon Mar 21 16:58:09      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:09 Rcvd: time taken 99
+Mon Mar 21 16:58:09 Rcvd: Packet (126) 0x32 at 99 (13343)
+Mon Mar 21 16:58:09      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:09 Rcvd: time taken 99
+Mon Mar 21 16:58:10 Rcvd: Packet (127) 0x32 at 99 (13443)
+Mon Mar 21 16:58:10      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:10 Rcvd: time taken 99
+Mon Mar 21 16:58:10 Rcvd: Packet (128) 0x32 at 99 (13543)
+Mon Mar 21 16:58:10      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:10 Rcvd: time taken 99
+Mon Mar 21 16:58:10 Rcvd: Packet (129) 0x32 at 98 (13643)
+Mon Mar 21 16:58:10      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:10 Rcvd: time taken 98
+Mon Mar 21 16:58:10 Rcvd: Packet (130) 0x32 at 99 (13743)
+Mon Mar 21 16:58:10      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:10 Rcvd: time taken 99
+Mon Mar 21 16:58:10 Sent: com(0)
+Mon Mar 21 16:58:10 Rcvd: Packet (131) 0x32 at 99 (13843)
+Mon Mar 21 16:58:10      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:10 Rcvd: time taken 99
+Mon Mar 21 16:58:10 Rcvd: Packet (132) 0x32 at 99 (13943)
+Mon Mar 21 16:58:10      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:10 Rcvd: time taken 99
+Mon Mar 21 16:58:10 Rcvd: Packet (133) 0x32 at 99 (14043)
+Mon Mar 21 16:58:10      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:10 Rcvd: time taken 99
+Mon Mar 21 16:58:10 Rcvd: Packet (134) 0x32 at 99 (14143)
+Mon Mar 21 16:58:10      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:10 Rcvd: time taken 99
+Mon Mar 21 16:58:10 Rcvd: Packet (135) 0x32 at 99 (14243)
+Mon Mar 21 16:58:10      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:10 Rcvd: time taken 99
+Mon Mar 21 16:58:10 Rcvd: Packet (136) 0x32 at 99 (14343)
+Mon Mar 21 16:58:10      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:10 Rcvd: time taken 99
+Mon Mar 21 16:58:10 Sent: com(0)
+Mon Mar 21 16:58:11 Rcvd: Packet (137) 0x32 at 99 (14443)
+Mon Mar 21 16:58:11      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:11 Rcvd: time taken 99
+Mon Mar 21 16:58:11 Rcvd: Packet (138) 0x32 at 99 (14543)
+Mon Mar 21 16:58:11      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:11 Rcvd: time taken 99
+Mon Mar 21 16:58:11 Rcvd: Packet (139) 0x32 at 99 (14643)
+Mon Mar 21 16:58:11      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:11 Rcvd: time taken 99
+Mon Mar 21 16:58:11 Rcvd: Packet (140) 0x32 at 99 (14743)
+Mon Mar 21 16:58:11      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:11 Rcvd: time taken 99
+Mon Mar 21 16:58:11 Rcvd: Packet (141) 0x32 at 99 (14843)
+Mon Mar 21 16:58:11      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:11 Rcvd: time taken 99
+Mon Mar 21 16:58:11 Rcvd: Packet (142) 0x32 at 99 (14943)
+Mon Mar 21 16:58:11      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:11 Rcvd: time taken 99
+Mon Mar 21 16:58:11 Sent: com(0)
+Mon Mar 21 16:58:11 Rcvd: Packet (143) 0x32 at 99 (15043)
+Mon Mar 21 16:58:11      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:11 Rcvd: time taken 99
+Mon Mar 21 16:58:11 Rcvd: Packet (144) 0x32 at 99 (15143)
+Mon Mar 21 16:58:11      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:11 Rcvd: time taken 99
+Mon Mar 21 16:58:11 Rcvd: Packet (145) 0x32 at 98 (15242)
+Mon Mar 21 16:58:11      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:11 Rcvd: time taken 98
+Mon Mar 21 16:58:11 Rcvd: Packet (146) 0x32 at 99 (15343)
+Mon Mar 21 16:58:11      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:11 Rcvd: time taken 99
+Mon Mar 21 16:58:12 Rcvd: Packet (147) 0x32 at 99 (15443)
+Mon Mar 21 16:58:12      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:12 Rcvd: time taken 99
+Mon Mar 21 16:58:12 Rcvd: Packet (148) 0x32 at 98 (15542)
+Mon Mar 21 16:58:12      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:12 Rcvd: time taken 98
+Mon Mar 21 16:58:12 Sent: com(0)
+Mon Mar 21 16:58:12 Rcvd: Packet (149) 0x32 at 98 (15642)
+Mon Mar 21 16:58:12      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:12 Rcvd: time taken 98
+Mon Mar 21 16:58:12 Rcvd: Packet (150) 0x32 at 99 (15742)
+Mon Mar 21 16:58:12      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:12 Rcvd: time taken 99
+Mon Mar 21 16:58:12 Rcvd: Packet (151) 0x32 at 99 (15842)
+Mon Mar 21 16:58:12      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:12 Rcvd: time taken 99
+Mon Mar 21 16:58:12 Rcvd: Packet (152) 0x32 at 99 (15942)
+Mon Mar 21 16:58:12      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:12 Rcvd: time taken 99
+Mon Mar 21 16:58:12 Rcvd: Packet (153) 0x32 at 99 (16042)
+Mon Mar 21 16:58:12      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:12 Rcvd: time taken 99
+Mon Mar 21 16:58:12 Rcvd: Packet (154) 0x32 at 98 (16141)
+Mon Mar 21 16:58:12      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:12 Rcvd: time taken 98
+Mon Mar 21 16:58:12 Sent: com(0)
+Mon Mar 21 16:58:12 Rcvd: Packet (155) 0x32 at 100 (16242)
+Mon Mar 21 16:58:12      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:12 Rcvd: time taken 100
+Mon Mar 21 16:58:12 Rcvd: Packet (156) 0x32 at 99 (16342)
+Mon Mar 21 16:58:12      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:12 Rcvd: time taken 99
+Mon Mar 21 16:58:13 Rcvd: Packet (157) 0x32 at 99 (16442)
+Mon Mar 21 16:58:13      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:13 Rcvd: time taken 99
+Mon Mar 21 16:58:13 Rcvd: Packet (158) 0x32 at 98 (16542)
+Mon Mar 21 16:58:13      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:13 Rcvd: time taken 98
+Mon Mar 21 16:58:13 Rcvd: Packet (159) 0x32 at 99 (16642)
+Mon Mar 21 16:58:13      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:13 Rcvd: time taken 99
+Mon Mar 21 16:58:13 Sent: com(0)
+Mon Mar 21 16:58:13 Rcvd: Packet (160) 0x32 at 99 (16742)
+Mon Mar 21 16:58:13      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:13 Rcvd: time taken 99
+Mon Mar 21 16:58:13 Rcvd: Packet (161) 0x32 at 99 (16842)
+Mon Mar 21 16:58:13      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:13 Rcvd: time taken 99
+Mon Mar 21 16:58:13 Rcvd: Packet (162) 0x32 at 99 (16942)
+Mon Mar 21 16:58:13      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:13 Rcvd: time taken 99
+Mon Mar 21 16:58:13 Rcvd: Packet (163) 0x32 at 99 (17042)
+Mon Mar 21 16:58:13      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:13 Rcvd: time taken 99
+Mon Mar 21 16:58:13 Rcvd: Packet (164) 0x32 at 98 (17142)
+Mon Mar 21 16:58:13      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:13 Rcvd: time taken 98
+Mon Mar 21 16:58:13 Rcvd: Packet (165) 0x32 at 99 (17242)
+Mon Mar 21 16:58:13      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:13 Rcvd: time taken 99
+Mon Mar 21 16:58:13 Sent: com(0)
+Mon Mar 21 16:58:13 Rcvd: Packet (166) 0x32 at 99 (17342)
+Mon Mar 21 16:58:13      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:13 Rcvd: time taken 99
+Mon Mar 21 16:58:14 Rcvd: Packet (167) 0x32 at 99 (17442)
+Mon Mar 21 16:58:14      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:14 Rcvd: time taken 99
+Mon Mar 21 16:58:14 Rcvd: Packet (168) 0x32 at 98 (17542)
+Mon Mar 21 16:58:14      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:14 Rcvd: time taken 98
+Mon Mar 21 16:58:14 Rcvd: Packet (169) 0x32 at 98 (17642)
+Mon Mar 21 16:58:14      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:14 Rcvd: time taken 98
+Mon Mar 21 16:58:14 Rcvd: Packet (170) 0x32 at 99 (17742)
+Mon Mar 21 16:58:14      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:14 Rcvd: time taken 99
+Mon Mar 21 16:58:14 Rcvd: Packet (171) 0x32 at 99 (17842)
+Mon Mar 21 16:58:14      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:14 Rcvd: time taken 99
+Mon Mar 21 16:58:14 Sent: com(0)
+Mon Mar 21 16:58:14 Rcvd: Packet (172) 0x32 at 99 (17942)
+Mon Mar 21 16:58:14      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:14 Rcvd: time taken 99
+Mon Mar 21 16:58:14 Rcvd: Packet (173) 0x32 at 99 (18042)
+Mon Mar 21 16:58:14      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:14 Rcvd: time taken 99
+Mon Mar 21 16:58:14 Rcvd: Packet (174) 0x32 at 99 (18142)
+Mon Mar 21 16:58:14      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:14 Rcvd: time taken 99
+Mon Mar 21 16:58:14 Rcvd: Packet (175) 0x32 at 99 (18242)
+Mon Mar 21 16:58:14      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:14 Rcvd: time taken 99
+Mon Mar 21 16:58:14 Rcvd: Packet (176) 0x32 at 99 (18342)
+Mon Mar 21 16:58:14      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:14 Rcvd: time taken 99
+Mon Mar 21 16:58:15 Rcvd: Packet (177) 0x32 at 99 (18442)
+Mon Mar 21 16:58:15      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:15 Rcvd: time taken 99
+Mon Mar 21 16:58:15 Sent: com(0)
+Mon Mar 21 16:58:15 Rcvd: Packet (178) 0x32 at 99 (18542)
+Mon Mar 21 16:58:15      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:15 Rcvd: time taken 99
+Mon Mar 21 16:58:15 Rcvd: Packet (179) 0x32 at 99 (18642)
+Mon Mar 21 16:58:15      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:15 Rcvd: time taken 99
+Mon Mar 21 16:58:15 Rcvd: Packet (180) 0x32 at 99 (18742)
+Mon Mar 21 16:58:15      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:15 Rcvd: time taken 99
+Mon Mar 21 16:58:15 Rcvd: Packet (181) 0x32 at 99 (18842)
+Mon Mar 21 16:58:15      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:15 Rcvd: time taken 99
+Mon Mar 21 16:58:15 Rcvd: Packet (182) 0x32 at 99 (18942)
+Mon Mar 21 16:58:15      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:15 Rcvd: time taken 99
+Mon Mar 21 16:58:15 Rcvd: Packet (183) 0x32 at 99 (19042)
+Mon Mar 21 16:58:15      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:15 Rcvd: time taken 99
+Mon Mar 21 16:58:15 Sent: com(0)
+Mon Mar 21 16:58:15 Rcvd: Packet (184) 0x32 at 99 (19142)
+Mon Mar 21 16:58:15      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:15 Rcvd: time taken 99
+Mon Mar 21 16:58:15 Rcvd: Packet (185) 0x32 at 99 (19242)
+Mon Mar 21 16:58:15      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:15 Rcvd: time taken 99
+Mon Mar 21 16:58:15 Rcvd: Packet (186) 0x32 at 99 (19342)
+Mon Mar 21 16:58:15      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:15 Rcvd: time taken 99
+Mon Mar 21 16:58:16 Rcvd: Packet (187) 0x32 at 99 (19442)
+Mon Mar 21 16:58:16      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:16 Rcvd: time taken 99
+Mon Mar 21 16:58:16 Rcvd: Packet (188) 0x32 at 99 (19542)
+Mon Mar 21 16:58:16      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:16 Rcvd: time taken 99
+Mon Mar 21 16:58:16 Rcvd: Packet (189) 0x32 at 99 (19642)
+Mon Mar 21 16:58:16      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:16 Rcvd: time taken 99
+Mon Mar 21 16:58:16 Sent: com(0)
+Mon Mar 21 16:58:16 Rcvd: Packet (190) 0x32 at 99 (19742)
+Mon Mar 21 16:58:16      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:16 Rcvd: time taken 99
+Mon Mar 21 16:58:16 Rcvd: Packet (191) 0x32 at 99 (19842)
+Mon Mar 21 16:58:16      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:16 Rcvd: time taken 99
+Mon Mar 21 16:58:16 Rcvd: Packet (192) 0x32 at 99 (19942)
+Mon Mar 21 16:58:16      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:16 Rcvd: time taken 99
+Mon Mar 21 16:58:16 Rcvd: Packet (193) 0x32 at 99 (20042)
+Mon Mar 21 16:58:16      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:16 Rcvd: time taken 99
+Mon Mar 21 16:58:16 Rcvd: Packet (194) 0x32 at 99 (20142)
+Mon Mar 21 16:58:16      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:16 Rcvd: time taken 99
+Mon Mar 21 16:58:16 Rcvd: Packet (195) 0x32 at 99 (20242)
+Mon Mar 21 16:58:16      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:16 Rcvd: time taken 99
+Mon Mar 21 16:58:16 Sent: com(0)
+Mon Mar 21 16:58:16 Rcvd: Packet (196) 0x32 at 99 (20342)
+Mon Mar 21 16:58:16      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:16 Rcvd: time taken 99
+Mon Mar 21 16:58:17 Rcvd: Packet (197) 0x32 at 99 (20442)
+Mon Mar 21 16:58:17      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:17 Rcvd: time taken 99
+Mon Mar 21 16:58:17 Rcvd: Packet (198) 0x32 at 99 (20542)
+Mon Mar 21 16:58:17      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:17 Rcvd: time taken 99
+Mon Mar 21 16:58:17 Rcvd: Packet (199) 0x32 at 99 (20642)
+Mon Mar 21 16:58:17      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:17 Rcvd: time taken 99
+Mon Mar 21 16:58:17 Rcvd: Packet (200) 0x32 at 99 (20742)
+Mon Mar 21 16:58:17      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:17 Rcvd: time taken 99
+Mon Mar 21 16:58:17 Rcvd: Packet (201) 0x32 at 99 (20842)
+Mon Mar 21 16:58:17      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:17 Rcvd: time taken 99
+Mon Mar 21 16:58:17 Sent: com(0)
+Mon Mar 21 16:58:17 Rcvd: Packet (202) 0x32 at 99 (20942)
+Mon Mar 21 16:58:17      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:17 Rcvd: time taken 99
+Mon Mar 21 16:58:17 Rcvd: Packet (203) 0x32 at 99 (21042)
+Mon Mar 21 16:58:17      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:17 Rcvd: time taken 99
+Mon Mar 21 16:58:17 Rcvd: Packet (204) 0x32 at 99 (21142)
+Mon Mar 21 16:58:17      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:17 Rcvd: time taken 99
+Mon Mar 21 16:58:17 Rcvd: Packet (205) 0x32 at 99 (21242)
+Mon Mar 21 16:58:17      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:17 Rcvd: time taken 99
+Mon Mar 21 16:58:17 Rcvd: Packet (206) 0x32 at 99 (21342)
+Mon Mar 21 16:58:17      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:17 Rcvd: time taken 99
+Mon Mar 21 16:58:18 Rcvd: Packet (207) 0x32 at 99 (21442)
+Mon Mar 21 16:58:18      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:18 Rcvd: time taken 99
+Mon Mar 21 16:58:18 Sent: com(0)
+Mon Mar 21 16:58:18 Rcvd: Packet (208) 0x32 at 98 (21541)
+Mon Mar 21 16:58:18      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:18 Rcvd: time taken 98
+Mon Mar 21 16:58:18 Rcvd: Packet (209) 0x32 at 100 (21642)
+Mon Mar 21 16:58:18      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:18 Rcvd: time taken 100
+Mon Mar 21 16:58:18 Rcvd: Packet (210) 0x32 at 99 (21742)
+Mon Mar 21 16:58:18      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:18 Rcvd: time taken 99
+Mon Mar 21 16:58:18 Rcvd: Packet (211) 0x32 at 98 (21841)
+Mon Mar 21 16:58:18      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:18 Rcvd: time taken 98
+Mon Mar 21 16:58:18 Rcvd: Packet (212) 0x32 at 99 (21941)
+Mon Mar 21 16:58:18      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:18 Rcvd: time taken 99
+Mon Mar 21 16:58:18 Rcvd: Packet (213) 0x32 at 99 (22041)
+Mon Mar 21 16:58:18      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:18 Rcvd: time taken 99
+Mon Mar 21 16:58:18 Sent: com(0)
+Mon Mar 21 16:58:18 Rcvd: Packet (214) 0x32 at 99 (22141)
+Mon Mar 21 16:58:18      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:18 Rcvd: time taken 99
+Mon Mar 21 16:58:18 Rcvd: Packet (215) 0x32 at 99 (22241)
+Mon Mar 21 16:58:18      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:18 Rcvd: time taken 99
+Mon Mar 21 16:58:18 Rcvd: Packet (216) 0x32 at 99 (22341)
+Mon Mar 21 16:58:18      TransVel:    0 RotVel:    0(   0) Heading    0 TransAcc    0 RotAcc    0(   0)
+Mon Mar 21 16:58:18 Rcvd: time taken 99
+Mon Mar 21 16:58:18 Disconnecting from robot.
+Mon Mar 21 16:58:19 Rcvd: time taken 201
+Mon Mar 21 16:58:19 Thread ArSyncLoop (-1294136464) with pid 2817 has finished
+Mon Mar 21 16:58:20 ArSerialConnection::close: Successfully closed serial port.

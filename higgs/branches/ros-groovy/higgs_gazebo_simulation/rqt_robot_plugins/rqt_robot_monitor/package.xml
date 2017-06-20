@@ -1,0 +1,43 @@
+<package>
+  <name>rqt_robot_monitor</name>
+  <version>0.2.9</version>
+  <description>rqt_robot_monitor displays diagnostics_agg topic messages.
+  
+  All diagnostics are fall into one of three tree panes depending on the 
+  status of diagnostics (normal, warning, error/stale). Status are shown 
+  in trees to represent their hierarchy. Worse status dominates the higher level
+  status. 
+  
+    Ex. 'Computer' category has 3 sub devices. 2 are green but 1 is error. Then
+        'Computer' becomes error.
+      
+  You can look at the detail of each status by double-clicking the tree nodes.
+   
+  Currently re-usable functionalities to other pkgs are not provided.   
+  </description>
+  <maintainer email="isaito@willowgarage.com">Isaac Saito</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/rqt_robot_monitor</url>
+  <url type="repository">https://github.com/ros-visualization/rqt_robot_plugins/rqt_robot_monitor</url>
+  <url type="bugtracker">https://github.com/ros-visualization/rqt_robot_plugins/issues</url>
+
+  <author>Isaac Saito</author>
+  <author>Ze'ev Klapow</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>python-rospkg</run_depend>
+  <run_depend>qt_gui_py_common</run_depend>
+  <run_depend>rosmsg</run_depend>
+  <run_depend>rqt_gui</run_depend>
+  <run_depend>rqt_gui_py</run_depend>
+  <run_depend>rqt_py_common</run_depend>
+
+  <export>
+    <rqt_gui plugin="${prefix}/plugin.xml" />
+  </export>
+</package>
+
+

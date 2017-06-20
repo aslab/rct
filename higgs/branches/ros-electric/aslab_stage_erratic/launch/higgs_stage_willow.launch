@@ -1,0 +1,30 @@
+<launch>
+  <param name="/use_sim_time" value="true"/>
+  
+  <node pkg="stage" type="stageros" name="stageros" args="$(find aslab_stage_erratic)/stage_files/willow-higgs.world" respawn="false" >
+    <param name="base_watchdog_timeout" value="0.2"/>
+    <remap from="/base_scan" to="/scan" />
+    <remap from="/odom" to="/pioneer/odom" />
+    <remap from="/cmd_vel" to="/pioneer/cmd_vel" />
+  </node>
+  
+  <!-- To teleoperate the robot -->
+  <node name="teleop_base_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen">
+    <remap from="base_controller/command" to="/pioneer/cmd_vel" />
+  </node>
+      
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find aslab_stage_erratic)/map/willow-room.yaml" respawn="false" />
+         
+  <!-- navigation nodes -->
+  <include file="$(find higgs_navigation)/launch/higgs_nav_sys.launch" >
+    <arg name="KIN" value="false" />
+    <arg name="KL" value="false" />
+    <arg name="ODOM_EKF" value="false" />
+  </include>
+  
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find aslab_stage_erratic)/complete.vcg" output="screen">
+    <remap from="/goal" to="/move_base_simple/goal" />
+  </node>
+
+  
+</launch>

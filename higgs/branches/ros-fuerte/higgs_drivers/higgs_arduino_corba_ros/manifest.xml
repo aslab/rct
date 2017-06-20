@@ -1,0 +1,17 @@
+<package>
+  <description brief="higgs_arduino_corba_ros">
+
+     higgs_arduino_corba_ros
+
+  </description>
+  <author>arturobc</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/higgs_arduino_corba_ros</url>
+  <depend package="roscpp"/>
+  <depend package="sensor_msgs"/>
+  <depend package="nav_msgs"/>
+  <depend package="tf"/>
+</package>
+
+

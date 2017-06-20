@@ -1,0 +1,15 @@
+<package>
+  <description brief="higgs_arduino">
+
+     higgs_arduino
+
+  </description>
+  <author>Carlos Hernandez</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/higgs_arduino</url>
+  <depend package="avr_bridge"/>
+
+</package>
+
+

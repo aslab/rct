@@ -1,0 +1,11 @@
+<launch>
+
+  <machine name="higgs" address="higgs" env-loader="/opt/ros/fuerte/env.sh" />
+     
+  <node pkg="higgs_kinect" name="kinect_tilt" type="tilt_kinect" machine="higgs" >
+  	<remap from="imu" to="kinect_imu" />
+  </node>
+  
+	
+</launch>
+

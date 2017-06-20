@@ -1,0 +1,8 @@
+<launch>
+  
+  <node name="fake_laser_scan_node" pkg="OM_Testbed2" type="fake_laser_scan_node.py" respawn="false">
+  	<param name="baudrate" value="5600" />
+  	<param name="port" value="$(find OM_Testbed2)/aux/laser_port" />
+  </node>
+  
+</launch>

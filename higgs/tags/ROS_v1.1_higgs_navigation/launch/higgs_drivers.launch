@@ -1,0 +1,18 @@
+<launch>
+
+  <group ns="robot">
+		    
+    <node pkg="ROSARIA" name="pioneer2AT8" type="RosAria" machine="higgs" /> 
+
+    <node pkg="higgs_setup_tf" name="higgs_tf_broadcaster" type="higgs_tf_broadcaster"/>
+
+      <param name="sicklms/port" value="/dev/ttyUSB1" />
+      <param name="sicklms/baud" value="38400" />
+    <node name="sicklms" pkg="sicktoolbox_wrapper" type="sicklms" />
+
+  </group> 
+
+
+ 
+	
+</launch>

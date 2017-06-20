@@ -1,0 +1,25 @@
+<launch>
+
+<param name="/use_sim_time" value="true" />
+
+<!-- Select the robot-driver you wish to use -->
+<include file="$(find pioneer3at)/launch/core/gazebo.launch" />
+<!-- <include file="$(find pioneer3at)/launch/core/rosaria.launch" /> -->
+<!-- <include file="$(find pioneer3at)/launch/core/p2os_driver.launch" /> -->
+
+<!-- Select the laser you wish to use -->
+<!-- YOU CAN ONLY USE 1 LASER AS A SENSOR FOR AMCL NODE FROM THIS GROUP -->
+<include file="$(find pioneer3at)/launch/lidar/gazebo_hokuyo.launch" />
+<!-- <include file="$(find pioneer3at)/launch/lidar/sicklms.launch" /> -->
+<!-- <include file="$(find pioneer3at)/launch/lidar/hokuyo.launch" /> -->
+<!-- Choose if you wish to use the kinect to obtain scans as a depth to image (laser) sensor -->
+ <include file="$(find higgs_kinect)/launch/cloudthrottle_simulation.launch" />
+
+<!-- Other essential launch files -->
+<include file="$(find pioneer3at)/launch/core/urdf.launch" />
+<include file="$(find pioneer3at)/launch/control/mux_cmdvel.launch" />
+
+	 
+</launch>
+
+

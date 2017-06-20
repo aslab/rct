@@ -1,0 +1,32 @@
+module higgs
+{
+	
+
+	//Structure that represents an obstacle and specify its angle, relative to the robot front, and it's distance
+	struct Obstacle
+	{
+		double angle;
+		double dist;
+	};
+	
+
+	//A list of the detected obstacle
+	typedef sequence<Obstacle> ObstaclesDetected; 
+
+	//Module responsible for the detection and returning a list of obstacles
+	interface ObstacleDetector
+	{
+
+
+		
+		//This method returns a sequence of detected obstacles that are closer
+		//to the robot by a certain "distRange" and are in a angle within leftAngleRange and rightAngleRange
+		ObstaclesDetected detectObstacles(in double distRange, in double leftAngleRange, in double rightAngleRange);
+
+		//Return the closest detected Obstacle
+		Obstacle getClosestObstacle();
+
+
+
+	};
+};

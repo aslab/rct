@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Model xmi:id="_GQg4YK7OEeCxLZhEn2s9Ag" name="HiggsRunningModel" viewpoint="Self">
+    <eAnnotations xmi:id="_GQg4Ya7OEeCxLZhEn2s9Ag" source="uml2.diagrams">
+      <contents xmi:type="notation:Diagram" xmi:id="_KAM2MK7OEeCxLZhEn2s9Ag" type="Freeform" name="contents">
+        <children xmi:id="_OHhQ4K7OEeCxLZhEn2s9Ag" element="_GQg4YK7OEeCxLZhEn2s9Ag">
+          <children xmi:id="_OHh38K7OEeCxLZhEn2s9Ag" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_OHh38a7OEeCxLZhEn2s9Ag" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_OHh38q7OEeCxLZhEn2s9Ag" type="Stereotype"/>
+          <children xmi:id="_OHh3867OEeCxLZhEn2s9Ag" type="Name"/>
+          <children xmi:id="_OHh39K7OEeCxLZhEn2s9Ag" type="Parent"/>
+          <children xmi:id="_OHh39a7OEeCxLZhEn2s9Ag" type="PackageContents">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_OHh39q7OEeCxLZhEn2s9Ag" canonical="false" collapsed="true"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_OHhQ4a7OEeCxLZhEn2s9Ag" fontName="Sans" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OHhQ4q7OEeCxLZhEn2s9Ag" x="3846" y="1531"/>
+        </children>
+        <children xmi:id="_PbyVIK7OEeCxLZhEn2s9Ag">
+          <children xmi:id="_PbyVI67OEeCxLZhEn2s9Ag" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_PbyVJK7OEeCxLZhEn2s9Ag" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_Pby8MK7OEeCxLZhEn2s9Ag" type="Stereotype"/>
+          <children xmi:id="_Pby8Ma7OEeCxLZhEn2s9Ag" type="Name"/>
+          <children xmi:id="_Pby8Mq7OEeCxLZhEn2s9Ag" type="Parent"/>
+          <children xmi:id="_Pby8M67OEeCxLZhEn2s9Ag" type="PackageContents">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Pby8NK7OEeCxLZhEn2s9Ag" canonical="false" collapsed="true"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_PbyVIa7OEeCxLZhEn2s9Ag" fontName="Sans" showStereotype="Label"/>
+          <element xmi:type="uml:Package" href="InstancesModel.efx#_nZEYQJgSEeC2wqYA7RZAVA?HiggsEngineeringModel/InstancesModel?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PbyVIq7OEeCxLZhEn2s9Ag" x="10642" y="6886"/>
+        </children>
+        <children xmi:id="_QiKHUK7OEeCxLZhEn2s9Ag">
+          <children xmi:id="_QiKHU67OEeCxLZhEn2s9Ag" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_QiKHVK7OEeCxLZhEn2s9Ag" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_QiKuYK7OEeCxLZhEn2s9Ag" type="Stereotype"/>
+          <children xmi:id="_QiKuYa7OEeCxLZhEn2s9Ag" type="Name"/>
+          <children xmi:id="_QiKuYq7OEeCxLZhEn2s9Ag" type="Parent"/>
+          <children xmi:id="_QiKuY67OEeCxLZhEn2s9Ag" type="PackageContents">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_QiKuZK7OEeCxLZhEn2s9Ag" canonical="false" collapsed="true"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_QiKHUa7OEeCxLZhEn2s9Ag" fontName="Sans" showStereotype="Label"/>
+          <element xmi:type="uml:Package" href="DomainArchitecture.efx#_1Z2PcA5qEeCo7JwALS5E6g?HiggsEngineeringModel/Design/SystemArchitecture/DomainArchitecture?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QiKHUq7OEeCxLZhEn2s9Ag" x="939" y="3443"/>
+        </children>
+        <children xmi:id="_SMfiMK7OEeCxLZhEn2s9Ag">
+          <children xmi:id="_SMgJQq7OEeCxLZhEn2s9Ag" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_SMgJQ67OEeCxLZhEn2s9Ag" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_SMgJRK7OEeCxLZhEn2s9Ag" type="Stereotype"/>
+          <children xmi:id="_SMgJRa7OEeCxLZhEn2s9Ag" type="Name"/>
+          <children xmi:id="_SMgwUK7OEeCxLZhEn2s9Ag" type="Parent"/>
+          <children xmi:id="_SMgwUa7OEeCxLZhEn2s9Ag" type="PackageContents">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_SMgwUq7OEeCxLZhEn2s9Ag" canonical="false" collapsed="true"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_SMgJQK7OEeCxLZhEn2s9Ag" fontName="Sans" showStereotype="Label"/>
+          <element xmi:type="uml:Package" href="HiggsComponentsModel.efx#_CbQeEIe-EeCF6PTS9hZuKg?HiggsEngineeringModel/Design/SolutionImplementation/SoftwareModel/ComponentsModel?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SMgJQa7OEeCxLZhEn2s9Ag" x="6260" y="5321"/>
+        </children>
+        <children xmi:id="_TiUFoK7OEeCxLZhEn2s9Ag">
+          <children xmi:id="_TiUssK7OEeCxLZhEn2s9Ag" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_TiUssa7OEeCxLZhEn2s9Ag" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_TiUssq7OEeCxLZhEn2s9Ag" type="Stereotype"/>
+          <children xmi:id="_TiUss67OEeCxLZhEn2s9Ag" type="Name"/>
+          <children xmi:id="_TiVTwK7OEeCxLZhEn2s9Ag" type="Parent"/>
+          <children xmi:id="_TiVTwa7OEeCxLZhEn2s9Ag" type="PackageContents">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_TiVTwq7OEeCxLZhEn2s9Ag" canonical="false" collapsed="true"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_TiUFoa7OEeCxLZhEn2s9Ag" fontName="Sans" showStereotype="Label"/>
+          <element xmi:type="uml:Package" href="Hardware.efx#_W1a8cA5tEeCEtvugbZhpxA?HiggsEngineeringModel/Design/SolutionImplementation/Hardware?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TiUFoq7OEeCxLZhEn2s9Ag" x="4069" y="5321"/>
+        </children>
+        <children xmi:id="_bfUYcK7OEeCxLZhEn2s9Ag" type="Note">
+          <children xmi:id="_bfU_gK7OEeCxLZhEn2s9Ag" type="DiagramName">
+            <element xsi:nil="true"/>
+          </children>
+          <children xmi:id="_bfU_ga7OEeCxLZhEn2s9Ag" type="Description">
+            <element xsi:nil="true"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_bfUYca7OEeCxLZhEn2s9Ag" fontName="Sans" description="CH 2011 07 13&lt;br />&#xA;         Ideally the running model that the Higgs system will use while operation should be equal to the Higgs Engineering Model&#xA;        used by the developers to build the Higgs Autonomous Navigation Application, but for the moment the running model will only&#xA;        consist of some parts of it: those the MetaArchitecture of Higgs can reason about&lt;br />" fillColor="13369343" lineColor="6737151" lineWidth="1"/>
+          <styles xmi:type="notation:TextStyle" xmi:id="_bfUYcq7OEeCxLZhEn2s9Ag"/>
+          <styles xmi:type="notation:LineTypeStyle" xmi:id="_bfUYc67OEeCxLZhEn2s9Ag"/>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bfUYdK7OEeCxLZhEn2s9Ag" x="11894" y="626" width="5321" height="3438"/>
+        </children>
+        <children xmi:id="_NamrEK7PEeCxLZhEn2s9Ag" type="Note">
+          <children xmi:id="_NanSIK7PEeCxLZhEn2s9Ag" type="DiagramName">
+            <element xsi:nil="true"/>
+          </children>
+          <children xmi:id="_NanSIa7PEeCxLZhEn2s9Ag" type="Description">
+            <element xsi:nil="true"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_NamrEa7PEeCxLZhEn2s9Ag" fontName="Sans" description="eventually HiggsRunningModel will also contain the knowledge about the mission and the environment, imported from the&#xA;        Analysis package of the Engineering Model, but for the moment this models/knowledge are implicit and the MetaArchitecture&#xA;        cannot reason about it&lt;br />" fillColor="14803196" lineColor="10265827" lineWidth="1"/>
+          <styles xmi:type="notation:TextStyle" xmi:id="_NamrEq7PEeCxLZhEn2s9Ag"/>
+          <styles xmi:type="notation:LineTypeStyle" xmi:id="_NamrE67PEeCxLZhEn2s9Ag"/>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NamrFK7PEeCxLZhEn2s9Ag" x="2174" y="7811" width="4384" height="1878"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_KAM2Ma7OEeCxLZhEn2s9Ag"/>
+        <element xsi:nil="true"/>
+        <edges xmi:id="_Ve9_kK7OEeCxLZhEn2s9Ag" element="_Ve8xcK7OEeCxLZhEn2s9Ag" source="_OHhQ4K7OEeCxLZhEn2s9Ag" target="_QiKHUK7OEeCxLZhEn2s9Ag">
+          <children xmi:id="_Ve-moK7OEeCxLZhEn2s9Ag" type="KindLabel">
+            <children xmi:id="_Ve-moq7OEeCxLZhEn2s9Ag" type="Stereotype"/>
+            <children xmi:id="_Ve-mpK7OEeCxLZhEn2s9Ag" type="Kind"/>
+            <children xmi:id="_Ve-mo67OEeCxLZhEn2s9Ag" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ve-moa7OEeCxLZhEn2s9Ag" y="-122"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Ve9_ka7OEeCxLZhEn2s9Ag" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ve9_kq7OEeCxLZhEn2s9Ag" points="[-28, 26, 133, -154]$[-262, 178, -101, -2]"/>
+        </edges>
+        <edges xmi:id="_WGzboK7OEeCxLZhEn2s9Ag" element="_WGwYUK7OEeCxLZhEn2s9Ag" source="_OHhQ4K7OEeCxLZhEn2s9Ag" target="_TiUFoK7OEeCxLZhEn2s9Ag">
+          <children xmi:id="_WGzbo67OEeCxLZhEn2s9Ag" type="KindLabel">
+            <children xmi:id="_WGzbpa7OEeCxLZhEn2s9Ag" type="Stereotype"/>
+            <children xmi:id="_WG0Csa7OEeCxLZhEn2s9Ag" type="Kind"/>
+            <children xmi:id="_WG0CsK7OEeCxLZhEn2s9Ag" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WGzbpK7OEeCxLZhEn2s9Ag" y="-122"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_WGzboa7OEeCxLZhEn2s9Ag" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WGzboq7OEeCxLZhEn2s9Ag" points="[4, 26, -45, -228]$[17, 280, -32, 26]"/>
+        </edges>
+        <edges xmi:id="_Wpob4K7OEeCxLZhEn2s9Ag" element="_Wpn00K7OEeCxLZhEn2s9Ag" source="_OHhQ4K7OEeCxLZhEn2s9Ag" target="_SMfiMK7OEeCxLZhEn2s9Ag">
+          <children xmi:id="_WppC8K7OEeCxLZhEn2s9Ag" type="KindLabel">
+            <children xmi:id="_WppC8q7OEeCxLZhEn2s9Ag" type="Stereotype"/>
+            <children xmi:id="_WppC9K7OEeCxLZhEn2s9Ag" type="Kind"/>
+            <children xmi:id="_WppC867OEeCxLZhEn2s9Ag" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WppC8a7OEeCxLZhEn2s9Ag" y="-122"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Wpob4a7OEeCxLZhEn2s9Ag" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Wpob4q7OEeCxLZhEn2s9Ag" points="[28, 26, -142, -120]$[84, 147, -86, 1]"/>
+        </edges>
+        <edges xmi:id="_XIYNYK7OEeCxLZhEn2s9Ag" element="_XIW_QK7OEeCxLZhEn2s9Ag" source="_OHhQ4K7OEeCxLZhEn2s9Ag" target="_PbyVIK7OEeCxLZhEn2s9Ag">
+          <children xmi:id="_XIYNY67OEeCxLZhEn2s9Ag" type="KindLabel">
+            <children xmi:id="_XIYNZa7OEeCxLZhEn2s9Ag" type="Stereotype"/>
+            <children xmi:id="_XIYNZ67OEeCxLZhEn2s9Ag" type="Kind"/>
+            <children xmi:id="_XIYNZq7OEeCxLZhEn2s9Ag" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XIYNZK7OEeCxLZhEn2s9Ag" y="-122"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_XIYNYa7OEeCxLZhEn2s9Ag" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XIYNYq7OEeCxLZhEn2s9Ag" points="[53, 26, -377, -192]$[415, 203, -15, -15]"/>
+        </edges>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_4eDYoK7OEeCxLZhEn2s9Ag" annotatedElement="_GQg4YK7OEeCxLZhEn2s9Ag">
+      <body>Ideally&amp;nbsp;the&amp;nbsp;running&amp;nbsp;model&amp;nbsp;that&amp;nbsp;the&amp;nbsp;Higgs&amp;nbsp;system&amp;nbsp;will&amp;nbsp;use&amp;nbsp;while&amp;nbsp;operation&amp;nbsp;should&amp;nbsp;be&amp;nbsp;equal&amp;nbsp;to&amp;nbsp;the&amp;nbsp;Higgs&amp;nbsp;Engineering&amp;nbsp;Model
+        used&amp;nbsp;by&amp;nbsp;the&amp;nbsp;developers&amp;nbsp;to&amp;nbsp;build&amp;nbsp;the&amp;nbsp;Higgs&amp;nbsp;Autonomous&amp;nbsp;Navigation&amp;nbsp;Application,&amp;nbsp;but&amp;nbsp;for&amp;nbsp;the&amp;nbsp;moment&amp;nbsp;the&amp;nbsp;running&amp;nbsp;model&amp;nbsp;will&amp;nbsp;only
+        consist&amp;nbsp;of&amp;nbsp;some&amp;nbsp;parts&amp;nbsp;of&amp;nbsp;it:&amp;nbsp;those&amp;nbsp;the&amp;nbsp;MetaArchitecture&amp;nbsp;of&amp;nbsp;Higgs&amp;nbsp;can&amp;nbsp;reason&amp;nbsp;about.&lt;br />
+         &lt;br />
+         Eventually HiggsRunningModel will also contain the knowledge about the mission and the environment, imported from the
+        Analysis package of the Engineering Model, but for the moment this models/knowledge are implicit and the MetaArchitecture
+        cannot reason about it&lt;br /></body>
+    </ownedComment>
+    <packageImport xmi:id="_GQg4Yq7OEeCxLZhEn2s9Ag">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_Ve8xcK7OEeCxLZhEn2s9Ag">
+      <importedPackage href="DomainArchitecture.efx#_1Z2PcA5qEeCo7JwALS5E6g?HiggsEngineeringModel/Design/SystemArchitecture/DomainArchitecture?"/>
+    </packageImport>
+    <packageImport xmi:id="_WGwYUK7OEeCxLZhEn2s9Ag">
+      <importedPackage href="Hardware.efx#_W1a8cA5tEeCEtvugbZhpxA?HiggsEngineeringModel/Design/SolutionImplementation/Hardware?"/>
+    </packageImport>
+    <packageImport xmi:id="_Wpn00K7OEeCxLZhEn2s9Ag">
+      <importedPackage href="HiggsComponentsModel.efx#_CbQeEIe-EeCF6PTS9hZuKg?HiggsEngineeringModel/Design/SolutionImplementation/SoftwareModel/ComponentsModel?"/>
+    </packageImport>
+    <packageImport xmi:id="_XIW_QK7OEeCxLZhEn2s9Ag">
+      <importedPackage href="InstancesModel.efx#_nZEYQJgSEeC2wqYA7RZAVA?HiggsEngineeringModel/InstancesModel?"/>
+    </packageImport>
+    <profileApplication xmi:id="_GQg4Y67OEeCxLZhEn2s9Ag">
+      <eAnnotations xmi:id="_GQg4ZK7OEeCxLZhEn2s9Ag" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_GQg4Za7OEeCxLZhEn2s9Ag">
+      <eAnnotations xmi:id="_GQg4Zq7OEeCxLZhEn2s9Ag" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_GQg4Z67OEeCxLZhEn2s9Ag">
+      <eAnnotations xmi:id="_GQg4aK7OEeCxLZhEn2s9Ag" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+  </uml:Model>
+  <Default:Documentation xmi:id="_4eD_sK7OEeCxLZhEn2s9Ag" base_Comment="_4eDYoK7OEeCxLZhEn2s9Ag"/>
+</xmi:XMI>

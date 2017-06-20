@@ -1,0 +1,28 @@
+<launch>
+  <param name="/use_sim_time" value="true"/>
+  
+  <node pkg="stage" type="stageros" name="stageros" args="$(find higgs_stage_sim)/stage_files/willow-higgs.world" respawn="false" >
+    <param name="base_watchdog_timeout" value="0.2"/>
+    <remap from="/base_scan" to="/scan" />
+    <remap from="/odom" to="/pioneer/odom" />
+    <remap from="/cmd_vel" to="/pioneer/cmd_vel" />
+  </node>
+        
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find higgs_stage_sim)/maps/willow_room.yaml" respawn="false" />
+         
+  <!-- navigation nodes -->
+  <include file="$(find higgs_navigation)/launch/higgs_nav_sys.launch" >
+    <arg name="KIN" value="false" />
+    <arg name="KL" value="false" />
+    <arg name="ODOM_EKF" value="false" />
+  </include>
+  
+  <!-- mission manager -->
+  <node name="mission_manager" pkg="mission_manager" type="mission_manager.py" args="-f $(find higgs_stage_sim)/maps/willow_room.yaml_patrol.mission" output="screen"/>  
+  
+  
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find higgs_stage_sim)/rviz_config/complete.vcg" >
+  </node>
+
+  
+</launch>

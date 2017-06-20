@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 3.1.1 (248775)"/><meta name="keywords" content="OM, thesis"/><meta name="created" content="2012-06-14 19:16:46 +0200"/><meta name="updated" content="2012-06-14 19:34:12 +0200"/><title>OMFunctionsMetamodel-Evaluation</title></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;">
+<div style="font-size: 27px;">Evaluation Models</div>
+<div><br/></div>
+
+<div>Following the evaluation model for each of the Function metamodel is schematically explained</div>
+
+<div><b>relevance</b> is the attribute for all of this elements related to its evaluation</div>
+<div><br/></div>
+<div>the relevance of a Root Objective is given by the initial state of the functional model (domain control system designer decision)</div>
+<div><br/></div>
+<div><br/></div>
+<div>for function and function specifications</div>
+<div>confidence = 1-failure_probability</div>
+<div><br/>
+<hr/>
+<span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;"><br/></span></div>
+<div style="font-size: 20px;"><span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: 16px;">Objective</span></div>
+<div><span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;"><br/></span></div>
+<div>relevance = max(set of owners fg relevances), that is, the bigger relevance in between those of the function groundings that require the objective</div>
+<div><br/>
+<hr/>
+<br/></div>
+<div style="font-size: 17px;">FunctionGrounding</div>
+<div><br/></div>
+<div>- if in ERROR -> relevance =0</div>
+<div>- weighted sum of the relevances for all the objectives it is realising</div>
+<div>     the weight is the relative relevance of the Fspec of this fg for the function of each objective</div>
+<div>
+<div><br/></div>
+<div><br/></div>
+</div>
+<div>
+<hr/>
+<br/></div>
+<div style="font-size: 18px;">Function</div>
+<div><br/></div>
+<div>failure probability = 1* product for all REALISABLE(1-Fspec.confidence)</div>
+<div><br/></div>
+<div><br/></div>
+<div>
+<hr/>
+<br/></div>
+<div style="font-size: 18px;">FunctionSpecification</div>
+<div><br/></div>
+<div><b>confidence</b> of an Fspec is 1-failure_probability, and is static given knowledge</div>
+<div><br/></div>
+<div><br/></div>
+<div><b>relevance</b> of an FSpec is relative to to a certain F (function) (obvious, in our model one FSpec realises only one FSpec)</div>
+<div>it is the probability of F not being achieved when FSpec is not available, normalized</div>
+<div><br/></div>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 10px/normal Helvetica;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="color: rgb(145, 30, 103);"><b>double</b></span> aux = 0;</span></span></span></p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 10px/normal Helvetica; min-height: 12px;"><br/></p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 10px/normal Helvetica;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="color: rgb(145, 30, 103);"><b>for</b></span> (Iterator&lt;OMFSpec> ifspec = f.<span style="color: rgb(11, 50, 201);">realisations</span>.iterator(); ifspec</span></span></span></p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 10px/normal Helvetica;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;">.hasNext();) {</span></span></span></span></span></p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 10px/normal Helvetica;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;">OMFSpec spec = ifspec.next();</span></span></span></span></p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 10px/normal Helvetica;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="color: rgb(145, 30, 103);"><b>if</b></span> (spec.errorModel() == FSpecStatus.<span style="color: rgb(11, 50, 201);"><i>REALISABLE</i></span>)</span></span></span></span></p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 10px/normal Helvetica;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;">aux = aux + f.failureProb(spec);</span></span></span></span></span></p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 10px/normal Helvetica;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;">}</span></span></span></p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 10px/normal Helvetica; min-height: 12px;"><br/></p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 10px/normal Helvetica;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="color: rgb(145, 30, 103);"><b>if</b></span> (aux &lt;= 0)</span></span></span></p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 10px/normal Helvetica;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="color: rgb(145, 30, 103);"><b>return</b></span> 1;</span></span></span></span></p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 10px/normal Helvetica; color: rgb(145, 30, 103);"><span style="color: rgb(0, 0, 0);"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><b>else</b></span></span></span></span></p>
+<div><span style="font-family: Helvetica; font-size: 10px; white-space: pre;"><span style="color: rgb(145, 30, 103);"><b>return</b></span></span> <span style="font-family: Helvetica; font-size: 10px; white-space: pre;">f.failureProb(</span><span style="font-family: Helvetica; font-size: 10px; white-space: pre;"><span style="color: rgb(145, 30, 103);"><b>this</b></span></span><span style="font-family: Helvetica; font-size: 10px; white-space: pre;">) / aux;</span><br/></div>
+<div><br/></div>
+<div>possible model: FSpec.relevance = product of the set (1-F)</div>
+<div><br/></div>
+<div>
+<hr/>
+<br/></div>
+          
+</body></html>

@@ -1,0 +1,30 @@
+#ifndef HT_IDL_H
+#define HT_IDL_H
+
+
+module higgs{
+
+	// structure to represent a position in 2D
+	struct Pose{
+		double x; //X-axis position
+		double y; //Y-axis position
+		double alpha; //Orientation relative to the geographic north, in radians
+	};
+
+	//Structure that represents a waypoint of the robot(x,y) in a motion plan and the desired
+	//orientation (theta) for the robot
+	struct WayPoint
+	{
+		double x; //X-axis position
+		double y; //Y-axis position
+		double alpha; //Orientation relative to the (magnetic?) north, in radians
+	};
+
+
+	//A sequence of WayPoints that represent a motion plan
+	typedef sequence<higgs::WayPoint> MotionPlan;
+
+};
+
+
+#endif

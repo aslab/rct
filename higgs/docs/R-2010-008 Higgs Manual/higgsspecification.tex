@@ -1,0 +1,955 @@
+
+The RCT testbed is a mobile robotic system intended as platform to test the
+technology developed in ICEA. The RCT platform is a pioneer mobile robot for
+research that is specially designed for outdoors applications. The aim of the
+RCT testbed is to purvey the system with the neccessary cognitive abilities so
+as to fulfil complex task. This abstract aim is grounded in the specification of a high level mission and the evaluation of the OM consciousness architecture as to enhenace mission level robustness.
+
+In this document the overall situation of the RCT platform of the ICEA Project
+is presented. The purpose of the document is double:
+
+\begin{itemize}
+  \item Report the current state of the platform.
+  \item Provide a short description of the platform.
+\end{itemize}
+
+The specification section is presented in the form of tables of specifications to capture the
+main characteristics of the different devices that compose the RCT platform. For
+much more detailed information on the RCT platform please refer to Higg's Manual ?poner enlace?
+
+
+
+
+
+
+%------------------------------------------------------------------------------
+
+	
+	
+
+\section{Base Platform: Pioneer 2-AT8}
+
+%------------------------------------------------------------------------------
+\begin{table}
+\centering
+\hspace{-4cm}
+\begin{tabular}{|l|l|}
+\hline
+
+\textbf{RCT Identifier}: & RCT-Higgs \\
+\hline
+
+\textbf{RCT Name}: & Higgs \\
+\hline
+
+\textbf{Description}: & mobile robot for outdoors use \\
+\hline
+
+\textbf{Functionality role}: & Robot base \\
+\hline
+
+\textbf{Model}: & Pioneer 2AT-8 \\
+\hline
+
+\textbf{State}: & fully operative \\
+\hline
+
+\textbf{Serial number}: & AT8CDBB1722 \\
+\hline
+
+\textbf{Purchase date}: & 200302 \\
+\hline
+
+\textbf{Physical Characteristics}: & 
+\parbox{8cm}{
+	\begin{tabular}{l l}
+    	\multicolumn{2}{l}{Alluminium body}\\
+		\textbf{Dimensions} & 50x49x24 cm\\	
+		\textbf{Weight} & 15 kg\footnote{one battery onboard}\\	
+		\textbf{Payload} & 40 kg\\		
+	\end{tabular}
+}
+ \\
+\hline
+
+\textbf{Physical links}: & 
+\parbox{8cm}{
+	\begin{tabular}{l l}
+	\textbf{} & \\
+	
+	\textbf{} & \\
+	
+	\textbf{} & \\
+		
+	\end{tabular}
+}
+
+ \\
+\hline
+
+\textbf{Informational links}: & 
+\parbox{8cm}{
+	\begin{tabular}{l l}
+	\textbf{In} & 5 analog\\
+	
+	\textbf{Out} & 2 analog\\
+	
+	\textbf{In\&Out} & 3 RS-232 ports, 8 bits bus\\
+		
+	\end{tabular}
+}
+
+ \\
+\hline
+
+\textbf{Power}: &  3 batteries 12VDC 7A-h (252W-h) \\
+\hline
+
+\textbf{Features}: & 
+
+\parbox{10cm}{
+	\begin{tabular}{l p{6.5cm}}
+	\textbf{Microcontroller} & Hitachi H8S\\
+	\textbf{Actuators:}	& \textbf{Skid steering:} \small{4 pittman motors
+	GM9236E204}\\
+	\textbf{Sensors:}	& \textbf{Sonar:} \small{2 arrays (front\&rear)  each of 8
+	sensors, 20º}  \\
+	& \textbf{Encoders:} \small{1 per wheel-- 34,000 conts/rev}\\
+	& \textbf{Bumpers:} \small{5 front and 5 rear}\\
+	\end{tabular}
+	\\
+	}
+	\\
+
+\textbf{Tech. doc.}: & \\
+\hline
+
+\end{tabular}
+\end{table}
+%-------------------------------------------------------------------------------
+
+
+\section{Onboard Systems}
+
+\subsection{Gene-6330}
+
+%------------------------------------------------------------------------------
+\begin{table}[ht!]
+\centering
+\hspace{-4cm}
+\begin{tabular}{|l|l|}
+\hline
+
+\textbf{RCT Identifier}: &  RCT-Gene\\
+\hline
+
+\textbf{RCT Name}: &  placa Gene\\
+\hline
+
+\textbf{Description}: &  This is the onboard computer\\
+\hline
+
+\textbf{Functionality role}: & On board computer \\
+\hline
+
+\textbf{Model}: &  GENE-6330\\
+\hline
+
+\textbf{State}: &  Obsolete and retired\\
+\hline
+
+\textbf{Serial number}: &  \\
+\hline
+
+\textbf{Purchase date}: &  \\
+\hline
+
+\textbf{Physical Characteristics}: & 
+\parbox{8cm}{
+	\begin{tabular}{l l}
+    	\textbf{Dimensions} & 146x101.6x26mm mm\\	
+		\textbf{Weight} & 0.4 kg
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Physical links}: & 
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{} & attached inside Higgs\\			
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Informational links}: &
+\parbox{10cm}{
+	\begin{tabular}{l p{7.5cm}}
+		1 ethernet (RJ-45)	&	not used \\
+		1 configurable port	RS-232/422/485 & not used\\
+		1 port RS-232 (need to put a conector) & not used\\
+		Wifi (purveyed by Compact PCMCIA) & main external interface\\
+	\end{tabular}
+}
+\\
+\hline
+
+\textbf{Power}: &  typical 0.7W / Max 6.4W (+5V and +12V AT) from higgs
+batteries\\
+\hline
+
+\textbf{Features}: & 
+\parbox{10cm}{
+	\begin{tabular}{l p{6cm}}
+		\textbf{Microprocessor} & Transmeta Crusoe TM5400, 600MHz\\
+		\textbf{Memory} & 64MB SDRAM + 256MB SDRAM\\
+		\textbf{Flash Memory} & CompactFlash I type 4GB\\
+		\textbf{Wifi} & purveyed by a Compaq WL110 PCMCIA + antenna\\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Tech. doc.}: & \\
+\hline
+
+\end{tabular}
+\end{table}
+%-------------------------------------------------------------------------------
+
+
+
+
+
+
+
+\newpage
+\subsection{Laptop}
+%------------------------------------------------------------------------------
+\begin{table}[ht!]
+\centering
+\hspace{-4cm}
+\begin{tabular}{|l|l|}
+\hline
+
+\textbf{RCT Identifier}: &  RCT-laptop\\
+\hline
+
+\textbf{RCT Name}: &  vaio\\
+\hline
+
+\textbf{Description}: &  a lightweith high functional laptop\\
+\hline
+
+\textbf{Functionality role}: & On board computer \\
+\hline
+
+\textbf{Model}: & Sony Vaio TX2HP \\
+\hline
+
+\textbf{State}: &  Fully operative \\
+\hline
+
+\textbf{Serial number}: &  \\
+\hline
+
+
+\textbf{Purchase date}: &  \\
+\hline
+
+\textbf{Physical Characteristics}: & 
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{Dimensions} & \\	
+		\textbf{Weight} & \\	
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Physical links}: & The Vaio is attached to the back part of Higgs' top \\
+\hline
+
+\textbf{Informational links}: & 
+\parbox{8cm}{
+	\begin{tabular}{l p{8cm}}
+		\textbf{In\&Out} &  2 USB 2.0, wifi IEEE 802.11b/g, 1 ethernet, Bluetooth
+		2.0\\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Power}: &  from its internal battery (7.5 hour)\\
+\hline
+
+\textbf{Features}: & 
+\parbox{10cm}{
+	\begin{tabular}{l p{6.5cm}}
+		\textbf{Processor} & Intel Pentium M 1.1GHz\\
+		\textbf{Memory} & 510 MB DDR2 SDRAM\\
+		\textbf{OS} & Windows XP and Fedora ??\\
+		\textbf{Hard drive} & 80 GB -4200 rpm\\
+		\textbf{Display} & 11.1'' LCD\\
+		\textbf{DVD+RW} & \\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Tech. doc.}: & \\
+\hline
+
+\end{tabular}
+\end{table}
+%-------------------------------------------------------------------------------
+
+\newpage
+\subsection{Arduino}
+%-------------------------------------------------------------------------------
+\begin{table}[ht!]
+\centering
+\hspace{-4cm}
+\begin{tabular}{|l|p{10cm}|} 
+\hline
+
+\textbf{RCT Identifier}: &  RCT-arduino\\
+\hline
+
+\textbf{RCT Name}: &  arduino\\
+\hline
+
+\textbf{Description}: &  a simple board to conect some simple devices\\
+\hline
+
+\textbf{Functionality role}: & I/O board \\
+\hline
+
+\textbf{Model}: &  \\
+\hline
+
+\textbf{State}: &  Fully integrated \\
+\hline
+
+\textbf{Serial number}: &  \\
+\hline
+
+\textbf{Purchase date}: &  2007\\
+\hline
+
+\textbf{Physical Characteristics}: &
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{Dimensions} & 175x55x50 \\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Physical links}: & Attached to the left side of the laser support\\
+\hline
+
+\textbf{Informational links}: &
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		USB & connected to laptop\\
+		3-wire & connected to various sensors\\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Power}: & 6-12 VDC \\
+\hline
+
+\textbf{Features}: &
+\parbox{10cm}{
+	\begin{tabular}{l p{6.5cm}}
+		\textbf{Sensors} & 2 accelerometers, 1 compass, 2 current and voltage sensors,
+				1 servo, 1 potentiometer, 2 switches.
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Tech. doc.}: & \\
+\hline
+
+\end{tabular}
+\end{table}
+%-------------------------------------------------------------------------------
+
+
+
+
+\subsection{Laser}
+
+%------------------------------------------------------------------------------
+\begin{table}[ht!]
+\centering
+\hspace{-4cm}
+\begin{tabular}{|l|l|}
+\hline
+
+\textbf{RCT Identifier}: &  RCT-Laser\\
+\hline
+
+\textbf{RCT Name}: &  Laser\\
+\hline
+
+\textbf{Description}: &  laser scanner for mobile robotics applications, SLAM,
+navigation, etc\\
+\hline
+
+\textbf{Functionality role}: & Scan device \\
+\hline
+
+\textbf{Model}: &  Sick LMS-200\\
+\hline
+
+\textbf{State}: &  Integrated\\
+\hline
+
+\textbf{Serial number}: &  \\
+\hline
+
+\textbf{Purchase date}: &  \\
+\hline
+
+\textbf{Physical Characteristics}: & 
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{Dimensions} & 155x156x265mm\\	
+		\textbf{Weight} & 4.5kg\footnote{without the support}\\	
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Physical links}:
+& The laser support is screwed to the front part of Higgs' top. \\
+& Includes a mechanism for tilting the laser by means of a servo.\\
+& The RCT-Wrist is screwed to the top of the laser support
+\\
+\hline
+
+\textbf{Informational links}: & 
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		RS-232/\textbf{422} & connected to vaio through USB/RS-232 converter\\	
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Power}: & 24VDC 40 W\\
+\hline
+
+\textbf{Features}: & 
+\parbox{10cm}{
+\begin{tabular}{l p{5cm}}
+  \textbf{Scanning angle} & 180º \\
+  \textbf{Res\/typ. meas. accuracy} & 10mm$/\pm$35mm  \\
+  \textbf{Accesories} & Metacrilate support $\pm$45º tilt with a Futaba servo \\	
+\end{tabular}
+} \\
+\hline
+
+\textbf{Tech. doc.}: & \\
+\hline
+
+\end{tabular}
+\end{table}
+%-------------------------------------------------------------------------------
+\newpage
+
+\subsection{Camera}
+%------------------------------------------------------------------------------
+\begin{table}[ht!]
+\centering
+\hspace{-4cm}
+\begin{tabular}{|l|l|}
+\hline
+
+\textbf{RCT Identifier}: &  RCT-Camera\\
+\hline
+
+\textbf{RCT Name}: &  Camara\\
+\hline
+
+\textbf{Description}: &  Stereo camera for Higgs' vision system\\
+\hline
+
+\textbf{Functionality role}: & Camera \\
+\hline
+
+\textbf{Model}: &  Videre STH-MDCS2-C\\
+\hline
+
+\textbf{State}: &  available, already controlled independently but not
+integrated\\
+\hline
+
+\textbf{Serial number}: &  \\
+\hline
+
+\textbf{Purchase date}: &  \\
+\hline
+
+\textbf{Physical Characteristics}: & 
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{Dimensions} & 44x132x73 mm\\	
+		\textbf{Weight} & 330 g\\	
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Physical links}: & 
+		Screwed to RCT-Wrist\\
+\hline
+
+\textbf{Informational links}: & 
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{In\&Out} & ieee 1394 (firewire)\\	
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Power}: &  $<$ 1W - 12 VDC\\
+\hline
+
+\textbf{Features}: & 
+\parbox{10cm}{
+	\begin{tabular}{l p{6.5cm}}
+		\textbf{Accesories} & RCT-Wrist\\	
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Tech. doc.}: & \\
+\hline
+
+\end{tabular}
+\end{table}
+%-------------------------------------------------------------------------------
+\newpage
+\subsection{Wrist}
+%------------------------------------------------------------------------------
+\begin{table}[ht!]
+\centering
+\hspace{-4cm}
+\begin{tabular}{|l|p{9cm}|}
+\hline
+
+\textbf{RCT Identifier}: &  RCT-Wrist\\
+\hline
+
+\textbf{RCT Name}: &  Wrist \\
+\hline
+
+\textbf{Description}: &  2 DOF high precision and torque actuator for
+orientation (pan\&tilt) of the RCT-camera\\
+\hline
+
+\textbf{Functionality role}: & Wrist \\
+\hline
+
+\textbf{Model}: &  SCHUNK PW-070\\
+\hline
+
+\textbf{State}: &  Fully integrated \\
+\hline
+
+\textbf{Serial number}: &  B3844 \& B3844\\
+\hline
+
+\textbf{Purchase date}: &  \\
+\hline
+
+\textbf{Physical Characteristics}: &
+\parbox{8cm}{
+	\begin{tabular}{l l}
+    	\multicolumn{2}{l}{}\\
+		\textbf{Dimensions} & 165x70x160 mm aprox\\
+		\textbf{Weight} & 1.8 kg\\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Physical links}: &
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{axis2 appendix} &  attached to laser support\\
+		\textbf{axis1 appendix} &  camera is attached here\\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Informational links}: &
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{In\&Out} & RS-232\\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Power}: & 24 VDC, nomical power current 4 A per axis \\
+\hline
+
+\textbf{Features}: &
+\parbox{10cm}{
+	\begin{tabular}{l p{6.5cm}}
+		\textbf{Sensors} & 1 encoder per axis\\
+		\textbf{Nominal torque} & 12 Nm axis1, 2 Nm axis2 \\
+		\textbf{Algle of rotation} & 120º axis1, 360º axis2 \\
+		\textbf{Resolution} & 5'' axis, 6'' axis2
+	\end{tabular} 
+}\\
+\hline
+
+\textbf{Tech. doc.}: & \\
+\hline
+
+\end{tabular}
+\end{table}
+%-------------------------------------------------------------------------------
+
+
+\newpage
+\subsection{GPS}
+%------------------------------------------------------------------------------
+\begin{table}[ht!]
+\centering
+\hspace{-4cm}
+\begin{tabular}{|l|l|}
+\hline
+
+\textbf{RCT Identifier}: &  RCT-GPS\\
+\hline
+
+\textbf{RCT Name}: &  GPS\\
+\hline
+
+\textbf{Description}: &  high performance GPS system\\
+\hline
+
+\textbf{Functionality role}: & GPSd \\
+\hline
+
+\textbf{Model}: &  OEMV-2-RT2\\
+\hline
+
+\textbf{State}: &  ready to install\\
+\hline
+
+\textbf{Serial number}: &  \\
+\hline
+
+\textbf{Purchase date}: &  2007\\
+\hline
+
+\textbf{Physical Characteristics}: &
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{Dimensions} & 60x100x13 mm\\
+		\textbf{Weight} & 56 g\\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Physical links}: &
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{} & \\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Informational links}: &
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{1 USB} & connected to laptop\\
+		1 RS-232/422\\
+		1 CAN bus & not used\\ 
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Power}: &  1.6W typ. \/ 12 VDC\\
+\hline
+
+\textbf{Features}: &
+\parbox{10cm}{
+	\begin{tabular}{l p{6.5cm}}
+		\textbf{Accuracy} & \\
+		\textbf{Accesories} & RCT-radio \\
+							& Antenna	\\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Tech. doc.}: & \\
+\hline
+
+\end{tabular}
+\end{table}
+%-------------------------------------------------------------------------------
+
+\subsection{Power Board}
+%------------------------------------------------------------------------------
+\begin{table}[ht!]
+\centering
+\hspace{-4cm}
+\begin{tabular}{|l|l|}
+\hline
+
+\textbf{RCT Identifier}: &  PowerBoard\\
+\hline
+
+\textbf{RCT Name}: &  Power Board\\
+\hline
+
+\textbf{Description}: &  A simple board for controlling power to other devices\\
+\hline
+
+\textbf{Functionality role}: & Power board \\
+\hline
+
+\textbf{State}: &  Fully operative\\
+\hline
+
+\textbf{Serial number}: &  \\
+\hline
+
+\textbf{Manufacturing date}: &  October 2009\\
+\hline
+
+\textbf{Physical Characteristics}: &
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{Dimensions} & 260x86x16 mm\\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Physical links}: & Attached to the front of the Vaio support \\
+\hline
+
+\textbf{Informational links}: &
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{Ribbon cable} & attached to arduino board\\
+		\textbf{Input 12V} & connected to Inst. batteries\\
+		\textbf{12V-24V} & to connect a 12V to 24V converter\\
+		\textbf{Input 24V} & connected to 12V to 24V converter\\
+		\textbf{6x12V} & Power for 12V devices\\
+		\textbf{3x24V} & Power for Wrist, Laser and 1 free slot\\
+		\textbf{Power Jack} & Battery charger\\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Power}: &  negligible, 12V to 24V \\
+\hline
+
+
+\textbf{Tech. doc.}: & \\
+\hline
+
+\end{tabular}
+\end{table}
+%-------------------------------------------------------------------------------
+
+\newpage
+\subsection{Radio}
+%-------------------------------------------------------------------------------
+\begin{table}[ht!]
+\centering
+\hspace{-4cm}
+\begin{tabular}{|l|p{10cm}|} 
+\hline
+
+\textbf{RCT Identifier}: &  RCT-radio\\
+\hline
+
+\textbf{RCT Name}: &  radio\\
+\hline
+
+\textbf{Description}: &  a radio system for DGPS (GPS + difference with a
+known base = more precisssion)\\
+\hline
+
+\textbf{Functionality role}: & GPSd radio \\
+\hline
+
+\textbf{Model}: &  Pacific Crest PDLRVR\\
+\hline
+
+\textbf{State}: &  not installed\\
+\hline
+
+\textbf{Serial number}: &  \\
+\hline
+
+\textbf{Purchase date}: &  2007\\
+\hline
+
+\textbf{Physical Characteristics}: &
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{Dimensions} & 21.0 cm L x 6.1 cm diameter\\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Physical links}: &
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{} & \\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Informational links}: &
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{} & \\
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Power}: &  0.3W 9-16 VDC (from its own external battery)\\
+\hline
+
+\textbf{Features}: &
+\parbox{10cm}{
+	\begin{tabular}{l p{6.5cm}}
+		\textbf{} & \\
+		\textbf{Weight} & 0.34 kg\\
+		\textbf{Accessories} & Antenna \\
+							 & Battery \\
+	\end{tabular}
+}\\
+\hline
+
+\end{tabular}
+\end{table}
+%-------------------------------------------------------------------------------
+
+\section{Supporting Systems}
+
+\subsection{PSP Remote Control}
+%------------------------------------------------------------------------------
+\begin{table}[ht!]
+\centering
+\hspace{-4cm}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+
+\textbf{RCT Identifier}: &  RCT-PSP\\
+\hline
+
+\textbf{RCT Name}: &  psp\\
+\hline
+
+\textbf{Description}: &  a portable device with screen and controls to 
+control remotely the RCT platform\\
+\hline
+
+\textbf{Functionality role}: & Remote controller \\
+\hline
+
+\textbf{Model}: & Sony PSP-1004 \\
+\hline
+
+\textbf{State}: &  available, not integrated\\
+\hline
+
+\textbf{Serial number}: &  \\
+\hline
+
+\textbf{Purchase date}: &  \\
+\hline
+
+\textbf{Physical Characteristics}: & 
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{Dimensions} & 170x23x74 mm\\	
+		\textbf{Weight} & 280 gr\\	
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Physical links}: & none (it's portable) \\
+\hline
+
+\textbf{Informational links}: & 
+\parbox{8cm}{
+	\begin{tabular}{l l}
+		\textbf{In\&Out} wifi (IEEE 802.11b), USB, infrared port\\	
+	\end{tabular}
+}\\
+\hline
+
+\textbf{Power}: &  from its internal batteries\\
+\hline
+
+\textbf{Features}: & 
+\parbox{10cm}{
+	\begin{tabular}{l p{6.5cm}}
+    	\textbf{Screen} & LCD 4.3'' (16:9) \\
+		\textbf{Wifi Security} & WEP, WPA (both AES \& TKIP)\\
+		\textbf{Video Compression} & H.264/MPEG-4 AVC \\
+	\end{tabular}
+}\\
+\hline
+
+\end{tabular}
+\end{table}
+%-------------------------------------------------------------------------------
+
+
+\newpage
+\subsection{Remote Server}
+% el servidor de nombres etc
+
+\subsection{Wireless Network}
+
+%------------------------------------------------------------------------------
+\begin{table}[ht!]
+\centering
+\hspace{-4cm}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+
+\textbf{RCT Identifier}: &  aslab\_wireless \\
+\hline
+
+\textbf{RCT Name}: &  aslab\_wireless \\
+\hline
+
+\textbf{Description}: &  ASLab's wifi network at DISAM and its surroundings\\
+\hline
+
+\textbf{Functionality role}: & Wi-fi connection \\
+\hline
+
+\textbf{Access point}: & Linksys WAP54G \\
+\hline
+
+\textbf{State}: &  fully operative \\
+\hline
+
+\textbf{Serial number}: &  \\
+\hline
+
+\textbf{Purchase date}: &  \\
+\hline
+
+
+\textbf{Situation}: & the access point is currently situated in the library \\
+\hline
+
+\textbf{Encryption}: & None \\
+\hline
+
+\textbf{Features}: & \\
+\hline
+
+\textbf{Other}: & config: usr= ; psswd= \\
+\hline
+
+\end{tabular}
+\end{table}

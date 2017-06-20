@@ -1,0 +1,18 @@
+module higgs
+{
+    struct laser_point
+      {
+	float angle; // 0 rad is front, +pi/2 deg is left.
+	float distance; // in m
+      };
+    typedef sequence<laser_point, 401> laser_data;
+
+    interface laser
+      {
+	// Currently set at sweep 100deg, resolution 1deg.
+	laser_data get_data();
+      };
+
+
+
+};

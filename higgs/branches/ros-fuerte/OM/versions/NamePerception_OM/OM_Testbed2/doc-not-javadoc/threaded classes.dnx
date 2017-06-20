@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<umlnotation:UMLDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xmi:id="_PD0yQNC_EeGsgdHQVm5ifw" type="Class" name="threaded classes.dnx">
+  <eAnnotations xmi:id="_PD0yQdC_EeGsgdHQVm5ifw" source="com.ibm.xtools.common.ui.reduction.editingCapabilities">
+    <details xmi:id="_PD0yQtC_EeGsgdHQVm5ifw" key="com.ibm.xtools.activities.javaVisualizerActivity" value="1"/>
+  </eAnnotations>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_Tur-4NC_EeGsgdHQVm5ifw" fontName="Sans" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Tusl8NC_EeGsgdHQVm5ifw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_Tusl8dC_EeGsgdHQVm5ifw" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_TutNANC_EeGsgdHQVm5ifw" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_TutNAdC_EeGsgdHQVm5ifw" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_TutNAtC_EeGsgdHQVm5ifw" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_TutNA9C_EeGsgdHQVm5ifw" visible="false" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_Tut0ENC_EeGsgdHQVm5ifw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_Tut0EdC_EeGsgdHQVm5ifw" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <children xmi:type="notation:BasicCompartment" xmi:id="_TvBWENC_EeGsgdHQVm5ifw" type="OPERATION_ITEM" collapsed="true">
+        <element xmi:type="uml:Operation" href="mmi:///#jmethod%5Ename=main%5Esign=(QNodeConfiguration;)V%5Bjsrctype%5Ename=OMMetacontrollerNode%5Bjcu%5Ename=OMMetacontrollerNode.java%5Bjpack%5Ename=org.aslab.om.ros%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMRosMetacontrol%5D%5D%5D%5D%5D$uml.Operation"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_TvBWEtC_EeGsgdHQVm5ifw" type="OPERATION_ITEM" collapsed="true">
+        <element xmi:type="uml:Operation" href="mmi:///#jmethod%5Ename=shutdown%5Esign=()V%5Bjsrctype%5Ename=OMMetacontrollerNode%5Bjcu%5Ename=OMMetacontrollerNode.java%5Bjpack%5Ename=org.aslab.om.ros%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMRosMetacontrol%5D%5D%5D%5D%5D$uml.Operation"/>
+      </children>
+    </children>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=OMMetacontrollerNode%5Bjcu%5Ename=OMMetacontrollerNode.java%5Bjpack%5Ename=org.aslab.om.ros%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMRosMetacontrol%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tur-4dC_EeGsgdHQVm5ifw" x="942" y="628"/>
+  </children>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_ch_AgNC_EeGsgdHQVm5ifw" fontName="Sans" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ch_nkNC_EeGsgdHQVm5ifw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_ch_nkdC_EeGsgdHQVm5ifw" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_ch_nktC_EeGsgdHQVm5ifw" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_ch_nk9C_EeGsgdHQVm5ifw" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_ciAOoNC_EeGsgdHQVm5ifw" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_ciAOodC_EeGsgdHQVm5ifw" visible="false" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_ciAOotC_EeGsgdHQVm5ifw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_ciAOo9C_EeGsgdHQVm5ifw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=FunctionalECL%5Bjcu%5Ename=FunctionalECL.java%5Bjpack%5Ename=org.aslab.om.metacontrol%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ch_AgdC_EeGsgdHQVm5ifw" x="5338" y="314"/>
+  </children>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_dT8o8NC_EeGsgdHQVm5ifw" fontName="Sans" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_dT9QANC_EeGsgdHQVm5ifw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_dT9QAdC_EeGsgdHQVm5ifw" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_dT93ENC_EeGsgdHQVm5ifw" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_dT93EdC_EeGsgdHQVm5ifw" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_dT93EtC_EeGsgdHQVm5ifw" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_dT-eINC_EeGsgdHQVm5ifw" visible="false" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_dT-eIdC_EeGsgdHQVm5ifw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_dT-eItC_EeGsgdHQVm5ifw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ComponentsECL%5Bjcu%5Ename=ComponentsECL.java%5Bjpack%5Ename=org.aslab.om.metacontrol%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dT8o8dC_EeGsgdHQVm5ifw" x="5595" y="3833"/>
+  </children>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_nkGqINC_EeGsgdHQVm5ifw" fontName="Sans" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nkHRMNC_EeGsgdHQVm5ifw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_nkHRMdC_EeGsgdHQVm5ifw" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_nkHRMtC_EeGsgdHQVm5ifw" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_nkHRM9C_EeGsgdHQVm5ifw" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_nkH4QNC_EeGsgdHQVm5ifw" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_nkH4QdC_EeGsgdHQVm5ifw" visible="false" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_nkH4QtC_EeGsgdHQVm5ifw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_nkH4Q9C_EeGsgdHQVm5ifw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=OMRosAPI%5Bjcu%5Ename=OMRosAPI.java%5Bjpack%5Ename=org.aslab.om.ros%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMRosMetacontrol%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nkGqIdC_EeGsgdHQVm5ifw" x="628" y="2198"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_tsj2INC_EeGsgdHQVm5ifw" type="Note" fontName="Sans" fontHeight="8" description="&lt;p>Ros message callbacks&lt;/p>" fillColor="13956346" transparency="0" lineColor="12632258" lineWidth="1">
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_tslEQNC_EeGsgdHQVm5ifw" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_tslEQdC_EeGsgdHQVm5ifw" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:TextStyle" xmi:id="_tsj2IdC_EeGsgdHQVm5ifw"/>
+    <styles xmi:type="notation:LineTypeStyle" xmi:id="_tsj2ItC_EeGsgdHQVm5ifw"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tsj2I9C_EeGsgdHQVm5ifw" x="3454" y="4082"/>
+  </children>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_oow18NGMEeGsgdHQVm5ifw" fontName="Sans" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ooyEENGMEeGsgdHQVm5ifw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_ooyEEdGMEeGsgdHQVm5ifw" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_ooyrINGMEeGsgdHQVm5ifw" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_ooyrIdGMEeGsgdHQVm5ifw" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_ooyrItGMEeGsgdHQVm5ifw" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_oozSMNGMEeGsgdHQVm5ifw" visible="false" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_oozSMdGMEeGsgdHQVm5ifw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_oozSMtGMEeGsgdHQVm5ifw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ECL%5Bjcu%5Ename=ECL.java%5Bjpack%5Ename=org.aslab.om.ecl%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oow18dGMEeGsgdHQVm5ifw" x="8478" y="1570"/>
+  </children>
+  <element xsi:nil="true"/>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_dXJG4NC_EeGsgdHQVm5ifw" source="_ch_AgNC_EeGsgdHQVm5ifw" target="_dT8o8NC_EeGsgdHQVm5ifw" fontName="Sans" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_dXJt8NC_EeGsgdHQVm5ifw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_dXJt8tC_EeGsgdHQVm5ifw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_dXKVANC_EeGsgdHQVm5ifw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_dXJt89C_EeGsgdHQVm5ifw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dXJt8dC_EeGsgdHQVm5ifw" y="-58"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=FunctionalECL%5Bjcu%5Ename=FunctionalECL.java%5Bjpack%5Ename=org.aslab.om.metacontrol%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ComponentsECL%5Bjcu%5Ename=ComponentsECL.java%5Bjpack%5Ename=org.aslab.om.metacontrol%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dXJG4dC_EeGsgdHQVm5ifw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nnU9QNC_EeGsgdHQVm5ifw" source="_Tur-4NC_EeGsgdHQVm5ifw" target="_nkGqINC_EeGsgdHQVm5ifw" fontName="Sans" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nnWLYNC_EeGsgdHQVm5ifw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nnWLYtC_EeGsgdHQVm5ifw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nnWLZNC_EeGsgdHQVm5ifw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nnWLY9C_EeGsgdHQVm5ifw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nnWLYdC_EeGsgdHQVm5ifw" y="-58"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=OMMetacontrollerNode%5Bjcu%5Ename=OMMetacontrollerNode.java%5Bjpack%5Ename=org.aslab.om.ros%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMRosMetacontrol%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=OMRosAPI%5Bjcu%5Ename=OMRosAPI.java%5Bjpack%5Ename=org.aslab.om.ros%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMRosMetacontrol%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nnU9QdC_EeGsgdHQVm5ifw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ts-s4NC_EeGsgdHQVm5ifw" type="NoteAttachment" source="_nkGqINC_EeGsgdHQVm5ifw" target="_tsj2INC_EeGsgdHQVm5ifw" lineWidth="1">
+    <styles xmi:type="notation:ArrowStyle" xmi:id="_ts-s4dC_EeGsgdHQVm5ifw"/>
+    <styles xmi:type="notation:LineTypeStyle" xmi:id="_ts-s4tC_EeGsgdHQVm5ifw"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ts-s49C_EeGsgdHQVm5ifw" points="[-88, -162, 143, 265]$[-231, -427, 0, 0]"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_osAXMNGMEeGsgdHQVm5ifw" source="_ch_AgNC_EeGsgdHQVm5ifw" target="_oow18NGMEeGsgdHQVm5ifw" fontName="Sans" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_osA-QNGMEeGsgdHQVm5ifw" type="NameLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_osBlUNGMEeGsgdHQVm5ifw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_osBlUdGMEeGsgdHQVm5ifw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_osA-QdGMEeGsgdHQVm5ifw" y="-58"/>
+    </children>
+    <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=FunctionalECL%5Bjcu%5Ename=FunctionalECL.java%5Bjpack%5Ename=org.aslab.om.metacontrol%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ECL%5Bjcu%5Ename=ECL.java%5Bjpack%5Ename=org.aslab.om.ecl%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D$uml.Generalization"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_osAXMdGMEeGsgdHQVm5ifw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_osCMYNGMEeGsgdHQVm5ifw" source="_ch_AgNC_EeGsgdHQVm5ifw" target="_oow18NGMEeGsgdHQVm5ifw" fontName="Sans" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_osCzcNGMEeGsgdHQVm5ifw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_osCzctGMEeGsgdHQVm5ifw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_osCzdNGMEeGsgdHQVm5ifw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_osCzc9GMEeGsgdHQVm5ifw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_osCzcdGMEeGsgdHQVm5ifw" y="-58"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=FunctionalECL%5Bjcu%5Ename=FunctionalECL.java%5Bjpack%5Ename=org.aslab.om.metacontrol%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ECL%5Bjcu%5Ename=ECL.java%5Bjpack%5Ename=org.aslab.om.ecl%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_osCMYdGMEeGsgdHQVm5ifw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_osDagNGMEeGsgdHQVm5ifw" source="_dT8o8NC_EeGsgdHQVm5ifw" target="_oow18NGMEeGsgdHQVm5ifw" fontName="Sans" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_osDagtGMEeGsgdHQVm5ifw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_osEBkNGMEeGsgdHQVm5ifw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_osEBktGMEeGsgdHQVm5ifw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_osEBkdGMEeGsgdHQVm5ifw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_osDag9GMEeGsgdHQVm5ifw" y="-58"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ComponentsECL%5Bjcu%5Ename=ComponentsECL.java%5Bjpack%5Ename=org.aslab.om.metacontrol%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ECL%5Bjcu%5Ename=ECL.java%5Bjpack%5Ename=org.aslab.om.ecl%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_osDagdGMEeGsgdHQVm5ifw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_osEooNGMEeGsgdHQVm5ifw" source="_dT8o8NC_EeGsgdHQVm5ifw" target="_oow18NGMEeGsgdHQVm5ifw" fontName="Sans" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_osFPsNGMEeGsgdHQVm5ifw" type="NameLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_osFPstGMEeGsgdHQVm5ifw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_osFPs9GMEeGsgdHQVm5ifw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_osFPsdGMEeGsgdHQVm5ifw" y="-58"/>
+    </children>
+    <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=ComponentsECL%5Bjcu%5Ename=ComponentsECL.java%5Bjpack%5Ename=org.aslab.om.metacontrol%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ECL%5Bjcu%5Ename=ECL.java%5Bjpack%5Ename=org.aslab.om.ecl%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D$uml.Generalization"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_osEoodGMEeGsgdHQVm5ifw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</umlnotation:UMLDiagram>

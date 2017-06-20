@@ -1,0 +1,10 @@
+<stack>
+  <description brief="higgs_autonomous_navigation">higgs_autonomous_navigation contains all ROS nodes and configuration files for the Higgs Autonomous Navigation application</description>
+  <author>Carlos Hernandez</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>svn+ssh://sagan/home/svn_repositories/Higgs/trunk/code/ROS/higgs_autonomous_navigation</url>
+  <depend stack="ros" />
+  <depend stack="higgs_drivers" />
+
+</stack>

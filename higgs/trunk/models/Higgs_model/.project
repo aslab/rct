@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>HiggsAutonomousNavigationApplication</name>
+	<comment></comment>
+	<projects>
+		<project>ASysUMLprofiles</project>
+		<project>control_libraries</project>
+		<project>DomainModelLibraries</project>
+		<project>idl</project>
+		<project>LowLevelControl</project>
+		<project>metamodels</project>
+		<project>WorldModel</project>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+</projectDescription>

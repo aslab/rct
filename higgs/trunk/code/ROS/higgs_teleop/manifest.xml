@@ -1,0 +1,17 @@
+<package>
+  <description brief="higgs_teleop">
+
+     higgs_teleop contains the configuration files to teleoperate the Higgs mobile platform by using teleop_base and/or higgs_wiimote
+
+  </description>
+  <author>Carlos Hernandez</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>svn+ssh://sagan/home/svn_repositories/Higgs/trunk/code/ROS/higgs_teleop</url>
+  <depend package="std_msgs"/>
+  <depend package="roscpp"/>  
+  <depend package="teleop_base"/>
+  <depend package="higgs_wiimote"/>
+</package>
+
+

@@ -1,0 +1,7 @@
+<launch>
+  
+  <node name="fake_laser_scan_node" pkg="higgs_stage_sim" type="fake_laser_scan_node.py" respawn="false">
+  	<param name="baudrate" value="5600" />
+  </node>
+  
+</launch>

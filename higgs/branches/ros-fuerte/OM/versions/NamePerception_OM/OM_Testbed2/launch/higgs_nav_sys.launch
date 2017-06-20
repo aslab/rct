@@ -1,0 +1,9 @@
+<launch>
+  
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find OM_Testbed2)/maps/willow_room.yaml" respawn="false" />
+    
+  <include file="$(find OM_Testbed2)/launch/amcl.launch"/> 
+  <include file="$(find OM_Testbed2)/launch/move_base.launch" />
+
+</launch>
+

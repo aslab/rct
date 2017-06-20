@@ -1,0 +1,195 @@
+// Pioneer 2AT Interface
+// Rafael Chinchilla Camara
+// Adolfo Hernando Marcos
+// ASLab 2005-2008
+
+module higgs {
+
+/////////////////////////////////////////////// DATA TYPES
+
+typedef    sequence<long>        SonarRangeSeq;
+typedef    sequence<boolean>     SonarNewReadingSeq;
+
+/////////////////////////////////////////////// DATA STRUCTURES
+
+struct TimeStamp_Struct{
+    long   secs;
+    long   usecs;
+};
+
+struct Pioneer2AT_State {
+    boolean     motorsEnabled;          // True if motors are enabled
+    boolean     sonarsEnabled;          // True if sonars are enabled
+    boolean     emergencyStop;          // True if ES button pushed
+    boolean     connected;              // True if connected (TCP,Serial)
+    boolean     running;                // True if executing
+    boolean     moving;                 // True if still moving
+    boolean     leftMotorStalled;       // True if motors stalled
+    boolean     rightMotorStalled;
+    boolean     leftBreakTriggered;     // True if breaks triggered
+    boolean     rightBreakTriggered;
+    float      battery;                // Battery voltage
+    boolean     newReadings;            // True if there are new sonar readings
+    TimeStamp_Struct   timeStamp;
+};
+
+struct Pioneer2AT_Movement {
+    float      speed;                  // Translation speed
+    float      leftSpeed;              // Translation speed, left wheel
+    float      rightSpeed;             // Translation speed, right wheel
+    float      rotSpeed;               // Rotation speed
+    float      maxSpeed;               // Maximum translation speed
+    float      maxRotSpeed;            // Maximum rotation speed
+    float      absMaxSpeed;            // Absolute maximum translation speed
+    float      absMaxRotSpeed;         // Absolute maximum rotation speed
+    float      accel;                  // Translation acceleration
+    float      rotAccel;               // Rotation acceleration
+    boolean     headingDone;            // True if rotation movement complete
+    boolean     movementDone;           // True if translation movement complete
+    TimeStamp_Struct   timeStamp;
+};
+
+struct Pioneer2AT_Position {
+    float     x;                       // X absolute coordinate
+    float     y;                       // Y absolute coordinate
+    float     t;                       // Theta absolute coordinate
+    float     heading;                 // Heading (degrees)
+    float     distanceDiff;            // Distance remaining to complete movement
+    float     headingDiff;             // Angle remaining to complete rotation
+    TimeStamp_Struct   timeStamp;
+};
+
+struct Pioneer2AT_Sensing {	
+    boolean             hasSonars;      // True if sonars available
+    boolean             hasBumpers;     // True if bumpers available
+    unsigned short      numSonars;      // Number of sonars available
+    unsigned short      numFBumpers;    // Number of front bumpers available
+    unsigned short      numRBumpers;    // Number of rear bumpers available
+    unsigned short      closestSonar;   // Number of closest sonar
+    unsigned long       closestRange;   // Closest sonar reading
+    SonarRangeSeq       SonarRanges;    // List of sonar readings
+    SonarNewReadingSeq  SonarNews;      // Bools, true if sonar has new reading
+    TimeStamp_Struct   timeStamp;
+}; 
+
+
+/////////////////////////////////////////////// INTERFACE
+
+interface Pioneer2AT{
+
+    // Data exchanging methods --------------------------------------------
+    Pioneer2AT_State    getRobotState    ();
+    Pioneer2AT_Movement getRobotMovement ();
+    Pioneer2AT_Position getRobotPosition ();
+    
+    void getRobotSensing  ( out Pioneer2AT_Sensing sensing );
+
+    // Robot fast state checking ------------------------------------------
+    boolean isReady     ();         // True if software loaded correctly
+    boolean isConnected ();         // True if connection established+Ready
+    boolean isRunning   ();         // True if ARrobot running+Connected
+    boolean isStalled   ();         // True if some motor stalled
+    boolean isEmergency ();         // True if emergency situation
+    boolean isMoving    ();         // True if completing a movement
+    boolean isEnabled   ();         // True if motors enabled+Running
+    boolean isBreaked   ();         // True if any break triggered
+    float  getBattery  ();         // Battery voltage
+	TimeStamp_Struct getTime();
+	void setTimeToNow();
+
+    // CORBA object remote control ----------------------------------------
+    void            init            ();
+    long            connect         ();
+    void            start           ();
+    void            stop            ();
+    void            disconnect      ();
+    void            finish          ();
+    void            setCycleTime    ( in unsigned long ms );
+    unsigned long   getCycleTime    ();
+    unsigned long   getRefreshTime  ();
+    void            setRefreshTime  ( in unsigned long ms );
+ 
+    // Movement information -----------------------------------------------
+    float  getVelocity         ();
+    float  getMaxVelocity      ();
+    float  getAbsMaxVelocity   ();
+    float  getLeftVelocity     ();
+    float  getRightVelocity    ();    
+    float  getAcceleration     ();
+    float  getDeceleration     (); 
+    float  getRotVelocity      ();
+    float  getMaxRotVelocity   ();
+    float  getAbsMaxRotVelocity();
+    float  getRotAcceleration  ();
+    boolean isHeadingDone      ();
+    boolean isMovementDone     ();
+    float  getHeading          ();
+    float  getHeadingDiff      ();
+    float  getDistanceDiff     ();
+
+    // Movement control ---------------------------------------------------
+    void    enableMotors        (                                       );
+    void    disableMotors       (                                       );
+    boolean areMotorsEnabled    (                                       );
+    void    setVelocity         ( in float vel                          );
+    boolean setMaxVelocity      ( in float maxVel                      );
+    boolean setAbsMaxVelocity   ( in float maxVel                      );
+    void    setLRVelocity       ( in float leftVel, in float rightVel );
+    void    setAcceleration     ( in float accel                       );
+    void    setDeceleration     ( in float decel                       );
+    void    setRotVelocity      ( in float rotVel                      );
+    boolean setMaxRotVelocity   ( in float maxRotVel                   );
+    boolean setAbsMaxRotVelocity( in float maxRotVel                   );
+    boolean setAbsMaxRotAccel   ( in float maxRotAccel                 );
+    boolean setAbsMaxRotDecel   ( in float maxRotDecel                 );
+    void    setRotAcceleration  ( in float rotAccel                    );
+    void    moveDistance        ( in float distance                    );
+    void    setHeading          ( in float heading                     );
+    void    setDeltaHeading     ( in float delta                       );
+ 
+    // Position information -----------------------------------------------
+    float getX             ();
+    float getY             ();
+    float getTh            ();
+    float getCompass       ();
+    void  resetPosition    ();
+
+    // Sensing ------------------------------------------------------------
+    boolean         hasSonars           ();
+    boolean         areSonarsEnabled    ();
+    void            enableSonars        ();
+    void            disableSonars       ();
+    boolean         hasFrontBumpers     ();    
+    boolean         hasRearBumpers      ();
+    unsigned short  getNumSonars        ();
+    unsigned short  getNumFrontBumpers  ();
+    unsigned short  getNumRearBumpers   ();
+    unsigned short  getClosestSonar     ();
+    unsigned long   getClosestSonarRange();
+    unsigned long   getSonarRange       ( in unsigned short numSonar );
+    boolean         hasSonarNewReadings ( in unsigned short numSonar );
+
+};//INTERFACE
+
+interface secure_higgs
+{
+    exception failsafe_timeout {};
+
+    void start_failsafe();
+    void stop_failsafe();
+    /**
+     * Call this method regularly (500ms recommended) for ensuring the communication channel is active.
+     * If the failsafe timeout (550ms) is reached, the next time this method is called
+     * it will throw an exception, then you should restart the failsafe to enable movement on the Pioneer.
+     */
+    void reset_failsafe_counter() raises (failsafe_timeout);
+
+    /**
+     * Start movement of the robot, detecting obstacles and braking if neccessary.
+     * linear in m/s, angular in rad/s
+     */
+    void secure_speed(in float linear, in float angular);
+};//INTERFACE
+
+};//MODULE
+

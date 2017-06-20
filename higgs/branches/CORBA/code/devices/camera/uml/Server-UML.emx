@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CPPTransformation="http:///schemas/CPPTransformation/_heOzgFyyEd6Zfc1aFVFfOg/43" xmlns:Default="http:///schemas/Default/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/CPPTransformation/_heOzgFyyEd6Zfc1aFVFfOg/43 pathmap://TRANSFORM_CPP_PROFILES/cpp_profile.epx#_hehucFyyEd6Zfc1aFVFfOg?CPPTransformation/CPPTransformation? http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_Ncbl4AQmEd-uw_ZZ-elW7g" name="Server-UML">
+    <eAnnotations xmi:id="_Ncbl4QQmEd-uw_ZZ-elW7g" source="uml2.diagrams" references="_Ncbl4gQmEd-uw_ZZ-elW7g">
+      <contents xmi:type="notation:Diagram" xmi:id="_Ncbl4gQmEd-uw_ZZ-elW7g" type="Class" name="Main">
+        <children xmi:id="_tZdw8AQrEd-VioucHm-iww" element="_bLSikAQmEd-uw_ZZ-elW7g">
+          <children xmi:id="_tZe_EAQrEd-VioucHm-iww" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_tZe_EQQrEd-VioucHm-iww" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_tZfmIAQrEd-VioucHm-iww" type="Stereotype"/>
+          <children xmi:id="_tZgNMAQrEd-VioucHm-iww" type="Name"/>
+          <children xmi:id="_tZg0QAQrEd-VioucHm-iww" type="Parent"/>
+          <children xmi:id="_tZhbUAQrEd-VioucHm-iww" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_tZhbUQQrEd-VioucHm-iww"/>
+          </children>
+          <children xmi:id="_tZiCYAQrEd-VioucHm-iww" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_tZiCYQQrEd-VioucHm-iww"/>
+          </children>
+          <children xmi:id="_tZipcAQrEd-VioucHm-iww" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_tZipcQQrEd-VioucHm-iww"/>
+          </children>
+          <children xmi:id="_tZjQgAQrEd-VioucHm-iww" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_tZjQgQQrEd-VioucHm-iww"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_tZdw8QQrEd-VioucHm-iww" fontName="Sans" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tZdw8gQrEd-VioucHm-iww" x="9555" y="735"/>
+        </children>
+        <children xmi:id="_ss0Q4AQsEd-VioucHm-iww" element="_tOiFkAQmEd-uw_ZZ-elW7g">
+          <children xmi:id="_ss038AQsEd-VioucHm-iww" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_ss038QQsEd-VioucHm-iww" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_ss1fAAQsEd-VioucHm-iww" type="Stereotype"/>
+          <children xmi:id="_ss2GEAQsEd-VioucHm-iww" type="Name"/>
+          <children xmi:id="_ss37QAQsEd-VioucHm-iww" type="Parent"/>
+          <children xmi:id="_ss4iUAQsEd-VioucHm-iww" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ss4iUQQsEd-VioucHm-iww"/>
+          </children>
+          <children xmi:id="_ss4iUgQsEd-VioucHm-iww" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ss4iUwQsEd-VioucHm-iww"/>
+          </children>
+          <children xmi:id="_ss6XgAQsEd-VioucHm-iww" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ss6XgQQsEd-VioucHm-iww"/>
+          </children>
+          <children xmi:id="_ss6XggQsEd-VioucHm-iww" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_ss6XgwQsEd-VioucHm-iww"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ss0Q4QQsEd-VioucHm-iww" fontName="Sans" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ss0Q4gQsEd-VioucHm-iww" x="1225" y="980"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_Ncbl4wQmEd-uw_ZZ-elW7g"/>
+      </contents>
+    </eAnnotations>
+    <packageImport xmi:id="_bK_noAQmEd-uw_ZZ-elW7g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_1fVDwBceEduYFs9AA0Zhzw?C++%20Types?"/>
+    </packageImport>
+    <packageImport xmi:id="_Ncbl5AQmEd-uw_ZZ-elW7g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bLSikAQmEd-uw_ZZ-elW7g" name="Imagen_impl">
+      <generalization xmi:id="_dZ7kYQQmEd-uw_ZZ-elW7g">
+        <general xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=POA_Imagen%5Ep=/Camera-TAO/generated/CamaraS.h$uml.Class"/>
+      </generalization>
+      <ownedOperation xmi:id="_bLbFcAQmEd-uw_ZZ-elW7g" name="getImagen" visibility="private">
+        <ownedParameter xmi:id="_bYqQMQQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=ImagenData%5Ep=/Camera-TAO/generated/CamaraC.h$uml.Class"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_b22oEAQmEd-uw_ZZ-elW7g" name="camera">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=CORBA'UShort%5Ep=&amp;includedir&amp;/tao/Basic_Types.h$uml.Class"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_dWlVcAQmEd-uw_ZZ-elW7g" name="update">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=CORBA'Boolean%5Ep=&amp;includedir&amp;/tao/Basic_Types.h$uml.Class"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dWnKoAQmEd-uw_ZZ-elW7g" name="changeRes" visibility="private">
+        <ownedParameter xmi:id="_dWrcEAQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_dWsDIAQmEd-uw_ZZ-elW7g" name="res">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=CORBA'UShort%5Ep=&amp;includedir&amp;/tao/Basic_Types.h$uml.Class"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dWtRQAQmEd-uw_ZZ-elW7g" name="getRes" visibility="private">
+        <ownedParameter xmi:id="_dWyw0QQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=CORBA'UShort%5Ep=&amp;includedir&amp;/tao/Basic_Types.h$uml.Class"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dWzX4AQmEd-uw_ZZ-elW7g" name="getDeviceWidth" visibility="private">
+        <ownedParameter xmi:id="_dW3pUQQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=CORBA'ULong%5Ep=&amp;includedir&amp;/tao/Basic_Types.h$uml.Class"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dW43cAQmEd-uw_ZZ-elW7g" name="getDeviceHeight" visibility="private">
+        <ownedParameter xmi:id="_dW9I4QQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=CORBA'ULong%5Ep=&amp;includedir&amp;/tao/Basic_Types.h$uml.Class"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dW-XAAQmEd-uw_ZZ-elW7g" name="getGain" visibility="private">
+        <ownedParameter xmi:id="_dXD2kAQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=CORBA'UShort%5Ep=&amp;includedir&amp;/tao/Basic_Types.h$uml.Class"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dXFEsAQmEd-uw_ZZ-elW7g" name="setGain" visibility="private">
+        <ownedParameter xmi:id="_dXJWIQQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_dXJ9MAQmEd-uw_ZZ-elW7g" name="gain">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=CORBA'UShort%5Ep=&amp;includedir&amp;/tao/Basic_Types.h$uml.Class"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dXLyYAQmEd-uw_ZZ-elW7g" name="getBright" visibility="private">
+        <ownedParameter xmi:id="_dXQD0QQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=CORBA'UShort%5Ep=&amp;includedir&amp;/tao/Basic_Types.h$uml.Class"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dXQq4AQmEd-uw_ZZ-elW7g" name="setBright" visibility="private">
+        <ownedParameter xmi:id="_dXWKcQQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_dXXYkAQmEd-uw_ZZ-elW7g" name="bright">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=CORBA'UShort%5Ep=&amp;includedir&amp;/tao/Basic_Types.h$uml.Class"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dXX_oAQmEd-uw_ZZ-elW7g" name="restart" visibility="private">
+        <ownedParameter xmi:id="_dXeGQQQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_dXfUYAQmEd-uw_ZZ-elW7g" name="">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dXgigAQmEd-uw_ZZ-elW7g" name="finish" visibility="private">
+        <ownedParameter xmi:id="_dXkz8AQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_dXlbAAQmEd-uw_ZZ-elW7g" name="">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_tOiFkAQmEd-uw_ZZ-elW7g" name="server">
+      <ownedAttribute xmi:id="_tOiFkQQmEd-uw_ZZ-elW7g" name="numCameras" visibility="private">
+        <ownedComment xmi:id="_tOmXAAQmEd-uw_ZZ-elW7g" annotatedElement="_tOiFkQQmEd-uw_ZZ-elW7g">
+          <body>declarations for libdc1394
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_tOrPgAQmEd-uw_ZZ-elW7g" name="capture" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPs6bXEdqm1P7n_cTT_g?C++%20Types/bool?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_tOu54AQmEd-uw_ZZ-elW7g" name="cameras" visibility="private">
+        <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=dc1394camera_t%5Ep=&amp;includedir&amp;/dc1394/camera.h$uml.Class"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_tVkhsAQmEd-uw_ZZ-elW7g" name="features" visibility="private">
+        <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=dc1394featureset_t%5Ep=&amp;includedir&amp;/dc1394/control.h$uml.Class"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_tghNcAQmEd-uw_ZZ-elW7g" name="frames" visibility="private">
+        <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=dc1394video_frame_t%5Ep=&amp;includedir&amp;/dc1394/video.h$uml.Class"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_tp-EYAQmEd-uw_ZZ-elW7g" name="device_name" visibility="private">
+        <ownedComment xmi:id="_tqCV0QQmEd-uw_ZZ-elW7g" annotatedElement="_tp-EYAQmEd-uw_ZZ-elW7g">
+          <body>dc1394video_frame_t * frames2[MAX_CAMERAS];
+declarations for video1394
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtabXEdqm1P7n_cTT_g?C++%20Types/char?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_tvxxcAQmEd-uw_ZZ-elW7g" name="device_width" visibility="private">
+        <ownedComment xmi:id="_pxbd0QQsEd-VioucHm-iww" annotatedElement="_tvxxcAQmEd-uw_ZZ-elW7g">
+          <body>declarations for image
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPu6bXEdqm1P7n_cTT_g?C++%20Types/long?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_tv2C4AQmEd-uw_ZZ-elW7g" name="device_height" visibility="private">
+        <ownedComment xmi:id="_pxiLgQQsEd-VioucHm-iww" annotatedElement="_tv2C4AQmEd-uw_ZZ-elW7g">
+          <body>declarations for image
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPu6bXEdqm1P7n_cTT_g?C++%20Types/long?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_t1q-EAQmEd-uw_ZZ-elW7g" name="format" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPu6bXEdqm1P7n_cTT_g?C++%20Types/long?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_t4eacAQmEd-uw_ZZ-elW7g" name="frame_length" visibility="private">
+        <ownedComment xmi:id="_t4iE0QQmEd-uw_ZZ-elW7g" annotatedElement="_t4eacAQmEd-uw_ZZ-elW7g">
+          <body>Other declarations
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPu6bXEdqm1P7n_cTT_g?C++%20Types/long?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_t4mWQAQmEd-uw_ZZ-elW7g" name="frame" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_t4sc4AQmEd-uw_ZZ-elW7g" name="adaptor" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_t4yjgAQmEd-uw_ZZ-elW7g" name="freeze" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_t45RMAQmEd-uw_ZZ-elW7g" name="average" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_t5FecAQmEd-uw_ZZ-elW7g" name="fps" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_t5Jv4AQmEd-uw_ZZ-elW7g" name="res" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_t5ZngAQmEd-uw_ZZ-elW7g" name="frame_buffer1" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtabXEdqm1P7n_cTT_g?C++%20Types/char?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_t5egAAQmEd-uw_ZZ-elW7g" name="stdout" visibility="private">
+        <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=FILE%5Ep=&amp;includedir&amp;/stdio.h$uml.Class"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_t6GyIAQmEd-uw_ZZ-elW7g" name="long_options" visibility="private" isStatic="true">
+        <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=option%5Ep=&amp;includedir&amp;/getopt.h$uml.Class"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_t8k3UAQmEd-uw_ZZ-elW7g" name="iyu12yuy2" visibility="public" isStatic="true">
+        <ownedComment xmi:id="_t80u8AQmEd-uw_ZZ-elW7g" annotatedElement="_t8k3UAQmEd-uw_ZZ-elW7g">
+          <body>image format conversion functions
+</body>
+        </ownedComment>
+        <ownedComment xmi:id="_t83yQQQmEd-uw_ZZ-elW7g">
+          <body>image format conversion functions
+</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_t80H4QQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_t87coAQmEd-uw_ZZ-elW7g" name="src">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtabXEdqm1P7n_cTT_g?C++%20Types/char?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_t9D_gAQmEd-uw_ZZ-elW7g" name="dest">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtabXEdqm1P7n_cTT_g?C++%20Types/char?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_t9JfEAQmEd-uw_ZZ-elW7g" name="NumPixels">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_t9KGIAQmEd-uw_ZZ-elW7g" name="rgb2yuy2" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_t9OXkAQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_t9O-oAQmEd-uw_ZZ-elW7g" name="RGB">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtabXEdqm1P7n_cTT_g?C++%20Types/char?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_t9T3IAQmEd-uw_ZZ-elW7g" name="YUV">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtabXEdqm1P7n_cTT_g?C++%20Types/char?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_t9YIkAQmEd-uw_ZZ-elW7g" name="NumPixels">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_t9ZWsAQmEd-uw_ZZ-elW7g" name="set_frame_length" visibility="public">
+        <ownedComment xmi:id="_t9dBEAQmEd-uw_ZZ-elW7g" annotatedElement="_t9ZWsAQmEd-uw_ZZ-elW7g">
+          <body>helper functions
+</body>
+        </ownedComment>
+        <ownedComment xmi:id="_t9fdUQQmEd-uw_ZZ-elW7g">
+          <body>helper functions
+</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_t9caAQQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_t9jHsAQmEd-uw_ZZ-elW7g" name="size">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPu6bXEdqm1P7n_cTT_g?C++%20Types/long?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_t9kV0AQmEd-uw_ZZ-elW7g" name="numCameras">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_t9lj8AQmEd-uw_ZZ-elW7g" name="cleanup" visibility="public">
+        <ownedParameter xmi:id="_t9onQAQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_t9pOUAQmEd-uw_ZZ-elW7g" name="">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_t9qccAQmEd-uw_ZZ-elW7g" name="main" visibility="public">
+        <ownedParameter xmi:id="_t9tfwQQmEd-uw_ZZ-elW7g" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_t9ut4AQmEd-uw_ZZ-elW7g" name="argc">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_t9vU8AQmEd-uw_ZZ-elW7g" name="argv">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtabXEdqm1P7n_cTT_g?C++%20Types/char?"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_Ncbl5QQmEd-uw_ZZ-elW7g">
+      <eAnnotations xmi:id="_Ncbl5gQmEd-uw_ZZ-elW7g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Ncbl5wQmEd-uw_ZZ-elW7g">
+      <eAnnotations xmi:id="_Ncbl6AQmEd-uw_ZZ-elW7g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Ncbl6QQmEd-uw_ZZ-elW7g">
+      <eAnnotations xmi:id="_Ncbl6gQmEd-uw_ZZ-elW7g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_bK-ZgQQmEd-uw_ZZ-elW7g">
+      <eAnnotations xmi:id="_bK_AkAQmEd-uw_ZZ-elW7g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TRANSFORM_CPP_PROFILES/cpp_profile.epx#_hehucFyyEd6Zfc1aFVFfOg?CPPTransformation/CPPTransformation?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TRANSFORM_CPP_PROFILES/cpp_profile.epx#_X909IObqEdiRH5WDuCLaMw?CPPTransformation?"/>
+    </profileApplication>
+  </uml:Package>
+  <CPPTransformation:cpp_type xmi:id="_xepP4AQmEd-uw_ZZ-elW7g" qualifier="*" base_Property="_t5ZngAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_operation xmi:id="_xfIYEAQmEd-uw_ZZ-elW7g" isInline="true" base_Operation="_t8k3UAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_type xmi:id="_xfMCcAQmEd-uw_ZZ-elW7g" base_Property="_t4sc4AQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_type xmi:id="_xfPs0AQmEd-uw_ZZ-elW7g" base_Property="_tOiFkQQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_operation xmi:id="_xfSwIAQmEd-uw_ZZ-elW7g" base_Operation="_t9ZWsAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_type xmi:id="_xfVzcAQmEd-uw_ZZ-elW7g" qualifier="*" base_Parameter="_t9D_gAQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_type xmi:id="_xfe9YAQmEd-uw_ZZ-elW7g" qualifier="*" base_Parameter="_t9T3IAQmEd-uw_ZZ-elW7g"/>
+  <Default:Documentation xmi:id="_xfiAsAQmEd-uw_ZZ-elW7g" base_Comment="_tOmXAAQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_type xmi:id="_xflEAAQmEd-uw_ZZ-elW7g" qualifier="*" base_Property="_tghNcAQmEd-uw_ZZ-elW7g" arrayDimensions="[MAX_CAMERAS]" isGlobal="true"/>
+  <CPPTransformation:cpp_operation xmi:id="_xfrKoAQmEd-uw_ZZ-elW7g" isInline="true" base_Operation="_dW-XAAQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_type xmi:id="_xfuN8AQmEd-uw_ZZ-elW7g" base_Property="_t4eacAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_type xmi:id="_xfxRQAQmEd-uw_ZZ-elW7g" qualifier="*" base_Parameter="_bYqQMQQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_type xmi:id="_xfztgAQmEd-uw_ZZ-elW7g" base_Property="_t4mWQAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_type xmi:id="_xf2w0AQmEd-uw_ZZ-elW7g" qualifier="*" base_Parameter="_t9vU8AQmEd-uw_ZZ-elW7g" arrayDimensions="[]"/>
+  <CPPTransformation:cpp_operation xmi:id="_xf50IAQmEd-uw_ZZ-elW7g" isInline="true" base_Operation="_dXQq4AQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_operation xmi:id="_xgAh0AQmEd-uw_ZZ-elW7g" isInline="true" base_Operation="_dWnKoAQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_type xmi:id="_xgHPgAQmEd-uw_ZZ-elW7g" base_Property="_tVkhsAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_type xmi:id="_xgKS0AQmEd-uw_ZZ-elW7g" base_Property="_t5Jv4AQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <Default:Documentation xmi:id="_xgNWIAQmEd-uw_ZZ-elW7g" base_Comment="_t4iE0QQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_type xmi:id="_xgTcwAQmEd-uw_ZZ-elW7g" qualifier="*" base_Property="_tp-EYAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_operation xmi:id="_xgWgEAQmEd-uw_ZZ-elW7g" base_Operation="_t9lj8AQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_operation xmi:id="_xgY8UAQmEd-uw_ZZ-elW7g" isInline="true" base_Operation="_bLbFcAQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_operation xmi:id="_xgkigAQmEd-uw_ZZ-elW7g" isInline="true" base_Operation="_dXX_oAQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_operation xmi:id="_xgnl0AQmEd-uw_ZZ-elW7g" isInline="true" base_Operation="_dWtRQAQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_type xmi:id="_xgqpIAQmEd-uw_ZZ-elW7g" base_Property="_t5FecAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_type xmi:id="_xgtscAQmEd-uw_ZZ-elW7g" qualifier="*" base_Parameter="_t9O-oAQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_type xmi:id="_xgwvwAQmEd-uw_ZZ-elW7g" qualifier="*" base_Property="_tOu54AQmEd-uw_ZZ-elW7g" arrayDimensions="[MAX_CAMERAS]" isGlobal="true"/>
+  <CPPTransformation:cpp_type xmi:id="_xgzMAAQmEd-uw_ZZ-elW7g" base_Property="_t1q-EAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_type xmi:id="_xg2PUAQmEd-uw_ZZ-elW7g" base_Property="_t6GyIAQmEd-uw_ZZ-elW7g" arrayDimensions="[]" isGlobal="true"/>
+  <Default:Documentation xmi:id="_xg5SoAQmEd-uw_ZZ-elW7g" base_Comment="_tqCV0QQmEd-uw_ZZ-elW7g"/>
+  <Default:Documentation xmi:id="_xg8V8AQmEd-uw_ZZ-elW7g" base_Comment="_t80u8AQmEd-uw_ZZ-elW7g"/>
+  <Default:Documentation xmi:id="_xg_ZQAQmEd-uw_ZZ-elW7g" base_Comment="_t9dBEAQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_operation xmi:id="_xhCckAQmEd-uw_ZZ-elW7g" base_Operation="_t9qccAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_operation xmi:id="_xhH8IAQmEd-uw_ZZ-elW7g" isInline="true" base_Operation="_dXFEsAQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_type xmi:id="_xhK_cAQmEd-uw_ZZ-elW7g" base_Property="_tv2C4AQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_body_comment xmi:id="_xhOCwAQmEd-uw_ZZ-elW7g" base_Comment="_t83yQQQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_operation xmi:id="_xhRGEAQmEd-uw_ZZ-elW7g" isInline="true" base_Operation="_dWzX4AQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_body_comment xmi:id="_xhUJYAQmEd-uw_ZZ-elW7g" base_Comment="_t9fdUQQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_type xmi:id="_xhXMsAQmEd-uw_ZZ-elW7g" base_Property="_t45RMAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_type xmi:id="_xhZo8AQmEd-uw_ZZ-elW7g" qualifier="*" base_Parameter="_t87coAQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_type xmi:id="_xhcsQAQmEd-uw_ZZ-elW7g" base_Property="_tOrPgAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_type xmi:id="_xhgWoAQmEd-uw_ZZ-elW7g" qualifier="*" base_Property="_t5egAAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_operation xmi:id="_xhjZ8AQmEd-uw_ZZ-elW7g" isInline="true" base_Operation="_dXgigAQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_type xmi:id="_xhmdQAQmEd-uw_ZZ-elW7g" base_Property="_t4yjgAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_operation xmi:id="_xhpgkAQmEd-uw_ZZ-elW7g" isInline="true" base_Operation="_dXLyYAQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_type xmi:id="_xhsj4AQmEd-uw_ZZ-elW7g" base_Property="_tvxxcAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_operation xmi:id="_xhvnMAQmEd-uw_ZZ-elW7g" isInline="true" base_Operation="_t9KGIAQmEd-uw_ZZ-elW7g" isGlobal="true"/>
+  <CPPTransformation:cpp_operation xmi:id="_xhyDcAQmEd-uw_ZZ-elW7g" isInline="true" base_Operation="_dW43cAQmEd-uw_ZZ-elW7g"/>
+  <CPPTransformation:cpp_generalization xmi:id="_xh1GwAQmEd-uw_ZZ-elW7g" base_Generalization="_dZ7kYQQmEd-uw_ZZ-elW7g" isVirtual="true"/>
+  <Default:Documentation xmi:id="_rEAgAAQsEd-VioucHm-iww" base_Comment="_pxbd0QQsEd-VioucHm-iww"/>
+  <Default:Documentation xmi:id="_rEEKYAQsEd-VioucHm-iww" base_Comment="_pxiLgQQsEd-VioucHm-iww"/>
+</xmi:XMI>

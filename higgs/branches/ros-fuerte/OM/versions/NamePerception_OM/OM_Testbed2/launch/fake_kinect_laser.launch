@@ -1,0 +1,6 @@
+<launch>
+  
+  <node name="fake_kinect_scan_node" pkg="OM_Testbed2" type="fake_kinect_scan_node.py" respawn="false">
+  </node>
+  
+</launch>

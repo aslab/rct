@@ -1,0 +1,18 @@
+<launch>
+  <master auto="start"/>  
+  <param name="/use_sim_time" value="true"/>
+  
+  <node pkg="stage" type="stageros" name="stageros" args="$(find stage)/world/willow-erratic.world" respawn="false" >
+    <param name="base_watchdog_timeout" value="0.2"/>
+  </node>
+  
+  <node name="teleop_base_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen">
+    <remap from="base_controller/command" to="cmd_vel" />
+  </node>
+  
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find erratic_stage_2dnav)/aslab_erratic.vcg" output="screen">
+    <remap from="/goal" to="/move_base_simple/goal" />
+  </node>
+  
+   
+</launch>

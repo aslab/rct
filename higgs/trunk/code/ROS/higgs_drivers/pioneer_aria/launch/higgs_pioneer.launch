@@ -1,0 +1,11 @@
+<launch>
+
+  <include file="$(find higgs_navigation)/launch/aslab_machines.xml"/>
+     
+  <node pkg="pioneer_aria" name="pioneer" type="pioneer_aria" required="true" machine="higgs" >
+  	<param name="tf_odom_broadcast" value="0"/>
+  </node>
+ 
+	
+</launch>
+

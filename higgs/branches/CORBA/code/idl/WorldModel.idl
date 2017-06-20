@@ -1,0 +1,106 @@
+#ifndef WM_IDL_H
+#define WM_IDL_H
+
+#include <laser.idl>
+#include <gps.idl>
+#include <HiggsTypes.idl>
+
+module higgs
+{
+
+	//Structure that represents the RobotState such as his location (x,y) and its orientation (theta), in radians
+	//and the current linear and angular velocity
+	//The WorldModel is responsable for the update of the information
+	struct RobotState
+	{
+		//Localization variables
+		double	x; //X-axis position
+		double	y; //Y-axis position
+		double	vel; //Linear velocity in m/s
+		double	theta; //Orientation relative to the (magnetic?) north, in radians
+		double	rot_vel; //Angular velocity in rad/s
+
+	};
+
+	//struct Vector // this type is used to ease passing of measurements and state vectors from controller to model
+	//{
+		// need something for the names of the variables in the vector
+	//	matrix vector;
+	//};
+
+	typedef	sequence<double>	matrix;
+
+	// this structure is not used: to be eliminated ///////////////////////////////////////////////////
+	struct CorbaStateModel{
+		// add something so as to maintain info on the StateModel used??, like a string or something, so that those modules using it know
+		short	stateSize;			// state estimation vector (updated estimate x(k|k)) [x y v theta w]
+		short	inputSize;
+		short	measurementsSize;
+
+		matrix	transition_mtrx;	// transition matrix for the process model (A)
+		matrix	transition_jacob;	// jacobian of the transition matrix
+		matrix	input_mtrx;			// input matrix for the process model (B)
+		matrix	model_cov;			// model covariances matrix (Q)
+		matrix	measurement_mtrx;	// observation model (H)
+		matrix	measurement_jacob;	// observation model jacobian
+		matrix	measurement_cov;	// measurements covariance matrix (R)
+
+		double tstep;
+	};
+	/////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	//This module is responsible for providing the perceived localization of the robot
+	interface WorldModel{
+		// methods for perceptors //////////////////////////////////////////////
+
+		// update sensor reading in the model
+		void	setLaserReading(in laser_data lreadings);
+		void	setCompassReading(in double a); // Valor en radianes de la brújula. 0 North, pi/2 West, as defined in Arduino.idl
+		void	setOdometryReading(in double linVel, in double rotVel);  // update in the WM the latest values of velocity coming from odometry
+		void	setUTMReading(in GPS_coords_UTM coords, in GPS_coords deviation);
+
+		void	setUTMReference(in GPS_coords_UTM coords);		// set UTM coordinates of the reference point
+
+
+		// for the kalman perceptor ///////////////////////////////
+		short	getStateSize();
+
+		matrix	getTransitionMatrix();
+		matrix	getTransitionJacobian();
+		matrix	getInputMatrix();
+		matrix	getModelCovariance();
+		matrix	getMeasurementMatrix();
+		matrix	getMeasurementJacobian();
+		matrix	getMeasurementCovariance();
+
+		matrix	getState();
+		matrix	getMeasurement();
+
+		void	updateState(in matrix s);
+		void	updateMeasurement();	//update the measurements in the StateModel from those already available
+		void	setTstep(in double t);	// set timestep in miliseconds
+		////////////////////////////////////////////////////////////
+
+		// to manage the Robot State Model
+		void		updateRobotModel();		//updates RobotStateModel accordingly to the current state
+
+		// not used /////////////
+		void		updateRobotState(in RobotState state);	// actualize current robot state
+		/////////////////////////////////////////////////
+
+		// methods for model users (controllers and action geneators) //////////
+
+		// provide sensors reading to those that may need it
+		laser_data	getLaserReading();
+
+		//Returns the perceived state of the robot
+		RobotState	getCurrentRobotState();
+		Pose		getPosition();
+
+
+
+	};
+};
+
+#endif

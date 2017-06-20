@@ -1,0 +1,18 @@
+<package>
+  <description brief="Meta_IO_py">
+
+     Meta_IO_py
+
+  </description>
+  <author>Carlos Hernandez Corbato</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/Meta_IO_py</url>
+  <depend package="meta_msgs"/>
+  <depend package="std_msgs"/>
+  <depend package="rospy"/>
+  <depend package="rosparam"/>
+
+</package>
+
+

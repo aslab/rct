@@ -1,0 +1,11 @@
+<launch>
+
+  <machine name="higgs" address="higgs" env-loader="/opt/ros/fuerte/env.sh" />
+       
+  <include file="$(find higgs_kinect)/launch/kinect_servo.launch"/>
+  
+  <include file="$(find higgs_kinect)/launch/kinect_openni.launch"/>
+  
+	
+</launch>
+

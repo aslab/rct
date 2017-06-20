@@ -1,0 +1,25 @@
+<launch>
+	
+<arg name="KINECT" default="1" />
+
+  <include file="$(find meta_controller)/launch/higgs_rover.launch" >
+  <arg name="KINECT" value="$(arg KINECT)" />
+  </include> 
+    
+  
+  <!-- navigation nodes -->
+  <include file="$(find meta_controller)/launch/higgs_nav_sys.launch" >
+  </include>
+  
+
+  <!-- rviz configured depending on RVIZ argument -->
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find meta_controller)/config_rviz/all.vcg" >
+    <remap from="/goal" to="/move_base_simple/goal" />
+  </node>
+
+  <!-- Meta_control layer -->
+  <include file="$(find meta_controller)/launch/meta_control.launch" >
+  </include>  
+
+</launch>
+

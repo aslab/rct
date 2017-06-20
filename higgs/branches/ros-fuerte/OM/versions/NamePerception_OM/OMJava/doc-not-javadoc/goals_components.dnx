@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<umlnotation:UMLDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xmi:id="_k5eYUNJeEeGnWdOpU-dfNg" type="Class" name="goals_components.dnx">
+  <eAnnotations xmi:id="_k5eYUdJeEeGnWdOpU-dfNg" source="com.ibm.xtools.common.ui.reduction.editingCapabilities">
+    <details xmi:id="_k5eYUtJeEeGnWdOpU-dfNg" key="com.ibm.xtools.activities.javaVisualizerActivity" value="1"/>
+  </eAnnotations>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_k_PCENJeEeGnWdOpU-dfNg" fontName="Sans" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_k_ReUNJeEeGnWdOpU-dfNg" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_k_ReUdJeEeGnWdOpU-dfNg" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_k_ReUtJeEeGnWdOpU-dfNg" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_k_b2YNJeEeGnWdOpU-dfNg" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_k_b2YdJeEeGnWdOpU-dfNg" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_k_cdcNJeEeGnWdOpU-dfNg" visible="false" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_k_eSoNJeEeGnWdOpU-dfNg" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_k_eSodJeEeGnWdOpU-dfNg" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=CompGoalAtomTracker%5Bjcu%5Ename=CompGoalAtomTracker.java%5Bjpack%5Ename=org.aslab.om.metacontrol.value%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k_PCEdJeEeGnWdOpU-dfNg" x="1256" y="2826"/>
+  </children>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_l2mH4NJeEeGnWdOpU-dfNg" fontName="Sans" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_l2mu8NJeEeGnWdOpU-dfNg" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_l2mu8dJeEeGnWdOpU-dfNg" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_l2mu8tJeEeGnWdOpU-dfNg" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_l2mu89JeEeGnWdOpU-dfNg" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_l2nWANJeEeGnWdOpU-dfNg" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_l2nWAdJeEeGnWdOpU-dfNg" visible="false" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_l2pLMNJeEeGnWdOpU-dfNg" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_l2pyQNJeEeGnWdOpU-dfNg" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ComponentSpecificationAtom%5Bjcu%5Ename=ComponentSpecificationAtom.java%5Bjpack%5Ename=org.aslab.om.metacontrol.value%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l2mH4dJeEeGnWdOpU-dfNg" x="4082" y="3768"/>
+  </children>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_m0BZcNJeEeGnWdOpU-dfNg" fontName="Sans" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_m0CnkNJeEeGnWdOpU-dfNg" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_m0CnkdJeEeGnWdOpU-dfNg" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_m0CnktJeEeGnWdOpU-dfNg" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_m0DOoNJeEeGnWdOpU-dfNg" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_m0DOodJeEeGnWdOpU-dfNg" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_m0DOotJeEeGnWdOpU-dfNg" visible="false" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_m0Fq4NJeEeGnWdOpU-dfNg" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_m0Fq4dJeEeGnWdOpU-dfNg" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ComponentsGoalTracker%5Bjcu%5Ename=ComponentsGoalTracker.java%5Bjpack%5Ename=org.aslab.om.metacontrol.value%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m0BZcdJeEeGnWdOpU-dfNg" x="1256" y="628"/>
+  </children>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_poHRsNJeEeGnWdOpU-dfNg" fontName="Sans" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_poH4wNJeEeGnWdOpU-dfNg" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_poH4wdJeEeGnWdOpU-dfNg" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_poH4wtJeEeGnWdOpU-dfNg" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_poH4w9JeEeGnWdOpU-dfNg" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_poIf0NJeEeGnWdOpU-dfNg" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_poIf0dJeEeGnWdOpU-dfNg" visible="false" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_poKVANJeEeGnWdOpU-dfNg" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_poK8ENJeEeGnWdOpU-dfNg" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=FunctionalGoalTracker%5Bjcu%5Ename=FunctionalGoalTracker.java%5Bjpack%5Ename=org.aslab.om.metacontrol.value%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_poHRsdJeEeGnWdOpU-dfNg" x="4082" y="628"/>
+  </children>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_rWsTYNJeEeGnWdOpU-dfNg" fontName="Sans" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_rWs6cNJeEeGnWdOpU-dfNg" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_rWs6cdJeEeGnWdOpU-dfNg" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_rWthgNJeEeGnWdOpU-dfNg" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_rWthgdJeEeGnWdOpU-dfNg" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_rWthgtJeEeGnWdOpU-dfNg" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_rWthg9JeEeGnWdOpU-dfNg" visible="false" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_rWuvoNJeEeGnWdOpU-dfNg" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_rWuvodJeEeGnWdOpU-dfNg" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=FunGoalAtomTracker%5Bjcu%5Ename=FunGoalAtomTracker.java%5Bjpack%5Ename=org.aslab.om.metacontrol.value%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rWsTYdJeEeGnWdOpU-dfNg" x="4082" y="2198"/>
+  </children>
+  <element xsi:nil="true"/>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_l7kHcNJeEeGnWdOpU-dfNg" source="_k_PCENJeEeGnWdOpU-dfNg" target="_l2mH4NJeEeGnWdOpU-dfNg" fontName="Sans" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_l7kugNJeEeGnWdOpU-dfNg" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_l7kugtJeEeGnWdOpU-dfNg" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_l7kuhNJeEeGnWdOpU-dfNg" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_l7kug9JeEeGnWdOpU-dfNg" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l7kugdJeEeGnWdOpU-dfNg" y="-58"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=CompGoalAtomTracker%5Bjcu%5Ename=CompGoalAtomTracker.java%5Bjpack%5Ename=org.aslab.om.metacontrol.value%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ComponentSpecificationAtom%5Bjcu%5Ename=ComponentSpecificationAtom.java%5Bjpack%5Ename=org.aslab.om.metacontrol.value%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_l7kHcdJeEeGnWdOpU-dfNg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_m3m48NJeEeGnWdOpU-dfNg" source="_m0BZcNJeEeGnWdOpU-dfNg" target="_k_PCENJeEeGnWdOpU-dfNg" fontName="Sans" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_m3ngANJeEeGnWdOpU-dfNg" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_m3ngAtJeEeGnWdOpU-dfNg" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_m3oHENJeEeGnWdOpU-dfNg" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_m3ngA9JeEeGnWdOpU-dfNg" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m3ngAdJeEeGnWdOpU-dfNg" y="-58"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ComponentsGoalTracker%5Bjcu%5Ename=ComponentsGoalTracker.java%5Bjpack%5Ename=org.aslab.om.metacontrol.value%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=CompGoalAtomTracker%5Bjcu%5Ename=CompGoalAtomTracker.java%5Bjpack%5Ename=org.aslab.om.metacontrol.value%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_m3m48dJeEeGnWdOpU-dfNg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_rXN30NJeEeGnWdOpU-dfNg" source="_poHRsNJeEeGnWdOpU-dfNg" target="_rWsTYNJeEeGnWdOpU-dfNg" fontName="Sans" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_rXN30tJeEeGnWdOpU-dfNg" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_rXOe4NJeEeGnWdOpU-dfNg" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_rXOe4tJeEeGnWdOpU-dfNg" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_rXOe4dJeEeGnWdOpU-dfNg" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rXN309JeEeGnWdOpU-dfNg" y="-58"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=FunctionalGoalTracker%5Bjcu%5Ename=FunctionalGoalTracker.java%5Bjpack%5Ename=org.aslab.om.metacontrol.value%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=FunGoalAtomTracker%5Bjcu%5Ename=FunGoalAtomTracker.java%5Bjpack%5Ename=org.aslab.om.metacontrol.value%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=OMJava%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rXN30dJeEeGnWdOpU-dfNg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</umlnotation:UMLDiagram>

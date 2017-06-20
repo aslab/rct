@@ -1,0 +1,27 @@
+<launch>
+	
+  <!-- launch onboard nodes and teleoperation -->
+  <include file="$(find higgs_navigation)/launch/higgs_rover.launch" >
+    <arg name="KIN" value="0" />
+    <arg name="KL" value="0" />
+    <arg name="LAS" value="1" />
+  </include>
+
+  <!-- ekf filter for odometry -->
+  <include file="$(find higgs_ekf)/launch/pose_ekf.launch" />
+
+  <!-- To build the map with SLAM -->
+  <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
+	<param name="odom_frame" value="odom_combined"/>
+	</node>
+
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find higgs_map_building)/map_laser.vcg" >
+  </node>
+  
+  <!--
+  to save the map as mymap run in another terminal:
+  # rosrun map_server map_server mymap.yaml
+  -->		
+
+</launch>
+

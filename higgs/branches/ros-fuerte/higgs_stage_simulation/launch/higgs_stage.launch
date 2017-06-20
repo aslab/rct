@@ -1,0 +1,12 @@
+<launch>
+  <param name="/use_sim_time" value="true"/>
+  
+  <node pkg="stage" type="stageros" name="stageros" args="$(find higgs_stage_simulation)/stage_files/willow-higgs.world" respawn="false" >
+    <param name="base_watchdog_timeout" value="0.2"/>
+    <remap from="/base_scan" to="/scan" />
+    <remap from="/odom" to="/pioneer/odom" />
+    <remap from="/cmd_vel" to="/pioneer/cmd_vel" />
+  </node>
+        
+  
+</launch>

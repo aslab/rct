@@ -1,0 +1,10 @@
+<launch>
+
+  <machine name="higgs" address="higgs2" ros-root="$(env ROS_ROOT)" user="parjonilla" ros-package-path="/opt/ros/diamondback/stacks:/home/parjonilla/trunk/code/ROS" default="false"/>
+
+   
+  <node pkg="pioneer_aria" name="pioneer" type="pioneer_aria" required="true" machine="higgs" output="screen" />
+ 
+	
+</launch>
+

@@ -1,0 +1,17 @@
+ <!-- Launch file for the kinect_wide_scan nodelet that provides a wider scan used for obstacle avoidance that will be recieved by the navigation node (used for navigation) -->
+ <!-- To use with the cloudthrottle.launch -->
+<launch>
+
+	<machine name="higgs" address="higgs" env-loader="/opt/ros/fuerte/env.sh" user="higgs" />
+  
+  <!-- Fake Laser for costmap Wide -->
+  <node pkg="nodelet" type="nodelet" name="kinect_wide_scan" args="load pointcloud_to_laserscan/CloudToScan openni_manager" respawn="true" machine="higgs" >
+    <param name="output_frame_id" value="/openni_depth_frame"/>
+    <!-- heights are in the (optical?) frame of the kinect -->
+    <param name="min_height" value="-0.15"/>
+    <param name="max_height" value="0.15"/>
+    <remap from="cloud" to="cloud_throttled"/>
+    <remap from="scan" to="kinect_wide_scan"/>
+  </node>
+
+</launch>

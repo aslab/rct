@@ -1,0 +1,33 @@
+<launch>
+
+  <!-- parameter for this launch file -->
+  <arg name="BAG" default="0"  /> <!-- if 1 just for bag recording so no gmapping -->
+	
+  <!-- launch onboard nodes and teleoperation -->
+  <include file="$(find higgs_navigation)/launch/higgs_rover.launch" >
+    <arg name="KIN" value="1" />
+    <arg name="LAS" value="0" />
+  </include>
+  
+  <!-- ekf filter for odometry -->
+  <include file="$(find higgs_ekf)/launch/pose_ekf.launch" />
+
+  <!-- To build the map with SLAM -->
+  <node unless="$(arg BAG)" name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
+    <remap from="scan" to="kinect_narrow_scan"/>
+    <param name="odom_frame" value="odom_combined"/>
+    <param name="maxUrange" value="6.0"/>
+    <param name="particles" value="300"/>		  <!-- param name="particles" value="30"/-->
+    <param name="srr" value="0.0002"/>              <!-- error in rotation as a factor of rotation vel -->
+    <param name="srt" value="0.0001"/>
+    <param name="str" value="0.02"/>
+    <param name="stt" value="0.01"/>
+    <param name="linearUpdate" value="0.25"/>     <!-- param name="linearUpdate" value="0.5"/-->
+    <param name="angularUpdate" value="0.262"/>   <!-- param name="angularUpdate" value="0.436"/-->
+  </node>
+
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find higgs_map_building)/map_kinect.vcg" >
+  </node>
+
+</launch>
+

@@ -1,0 +1,21 @@
+<package>
+  <description brief="master_monitor">
+
+     master_monitor
+
+  </description>
+  <author>Arturo</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/master_monitor</url>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="rosgraph_msgs"/>
+  
+  <depend package="std_msgs"/>
+  <depend package="actionlib"/>
+  <depend package="move_base_msgs"/>
+  <depend package="geometry_msgs"/>
+</package>
+
+

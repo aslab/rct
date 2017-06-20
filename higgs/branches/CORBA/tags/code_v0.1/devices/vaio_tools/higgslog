@@ -1,0 +1,9 @@
+#logrotate config file for
+/var/log/higgs/* {
+    rotate 2
+    compress
+    missingok
+    notifempty
+    size 3000k
+    daily
+}

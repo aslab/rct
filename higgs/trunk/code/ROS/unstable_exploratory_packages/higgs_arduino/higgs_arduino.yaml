@@ -1,0 +1,6 @@
+port: /dev/ttyUSB2
+name: higgs_arduino
+publish: #list of published topics
+ compass: #topic name
+  type: higgs_arduino/Compass  #msg type
+

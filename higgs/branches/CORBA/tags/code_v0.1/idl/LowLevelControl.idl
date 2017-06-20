@@ -1,0 +1,16 @@
+#ifndef LLC_IDL_H
+#define LLC_IDL_H
+
+module higgs
+{
+
+	interface HiggsMovement{
+		void setMovement( in double v, in double w); // set robot linear and angular velocities
+		void start();	// starts the low level control loop in Higgs
+		void stop();	// stops the low level control loop in Higgs
+	};
+
+
+};
+
+#endif

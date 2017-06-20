@@ -1,0 +1,17 @@
+ <!-- Launches two nodes openni_manager as a manager for the kinect nodes which recieves the PointCloud2 topic from the openni_camera node and the pointcloud_throttle to convert PointCloud2 into CloudThrottle (Compresses the PointCloud2 into a smaller structure)  -->
+ <!-- To use with kinect_obstacles.launch or/and kinect_references.launch -->
+ <!-- YOU NEED THE POINT_CLOUD_TO_LASERSCAN OF THE TURTLEBOT STACK IN ORDER TO WORK!! -->
+<launch>
+
+	<machine name="higgs" address="higgs" env-loader="/opt/ros/fuerte/env.sh" user="higgs" />
+
+  <node pkg="nodelet" type="nodelet" name="openni_manager" output="screen" respawn="true" args="manager" machine="higgs"/>
+
+  <!-- throttling -->
+  <node pkg="nodelet" type="nodelet" name="pointcloud_throttle" machine="higgs" args="load pointcloud_to_laserscan/CloudThrottle openni_manager" output="screen" >
+    <param name="max_rate" value="2.0"/>
+    <remap from="cloud_in" to="camera/depth/points"/>
+    <remap from="cloud_out" to="cloud_throttled"/>
+  </node>
+
+</launch>

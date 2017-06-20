@@ -1,0 +1,11 @@
+<launch>
+
+  <include file="$(find higgs_navigation)/launch/aslab_machines.xml"/>
+     
+  <include file="$(find higgs_kinect)/launch/kinect_servo.launch"/>
+  
+  <include file="$(find higgs_kinect)/launch/kinect_openni.launch"/>
+  
+	
+</launch>
+

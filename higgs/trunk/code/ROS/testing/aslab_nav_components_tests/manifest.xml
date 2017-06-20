@@ -1,0 +1,20 @@
+<package>
+  <description brief="aslab_nav_components_tests">
+
+     aslab_nav_components_tests
+
+  </description>
+  <author>Carlos Hernandez Corbato</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/aslab_nav_components_tests</url>
+  <depend package="stage"/>
+  <depend package="move_base"/>
+  <depend package="amcl"/>
+  <depend package="map_server"/>
+  <depend package="teleop_base"/>
+  <depend package="rviz"/>
+
+</package>
+
+

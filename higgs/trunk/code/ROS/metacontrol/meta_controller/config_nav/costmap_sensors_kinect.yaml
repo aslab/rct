@@ -1,0 +1,39 @@
+# for Higgs @ ASLab
+
+#Set the tolerance we're willing to have for tf transforms
+#transform_tolerance: 6.0
+
+#Configuration for the sensors that the costmap will use to update a map
+observation_sources: kinect_scan laser
+
+laser: {sensor_frame: base_laser_link,
+            data_type: LaserScan,
+            topic: /scan,
+            expected_update_rate: 0.0,
+            observation_persistence: 0.0,
+            marking: true,
+            clearing: true,
+            min_obstacle_height: -0.10,
+            max_obstacle_height: 2.0}
+
+kinect_scan: {sensor_frame: /openni_depth_optical_frame,
+            data_type: LaserScan,
+            topic: /kinect_wide_scan,
+            expected_update_rate: 0.0,
+            observation_persistence: 0.0,
+            marking: true,
+            clearing: true,
+            min_obstacle_height: -0.10,
+            max_obstacle_height: 2.0}
+
+kinect: {sensor_frame: /openni_depth_optical_frame,
+                    data_type: PointCloud,
+                    topic: /camera/rgb/points_PointCloud,
+                    expected_update_rate: 6,
+                    observation_persistence: 6,
+                    marking: true,
+                    clearing: true,
+                    min_obstacle_height: 0.1,
+                    max_obstacle_height: 1.0}
+                  
+

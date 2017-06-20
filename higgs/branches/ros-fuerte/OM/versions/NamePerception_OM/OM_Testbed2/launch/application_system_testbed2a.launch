@@ -1,0 +1,6 @@
+<launch>
+  
+  <!-- controlled plant -->
+  <include file="$(find OM_Testbed2)/launch/fake_laser.launch" />
+    
+</launch>

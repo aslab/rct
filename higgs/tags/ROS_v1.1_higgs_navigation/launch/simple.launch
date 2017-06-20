@@ -1,0 +1,9 @@
+<launch>
+	    
+  <machine name="higgs" address="higgs2" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="root" password="ramadosmiltres"  default="false"/>
+
+  <machine name="remote" address="arturo-desktop" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="admin" password="ramadosmiltres"  default="false"/>
+
+    <node pkg="higgs_setup_tf" name="higgs_tf_broadcaster" type="higgs_tf_broadcaster" respawn="true" machine="higgs" />
+
+</launch>

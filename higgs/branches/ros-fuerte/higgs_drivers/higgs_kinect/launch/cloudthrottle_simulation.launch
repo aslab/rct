@@ -1,0 +1,13 @@
+ <!-- Launches two nodes openni_manager as a manager for the kinect nodes which recieves the PointCloud2 topic from the openni_camera node and the pointcloud_throttle to convert PointCloud2 into CloudThrottle (Compresses the PointCloud2 into a smaller structure)  -->
+ <!-- To use with kinect_obstacles.launch or/and kinect_references.launch -->
+ <!-- YOU NEED THE POINT_CLOUD_TO_LASERSCAN OF THE TURTLEBOT STACK IN ORDER TO WORK!! -->
+<launch>
+
+<node pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" name="depthimage_to_laserscan">
+	<param name="output_frame_id" type="str" value="/Pioneer3AT/camera_depth" />
+	<remap from="image" to="/kinect/image_depth"/>
+	<remap from="camera_info" to="/kinect/camera_info"/>
+	<remap from="scan" to="/Pioneer3AT/kinect_laserscan" />
+</node>
+ <node pkg="tf" type="static_transform_publisher" name="depth_cam_tf" args="0.250 0.020 0.580 0 0 0 1 /Pioneer3AT/base_link /Pioneer3AT/camera_depth 1" />
+</launch>

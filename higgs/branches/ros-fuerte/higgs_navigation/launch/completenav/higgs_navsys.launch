@@ -1,0 +1,11 @@
+<!-- Launch file that sets the configuration parameters for amcl_node and move_base for laser only navigation -->
+<launch>
+       
+  <!-- localization -->
+  <include file="$(find higgs_navigation)/config_nav/amcl_node.launch"/> 
+  
+  <!-- navigation -->
+  <include file="$(find higgs_navigation)/config_nav/move_base.launch" >
+  </include>
+  
+  </launch>

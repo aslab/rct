@@ -1,0 +1,32 @@
+Carlos Hernandez
+
+March 1 2011
+
+This directory contains the sources for many control algorithms
+
+newmat library is needed (http://www.robertnz.net/nm_intro.htm), so the headers are expected here /usr/include
+and the libraries here /usr/lib
+
+========================================================================
+
+
+EKalman.h EKalman.cpp
+---------------------
+The EKalman class realizes the Extended Kalman filter algorithm by providing predict and correct methods to compute an estimation of the state and its covariance
+Dependencies: PredictionModel.h, ObservationModel.h, newmat/newmat.h
+
+
+PredictionModel.h PredictionModel.cpp
+-------------------------------------
+The PredictionModel abstract class encapsulates the interface to manipulate an object that contains a predictive state model of a system
+Dependencies: newmat/newmat.h
+
+ObservationModel.h ObservationModel.cpp
+---------------------------------------
+The ObservationModel abstract class encapsulates the interface to manipulate an object that contains an observation state model of a system
+Dependencies: newmat/newmat.h
+
+HiggsModels.h HiggsModels.cpp
+-----------------------------------
+The HiggsStateModel contains different prediction and observation models for the Higgs robot
+Dependencies: newmat/newmat.h, PredictionModel.h, ObservationModel.h

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_g_82UC6kEeC5rdLAdpK8ow" type="Class" name="classdiagram.dnx">
+  <children xmi:id="_kz3M0S6kEeC5rdLAdpK8ow">
+    <children xmi:id="_kz3M1C6kEeC5rdLAdpK8ow" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_kz3M1S6kEeC5rdLAdpK8ow" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_kz3z4C6kEeC5rdLAdpK8ow" type="Stereotype"/>
+    <children xmi:id="_kz3z4S6kEeC5rdLAdpK8ow" type="Name"/>
+    <children xmi:id="_kz3z4i6kEeC5rdLAdpK8ow" type="Parent"/>
+    <children xmi:id="_kz3z4y6kEeC5rdLAdpK8ow" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_kz3z5C6kEeC5rdLAdpK8ow"/>
+    </children>
+    <children xmi:id="_kz4a8C6kEeC5rdLAdpK8ow" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_kz4a8S6kEeC5rdLAdpK8ow"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_kz3M0i6kEeC5rdLAdpK8ow" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=LowLevelControl_impl%5Ep=/LowLevelControl/src/LowLevelControl_impl.h$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kz3M0y6kEeC5rdLAdpK8ow" x="1565" y="6573"/>
+  </children>
+  <children xmi:id="_ABJdgC6lEeC5rdLAdpK8ow">
+    <children xmi:id="_ABKEkC6lEeC5rdLAdpK8ow" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_ABKEkS6lEeC5rdLAdpK8ow" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_ABKroC6lEeC5rdLAdpK8ow" type="Stereotype"/>
+    <children xmi:id="_ABKroS6lEeC5rdLAdpK8ow" type="Name"/>
+    <children xmi:id="_ABKroi6lEeC5rdLAdpK8ow" type="Parent"/>
+    <children xmi:id="_ABQLMC6lEeC5rdLAdpK8ow" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ABQLMS6lEeC5rdLAdpK8ow"/>
+    </children>
+    <children xmi:id="_ABQLMi6lEeC5rdLAdpK8ow" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ABQLMy6lEeC5rdLAdpK8ow"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ABJdgS6lEeC5rdLAdpK8ow" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=StateModel_wrapper%5Ep=/LowLevelControl/src/StateModel_wrapper.h$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ABJdgi6lEeC5rdLAdpK8ow" x="9703" y="8451"/>
+  </children>
+  <children xmi:id="_FEzkoC6lEeC5rdLAdpK8ow">
+    <children xmi:id="_FE0LsC6lEeC5rdLAdpK8ow" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_FE0LsS6lEeC5rdLAdpK8ow" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_FE0Lsi6lEeC5rdLAdpK8ow" type="Stereotype"/>
+    <children xmi:id="_FE0Lsy6lEeC5rdLAdpK8ow" type="Name"/>
+    <children xmi:id="_FE0LtC6lEeC5rdLAdpK8ow" type="Parent"/>
+    <children xmi:id="_FE0LtS6lEeC5rdLAdpK8ow" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_FE0Lti6lEeC5rdLAdpK8ow"/>
+    </children>
+    <children xmi:id="_FE0ywC6lEeC5rdLAdpK8ow" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_FE0ywS6lEeC5rdLAdpK8ow"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_FEzkoS6lEeC5rdLAdpK8ow" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#cdt.global%5En=LowLevelControl_server.cpp%5Ep=/LowLevelControl/src/LowLevelControl_server.cpp$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FEzkoi6lEeC5rdLAdpK8ow" x="1252" y="1252"/>
+  </children>
+  <children xmi:id="_ugGMIC6lEeC5rdLAdpK8ow">
+    <children xmi:id="_ugGzMC6lEeC5rdLAdpK8ow" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_ugGzMS6lEeC5rdLAdpK8ow" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_ugGzMi6lEeC5rdLAdpK8ow" type="Stereotype"/>
+    <children xmi:id="_ugKdkC6lEeC5rdLAdpK8ow" type="Name"/>
+    <children xmi:id="_ugKdkS6lEeC5rdLAdpK8ow" type="Parent"/>
+    <children xmi:id="_ugLEoC6lEeC5rdLAdpK8ow" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ugLEoS6lEeC5rdLAdpK8ow"/>
+    </children>
+    <children xmi:id="_ugLEoi6lEeC5rdLAdpK8ow" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ugLEoy6lEeC5rdLAdpK8ow"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ugGMIS6lEeC5rdLAdpK8ow" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=StateModel%5Ep=/control_libraries/src/StateModel.h$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ugGMIi6lEeC5rdLAdpK8ow" x="15963" y="-626"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_g_82US6kEeC5rdLAdpK8ow"/>
+  <element xsi:nil="true"/>
+  <edges xmi:id="_ADsbMC6lEeC5rdLAdpK8ow" source="_kz3M0S6kEeC5rdLAdpK8ow" target="_ABJdgC6lEeC5rdLAdpK8ow">
+    <children xmi:id="_ADtCQi6lEeC5rdLAdpK8ow" type="KindLabel">
+      <children xmi:id="_ADtCRC6lEeC5rdLAdpK8ow" type="Stereotype"/>
+      <children xmi:id="_ADuQYC6lEeC5rdLAdpK8ow" type="Kind"/>
+      <children xmi:id="_ADtpUC6lEeC5rdLAdpK8ow" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ADtCQy6lEeC5rdLAdpK8ow" y="-122"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ADtCQC6lEeC5rdLAdpK8ow" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#cdt.usage%5En=StateModel_wrapper%5Bcdt.struct%5En=LowLevelControl_impl%5Ep=/LowLevelControl/src/LowLevelControl_impl.h%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ADtCQS6lEeC5rdLAdpK8ow" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_FI-S8C6lEeC5rdLAdpK8ow" source="_FEzkoC6lEeC5rdLAdpK8ow" target="_kz3M0S6kEeC5rdLAdpK8ow">
+    <children xmi:id="_FI-S8y6lEeC5rdLAdpK8ow" type="KindLabel">
+      <children xmi:id="_FI-S9S6lEeC5rdLAdpK8ow" type="Stereotype"/>
+      <children xmi:id="_FI-6AS6lEeC5rdLAdpK8ow" type="Kind"/>
+      <children xmi:id="_FI-6AC6lEeC5rdLAdpK8ow" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FI-S9C6lEeC5rdLAdpK8ow" y="-122"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_FI-S8S6lEeC5rdLAdpK8ow" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#cdt.usage%5En=LowLevelControl_impl%5Bcdt.global%5En=LowLevelControl_server.cpp%5Ep=/LowLevelControl/src/LowLevelControl_server.cpp%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FI-S8i6lEeC5rdLAdpK8ow" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_ug8gsC6lEeC5rdLAdpK8ow" source="_ABJdgC6lEeC5rdLAdpK8ow" target="_ugGMIC6lEeC5rdLAdpK8ow">
+    <children xmi:id="_ug9HwC6lEeC5rdLAdpK8ow" type="NameLabel">
+      <children xmi:id="_ug9Hwi6lEeC5rdLAdpK8ow" type="Stereotype"/>
+      <children xmi:id="_ug9Hwy6lEeC5rdLAdpK8ow" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ug9HwS6lEeC5rdLAdpK8ow" y="-122"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ug8gsS6lEeC5rdLAdpK8ow" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="mmi:///#cdt.inherit%5En=StateModel%5Bcdt.struct%5En=StateModel_wrapper%5Ep=/LowLevelControl/src/StateModel_wrapper.h%5D$uml.Generalization"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ug8gsi6lEeC5rdLAdpK8ow" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>

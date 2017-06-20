@@ -1,0 +1,61 @@
+------ Features report ------
+OP   - one push capable
+RC   - readout capable
+O/OC - on/off capable
+AC   - auto capable
+MC   - manual capable
+ABS  - absolute capable
+-----------------------------
+Brightness:
+        RC  MC  (active is: MAN)  
+        min: 0 max 255
+        current value is: 64
+Exposure:
+        RC  MC  (active is: MAN)  
+        min: 0 max 1023
+        current value is: 1023
+Sharpness:
+        NOT AVAILABLE
+White Balance:
+        RC  MC  (active is: MAN)  
+        min: 0 max 62
+        B/U value: 31 R/V value: 31
+Hue:
+        NOT AVAILABLE
+Saturation:
+        NOT AVAILABLE
+Gamma:
+        NOT AVAILABLE
+Shutter:
+        NOT AVAILABLE
+Gain:
+        RC  MC  (active is: MAN)  
+        min: 0 max 127
+        current value is: 100
+Iris:
+        NOT AVAILABLE
+Focus:
+        NOT AVAILABLE
+Temperature:
+        NOT AVAILABLE
+Trigger:
+        NOT AVAILABLE
+Trigger Delay:
+        NOT AVAILABLE
+White Shading:
+        NOT AVAILABLE
+Frame Rate:
+        NOT AVAILABLE
+Zoom:
+        NOT AVAILABLE
+Pan:
+        NOT AVAILABLE
+Tilt:
+        NOT AVAILABLE
+Optical Filter:
+        NOT AVAILABLE
+Capture Size:
+        NOT AVAILABLE
+Capture Quality:
+        NOT AVAILABLE
+

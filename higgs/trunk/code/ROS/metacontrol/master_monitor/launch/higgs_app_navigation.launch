@@ -1,0 +1,18 @@
+<launch>
+
+  <include file="$(find master_monitor)/launch/higgs_rover.launch" >
+  </include> 
+    
+  
+  <!-- navigation nodes -->
+  <include file="$(find master_monitor)/launch/higgs_nav_sys.launch" >
+  </include>
+  
+
+  <!-- rviz configured depending on RVIZ argument -->
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find master_monitor)/config_rviz/all.vcg" >
+    <remap from="/goal" to="/move_base_simple/goal" />
+  </node>
+	
+</launch>
+

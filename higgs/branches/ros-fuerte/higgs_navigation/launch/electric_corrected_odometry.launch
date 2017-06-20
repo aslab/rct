@@ -1,0 +1,47 @@
+<launch>
+
+  <machine name="higgs" address="higgs2" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)"  user="higgs" default="false" >
+  	<env name="ROS_MASTER_URI" value="$(env ROS_MASTER_URI)" />
+  </machine>
+     
+  <!-- robot nodes -->
+	
+  	    
+    <node pkg="pioneer_aria" name="pioneer" type="pioneer_aria" required="true" machine="higgs" >
+		<param name="odom_frame" value="odom_combined"/>
+	</node>
+	   
+    <node pkg="higgs_setup_tf" name="higgs_tf_broadcaster" type="higgs_tf_broadcaster" machine="higgs" />
+	
+  	<node name="higgs_arduino" pkg="higgs_arduino_corba_ros" type="higgs_arduino" output="screen" machine="higgs">
+	 	<remap from="higgs_arduino/Imu" to="higgs_arduino/output_Imu"/>
+	 	<param name="loop_rate_hz" value="10"/>
+	</node>
+	
+    <include file="$(find higgs_ekf)/launch/pose_ekf.launch"/>
+  
+  
+  <!-- To teleoperate the robot -->
+  <node name="teleop_base_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen" >
+    <remap from="base_controller/command" to="pioneer/cmd_vel" />	
+  </node>
+  
+  <include file="$(find higgs_wiimote)/launch/higgs_wii.launch"/>
+ 
+  <!-- to plot PoseWithCovarianceStamped in rViz -->   
+  <node pkg="posewcov2pose" name="pose_converter" type="posewcov2pose" >
+  	<remap from="pose_cov" to="pose_ekf/odom_combined" />
+  	<remap from="pose" to="pose_corrected" />
+  </node>
+
+  <!-- to plot Imu in rViz--> 
+  <node pkg="higgs_ekf" name="imu_converter" type="imu_pose.py" >
+  	<remap from="imu_data" to="higgs_arduino/output_Imu" />
+  </node> 
+
+  <!-- rviz -->  
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find higgs_navigation)/config_rviz/ekf_pose.vcg" >
+  </node>
+	
+</launch>
+

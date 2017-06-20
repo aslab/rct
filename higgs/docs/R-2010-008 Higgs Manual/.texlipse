@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Tue May 04 13:09:04 CEST 2010
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=R-2010-008 Higgs Manual.tex
+outputFile=R-2010-008 Higgs Manual.pdf
+langSpell=en
+markDer=true
+srcDir=

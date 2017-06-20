@@ -1,0 +1,7 @@
+<launch>
+
+<!-- Meta-controller nodes -->
+  <node name="meta_monitor" pkg="meta_controller" type="meta_monitor.py" output="screen" />
+  <node name="meta_actuator" pkg="meta_controller" type="meta_actuator.py" output="screen" />	
+
+</launch>  

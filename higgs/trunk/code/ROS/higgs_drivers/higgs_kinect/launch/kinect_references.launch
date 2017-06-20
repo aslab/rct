@@ -1,0 +1,13 @@
+<launch>
+
+  <!-- fake laser for localization Narrow-->
+  <node pkg="nodelet" type="nodelet" name="kinect_laser" args="load pointcloud_to_laserscan/CloudToScan openni_manager" output="screen" machine="higgs" >
+    <param name="output_frame_id" value="/openni_depth_frame"/>
+    <!-- heights are in the (optical?) frame of the kinect -->
+    <param name="min_height" value="-0.275"/>
+    <param name="max_height" value="-0.255"/>
+    <remap from="cloud" to="cloud_throttled"/>
+  	<remap from="scan" to="kinect_narrow_scan"/>
+  </node>
+
+</launch>

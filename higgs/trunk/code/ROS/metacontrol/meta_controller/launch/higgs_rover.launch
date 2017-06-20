@@ -1,0 +1,59 @@
+<launch>
+
+<arg name="KINECT" default="0" />
+
+  <machine name="higgs" address="higgs2" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)"  user="higgs" default="false" >
+  	<env name="ROS_MASTER_URI" value="$(env ROS_MASTER_URI)" />
+  </machine>
+     
+  <!-- robot nodes -->
+  	<!-- ROBOT -->
+  	<param name="pioneer/tf_odom_broadcast" value="false" />
+    <param name="pioneer/odom_frame" value="odom_combined" />
+    <param name="pioneer/sonar" value="false" />
+    <include file="$(find pioneer_aria)/launch/pioneer.launch"/>
+
+ 
+    <!-- COMPASS -->
+    <node name="higgs_arduino" pkg="higgs_arduino_corba_ros" type="higgs_arduino" output="screen" machine="higgs">
+	 	<remap from="higgs_arduino/Imu" to="higgs_arduino/output_Imu"/>
+	 	<param name="loop_rate_hz" value="10"/>
+	</node>   
+    <!-- EKF filter for better odometry -->
+    <include file="$(find higgs_ekf)/launch/pose_ekf.launch"/>
+    
+    
+    <node pkg="higgs_setup_tf" name="tf_robot_geometry" type="higgs_tf_broadcaster" machine="higgs" />
+    
+
+
+	<!-- KINECT -->
+    <include file="$(find higgs_kinect)/launch/kinect_full.launch"/>      
+	<!-- kinect perception -->
+	<include file="$(find higgs_kinect)/launch/cloudthrottle.launch"/>
+    <include file="$(find higgs_kinect)/launch/kinect_obstacles.launch"/>
+    <!-- -->
+    
+    
+    <!-- If Kinect localization is set as default -->
+   <node if="$(arg KINECT)" pkg="nodelet" type="nodelet" name="kinect_laser" args="load pointcloud_to_laserscan/CloudToScan openni_manager" output="screen" machine="higgs" >
+    <param name="output_frame_id" value="/openni_depth_frame" />
+    <!-- heights are in the (optical?) frame of the kinect -->
+    <param name="min_height" value="-0.275"/>
+    <param name="max_height" value="-0.255"/>
+    <remap from="cloud" to="cloud_throttled"/>
+  	</node>
+	
+	 <!-- If LASER localization is set as default -->
+    <include unless="$(arg KINECT)" file="$(find higgs_laser)/launch/laser.launch"/>
+  
+
+  <!-- To teleoperate the robot -->
+  <node name="teleop_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen" >
+    <remap from="base_controller/command" to="pioneer/cmd_vel" />	
+  </node>
+  
+<!--  <include file="$(find higgs_wiimote)/launch/higgs_wii.launch"/> -->
+	
+</launch>
+

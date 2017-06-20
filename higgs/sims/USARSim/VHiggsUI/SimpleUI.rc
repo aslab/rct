@@ -1,0 +1,376 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INFO_DLG DIALOG  0, 0, 263, 211
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "STOP!!!"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,99,190,50,14
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,7,7,249,176
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_INFO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_INFO_DLG DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x3378, 0x0000, 0x2461, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SimpleUI"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SimpleUI Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SIMPLEUI_DIALOG DIALOGEX 0, 0, 268, 199
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SimpleUI"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Quit",IDCANCEL,161,174,67,17
+    LTEXT           "Host:",IDC_STATIC,19,18,18,8
+    EDITTEXT        IDC_CHOST,43,16,76,17,ES_AUTOHSCROLL
+    LTEXT           "Port:",IDC_STATIC,21,41,16,8
+    EDITTEXT        IDC_CPORT,43,38,53,17,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Model:",IDC_STATIC,150,19,22,8
+    COMBOBOX        IDC_MODEL,178,16,64,67,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Position:",IDC_STATIC,144,40,28,8
+    EDITTEXT        IDC_POSITION,178,38,71,17,ES_AUTOHSCROLL
+    GROUPBOX        "Command",IDC_STATIC,5,3,124,60
+    GROUPBOX        "Robot",IDC_STATIC,138,3,124,60
+    LTEXT           "Host:",IDC_STATIC,16,106,18,8
+    EDITTEXT        IDC_VHOST,38,105,76,16,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Port:",IDC_STATIC,18,140,16,8
+    EDITTEXT        IDC_VPORT,38,140,53,17,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    GROUPBOX        "Video",IDC_STATIC,5,69,255,99
+    CONTROL         "Remote",IDC_REMOTE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,82,41,10
+    CONTROL         "Local",IDC_LOCAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,133,82,33,10
+    LTEXT           "Resolution:",IDC_STATIC,136,97,36,8
+    CONTROL         "Slider1",IDC_RESOLUTION,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,152,108,83,15
+    LTEXT           "160x120",IDC_STATIC,146,125,28,8
+    LTEXT           "480x360",IDC_STATIC,215,125,28,8
+    EDITTEXT        IDC_RESOLUTION2,175,98,40,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    LTEXT           "Frame Rate:",IDC_STATIC,137,144,40,8
+    EDITTEXT        IDC_FPS,181,143,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_FPS2,"msctls_updown32",UDS_ARROWKEYS,222,144,10,14
+    PUSHBUTTON      "Start",IDC_START,41,174,67,17
+END
+
+IDD_CONTROL_DLG DIALOGEX 0, 0, 610, 381
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Control Interface"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Wheels",IDC_STATIC,339,7,96,91
+    PUSHBUTTON      "/\\\n||",IDC_CUP,377,14,18,20,BS_MULTILINE
+    PUSHBUTTON      "<=",IDC_CLEFT,351,37,24,12
+    PUSHBUTTON      "=>",IDC_CRIGHT,397,37,24,12
+    PUSHBUTTON      "||\n\\/",IDC_CDOWN,377,50,18,20,BS_MULTILINE
+    GROUPBOX        "Camera",IDC_STATIC,340,115,96,89
+    PUSHBUTTON      "/\\\n||",IDC_VUP,377,123,18,20,BS_MULTILINE
+    PUSHBUTTON      "<=",IDC_VLEFT,351,146,24,12
+    PUSHBUTTON      "=>",IDC_VRIGHT,397,146,24,12
+    PUSHBUTTON      "||\n\\/",IDC_VDOWN,377,159,18,20,BS_MULTILINE
+    GROUPBOX        "Video",IDC_STATIC_VIDEO,7,6,327,255
+    PUSHBUTTON      "Speed\n Up",IDC_SPEED_UP,342,74,27,20,BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "Speed\n Down",IDC_SPEED_DOWN,404,74,27,20,BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "Zoom In",IDC_ZOOM_IN,343,184,37,14,BS_FLAT
+    PUSHBUTTON      "Zoom Out",IDC_ZOOM_OUT,385,184,46,14,BS_FLAT
+    PUSHBUTTON      "Stop",IDC_STOP,373,74,27,20,BS_MULTILINE | BS_FLAT
+    LTEXT           "FPS:",IDC_STATIC,54,246,16,8
+    EDITTEXT        IDC_FPS,72,243,37,14,ES_AUTOHSCROLL
+    LTEXT           "Width:",IDC_STATIC,119,246,22,8
+    EDITTEXT        IDC_WIDTH,145,243,42,14,ES_AUTOHSCROLL
+    LTEXT           "Height:",IDC_STATIC,195,246,24,8
+    EDITTEXT        IDC_HEIGHT,221,243,43,14,ES_AUTOHSCROLL
+    RADIOBUTTON     "Update:",IDC_UPDATE,10,246,36,10,BS_LEFTTEXT | BS_FLAT
+    PUSHBUTTON      "Show UT",IDC_SHOWUT,278,242,52,16,BS_FLAT | WS_DISABLED
+    CONTROL         "Tree3",IDC_MSG_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,274,596,100
+    LTEXT           "Sensor Data:",IDC_STATIC,7,264,42,8
+    LTEXT           "",IDC_VIDEO,11,18,320,220,0,WS_EX_CLIENTEDGE
+    LTEXT           "Light:",IDC_STATIC,345,230,18,8
+    PUSHBUTTON      "Turn On",IDC_LIGHT,367,227,50,14,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_VEL,514,33,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROT,514,62,60,14,ES_AUTOHSCROLL
+    LTEXT           "Velocity",IDC_STATIC,457,35,49,12
+    LTEXT           "RotVelocity",IDC_STATIC,457,63,49,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SIMPLEUI_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_CONTROL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 603
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 374
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SIMPLEUI_DIALOG DLGINIT
+BEGIN
+    IDC_MODEL, 0x403, 5, 0
+0x3250, 0x5844, "\000" 
+    IDC_MODEL, 0x403, 5, 0
+0x3250, 0x5441, "\000" 
+    IDC_MODEL, 0x403, 6, 0
+0x6f52, 0x6576, 0x0072, 
+    IDC_MODEL, 0x403, 7, 0
+0x5441, 0x5652, 0x724a, "\000" 
+    IDC_MODEL, 0x403, 7, 0
+0x5355, 0x5241, 0x6342, "\000" 
+    IDC_MODEL, 0x403, 8, 0
+0x5355, 0x5241, 0x6143, 0x0072, 
+    0
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SimpleUI.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SimpleUI.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "SimpleUI MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "SimpleUI"
+            VALUE "LegalCopyright", "Copyright (C) 2004"
+            VALUE "OriginalFilename", "SimpleUI.EXE"
+            VALUE "ProductName", "SimpleUI Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About SimpleUI..."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    IDS_SET_UTC             "Please set view point in the UTClient window!\n    1) Left mouse button switch view point between robots.\n    2) Right mouse button return to full view point. \nTo go to the UTCleint, you can press Alt+Tab. \nTo return to Image Server, press Alt+Tab again.\n\nNOTE: After you pressed the OK button, UTClient will be automatically hid. \nIf you want to show the UTClient window, please click the 'Show UT' button."
+    IDS_CLOSE_UTC           "Do you want to close the runing UT Client?"
+    IDS_HOOK_ERROR          "DetourCreateProcessWithDll() failed. Error# %d"
+    IDS_CANT_CATCH_UTC      "Can't catch utclient %s!"
+    IDS_MEM_ERROR           "Cann't allocate memory!"
+    IDS_DLL_LOAD_ERROR      "Load library '%s' faild. Error# %d!"
+    IDS_DLL_PROCADDR_ERROR  "Can't get process address of '%s'. Error# %d!"
+    IDS_OPEN_UT2003         "Cann't open ut2004. Please specify where is the ut2004.exe file."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OPEN_DLL            "Cann't open Hook. Please specify where is the Hook.dll file."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\SimpleUI.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

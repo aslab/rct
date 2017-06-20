@@ -1,0 +1,415 @@
+% ===============================================================================
+% $Id: R-2010-008 Higgs Manual.tex 2632 2011-09-28 17:06:29Z parjonilla $
+% ===============================================================================
+%
+% Title: Higgs Manual
+% Author:  C.Hernandez, A. Hernando, Paco Arjonilla and R.Sanz,
+%
+% Release: $Revision: 2632 $
+% Author: $Author: parjonilla $
+% Date:  $Date: 2011-09-28 19:06:29 +0200 (Wed, 28 Sep 2011) $
+%
+% Copyright (c) $Year$ ASLab
+%
+%=============================================================================== 
+
+\documentclass{aslreport}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx} \graphicspath{{figures/}}
+
+% Standard quote (text+reference)
+
+\newcommand{\Quote}[2]{
+\begin{quotation}
+\noindent\textit{``#1''}\\
+\cite{#2}
+\end{quotation}
+}
+
+% Quote with additional information
+
+\newcommand{\QuoteX}[3]{
+\begin{quotation}
+\noindent\textit{``#1''}\\
+\cite[#3]{#2}
+\end{quotation}
+}
+
+% Chapter introductory quote
+
+\newcommand{\QuoteI}[3]{
+\begin{quotation}
+\noindent\textit{``#1''}\\
+\cite[#3]{#2}
+\end{quotation}
+\begin{center}
+$\clubsuit$\\[1cm]
+\end{center}
+}
+
+% Standardised figure
+
+\newcommand{\Figure}[4]{
+\begin{figure}[!htb]\centering
+\includegraphics[width=#2]{#1}
+\emph{\caption{#3}\label{#4}}
+\end{figure}
+}
+
+
+% Abreviatures
+
+\newcommand{\xie}{\emph{i.e.}\ }
+\newcommand{\xeg}{\emph{e.g.}\ }
+\newcommand{\xcf}{\emph{cf.}\ }
+\newcommand{\xetc}{\emph{etc.}\ }
+
+\newcommand{\gcaterm}[1]{\textsf{#1}}
+
+\hyphenation{
+sour-ce
+im-pas-ses
+me-thod
+en-vi-ron-ment
+know-ledge
+ge-ne-ral
+be-ha-viours
+con-di-tions
+ex-pres-sing
+a-dap-ta-tion
+ar-chi-tec-tures
+smal-ler}
+
+
+\begin{document}
+
+
+% Document Metadata ========================================================
+\title{Higgs Manual}
+\subtitle{A Platform for Autonomy Research}
+\date{\today}
+\reference{R-2010-008}
+\docyear{2010}
+\release{0.1}
+\status{Draft}
+\author{Carlos Hern\'andez, 
+Adolfo Hernando, 
+Ricardo Sanz and
+Francisco Arjonilla}
+\logo{ASys_Logo.pdf}
+\URL{http://www.aslab.org/documents/controlled/ASLAB-R-2010-008.pdf}
+\abstract{The target system selected for control is a Pioneer 2 ATX robot.}
+\keywords{Higgs, cognitive architecture, perception, action, integrated control,
+cognition, emotion, autonomy, autonomous systems} \acknowledgements{We acknowledge the support of the European Commission through
+grant \emph{IST-027819-IP ICEA} of the IST-2004-2.4.8 Cognitive Systems domain
+and of the Spanish Ministry of Science and Innovation through grant
+\emph{TIN2008-02250-E-1}.}
+% =====================================================================
+\maketitle
+
+\abstractpage
+
+%=====================================================================
+\chapter*{Revisions}
+
+\newcommand{\Revision}[4]{\small #1 & #2 & \parbox{6cm}{\raggedright\rule{0mm}{5mm}#3\rule[-3mm]{0mm}{4mm}}& \parbox{2cm}{\rule{0mm}{5mm}#4\rule[-3mm]{0mm}{4mm}} \\
+\hline}
+
+\begin{table}[htdp]
+\centering
+\begin{tabular}{|c|c|l|l|}\hline\hline
+%====================================================================
+Release & Date & Content & Author \\ \hline\hline
+%====================================================================
+\Revision{0.1}{10/05/04}{Initial release.}{Sanz}\hline
+%====================================================================
+\Revision{0.2}{28/09/11}{User and developer manuals.}{Arjonilla}\hline
+%====================================================================
+\end{tabular}
+\label{table:revisions}
+\end{table}%
+
+%=====================================================================
+
+\tableofcontents
+
+%===========================================================================
+\chapter{Introduction}
+\label{chapter:introduction}
+%===========================================================================
+\input{introduction.tex}
+
+
+%===========================================================================
+\chapter{The Higgs Robot Control Testbed}
+%===========================================================================
+\input{higgsrct.tex}
+
+
+%===========================================================================
+\chapter{Physical System Specification}
+%===========================================================================
+\input{higgsspecification.tex}
+
+
+
+%===========================================================================
+\chapter{User Manual}
+%===========================================================================
+\input{higgsusermanual.tex}
+
+
+%===========================================================================
+\chapter{Developer Manual}
+%===========================================================================
+\input{higgsdevelopermanual.tex}
+
+
+
+%===========================================================================
+\chapter{ASys Approach to Higgs}
+%===========================================================================
+\label{chapter:asyshiggs}
+\input{higgsasys.tex}
+
+
+%===========================================================================
+\chapter{Mission Specification}
+%===========================================================================
+
+%===========================================================================
+\chapter{Higgs Webots Model}
+%===========================================================================
+\input{higgswebots.tex}
+
+
+%===========================================================================
+\chapter{Model-based Synthesis}
+%===========================================================================
+
+This chapter will contains the description of the software synthesis process
+from models.
+
+%===========================================================================
+\chapter{Higgs Self-Awareness}
+%===========================================================================
+
+This chapter will contains the description of the mechansisms for self-awareness
+in Higgs.
+
+\appendix
+%===========================================================================
+\chapter{CORBA Interface Definitions}
+%===========================================================================
+
+
+%===========================================================================
+\chapter{XML Self-model}
+%===========================================================================
+
+The self-management system uses an XML model as the central repository of information on reflective knowledge. This is used by the self manager in the decision making concerning the functional operation of the robot.
+
+What follows is the XML model concerning bandwidth-based reconfiguration of the robot perception system.
+
+{\small
+\begin{verbatim}
+<?xml version="1.0" encoding="UTF-8"?>
+<system xmlns="http://www.rcc.com/system"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.rcc.com/system file:/C:/Users/raduadmin/Desktop/GPAC-0.13/metamodel/managedSystem.xsd">
+    
+    <name>BandwithControl</name>
+    
+    <resource>
+        <ID>robot</ID>
+
+		<!-- state parameter section -->
+		
+        <property>
+            <ID>link_quality</ID>
+            <propertyDataType>
+                <xs:element name="link_quality" type="robotLink_quality" />
+                <xs:simpleType name="robotLink_quality">
+                    <xs:restriction base="xs:int"/>
+                </xs:simpleType>
+            </propertyDataType>
+            <mutability>constant</mutability>
+            <modifiability>read-only</modifiability>
+            <subscribeability>false</subscribeability>
+            <primaryKey>false</primaryKey>
+        </property>
+        <property>
+            <ID>bit_rate</ID>
+            <propertyDataType>
+                <xs:element name="bit_rate" type="robotBit_rate" />
+                <xs:simpleType name="robotBit_rate">
+                    <xs:restriction base="xs:int"/>
+                </xs:simpleType>
+            </propertyDataType>
+            <mutability>constant</mutability>
+            <modifiability>read-only</modifiability>
+            <subscribeability>false</subscribeability>
+            <primaryKey>false</primaryKey>
+        </property>
+        <property>
+            <ID>missed_beacons</ID>
+            <propertyDataType>
+                <xs:element name="missed_beacons" type="robotMissed_beacons" />
+                <xs:simpleType name="robotMissed_beacons">
+                    <xs:restriction base="xs:long"/>
+                </xs:simpleType>
+            </propertyDataType>
+            <mutability>mutable</mutability>
+            <modifiability>read-only</modifiability>
+            <subscribeability>false</subscribeability>
+            <primaryKey>false</primaryKey>
+        </property>
+        <property>
+            <ID>video_fps</ID>
+            <propertyDataType>
+                <xs:element name="video_fps" type="robotVideo_fps" />
+                <xs:simpleType name="robotVideo_fps">
+                    <xs:restriction base="xs:double"/>
+                </xs:simpleType>
+            </propertyDataType>
+            <mutability>constant</mutability>
+            <modifiability>read-only</modifiability>
+            <subscribeability>false</subscribeability>
+            <primaryKey>false</primaryKey>
+        </property>
+
+		<!-- derived parameter section -->
+		
+		<property>
+			<ID>bwidth_used</ID>
+			<propertyDataType>
+				<xs:element name="bwidth_used" type="robotBwidth_used" />
+				<xs:simpleType name="robotBwidth_used">
+					<xs:restriction base="xs:int"/>
+				</xs:simpleType>
+			</propertyDataType>
+			<mutability>constant</mutability>
+			<modifiability>read-only</modifiability>
+			<subscribeability>false</subscribeability>
+			<primaryKey>false</primaryKey>
+		</property>
+
+
+		<!-- configuration parameter section -->
+		
+		<property>
+            <ID>video_rgb</ID>
+            <propertyDataType>
+                <xs:element name="video_rgb" type="robotVideo_rgb" />
+                <xs:simpleType name="robotVideo_rgb">
+                    <xs:restriction base="xs:int"/>
+                </xs:simpleType>
+            </propertyDataType>
+            <mutability>constant</mutability>
+            <modifiability>read-write</modifiability>
+            <subscribeability>false</subscribeability>
+            <primaryKey>false</primaryKey>
+        </property>
+        <property>
+            <ID>video_width</ID>
+            <propertyDataType>
+                <xs:element name="video_width" type="robotVideo_width" />
+                <xs:simpleType name="robotVideo_width">
+                    <xs:restriction base="xs:int"/>
+                </xs:simpleType>
+            </propertyDataType>
+            <mutability>constant</mutability>
+            <modifiability>read-write</modifiability>
+            <subscribeability>false</subscribeability>
+            <primaryKey>false</primaryKey>
+        </property>
+        <property>
+            <ID>video_trans</ID>
+            <propertyDataType>
+                <xs:element name="video_trans" type="robotVideo_trans" />
+                <xs:simpleType name="robotVideo_trans">
+                    <xs:restriction base="xs:int"/>
+                </xs:simpleType>
+            </propertyDataType>
+            <mutability>constant</mutability>
+            <modifiability>read-write</modifiability>
+            <subscribeability>false</subscribeability>
+            <primaryKey>false</primaryKey>
+        </property>
+        <property>
+            <ID>laser_trans</ID>
+            <propertyDataType>
+                <xs:element name="laser_trans" type="robotLaser_trans" />
+                <xs:simpleType name="robotLaser_trans">
+                    <xs:restriction base="xs:int"/>
+                </xs:simpleType>
+            </propertyDataType>
+            <mutability>constant</mutability>
+            <modifiability>read-write</modifiability>
+            <subscribeability>false</subscribeability>
+            <primaryKey>false</primaryKey>
+        </property>
+        <property>
+            <ID>sonars_trans</ID>
+            <propertyDataType>
+                <xs:element name="sonars_trans" type="robotSonars_trans" />
+                <xs:simpleType name="robotSonars_trans">
+                    <xs:restriction base="xs:int"/>
+                </xs:simpleType>
+            </propertyDataType>
+            <mutability>constant</mutability>
+            <modifiability>read-write</modifiability>
+            <subscribeability>false</subscribeability>
+            <primaryKey>false</primaryKey>
+        </property>
+
+		<!-- operational model section -->
+		
+		<property>
+			<ID>operationalModel</ID>
+			<propertyDataType>
+				<xs:element name="operationalModel" type="robotOperationalModel"/>
+				<xs:complexType name="robotOperationalModel">
+					<xs:sequence>
+						<xs:element name="modelElement" type="robotModelElement" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+				<xs:complexType name="robotModelElement">
+					<xs:sequence>
+						<xs:element name="bwidth_used" type="robotBwidth_used" />
+						<xs:element name="video_rgb" type="robotVideo_rgb" />
+						<xs:element name="video_width" type="robotVideo_width" />
+						<xs:element name="video_trans" type="robotVideo_trans" />
+						<xs:element name="laser_trans" type="robotLaser_trans" />
+						<xs:element name="sonars_trans" type="robotSonars_trans" />
+						<xs:element name="video_fps" type="robotVideo_fps" />
+					</xs:sequence>
+				</xs:complexType>
+			</propertyDataType>
+			<mutability>constant</mutability>
+			<modifiability>read-only</modifiability>
+			<subscribeability>false</subscribeability>
+			<primaryKey>false</primaryKey>
+		</property>
+
+	</resource>
+</system>
+
+\end{verbatim}
+}
+
+% ===============================================================================
+% References
+% ===============================================================================
+
+
+\bibliography{bibliography}
+\bibliographystyle{aslab}
+
+\finalcover
+
+\end{document}

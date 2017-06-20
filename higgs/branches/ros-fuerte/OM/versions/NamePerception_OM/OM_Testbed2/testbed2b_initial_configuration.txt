@@ -1,0 +1,322 @@
+chcorbato@ubuntu:~$ rosrun OMRosDrivers_py test_sensing.py 
+enter:
+ n to add a new referent 
+ s to get latest sensing 
+ q to quit
+s
+sensing received: -----------------------
+-----------
+Component:  /stageros
+status: 1
+parameters:
+	base_watchdog_timeout	0
+connectors:
+	/pioneer/cmd_vel (IN)
+	/clock (IN)
+	/tf (OUT)
+	/rosout (OUT)
+	/pioneer/odom (OUT)
+	/base_scan (OUT)
+	/clock (OUT)
+	/base_pose_ground_truth (OUT)
+log:
+-----------
+Component:  /amcl
+status: 1
+parameters:
+	base_frame_id	0base_link
+	first_map_only	0
+	global_frame_id	0map
+	gui_publish_rate	10
+	initial_cov_aa	0
+	initial_cov_xx	0
+	initial_cov_yy	0
+	initial_pose_a	-1
+	initial_pose_x	-16
+	initial_pose_y	3
+	kld_err	0
+	kld_z	0
+	laser_lambda_short	0
+	laser_likelihood_max_dist	2
+	laser_max_beams	30
+	laser_max_range	-1
+	laser_min_range	-1
+	laser_model_type	0likelihood_field
+	laser_sigma_hit	0
+	laser_z_hit	0
+	laser_z_max	0
+	laser_z_rand	0
+	laser_z_short	0
+	max_particles	5000
+	min_particles	500
+	odom_alpha1	1
+	odom_alpha2	1
+	odom_alpha3	1
+	odom_alpha4	1
+	odom_alpha5	0
+	odom_frame_id	0odom
+	odom_model_type	0diff
+	recovery_alpha_fast	0
+	recovery_alpha_slow	0
+	resample_interval	1
+	save_pose_rate	0
+	transform_tolerance	0
+	update_min_a	0
+	update_min_d	0
+	use_map_topic	0
+connectors:
+	/initialpose (IN)
+	/clock (IN)
+	/tf (IN)
+	/scan (IN)
+	/amcl_pose (OUT)
+	/tf (OUT)
+	/particlecloud (OUT)
+	/rosout (OUT)
+	/amcl/parameter_updates (OUT)
+	/amcl/parameter_descriptions (OUT)
+log:
+	Received initialpose message with header.frame_id == .  This behavior is deprecated; you should always set the frame_id
+	Setting pose (10.400000): -17.000 3.000 -1.571
+	Received initialpose message with header.frame_id == .  This behavior is deprecated; you should always set the frame_id
+	Setting pose (10.400000): -17.000 3.000 -1.571
+-----------
+Component:  /initial_pose_node
+status: 1
+parameters:
+connectors:
+	/clock (IN)
+	/rosout (OUT)
+	/initialpose (OUT)
+log:
+-----------
+Component:  /map_server
+status: 1
+parameters:
+connectors:
+	/clock (IN)
+	/map_metadata (OUT)
+	/map (OUT)
+	/rosout (OUT)
+log:
+-----------
+Component:  /move_base_node
+status: 1
+parameters:
+	TrajectoryPlannerROS/acc_lim_th	2
+	TrajectoryPlannerROS/acc_lim_theta	1
+	TrajectoryPlannerROS/acc_lim_x	0
+	TrajectoryPlannerROS/acc_lim_y	0
+	TrajectoryPlannerROS/angular_sim_granularity	0
+	TrajectoryPlannerROS/dwa	0
+	TrajectoryPlannerROS/escape_reset_dist	0
+	TrajectoryPlannerROS/escape_reset_theta	1
+	TrajectoryPlannerROS/escape_vel	0
+	TrajectoryPlannerROS/gdist_scale	0
+	TrajectoryPlannerROS/goal_distance_bias	0
+	TrajectoryPlannerROS/heading_lookahead	0
+	TrajectoryPlannerROS/heading_scoring	0
+	TrajectoryPlannerROS/heading_scoring_timestep	0
+	TrajectoryPlannerROS/holonomic_robot	0
+	TrajectoryPlannerROS/max_rotational_vel	0
+	TrajectoryPlannerROS/max_vel_theta	1
+	TrajectoryPlannerROS/max_vel_x	0
+	TrajectoryPlannerROS/min_in_place_rotational_vel	0
+	TrajectoryPlannerROS/min_in_place_vel_theta	0
+	TrajectoryPlannerROS/min_vel_theta	0
+	TrajectoryPlannerROS/min_vel_x	0
+	TrajectoryPlannerROS/occdist_scale	0
+	TrajectoryPlannerROS/oscillation_reset_dist	0
+	TrajectoryPlannerROS/path_distance_bias	0
+	TrajectoryPlannerROS/pdist_scale	0
+	TrajectoryPlannerROS/prune_plan	0
+	TrajectoryPlannerROS/sim_granularity	0
+	TrajectoryPlannerROS/sim_time	1
+	TrajectoryPlannerROS/simple_attractor	0
+	TrajectoryPlannerROS/vtheta_samples	20
+	TrajectoryPlannerROS/vx_samples	3
+	TrajectoryPlannerROS/xy_goal_tolerance	0
+	TrajectoryPlannerROS/y_vels	0-0.3,-0.1,0.1,-0.3
+	TrajectoryPlannerROS/yaw_goal_tolerance	0
+	aggressive_reset/reset_distance	1
+	base_global_planner	0navfn/NavfnROS
+	base_local_planner	0base_local_planner/TrajectoryPlannerROS
+	clearing_rotation_allowed	0
+	conservative_reset/reset_distance	3
+	conservative_reset_dist	3
+	controller_frequency	10
+	controller_patience	15
+	global_costmap/clearing_radius	0
+	global_costmap/cost_scaling_factor	10
+	global_costmap/footprint	0[]
+	global_costmap/footprint_padding	0
+	global_costmap/global_frame	0/map
+	global_costmap/height	10
+	global_costmap/inflation_radius	0
+	global_costmap/laser/clearing	0
+	global_costmap/laser/data_type	0LaserScan
+	global_costmap/laser/expected_update_rate	0
+	global_costmap/laser/marking	0
+	global_costmap/laser/max_obstacle_height	2
+	global_costmap/laser/min_obstacle_height	0
+	global_costmap/laser/observation_persistence	0
+	global_costmap/laser/sensor_frame	0base_laser_link
+	global_costmap/laser/topic	0/scan
+	global_costmap/lethal_cost_threshold	100
+	global_costmap/map_topic	0map
+	global_costmap/map_type	0voxel
+	global_costmap/mark_threshold	0
+	global_costmap/max_obstacle_height	2
+	global_costmap/max_obstacle_range	2
+	global_costmap/observation_sources	0laser
+	global_costmap/obstacle_range	2
+	global_costmap/origin_x	0
+	global_costmap/origin_y	0
+	global_costmap/origin_z	0
+	global_costmap/publish_frequency	0
+	global_costmap/publish_voxel_map	0
+	global_costmap/raytrace_range	3
+	global_costmap/resolution	0
+	global_costmap/robot_base_frame	0base_link
+	global_costmap/robot_radius	0
+	global_costmap/rolling_window	0
+	global_costmap/static_map	0
+	global_costmap/track_unknown_space	0
+	global_costmap/transform_tolerance	2
+	global_costmap/unknown_cost_value	0
+	global_costmap/unknown_threshold	9
+	global_costmap/update_frequency	4
+	global_costmap/width	0
+	global_costmap/z_resolution	0
+	global_costmap/z_voxels	10
+	local_costmap/clearing_radius	0
+	local_costmap/cost_scaling_factor	10
+	local_costmap/footprint	0[]
+	local_costmap/footprint_padding	0
+	local_costmap/global_frame	0odom
+	local_costmap/height	6
+	local_costmap/inflation_radius	0
+	local_costmap/laser/clearing	0
+	local_costmap/laser/data_type	0LaserScan
+	local_costmap/laser/expected_update_rate	0
+	local_costmap/laser/marking	0
+	local_costmap/laser/max_obstacle_height	2
+	local_costmap/laser/min_obstacle_height	0
+	local_costmap/laser/observation_persistence	0
+	local_costmap/laser/sensor_frame	0base_laser_link
+	local_costmap/laser/topic	0/scan
+	local_costmap/lethal_cost_threshold	100
+	local_costmap/map_topic	0map
+	local_costmap/map_type	0voxel
+	local_costmap/mark_threshold	0
+	local_costmap/max_obstacle_height	2
+	local_costmap/max_obstacle_range	2
+	local_costmap/observation_sources	0laser
+	local_costmap/obstacle_range	2
+	local_costmap/origin_x	0
+	local_costmap/origin_y	0
+	local_costmap/origin_z	0
+	local_costmap/publish_frequency	2
+	local_costmap/publish_voxel_map	0
+	local_costmap/raytrace_range	3
+	local_costmap/resolution	0
+	local_costmap/robot_base_frame	0base_link
+	local_costmap/robot_radius	0
+	local_costmap/rolling_window	0
+	local_costmap/static_map	0
+	local_costmap/track_unknown_space	0
+	local_costmap/transform_tolerance	2
+	local_costmap/unknown_cost_value	0
+	local_costmap/unknown_threshold	9
+	local_costmap/update_frequency	4
+	local_costmap/width	6
+	local_costmap/z_resolution	0
+	local_costmap/z_voxels	10
+	oscillation_distance	0
+	oscillation_timeout	30
+	planner_frequency	0
+	planner_patience	5
+	recovery_behavior_enabled	0
+	shutdown_costmaps	0
+connectors:
+	/pioneer/odom (IN)
+	/move_base_simple/goal (IN)
+	/clock (IN)
+	/tf (IN)
+	/move_base/cancel (IN)
+	/map (IN)
+	/move_base/goal (IN)
+	/scan (IN)
+	/move_base_node/local_costmap/obstacles (OUT)
+	/move_base_node/NavfnROS/NavfnROS_costmap/obstacles (OUT)
+	/move_base_node/current_goal (OUT)
+	/move_base_node/TrajectoryPlannerROS/parameter_descriptions (OUT)
+	/move_base_node/parameter_descriptions (OUT)
+	/move_base_node/global_costmap/obstacles (OUT)
+	/move_base_node/local_costmap/parameter_descriptions (OUT)
+	/move_base_node/local_costmap/inflated_obstacles (OUT)
+	/move_base_node/NavfnROS/NavfnROS_costmap/robot_footprint (OUT)
+	/move_base_node/TrajectoryPlannerROS/cost_cloud (OUT)
+	/move_base_node/TrajectoryPlannerROS/global_plan (OUT)
+	/move_base_node/local_costmap/voxel_grid (OUT)
+	/move_base/feedback (OUT)
+	/move_base/result (OUT)
+	/move_base_node/global_costmap/inflated_obstacles (OUT)
+	/move_base_node/global_costmap/parameter_updates (OUT)
+	/move_base_node/TrajectoryPlannerROS/local_plan (OUT)
+	/move_base/status (OUT)
+	/move_base_node/parameter_updates (OUT)
+	/move_base_node/global_costmap/voxel_grid (OUT)
+	/move_base_node/local_costmap/parameter_updates (OUT)
+	/pioneer/cmd_vel (OUT)
+	/move_base_node/global_costmap/parameter_descriptions (OUT)
+	/rosout (OUT)
+	/move_base_node/global_costmap/unknown_space (OUT)
+	/move_base/goal (OUT)
+	/move_base_node/NavfnROS/plan (OUT)
+	/move_base_node/local_costmap/unknown_space (OUT)
+	/move_base_node/NavfnROS/NavfnROS_costmap/inflated_obstacles (OUT)
+	/move_base_node/TrajectoryPlannerROS/parameter_updates (OUT)
+	/move_base_node/local_costmap/robot_footprint (OUT)
+	/move_base_node/global_costmap/robot_footprint (OUT)
+	/move_base_node/NavfnROS/NavfnROS_costmap/unknown_space (OUT)
+log:
+-----------
+Component:  /meta_sensor_tester
+status: 1
+parameters:
+connectors:
+	/meta_singularities (IN)
+	/clock (IN)
+	/rosout (OUT)
+	/meta_referents (OUT)
+log:
+-----------
+Component:  /fake_laser_scan_node
+status: 1
+parameters:
+	baudrate	5600
+connectors:
+	/base_scan (IN)
+	/clock (IN)
+	/scan (OUT)
+	/rosout (OUT)
+log:
+-----------
+Component:  /mission_manager
+status: 1
+parameters:
+connectors:
+	/move_base/feedback (IN)
+	/move_base/status (IN)
+	/clock (IN)
+	/move_base/result (IN)
+	/goal (IN)
+	/amcl_pose (IN)
+	/rosout (OUT)
+	/move_base/goal (OUT)
+	/move_base/cancel (OUT)
+log:
+	Mission manager: Robot has first localization. Ready to send goals
+	Mission manager: Robot has first localization. Ready to send goals
+-----------------------------------------

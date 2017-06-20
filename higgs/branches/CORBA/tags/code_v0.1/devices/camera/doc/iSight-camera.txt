@@ -1,0 +1,17 @@
+------ Camera information ------
+Vendor                            :     Apple Computer, Inc.
+Model                             :     iSight
+Unit                              :     0
+Specifications ID                 :     0xa02d
+Software revision                 :     0x102
+IIDC version code                 :     547
+Unit directory offset             :     0x43c
+Unit dependent directory offset   :     0x44c
+Commands registers base           :     0x10000
+Unique ID                         :     0x000a270004144455
+Vendor ID                         :     0x80007
+Model ID                          :     0x0
+1394b mode capable (>=800Mbit/s)  :     No
+Platform backend                  :     juju
+------ Camera platform-specific information ------
+Device filename                   :     /dev/fw2

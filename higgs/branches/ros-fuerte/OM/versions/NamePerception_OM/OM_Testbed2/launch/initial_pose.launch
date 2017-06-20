@@ -1,0 +1,5 @@
+<launch>
+
+  <node name="initial_pose_node" pkg="OM_Testbed2" type="initial_pose.py" />
+  
+</launch>

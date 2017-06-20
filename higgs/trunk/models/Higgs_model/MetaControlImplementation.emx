@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:JavaTransformation50="http:///schemas/JavaTransformation50/_ROrggCuCEd6jYeiuKnYn-A/33" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/JavaTransformation50/_ROrggCuCEd6jYeiuKnYn-A/33 pathmap://TRANSFORM_JAVA5_PROFILES/JavaTransformProfile.epx#_ROrggSuCEd6jYeiuKnYn-A?JavaTransformation5.0/JavaTransformation50?">
+  <uml:Model xmi:id="_4vB5sMHvEeCN_rIGOgwH0A" name="MetaControlImplementation">
+    <eAnnotations xmi:id="_4vB5scHvEeCN_rIGOgwH0A" source="uml2.diagrams">
+      <contents xmi:type="notation:Diagram" xmi:id="_fK8yEMpsEeCG_9QpBuGpvQ" type="Freeform" name="FreeformDiagram1">
+        <children xmi:id="_fxWDsMpsEeCG_9QpBuGpvQ" element="_Z8ZpkMpsEeCG_9QpBuGpvQ">
+          <children xmi:id="_fxXR0MpsEeCG_9QpBuGpvQ" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_fxXR0cpsEeCG_9QpBuGpvQ" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_fxX44MpsEeCG_9QpBuGpvQ" type="Stereotype"/>
+          <children xmi:id="_fxYf8MpsEeCG_9QpBuGpvQ" type="Name"/>
+          <children xmi:id="_fxYf8cpsEeCG_9QpBuGpvQ" type="Parent"/>
+          <children xmi:id="_fxZHAMpsEeCG_9QpBuGpvQ" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_fxZHAcpsEeCG_9QpBuGpvQ"/>
+          </children>
+          <children xmi:id="_fxZHAspsEeCG_9QpBuGpvQ" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_fxZHA8psEeCG_9QpBuGpvQ"/>
+          </children>
+          <children xmi:id="_fxZuEMpsEeCG_9QpBuGpvQ" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_fxZuEcpsEeCG_9QpBuGpvQ"/>
+          </children>
+          <children xmi:id="_fxaVIMpsEeCG_9QpBuGpvQ" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_fxaVIcpsEeCG_9QpBuGpvQ"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_fxWDscpsEeCG_9QpBuGpvQ" fontName="Sans" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fxWDsspsEeCG_9QpBuGpvQ" x="1236" y="2781"/>
+        </children>
+        <children xmi:id="_hcQGUMpsEeCG_9QpBuGpvQ" element="_Z8cs4MpsEeCG_9QpBuGpvQ">
+          <children xmi:id="_hcQtYMpsEeCG_9QpBuGpvQ" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_hcQtYcpsEeCG_9QpBuGpvQ" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_hcRUcMpsEeCG_9QpBuGpvQ" type="Stereotype"/>
+          <children xmi:id="_hcSikMpsEeCG_9QpBuGpvQ" type="Name"/>
+          <children xmi:id="_hcSikcpsEeCG_9QpBuGpvQ" type="Parent"/>
+          <children xmi:id="_hcSikspsEeCG_9QpBuGpvQ" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_hcSik8psEeCG_9QpBuGpvQ"/>
+          </children>
+          <children xmi:id="_hcTJoMpsEeCG_9QpBuGpvQ" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_hcTJocpsEeCG_9QpBuGpvQ"/>
+          </children>
+          <children xmi:id="_hcU-0MpsEeCG_9QpBuGpvQ" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_hcU-0cpsEeCG_9QpBuGpvQ"/>
+          </children>
+          <children xmi:id="_hcU-0spsEeCG_9QpBuGpvQ" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_hcU-08psEeCG_9QpBuGpvQ"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_hcQGUcpsEeCG_9QpBuGpvQ" fontName="Sans" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hcQGUspsEeCG_9QpBuGpvQ" x="9888" y="2163"/>
+        </children>
+        <children xmi:id="_ApjP0MptEeCG_9QpBuGpvQ" element="_Z8hlYMpsEeCG_9QpBuGpvQ">
+          <children xmi:id="_Apkd8MptEeCG_9QpBuGpvQ" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_Apkd8cptEeCG_9QpBuGpvQ" width="530" height="530"/>
+          </children>
+          <children xmi:id="_Apkd8sptEeCG_9QpBuGpvQ" type="Stereotype"/>
+          <children xmi:id="_Apkd88ptEeCG_9QpBuGpvQ" type="Kind"/>
+          <children xmi:id="_AplFAMptEeCG_9QpBuGpvQ" type="Name"/>
+          <children xmi:id="_AplsEMptEeCG_9QpBuGpvQ" type="Parent"/>
+          <children xmi:id="_ApmTIMptEeCG_9QpBuGpvQ" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ApmTIcptEeCG_9QpBuGpvQ"/>
+          </children>
+          <children xmi:id="_ApmTIsptEeCG_9QpBuGpvQ" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_ApmTI8ptEeCG_9QpBuGpvQ"/>
+          </children>
+          <children xmi:id="_Apm6MMptEeCG_9QpBuGpvQ" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Apm6McptEeCG_9QpBuGpvQ"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_ApjP0cptEeCG_9QpBuGpvQ" fontName="Sans" showStereotype="Label" useClassifierShape="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ApjP0sptEeCG_9QpBuGpvQ" x="12051" y="11742"/>
+        </children>
+        <children xmi:id="_IUC5gMpxEeCG_9QpBuGpvQ" element="_Z8kosMpsEeCG_9QpBuGpvQ">
+          <children xmi:id="_IUEusMpxEeCG_9QpBuGpvQ" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_IUEuscpxEeCG_9QpBuGpvQ" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_IUEusspxEeCG_9QpBuGpvQ" type="Stereotype"/>
+          <children xmi:id="_IUEus8pxEeCG_9QpBuGpvQ" type="Name"/>
+          <children xmi:id="_IUEutMpxEeCG_9QpBuGpvQ" type="Parent"/>
+          <children xmi:id="_IUFVwMpxEeCG_9QpBuGpvQ" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_IUFVwcpxEeCG_9QpBuGpvQ"/>
+          </children>
+          <children xmi:id="_IUFVwspxEeCG_9QpBuGpvQ" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_IUFVw8pxEeCG_9QpBuGpvQ"/>
+          </children>
+          <children xmi:id="_IUFVxMpxEeCG_9QpBuGpvQ" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_IUF80MpxEeCG_9QpBuGpvQ"/>
+          </children>
+          <children xmi:id="_IUF80cpxEeCG_9QpBuGpvQ" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_IUF80spxEeCG_9QpBuGpvQ"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_IUC5gcpxEeCG_9QpBuGpvQ" fontName="Sans" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IUC5gspxEeCG_9QpBuGpvQ" x="927" y="11124"/>
+        </children>
+        <children xmi:id="_Y1HpsMpyEeCG_9QpBuGpvQ" element="_Zx5pwMpsEeCG_9QpBuGpvQ">
+          <children xmi:id="_Y1I30MpyEeCG_9QpBuGpvQ" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_Y1I30cpyEeCG_9QpBuGpvQ" width="530" height="530"/>
+          </children>
+          <children xmi:id="_Y1I30spyEeCG_9QpBuGpvQ" type="Stereotype"/>
+          <children xmi:id="_Y1Je4MpyEeCG_9QpBuGpvQ" type="Kind"/>
+          <children xmi:id="_Y1Je4cpyEeCG_9QpBuGpvQ" type="Name"/>
+          <children xmi:id="_Y1Je4spyEeCG_9QpBuGpvQ" type="Parent"/>
+          <children xmi:id="_Y1KF8MpyEeCG_9QpBuGpvQ" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Y1KF8cpyEeCG_9QpBuGpvQ"/>
+          </children>
+          <children xmi:id="_Y1KF8spyEeCG_9QpBuGpvQ" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Y1KF88pyEeCG_9QpBuGpvQ"/>
+          </children>
+          <children xmi:id="_Y1KtAMpyEeCG_9QpBuGpvQ" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Y1KtAcpyEeCG_9QpBuGpvQ"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_Y1HpscpyEeCG_9QpBuGpvQ" fontName="Sans" showStereotype="Label" useClassifierShape="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y1HpsspyEeCG_9QpBuGpvQ" x="11124" y="14214"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_fK8yEcpsEeCG_9QpBuGpvQ"/>
+        <element xsi:nil="true"/>
+        <edges xmi:id="_BhouYMptEeCG_9QpBuGpvQ" element="_Bhkc8MptEeCG_9QpBuGpvQ" source="_hcQGUMpsEeCG_9QpBuGpvQ" target="_ApjP0MptEeCG_9QpBuGpvQ">
+          <children xmi:id="_BhqjkMptEeCG_9QpBuGpvQ" type="KindLabel">
+            <children xmi:id="_BhqjksptEeCG_9QpBuGpvQ" type="Stereotype"/>
+            <children xmi:id="_BhrKoMptEeCG_9QpBuGpvQ" type="Kind"/>
+            <children xmi:id="_Bhqjk8ptEeCG_9QpBuGpvQ" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BhqjkcptEeCG_9QpBuGpvQ" y="-217"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_BhouYcptEeCG_9QpBuGpvQ" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BhouYsptEeCG_9QpBuGpvQ" points="[-42, 116, 60, -130]$[-54, 212, 48, -34]"/>
+        </edges>
+        <edges xmi:id="_IUHK8MpxEeCG_9QpBuGpvQ" element="_aOdp8MpsEeCG_9QpBuGpvQ" source="_IUC5gMpxEeCG_9QpBuGpvQ" target="_ApjP0MptEeCG_9QpBuGpvQ">
+          <children xmi:id="_IUHyAMpxEeCG_9QpBuGpvQ" type="NameLabel">
+            <children xmi:id="_IUHyAspxEeCG_9QpBuGpvQ" type="Stereotype"/>
+            <children xmi:id="_IUIZEMpxEeCG_9QpBuGpvQ" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IUHyAcpxEeCG_9QpBuGpvQ" y="-217"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_IUHK8cpxEeCG_9QpBuGpvQ" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IUHK8spxEeCG_9QpBuGpvQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_Y1NwUMpyEeCG_9QpBuGpvQ" element="_aOe4EMpsEeCG_9QpBuGpvQ" source="_IUC5gMpxEeCG_9QpBuGpvQ" target="_Y1HpsMpyEeCG_9QpBuGpvQ">
+          <children xmi:id="_Y1NwU8pyEeCG_9QpBuGpvQ" type="NameLabel">
+            <children xmi:id="_Y1OXYMpyEeCG_9QpBuGpvQ" type="Stereotype"/>
+            <children xmi:id="_Y1OXYcpyEeCG_9QpBuGpvQ" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y1NwVMpyEeCG_9QpBuGpvQ" y="-217"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Y1NwUcpyEeCG_9QpBuGpvQ" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Y1NwUspyEeCG_9QpBuGpvQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:id="_a_ugEMpyEeCG_9QpBuGpvQ" element="_a_q1sMpyEeCG_9QpBuGpvQ" source="_hcQGUMpsEeCG_9QpBuGpvQ" target="_Y1HpsMpyEeCG_9QpBuGpvQ">
+          <children xmi:id="_a_vHIMpyEeCG_9QpBuGpvQ" type="KindLabel">
+            <children xmi:id="_a_vHIspyEeCG_9QpBuGpvQ" type="Stereotype"/>
+            <children xmi:id="_a_vuMMpyEeCG_9QpBuGpvQ" type="Kind"/>
+            <children xmi:id="_a_vHI8pyEeCG_9QpBuGpvQ" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a_vHIcpyEeCG_9QpBuGpvQ" y="-217"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_a_ugEcpyEeCG_9QpBuGpvQ" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_a_ugEspyEeCG_9QpBuGpvQ" points="[2221, 4099, 2905, -4887]$[3605, 6655, 4289, -2331]$[1219, 7952, 1903, -1034]"/>
+        </edges>
+      </contents>
+    </eAnnotations>
+    <packageImport xmi:id="_4vB5ssHvEeCN_rIGOgwH0A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_-qoVcMHvEeCN_rIGOgwH0A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ZokuoMpsEeCG_9QpBuGpvQ" name="org.aslab.asys.metacontrol">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZolVsMpsEeCG_9QpBuGpvQ" name="Tools">
+        <generalization xmi:id="_Z9UPkMpsEeCG_9QpBuGpvQ">
+          <general xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=com.ibm.xtools.pluglets.Pluglet%5Bproject%5Eid=metacontrol_trials%5D$uml.Class"/>
+        </generalization>
+        <ownedOperation xmi:id="_Z8_fcMpsEeCG_9QpBuGpvQ" name="out" visibility="protected">
+          <ownedParameter xmi:id="_Z9BUoMpsEeCG_9QpBuGpvQ" name="output">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Z9JQcMpsEeCG_9QpBuGpvQ" name="printElements" visibility="protected">
+          <ownedParameter xmi:id="_Z9SaYMpsEeCG_9QpBuGpvQ" name="p">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZvZvYMpsEeCG_9QpBuGpvQ" name="ComponentECL">
+        <ownedComment xmi:id="_ZvdZwMpsEeCG_9QpBuGpvQ" annotatedElement="_ZvZvYMpsEeCG_9QpBuGpvQ">
+          <body>&lt;!--&amp;nbsp;begin-UML-doc&amp;nbsp;-->&lt;br>&lt;!--&amp;nbsp;end-UML-doc&amp;nbsp;-->&lt;br>@author&amp;nbsp;guest</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_Z9iSAMpsEeCG_9QpBuGpvQ" name="observer" visibility="package" type="_Z8cs4MpsEeCG_9QpBuGpvQ"/>
+        <ownedAttribute xmi:id="_Z9kuQMpsEeCG_9QpBuGpvQ" name="controller" visibility="package" type="_Z8-RUMpsEeCG_9QpBuGpvQ"/>
+        <ownedAttribute xmi:id="_Z9rb8MpsEeCG_9QpBuGpvQ" name="rate" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Z9tRIMpsEeCG_9QpBuGpvQ" name="model" visibility="package" isStatic="true">
+          <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_Z9t4MMpsEeCG_9QpBuGpvQ" name="loop" visibility="package">
+          <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.InterruptedException%5Bproject%5Eid=metacontrol_trials%5D$uml.Class"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Z9xikMpsEeCG_9QpBuGpvQ" name="main" visibility="public" isStatic="true">
+          <ownedComment xmi:id="_Z9xikcpsEeCG_9QpBuGpvQ" annotatedElement="_Z9xikMpsEeCG_9QpBuGpvQ">
+            <body>@param&amp;nbsp;args</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_Z9ywsMpsEeCG_9QpBuGpvQ" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z9zXwMpsEeCG_9QpBuGpvQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z9z-0MpsEeCG_9QpBuGpvQ"/>
+          </ownedParameter>
+          <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.io.IOException%5Bproject%5Eid=metacontrol_trials%5D$uml.Class"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Z8cs4MpsEeCG_9QpBuGpvQ" name="ComponentObserver" clientDependency="_Bhkc8MptEeCG_9QpBuGpvQ _a_q1sMpyEeCG_9QpBuGpvQ">
+        <ownedComment xmi:id="_Z8dT8MpsEeCG_9QpBuGpvQ" annotatedElement="_Z8cs4MpsEeCG_9QpBuGpvQ">
+          <body>&lt;!--&amp;nbsp;begin-UML-doc&amp;nbsp;-->&lt;br>&lt;!--&amp;nbsp;end-UML-doc&amp;nbsp;-->&lt;br>@author&amp;nbsp;guest</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_aI7CoMpsEeCG_9QpBuGpvQ" name="state" visibility="package">
+          <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_aI9e4MpsEeCG_9QpBuGpvQ" name="icomponents" visibility="public" isOrdered="true" isUnique="false">
+          <ownedComment xmi:id="_aJAiMMpsEeCG_9QpBuGpvQ" annotatedElement="_aI9e4MpsEeCG_9QpBuGpvQ">
+            <body>Lists&amp;nbsp;to&amp;nbsp;access&amp;nbsp;the&amp;nbsp;different&amp;nbsp;elements&amp;nbsp;of&amp;nbsp;the&amp;nbsp;state</body>
+          </ownedComment>
+          <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.NamedElement%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aI9e4cpsEeCG_9QpBuGpvQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aI-F8MpsEeCG_9QpBuGpvQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_aJBJQMpsEeCG_9QpBuGpvQ" name="ivariables" visibility="public" isOrdered="true" isUnique="false">
+          <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.NamedElement%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aJBJQcpsEeCG_9QpBuGpvQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aJBJQspsEeCG_9QpBuGpvQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_aJCXYMpsEeCG_9QpBuGpvQ" name="componentMetamodel" visibility="package">
+          <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_aJC-cMpsEeCG_9QpBuGpvQ" name="component" visibility="package"/>
+        <ownedAttribute xmi:id="_aJEMkMpsEeCG_9QpBuGpvQ" name="variable" visibility="package"/>
+        <ownedAttribute xmi:id="_aJEzoMpsEeCG_9QpBuGpvQ" name="measurement" visibility="package" type="_Z8izgMpsEeCG_9QpBuGpvQ"/>
+        <ownedAttribute xmi:id="_aJGo0MpsEeCG_9QpBuGpvQ" name="action" visibility="package" type="_Z8gXQMpsEeCG_9QpBuGpvQ"/>
+        <ownedAttribute xmi:id="_Ko4wU8p5EeCG_9QpBuGpvQ" name="systemModel" visibility="private" type="_Z8hlYMpsEeCG_9QpBuGpvQ" association="_Ko6lgMp5EeCG_9QpBuGpvQ"/>
+        <ownedAttribute xmi:id="_aJIeAMpsEeCG_9QpBuGpvQ" name="processModel" visibility="private" type="_Z8hlYMpsEeCG_9QpBuGpvQ"/>
+        <ownedAttribute xmi:id="_LDqsAMpyEeCG_9QpBuGpvQ" name="measurementModel" visibility="private" type="_Zx5pwMpsEeCG_9QpBuGpvQ"/>
+        <ownedOperation xmi:id="_Ko7Mk8p5EeCG_9QpBuGpvQ" name="ComponentObserver" visibility="public">
+          <ownedParameter xmi:id="_Ko8asMp5EeCG_9QpBuGpvQ" name="m">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Ko9BwMp5EeCG_9QpBuGpvQ" name="c">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Ko9Bwcp5EeCG_9QpBuGpvQ" name="s">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Ko9o0Mp5EeCG_9QpBuGpvQ" name="sysModel" type="_Z8hlYMpsEeCG_9QpBuGpvQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Ko9o0cp5EeCG_9QpBuGpvQ" name="ComponentObserver" visibility="public">
+          <ownedParameter xmi:id="_Ko-P4Mp5EeCG_9QpBuGpvQ" name="m">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Ko-P4cp5EeCG_9QpBuGpvQ" name="c">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Ko-28Mp5EeCG_9QpBuGpvQ" name="s">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_aJK6QMpsEeCG_9QpBuGpvQ" name="ComponentObserver" visibility="public">
+          <ownedParameter xmi:id="_aJLhUMpsEeCG_9QpBuGpvQ" name="m">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_aJMIYMpsEeCG_9QpBuGpvQ" name="c">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_aJMIYcpsEeCG_9QpBuGpvQ" name="s">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Pvn6QMpxEeCG_9QpBuGpvQ" name="sysModel" type="_Z8hlYMpsEeCG_9QpBuGpvQ"/>
+          <ownedParameter xmi:id="_QeNCEMpyEeCG_9QpBuGpvQ" name="measModel" type="_Zx5pwMpsEeCG_9QpBuGpvQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_aAJH0cpxEeCG_9QpBuGpvQ" name="ComponentObserver" visibility="public">
+          <ownedParameter xmi:id="_aAJu4cpxEeCG_9QpBuGpvQ" name="c">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_aAKV8MpxEeCG_9QpBuGpvQ" name="s">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_aJMvcMpsEeCG_9QpBuGpvQ" name="readMetamodel" visibility="package"/>
+        <ownedOperation xmi:id="_aJN9kMpsEeCG_9QpBuGpvQ" name="correct" visibility="protected"/>
+        <ownedOperation xmi:id="_aJPLsMpsEeCG_9QpBuGpvQ" name="estimation" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Z8gXQMpsEeCG_9QpBuGpvQ" name="ComponentAction"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Z8izgMpsEeCG_9QpBuGpvQ" name="ComponentMeasurement"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Z8kosMpsEeCG_9QpBuGpvQ" name="ModelOfComponents" clientDependency="_aOdp8MpsEeCG_9QpBuGpvQ _aOe4EMpsEeCG_9QpBuGpvQ">
+        <ownedComment xmi:id="_Kc9NIcp5EeCG_9QpBuGpvQ" annotatedElement="_Z8kosMpsEeCG_9QpBuGpvQ">
+          <body>&lt;!--&amp;nbsp;begin-UML-doc&amp;nbsp;-->&lt;br>&lt;!--&amp;nbsp;end-UML-doc&amp;nbsp;-->&lt;br>@author&amp;nbsp;guest</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_KuMuIMp5EeCG_9QpBuGpvQ" name="matrix" visibility="public">
+          <ownedComment xmi:id="_KuPKYMp5EeCG_9QpBuGpvQ" annotatedElement="_KuMuIMp5EeCG_9QpBuGpvQ">
+            <body>&lt;!--&amp;nbsp;begin-UML-doc&amp;nbsp;-->&lt;br>&lt;!--&amp;nbsp;end-UML-doc&amp;nbsp;--></body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KuNVMMp5EeCG_9QpBuGpvQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KuNVMcp5EeCG_9QpBuGpvQ"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_aOdp8MpsEeCG_9QpBuGpvQ" supplier="_Z8hlYMpsEeCG_9QpBuGpvQ" client="_Z8kosMpsEeCG_9QpBuGpvQ" contract="_Z8hlYMpsEeCG_9QpBuGpvQ"/>
+        <interfaceRealization xmi:id="_aOe4EMpsEeCG_9QpBuGpvQ" supplier="_Zx5pwMpsEeCG_9QpBuGpvQ" client="_Z8kosMpsEeCG_9QpBuGpvQ" contract="_Zx5pwMpsEeCG_9QpBuGpvQ"/>
+        <ownedOperation xmi:id="_aOWVMMpsEeCG_9QpBuGpvQ" name="stateFromState" visibility="public"/>
+        <ownedOperation xmi:id="_aOZ_kMpsEeCG_9QpBuGpvQ" name="stateFromAction" visibility="public"/>
+        <ownedOperation xmi:id="_aOcb0MpsEeCG_9QpBuGpvQ" name="stateFromMeasurement" visibility="public"/>
+        <ownedOperation xmi:id="_aGEJoMpxEeCG_9QpBuGpvQ" name="predictState" visibility="public">
+          <ownedParameter xmi:id="_aGF-0MpxEeCG_9QpBuGpvQ" name="initial"/>
+          <ownedParameter xmi:id="_aGGl4MpxEeCG_9QpBuGpvQ" name="time">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Z8-RUMpsEeCG_9QpBuGpvQ" name="ComponentController"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ko6lgMp5EeCG_9QpBuGpvQ" memberEnd="_Ko4wU8p5EeCG_9QpBuGpvQ _Ko7MkMp5EeCG_9QpBuGpvQ">
+        <ownedEnd xmi:id="_Ko7MkMp5EeCG_9QpBuGpvQ" visibility="private" type="_Z8cs4MpsEeCG_9QpBuGpvQ" association="_Ko6lgMp5EeCG_9QpBuGpvQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ko7Mksp5EeCG_9QpBuGpvQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ko7Mkcp5EeCG_9QpBuGpvQ"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_Bhkc8MptEeCG_9QpBuGpvQ" supplier="_Z8hlYMpsEeCG_9QpBuGpvQ" client="_Z8cs4MpsEeCG_9QpBuGpvQ"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_a_q1sMpyEeCG_9QpBuGpvQ" supplier="_Zx5pwMpsEeCG_9QpBuGpvQ" client="_Z8cs4MpsEeCG_9QpBuGpvQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Zx5CsMpsEeCG_9QpBuGpvQ" name="org.aslab.asys.models">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_Zx5pwMpsEeCG_9QpBuGpvQ" name="MeasurementModel">
+        <ownedOperation xmi:id="_Z-eGIMpsEeCG_9QpBuGpvQ" name="stateFromMeasurement" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_Z5s64MpsEeCG_9QpBuGpvQ" name="FreeEvolution">
+        <ownedOperation xmi:id="_aA6WIMpsEeCG_9QpBuGpvQ" name="stateFromState" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_Z8bewMpsEeCG_9QpBuGpvQ" name="ActionModel">
+        <ownedOperation xmi:id="_aGgn0MpsEeCG_9QpBuGpvQ" name="stateFromAction" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_Z8hlYMpsEeCG_9QpBuGpvQ" name="ProcessModel">
+        <generalization xmi:id="_aL6sQMpsEeCG_9QpBuGpvQ" general="_Z5s64MpsEeCG_9QpBuGpvQ"/>
+        <generalization xmi:id="_aL6sQcpsEeCG_9QpBuGpvQ" general="_Z8bewMpsEeCG_9QpBuGpvQ"/>
+        <ownedOperation xmi:id="_aL5eIMpsEeCG_9QpBuGpvQ" name="predictState" visibility="public">
+          <ownedParameter xmi:id="_PEdS0MpwEeCG_9QpBuGpvQ" name="initial"/>
+          <ownedParameter xmi:id="_X189oMpwEeCG_9QpBuGpvQ" name="time">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Z8ZCgMpsEeCG_9QpBuGpvQ" name="trials">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Z8ZpkMpsEeCG_9QpBuGpvQ" name="ComponentECLtrial">
+        <generalization xmi:id="_aD1uUMpsEeCG_9QpBuGpvQ">
+          <general xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=com.ibm.xtools.pluglets.Pluglet%5Bproject%5Eid=metacontrol_trials%5D$uml.Class"/>
+        </generalization>
+        <ownedAttribute xmi:id="_aDYbUMpsEeCG_9QpBuGpvQ" name="observer" visibility="package" type="_Z8cs4MpsEeCG_9QpBuGpvQ"/>
+        <ownedAttribute xmi:id="_aDaQgMpsEeCG_9QpBuGpvQ" name="controller" visibility="package" type="_Z8-RUMpsEeCG_9QpBuGpvQ"/>
+        <ownedAttribute xmi:id="_aDbeoMpsEeCG_9QpBuGpvQ" name="rate" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_aDcFsMpsEeCG_9QpBuGpvQ" name="metamodel" visibility="package">
+          <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_aDdT0MpsEeCG_9QpBuGpvQ" name="cmodel" visibility="package">
+          <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_aDeh8MpsEeCG_9QpBuGpvQ" name="state" visibility="package">
+          <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_aDfJAMpsEeCG_9QpBuGpvQ" name="out" visibility="protected">
+          <ownedParameter xmi:id="_aDgXIMpsEeCG_9QpBuGpvQ" name="output">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_aDgXIcpsEeCG_9QpBuGpvQ" name="printElements" visibility="protected">
+          <ownedParameter xmi:id="_aDg-MMpsEeCG_9QpBuGpvQ" name="p">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.Package%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_aDhlQMpsEeCG_9QpBuGpvQ" name="printElements" visibility="protected">
+          <ownedParameter xmi:id="_aDiMUMpsEeCG_9QpBuGpvQ" name="l" isOrdered="true" isUnique="false">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.eclipse.uml2.uml.NamedElement%5Bproject%5Eid=metacontrol_trials%5D$uml.Interface"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aDiMUcpsEeCG_9QpBuGpvQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aDizYMpsEeCG_9QpBuGpvQ"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_aDl2sMpsEeCG_9QpBuGpvQ" name="initialization" visibility="package">
+          <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.io.IOException%5Bproject%5Eid=metacontrol_trials%5D$uml.Class"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_aDmdwMpsEeCG_9QpBuGpvQ" name="plugletmain" visibility="public">
+          <ownedParameter xmi:id="_aDnE0MpsEeCG_9QpBuGpvQ" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aDz5IMpsEeCG_9QpBuGpvQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aD0gMMpsEeCG_9QpBuGpvQ"/>
+          </ownedParameter>
+          <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.InterruptedException%5Bproject%5Eid=metacontrol_trials%5D$uml.Class"/>
+          <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.io.IOException%5Bproject%5Eid=metacontrol_trials%5D$uml.Class"/>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_4vB5s8HvEeCN_rIGOgwH0A">
+      <eAnnotations xmi:id="_4vB5tMHvEeCN_rIGOgwH0A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_4vB5tcHvEeCN_rIGOgwH0A">
+      <eAnnotations xmi:id="_4vB5tsHvEeCN_rIGOgwH0A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_4vB5t8HvEeCN_rIGOgwH0A">
+      <eAnnotations xmi:id="_4vB5uMHvEeCN_rIGOgwH0A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_-wz18cHvEeCN_rIGOgwH0A">
+      <eAnnotations xmi:id="_-wz18sHvEeCN_rIGOgwH0A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TRANSFORM_JAVA5_PROFILES/JavaTransformProfile.epx#_ROrggSuCEd6jYeiuKnYn-A?JavaTransformation5.0/JavaTransformation50?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TRANSFORM_JAVA5_PROFILES/JavaTransformProfile.epx#_TQfqgOcaEdi4LptNXGi2fQ?JavaTransformation5.0?"/>
+    </profileApplication>
+  </uml:Model>
+  <Default:Documentation xmi:id="_crFdYMpsEeCG_9QpBuGpvQ" base_Comment="_Z9xikcpsEeCG_9QpBuGpvQ"/>
+  <Default:Documentation xmi:id="_crJHwMpsEeCG_9QpBuGpvQ" base_Comment="_aJAiMMpsEeCG_9QpBuGpvQ"/>
+  <JavaTransformation50:JavaArray xmi:id="_crLkAMpsEeCG_9QpBuGpvQ" base_TypedElement="_aDnE0MpsEeCG_9QpBuGpvQ"/>
+  <JavaTransformation50:JavaCollection2 xmi:id="_crOAQMpsEeCG_9QpBuGpvQ" collectionType="java.util.List" base_TypedElement="_aJBJQMpsEeCG_9QpBuGpvQ"/>
+  <JavaTransformation50:JavaCollection2 xmi:id="_crP1cMpsEeCG_9QpBuGpvQ" collectionType="java.util.List" base_TypedElement="_aI9e4MpsEeCG_9QpBuGpvQ"/>
+  <JavaTransformation50:JavaCollection2 xmi:id="_crSRsMpsEeCG_9QpBuGpvQ" collectionType="java.util.List" base_TypedElement="_aDiMUMpsEeCG_9QpBuGpvQ"/>
+  <JavaTransformation50:JavaArray xmi:id="_crUt8MpsEeCG_9QpBuGpvQ" base_TypedElement="_Z9ywsMpsEeCG_9QpBuGpvQ"/>
+  <Default:Documentation xmi:id="_crXKMMpsEeCG_9QpBuGpvQ" base_Comment="_Z8dT8MpsEeCG_9QpBuGpvQ"/>
+  <Default:Documentation xmi:id="_crY_YMpsEeCG_9QpBuGpvQ" base_Comment="_ZvdZwMpsEeCG_9QpBuGpvQ"/>
+  <JavaTransformation50:JavaArray xmi:id="_P9L7gMp5EeCG_9QpBuGpvQ" dimensions="2" base_TypedElement="_KuMuIMp5EeCG_9QpBuGpvQ"/>
+  <Default:Documentation xmi:id="_P9O-0Mp5EeCG_9QpBuGpvQ" base_Comment="_KuPKYMp5EeCG_9QpBuGpvQ"/>
+  <Default:Documentation xmi:id="_P9RbEMp5EeCG_9QpBuGpvQ" base_Comment="_Kc9NIcp5EeCG_9QpBuGpvQ"/>
+</xmi:XMI>

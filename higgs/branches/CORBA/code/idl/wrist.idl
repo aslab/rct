@@ -1,0 +1,64 @@
+module higgs
+{
+    /**
+     * No method blocks unless specified, but they wait until the communication process
+     * with the physical device is completed.
+     *
+     * Operates in spherical coordinates.
+     */
+    interface wrist
+      {
+	/**
+	 * PITCH,	// Up and down movement.
+	 * ROLL,	// Left and right movement.
+	 */
+	enum wrist_axis
+	  {
+	    PITCH,	// Up and down movement.
+	    ROLL,	// Left and right movement.
+	    BOTH
+	  };
+
+	/**
+	 * Returns a list of parameters and its values representing the state of the specified axis.
+	 */
+	string get_full_state(in wrist_axis axis);
+	string get_status(in wrist_axis axis); // The same, only for the status flags.
+
+	/// Maximums allowed.
+	void  set_max_speed  (in float speed,   in wrist_axis axis);
+	void  set_max_accel  (in float accel,   in wrist_axis axis);
+	//void  set_max_current(in float current, in wrist_axis axis); /// Does not affect movement, but issues error if current is reached.
+
+	/// Not immediately achieved. In radians.
+	void set_position(in float position, in wrist_axis axis);
+	void set_diff_position(in float diff, in wrist_axis axis);
+
+	// Too complex, and probably not needed. It makes necessary to create threads or block the
+	// caller. Not implemented for now.
+	// All times refered to the same reference. Servant will keep track of correct movement.
+	//void follow_trajectory(list_for_pitch(positions, times), list_for_roll(positions, times));
+
+	/** May not agree after a call to set.
+	 * It will be the same when is_stable returns true. */
+	float get_position(in wrist_axis axis);
+	float get_speed   (in wrist_axis axis);
+	float get_current (in wrist_axis axis);
+
+	/**
+	 * There is no need to wait for the current movement to finish before starting another one;
+	 * the initial movement will be cancelled if another is requested.
+	 * \return True if the specified axis has finished any previous movements.
+	 */
+	boolean is_ready(in wrist_axis axis);
+	/**
+	 * Blocks current thread until is_ready is true.
+	 */
+	void wait(in wrist_axis axis);
+	// TODO: Exception
+	/* 
+	 * If there is an error pending, it raises an exception. Otherwise does nothing.
+	 */
+	// TODO void test() ;//raises(WristException); // Throws an exception if there has been any problem.
+      };
+};

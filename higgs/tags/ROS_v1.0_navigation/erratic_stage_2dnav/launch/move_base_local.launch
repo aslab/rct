@@ -1,0 +1,34 @@
+<launch>
+  <master auto="start"/>  
+  <param name="/use_sim_time" value="true"/>
+  
+  <node pkg="stage" type="stageros" name="stageros" args="$(find stage)/world/willow-erratic.world" respawn="false" >
+    <param name="base_watchdog_timeout" value="0.2"/>
+  </node>
+  
+  <node name="teleop_base_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen">
+    <remap from="base_controller/command" to="cmd_vel" />
+  </node>
+  
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find erratic_stage_2dnav)/aslab_erratic.vcg" output="screen">
+    <remap from="/goal" to="/move_base_simple/goal" />
+  </node>
+    
+   <!-- for moving -->
+   <node pkg="move_base" type="move_base" respawn="false" name="move_base_node" output="screen">
+     <remap from="odom" to="odom" />
+     <remap from="cmd_vel" to="cmd_vel" />
+        
+        <!-- Load common configuration files -->
+        <rosparam file="$(find erratic_navigation)/navigation_config/move_base_params.yaml" command="load" />
+        <rosparam file="$(find erratic_stage_2dnav)/navigation_config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+        <rosparam file="$(find erratic_stage_2dnav)/navigation_config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+        <rosparam file="$(find erratic_navigation)/navigation_config/base_local_planner_params.yaml" command="load" ns="TrajectoryPlannerROS" />
+
+        <!-- Load global navigation specific parameters -->
+        <rosparam file="$(find erratic_navigation)/navigation_local/config/move_base_params.yaml" command="load" />
+        <rosparam file="$(find erratic_navigation)/navigation_local/config/local_costmap_params.yaml" command="load" />
+        <rosparam file="$(find erratic_navigation)/navigation_local/config/global_costmap_params.yaml" command="load" />
+        <rosparam file="$(find erratic_navigation)/navigation_local/config/base_local_planner_params.yaml" command="load" />
+  </node>
+</launch>
