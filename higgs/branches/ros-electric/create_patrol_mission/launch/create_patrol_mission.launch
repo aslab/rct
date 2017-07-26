@@ -1,0 +1,14 @@
+<launch>
+  <!-- arguments for the launchfile -->
+  <arg name="MAP" default="$(find create_patrol_mission)/maps/sala_completa.yaml" />
+  <!-- MAP must be an absolute file path to the .yaml file of the map -->
+    
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg MAP)" respawn="false" />
+
+  <node name="mission_creator" pkg="create_patrol_mission" type="mission_creator.py" args="-f $(arg MAP)_patrol.mission" respawn="false" output="screen" />
+
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find create_patrol_mission)/patrol_map.vcg" >
+  </node>
+
+  
+</launch>

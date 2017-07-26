@@ -1,0 +1,1223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CPPTransformation="http:///schemas/CPPTransformation/_502nELP8Ed629f4CKZW4vg/44" xmlns:Default="http:///schemas/Default/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/CPPTransformation/_502nELP8Ed629f4CKZW4vg/44 pathmap://TRANSFORM_CPP_PROFILES/cpp_profile.epx#_502nEbP8Ed629f4CKZW4vg?CPPTransformation/CPPTransformation? http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Model xmi:id="_9T9I4BAjEeC0DaEa5WeF9w" name="HiggsSoftware">
+    <eAnnotations xmi:id="_9T9I4RAjEeC0DaEa5WeF9w" source="uml2.diagrams"/>
+    <packageImport xmi:id="_9T9I5BAjEeC0DaEa5WeF9w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_yb7vWTt5EeCRtrlPkIazJw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_1fVDwBceEduYFs9AA0Zhzw?C++%20Types?"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ycBO4Dt5EeCRtrlPkIazJw" name="src">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ycBO4Tt5EeCRtrlPkIazJw" name="EKalman">
+        <ownedAttribute xmi:id="_yc6mwDt5EeCRtrlPkIazJw" name="model" visibility="private" type="_ycM1EDt5EeCRtrlPkIazJw">
+          <ownedComment xmi:id="_yc704Tt5EeCRtrlPkIazJw" annotatedElement="_yc6mwDt5EeCRtrlPkIazJw">
+            <body>pointer to the state model
+</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yc9qEDt5EeCRtrlPkIazJw" name="kalman" visibility="private">
+          <ownedComment xmi:id="_yc-4MTt5EeCRtrlPkIazJw" annotatedElement="_yc9qEDt5EeCRtrlPkIazJw">
+            <body>for the OpenCV kalman
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=CvKalman%5Ep=&amp;includedir&amp;/opencv/cvtypes.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ydAtYDt5EeCRtrlPkIazJw" name="measurement" visibility="private">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=CvMat%5Ep=&amp;includedir&amp;/opencv/cxtypes.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ydDJoDt5EeCRtrlPkIazJw" name="control" visibility="private">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=CvMat%5Ep=&amp;includedir&amp;/opencv/cxtypes.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ydE-0Dt5EeCRtrlPkIazJw" name="jacob" visibility="private">
+          <ownedComment xmi:id="_ydHbEDt5EeCRtrlPkIazJw" annotatedElement="_ydE-0Dt5EeCRtrlPkIazJw">
+            <body>for the jacobian of A in the prediction step
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=CvMat%5Ep=&amp;includedir&amp;/opencv/cxtypes.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ydJQQDt5EeCRtrlPkIazJw" name="rng" visibility="private">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=CvRandState%5Ep=&amp;includedir&amp;/opencv/cvcompat.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_ydKeYDt5EeCRtrlPkIazJw" name="EKalman" visibility="public">
+          <ownedParameter xmi:id="_ydLsgDt5EeCRtrlPkIazJw" name="m" type="_ycM1EDt5EeCRtrlPkIazJw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ydNhsDt5EeCRtrlPkIazJw" name="estimate" visibility="public">
+          <ownedParameter xmi:id="_ydNhsTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ydOv0Dt5EeCRtrlPkIazJw" name="c">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ydRMEDt5EeCRtrlPkIazJw" name="reset" visibility="public">
+          <ownedComment xmi:id="_ydRMEjt5EeCRtrlPkIazJw">
+            <body>to initialize the kalman filter from an initial state
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_ydRMETt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ydWroDt5EeCRtrlPkIazJw" name="array2CvMat" visibility="public">
+          <ownedComment xmi:id="_ydX5wjt5EeCRtrlPkIazJw" annotatedElement="_ydWroDt5EeCRtrlPkIazJw">
+            <body>auxiliary function to translate an array into a opencv matrix CvMat
+</body>
+          </ownedComment>
+          <ownedComment xmi:id="_ydZH4Tt5EeCRtrlPkIazJw">
+            <body>auxiliary function to translate an array into a opencv matrix CvMat
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_ydX5wTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yda9EDt5EeCRtrlPkIazJw" name="a">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yddZUDt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=CvMat%5Ep=&amp;includedir&amp;/opencv/cxtypes.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ycGHYDt5EeCRtrlPkIazJw" name="HiggsStateModel">
+        <ownedComment xmi:id="_ycGucDt5EeCRtrlPkIazJw" annotatedElement="_ycGHYDt5EeCRtrlPkIazJw">
+          <body>
+* This is a passive class that contains data that can be accessed or modified
+* by other classes
+*
+</body>
+        </ownedComment>
+        <generalization xmi:id="_ydsC0Dt5EeCRtrlPkIazJw" general="_ycM1EDt5EeCRtrlPkIazJw"/>
+        <ownedOperation xmi:id="_ydjf8Dt5EeCRtrlPkIazJw" name="updateMeasurement" visibility="public">
+          <ownedComment xmi:id="_ydjf8jt5EeCRtrlPkIazJw" annotatedElement="_ydjf8Dt5EeCRtrlPkIazJw">
+            <body>Higgs model allows for updating the diagonal noise matrix
+</body>
+          </ownedComment>
+          <ownedComment xmi:id="_ydkHATt5EeCRtrlPkIazJw">
+            <body>two vectors are passed as arguments:
+r contains the measurements
+cov contains the diagonal covariances (to be squared here)
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_ydjf8Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ydmjQDt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ydoYcDt5EeCRtrlPkIazJw" name="cov">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ydq0sDt5EeCRtrlPkIazJw" name="updateModel" visibility="public">
+          <ownedParameter xmi:id="_ydq0sTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ycM1EDt5EeCRtrlPkIazJw" name="StateModel">
+        <ownedAttribute xmi:id="_yd0lsDt5EeCRtrlPkIazJw" name="stateSize" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yd4QEDt5EeCRtrlPkIazJw" name="inputSize" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yd5eMDt5EeCRtrlPkIazJw" name="measurementSize" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yd6FQDt5EeCRtrlPkIazJw" name="tstep" visibility="protected">
+          <ownedComment xmi:id="_yd6FQTt5EeCRtrlPkIazJw" annotatedElement="_yd6FQDt5EeCRtrlPkIazJw">
+            <body>in milliseconds
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yd8hgDt5EeCRtrlPkIazJw" name="state" visibility="protected">
+          <ownedComment xmi:id="_yd8hgTt5EeCRtrlPkIazJw" annotatedElement="_yd8hgDt5EeCRtrlPkIazJw">
+            <body>Higgs state model
+state estimation vector (updated estimate x(k|k)) [x y v theta w]
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'ColumnVector%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yd-WsDt5EeCRtrlPkIazJw" name="measurement" visibility="protected">
+          <ownedComment xmi:id="_yd-WsTt5EeCRtrlPkIazJw" annotatedElement="_yd-WsDt5EeCRtrlPkIazJw">
+            <body>sensors' measurements vector   [x y v theta w]
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'ColumnVector%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yeAL4Dt5EeCRtrlPkIazJw" name="transition_mtrx" visibility="protected">
+          <ownedComment xmi:id="_yeAL4Tt5EeCRtrlPkIazJw" annotatedElement="_yeAL4Dt5EeCRtrlPkIazJw">
+            <body>transition matrix for the process model (A)
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'Matrix%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yeCoIDt5EeCRtrlPkIazJw" name="transition_jacob" visibility="protected">
+          <ownedComment xmi:id="_yeCoITt5EeCRtrlPkIazJw" annotatedElement="_yeCoIDt5EeCRtrlPkIazJw">
+            <body>jacobian of the transition matrix
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'Matrix%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yeEdUDt5EeCRtrlPkIazJw" name="input_mtrx" visibility="protected">
+          <ownedComment xmi:id="_yeEdUTt5EeCRtrlPkIazJw" annotatedElement="_yeEdUDt5EeCRtrlPkIazJw">
+            <body>input matrix for the process model (B)
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'Matrix%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yeGSgDt5EeCRtrlPkIazJw" name="model_cov" visibility="protected">
+          <ownedComment xmi:id="_yeGSgTt5EeCRtrlPkIazJw" annotatedElement="_yeGSgDt5EeCRtrlPkIazJw">
+            <body>model covariances matrix (Q)
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'Matrix%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yeIuwDt5EeCRtrlPkIazJw" name="measurement_mtrx" visibility="protected">
+          <ownedComment xmi:id="_yeIuwTt5EeCRtrlPkIazJw" annotatedElement="_yeIuwDt5EeCRtrlPkIazJw">
+            <body>observation model (H)
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'Matrix%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yeKj8Dt5EeCRtrlPkIazJw" name="measurement_jacob" visibility="protected">
+          <ownedComment xmi:id="_yeKj8Tt5EeCRtrlPkIazJw" annotatedElement="_yeKj8Dt5EeCRtrlPkIazJw">
+            <body>observation model jacobian
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'Matrix%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yeMZIDt5EeCRtrlPkIazJw" name="measurement_cov" visibility="protected">
+          <ownedComment xmi:id="_yeMZITt5EeCRtrlPkIazJw" annotatedElement="_yeMZIDt5EeCRtrlPkIazJw">
+            <body>measurements covariance matrix (R)
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'Matrix%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yeO1YDt5EeCRtrlPkIazJw" name="r" visibility="protected">
+          <ownedComment xmi:id="_yePccTt5EeCRtrlPkIazJw" annotatedElement="_yeO1YDt5EeCRtrlPkIazJw">
+            <body>auxiliary pointer
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_yeR4sDt5EeCRtrlPkIazJw" name="setStateSize" visibility="public">
+          <ownedComment xmi:id="_yeR4sjt5EeCRtrlPkIazJw" annotatedElement="_yeR4sDt5EeCRtrlPkIazJw">
+            <body>write methods
+size of A
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yeR4sTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yeUU8Dt5EeCRtrlPkIazJw" name="s">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yeVjEDt5EeCRtrlPkIazJw" name="setMeasurementSize" visibility="public">
+          <ownedComment xmi:id="_yeVjEjt5EeCRtrlPkIazJw" annotatedElement="_yeVjEDt5EeCRtrlPkIazJw">
+            <body>size of H
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yeVjETt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yeXYQDt5EeCRtrlPkIazJw" name="s">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yeYmYDt5EeCRtrlPkIazJw" name="setInputSize" visibility="public">
+          <ownedComment xmi:id="_yeYmYjt5EeCRtrlPkIazJw" annotatedElement="_yeYmYDt5EeCRtrlPkIazJw">
+            <body>size of u
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yeYmYTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yebCoDt5EeCRtrlPkIazJw" name="s">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yecQwDt5EeCRtrlPkIazJw" name="setTransitionMatrix" visibility="public">
+          <ownedParameter xmi:id="_yecQwTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yede4Dt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yefUEDt5EeCRtrlPkIazJw" name="setTransitionJacobian" visibility="public">
+          <ownedParameter xmi:id="_yefUETt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yegiMDt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yei-cDt5EeCRtrlPkIazJw" name="setInputMatrix" visibility="public">
+          <ownedComment xmi:id="_yei-cjt5EeCRtrlPkIazJw">
+            <body>use getStateSize to calculate length of m array
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yei-cTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yekzoDt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yenP4Dt5EeCRtrlPkIazJw" name="setModelCovariance" visibility="public">
+          <ownedParameter xmi:id="_yenP4Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yeoeADt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yeqTMDt5EeCRtrlPkIazJw" name="setMeasurementMatrix" visibility="public">
+          <ownedParameter xmi:id="_yeqTMTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yerhUDt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yet9kDt5EeCRtrlPkIazJw" name="setMeasurementJacobian" visibility="public">
+          <ownedParameter xmi:id="_yet9kTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yevLsDt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yexA4Dt5EeCRtrlPkIazJw" name="setMeasurementCovariance" visibility="public">
+          <ownedParameter xmi:id="_yexA4Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yeyPADt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ye0rQDt5EeCRtrlPkIazJw" name="setTransitionMatrix" visibility="public">
+          <ownedParameter xmi:id="_ye0rQTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ye15YDt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'Matrix%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ye3HgDt5EeCRtrlPkIazJw" name="setTransitionJacobian" visibility="public">
+          <ownedParameter xmi:id="_ye3HgTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ye4VoDt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'Matrix%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ye48sDt5EeCRtrlPkIazJw" name="setInputMatrix" visibility="public">
+          <ownedComment xmi:id="_ye5jwTt5EeCRtrlPkIazJw">
+            <body>use getStateSize to calculate length of m array
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_ye5jwDt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ye7Y8Dt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'Matrix%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ye8nEDt5EeCRtrlPkIazJw" name="setModelCovariance" visibility="public">
+          <ownedParameter xmi:id="_ye8nETt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ye91MDt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'Matrix%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ye_DUDt5EeCRtrlPkIazJw" name="setMeasurementMatrix" visibility="public">
+          <ownedParameter xmi:id="_ye_DUTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yfARcDt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'Matrix%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfBfkDt5EeCRtrlPkIazJw" name="setMeasurementJacobian" visibility="public">
+          <ownedParameter xmi:id="_yfBfkTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yfDUwDt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'Matrix%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfEi4Dt5EeCRtrlPkIazJw" name="setMeasurementCovariance" visibility="public">
+          <ownedParameter xmi:id="_yfEi4Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yfFxADt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=NEWMAT'Matrix%5Ep=&amp;includedir&amp;/newmat/newmat.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfG_IDt5EeCRtrlPkIazJw" name="setTstep" visibility="public">
+          <ownedParameter xmi:id="_yfG_ITt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yfINQDt5EeCRtrlPkIazJw" name="t">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfJbYDt5EeCRtrlPkIazJw" name="updateState" visibility="public">
+          <ownedComment xmi:id="_yfJbYjt5EeCRtrlPkIazJw" annotatedElement="_yfJbYDt5EeCRtrlPkIazJw">
+            <body>updates the vector state and the model according to it
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yfJbYTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yfL3oDt5EeCRtrlPkIazJw" name="s">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfOT4Dt5EeCRtrlPkIazJw" name="resetState" visibility="public">
+          <ownedComment xmi:id="_yfOT4jt5EeCRtrlPkIazJw">
+            <body>/////////////////
+Matrix StateModel::getInputMatrix(){
+return input_mtrx;
+}
+
+ColumnVector StateModel::getMeasurement(){
+return r;
+}
+
+Matrix StateModel::getMeasurementCovariance(){
+return measurement_cov;
+}
+
+Matrix StateModel::getMeasurementJacobian(){
+return measurement_jacob;
+}
+
+Matrix StateModel::getMeasurementMatrix(){
+return measurement_mtrx;
+}
+
+Matrix StateModel::getModelCovariance(){
+return model_cov;
+}
+
+ColumnVector StateModel::getState(){
+return state;
+}
+
+Matrix StateModel::getTransitionJacobian(){
+return transition_jacob;
+}
+
+Matrix StateModel::getTransitionMatrix(){
+return transition_mtrx;
+}
+///////////////////////////////////////
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yfOT4Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfQwIDt5EeCRtrlPkIazJw" name="updateMeasurement" visibility="public">
+          <ownedParameter xmi:id="_yfQwITt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yfTMYDt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yfVBkDt5EeCRtrlPkIazJw" name="cov">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfW2wDt5EeCRtrlPkIazJw" name="getStateSize" visibility="public">
+          <ownedComment xmi:id="_yfW2wjt5EeCRtrlPkIazJw" annotatedElement="_yfW2wDt5EeCRtrlPkIazJw">
+            <body>read methods
+size of A
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yfW2wTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfZTADt5EeCRtrlPkIazJw" name="getMeasurementSize" visibility="public">
+          <ownedComment xmi:id="_yfZ6EDt5EeCRtrlPkIazJw" annotatedElement="_yfZTADt5EeCRtrlPkIazJw">
+            <body>size of H
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yfZTATt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfbvQDt5EeCRtrlPkIazJw" name="getInputSize" visibility="public">
+          <ownedComment xmi:id="_yfcWUDt5EeCRtrlPkIazJw" annotatedElement="_yfbvQDt5EeCRtrlPkIazJw">
+            <body>size of u
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yfbvQTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfeykDt5EeCRtrlPkIazJw" name="getState" visibility="public">
+          <ownedParameter xmi:id="_yfeykTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfhO0Dt5EeCRtrlPkIazJw" name="getMeasurement" visibility="public">
+          <ownedParameter xmi:id="_yfhO0Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfjrEDt5EeCRtrlPkIazJw" name="getTransitionMatrix" visibility="public">
+          <ownedParameter xmi:id="_yfjrETt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfmHUDt5EeCRtrlPkIazJw" name="getTransitionJacobian" visibility="public">
+          <ownedParameter xmi:id="_yfmHUTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfojkDt5EeCRtrlPkIazJw" name="getInputMatrix" visibility="public">
+          <ownedParameter xmi:id="_yfojkTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfqYwDt5EeCRtrlPkIazJw" name="getModelCovariance" visibility="public">
+          <ownedParameter xmi:id="_yfq_0Dt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfs1ADt5EeCRtrlPkIazJw" name="getMeasurementMatrix" visibility="public">
+          <ownedParameter xmi:id="_yfs1ATt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfv4UDt5EeCRtrlPkIazJw" name="getMeasurementJacobian" visibility="public">
+          <ownedParameter xmi:id="_yfv4UTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yfyUkDt5EeCRtrlPkIazJw" name="getMeasurementCovariance" visibility="public">
+          <ownedParameter xmi:id="_yfyUkTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yf0w0Dt5EeCRtrlPkIazJw" name="getTstep" visibility="public">
+          <ownedParameter xmi:id="_yf0w0Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yf1-8Dt5EeCRtrlPkIazJw" name="updateModel" visibility="protected">
+          <ownedParameter xmi:id="_yf1-8Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ycVX8Dt5EeCRtrlPkIazJw" name="LowLevelControl_impl">
+        <generalization xmi:id="_yg35sDt5EeCRtrlPkIazJw">
+          <general xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=POA_higgs'HiggsMovement%5Ep=/LowLevelControl/src/LowLevelControlS.h$uml.Class"/>
+        </generalization>
+        <ownedAttribute xmi:id="_ygBlIDt5EeCRtrlPkIazJw" name="thread" visibility="private">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=pthread_t%5Ep=&amp;includedir&amp;/bits/pthreadtypes.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ygCzQDt5EeCRtrlPkIazJw" name="nameServiceVar" visibility="private">
+          <ownedComment xmi:id="_ygCzQTt5EeCRtrlPkIazJw" annotatedElement="_ygCzQDt5EeCRtrlPkIazJw">
+            <body>IORs
+IOR of the Naming Service Object
+</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=CosNaming'NamingContext_var%5Ep=/LowLevelControl/src/CosNamingC.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ygEocDt5EeCRtrlPkIazJw" name="arduino" visibility="private">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=higgs'Arduino_var%5Ep=/LowLevelControl/src/ArduinoC.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ygF2kDt5EeCRtrlPkIazJw" name="gps" visibility="private">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=higgs'GPS_var%5Ep=/LowLevelControl/src/gpsC.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ygGdoDt5EeCRtrlPkIazJw" name="laser" visibility="private">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=higgs'laser_var%5Ep=/LowLevelControl/src/laserC.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ygHrwDt5EeCRtrlPkIazJw" name="pioneer" visibility="private">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=higgs'Pioneer2AT_var%5Ep=/LowLevelControl/src/Pioneer2ATC.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ygI54Dt5EeCRtrlPkIazJw" name="wmodel" visibility="private">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=higgs'WorldModel_var%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ygJg8Dt5EeCRtrlPkIazJw" name="filter" visibility="private" type="_ycBO4Tt5EeCRtrlPkIazJw">
+          <ownedComment xmi:id="_ygKvETt5EeCRtrlPkIazJw" annotatedElement="_ygJg8Dt5EeCRtrlPkIazJw">
+            <body>for the extended kalman filter
+</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ygMkQDt5EeCRtrlPkIazJw" name="smodel" visibility="private" type="_ycdTwDt5EeCRtrlPkIazJw">
+          <ownedComment xmi:id="_ygNyYTt5EeCRtrlPkIazJw" annotatedElement="_ygMkQDt5EeCRtrlPkIazJw">
+            <body>local state model for EKalman filter (to be kept update with wmodel)
+</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ygPnkDt5EeCRtrlPkIazJw" name="command" visibility="private">
+          <ownedComment xmi:id="_ygPnkzt5EeCRtrlPkIazJw" annotatedElement="_ygPnkDt5EeCRtrlPkIazJw">
+            <body>[vel rotvel]
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ygPnkjt5EeCRtrlPkIazJw" name="" value="2"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ygPnkTt5EeCRtrlPkIazJw" name="" value="2"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ygRcwDt5EeCRtrlPkIazJw" name="tstep" visibility="private">
+          <ownedComment xmi:id="_ygSD0Dt5EeCRtrlPkIazJw" annotatedElement="_ygRcwDt5EeCRtrlPkIazJw">
+            <body>in microseconds, time step of the loop
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPu6bXEdqm1P7n_cTT_g?C++%20Types/long?"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_ygdC8Dt5EeCRtrlPkIazJw" name="LowLevelControl_impl" visibility="public">
+          <ownedParameter xmi:id="_ygeREDt5EeCRtrlPkIazJw" name="nameservice">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=CosNaming'NamingContext_var%5Ep=/LowLevelControl/src/CosNamingC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ygffMDt5EeCRtrlPkIazJw" name="setMovement" visibility="public">
+          <ownedComment xmi:id="_yggtUjt5EeCRtrlPkIazJw" annotatedElement="_ygffMDt5EeCRtrlPkIazJw">
+            <body>HiggsMovement Interface //////////////////////////////////////
+set robot linear and angular velocities
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yggtUTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ygjJkDt5EeCRtrlPkIazJw" name="v">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ygjwoDt5EeCRtrlPkIazJw" name="w">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ygk-wDt5EeCRtrlPkIazJw" name="setNameServiceAddr" visibility="public">
+          <ownedParameter xmi:id="_ygmM4Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ygnbADt5EeCRtrlPkIazJw" name="nameService">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=CosNaming'NamingContext_var%5Ep=/LowLevelControl/src/CosNamingC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ygopIDt5EeCRtrlPkIazJw" name="start" visibility="public">
+          <ownedComment xmi:id="_ygpQMjt5EeCRtrlPkIazJw" annotatedElement="_ygopIDt5EeCRtrlPkIazJw">
+            <body>launches thread with run (loop)
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_ygpQMTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ygrscDt5EeCRtrlPkIazJw" name="stop" visibility="public">
+          <ownedComment xmi:id="_ygs6kjt5EeCRtrlPkIazJw" annotatedElement="_ygrscDt5EeCRtrlPkIazJw">
+            <body>stops thread with loop
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_ygs6kTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ygvW0Dt5EeCRtrlPkIazJw" name="run" visibility="private">
+          <ownedComment xmi:id="_ygvW0jt5EeCRtrlPkIazJw" annotatedElement="_ygvW0Dt5EeCRtrlPkIazJw">
+            <body>ECL loop
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_ygvW0Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ygxzEDt5EeCRtrlPkIazJw" name="threadRun" visibility="private" isStatic="true">
+          <ownedComment xmi:id="_ygzBMTt5EeCRtrlPkIazJw" annotatedElement="_ygxzEDt5EeCRtrlPkIazJw">
+            <body>thread for run
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_ygxzETt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yg02YDt5EeCRtrlPkIazJw" name="obj">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ycdTwDt5EeCRtrlPkIazJw" name="StateModel_wrapper">
+        <generalization xmi:id="_yh7poDt5EeCRtrlPkIazJw" general="_ycM1EDt5EeCRtrlPkIazJw"/>
+        <ownedAttribute xmi:id="_yhJmgDt5EeCRtrlPkIazJw" name="wmodel" visibility="private">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=higgs'WorldModel_var%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_yhK0oDt5EeCRtrlPkIazJw" name="StateModel_wrapper" visibility="public">
+          <ownedComment xmi:id="_yhK0oTt5EeCRtrlPkIazJw">
+            <body>///////////////////////////////////////////////////////////////
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yhaFMDt5EeCRtrlPkIazJw" name="s">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.typedef%5En=higgs'WorldModel_var%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yhbTUDt5EeCRtrlPkIazJw" name="updateState" visibility="public">
+          <ownedComment xmi:id="_yhbTUjt5EeCRtrlPkIazJw">
+            <body>////////////////////////////////////////////////////////////////////////////////////////
+Methods to be a StateModel client
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yhbTUTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yhdvkDt5EeCRtrlPkIazJw" name="s">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yhgL0Dt5EeCRtrlPkIazJw" name="updateMeasurement" visibility="public">
+          <ownedParameter xmi:id="_yhgL0Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yhhZ8Dt5EeCRtrlPkIazJw" name="getState" visibility="public">
+          <ownedComment xmi:id="_yhioETt5EeCRtrlPkIazJw">
+            <body>all this functions should manage memory better, as in updateState
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yhhZ8Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yhkdQDt5EeCRtrlPkIazJw" name="getMeasurement" visibility="public">
+          <ownedParameter xmi:id="_yhkdQTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yhm5gDt5EeCRtrlPkIazJw" name="setTstep" visibility="public">
+          <ownedParameter xmi:id="_yhm5gTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yhoHoDt5EeCRtrlPkIazJw" name="t">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yhpVwDt5EeCRtrlPkIazJw" name="getTransitionMatrix" visibility="public">
+          <ownedParameter xmi:id="_yhpVwTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yhryADt5EeCRtrlPkIazJw" name="getTransitionJacobian" visibility="public">
+          <ownedParameter xmi:id="_yhryATt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yhuOQDt5EeCRtrlPkIazJw" name="getInputMatrix" visibility="public">
+          <ownedParameter xmi:id="_yhuOQTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yhxRkDt5EeCRtrlPkIazJw" name="getModelCovariance" visibility="public">
+          <ownedParameter xmi:id="_yhxRkTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yhzt0Dt5EeCRtrlPkIazJw" name="getMeasurementMatrix" visibility="public">
+          <ownedParameter xmi:id="_yhzt0Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yh2KEDt5EeCRtrlPkIazJw" name="getMeasurementJacobian" visibility="public">
+          <ownedParameter xmi:id="_yh2KETt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yh4mUDt5EeCRtrlPkIazJw" name="getMeasurementCovariance" visibility="public">
+          <ownedParameter xmi:id="_yh4mUTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yiAiIDt5EeCRtrlPkIazJw" name="darray2matrix" visibility="public">
+          <ownedComment xmi:id="_yiEzkTt5EeCRtrlPkIazJw" annotatedElement="_yiAiIDt5EeCRtrlPkIazJw">
+            <body>utility functions ////////////////////////////////////////////
+</body>
+          </ownedComment>
+          <ownedComment xmi:id="_yiGBsTt5EeCRtrlPkIazJw">
+            <body>utility functions ////////////////////////////////////////////
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yiBJMTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'matrix%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yiId8Dt5EeCRtrlPkIazJw" name="a">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yiK6MDt5EeCRtrlPkIazJw" name="size">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yiMIUDt5EeCRtrlPkIazJw" name="matrix2darray" visibility="public">
+          <ownedParameter xmi:id="_yiMvYTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yiPLoDt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'matrix%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ycr9QDt5EeCRtrlPkIazJw" name="WorldModel_impl">
+        <generalization xmi:id="_ykl8ETt5EeCRtrlPkIazJw">
+          <general xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=POA_higgs'WorldModel%5Ep=/LowLevelControl/src/WorldModelS.h$uml.Class"/>
+        </generalization>
+        <ownedAttribute xmi:id="_yiYVkDt5EeCRtrlPkIazJw" name="currentRobotState" visibility="private">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'RobotState%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yiZjsDt5EeCRtrlPkIazJw" name="laserReading" visibility="private">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'laser_data%5Ep=/LowLevelControl/src/laserC.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yiaKwDt5EeCRtrlPkIazJw" name="compassReading" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yibY4Dt5EeCRtrlPkIazJw" name="referencePoint" visibility="private">
+          <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'GPS_coords_UTM%5Ep=/WorldModel/src/gpsC.h$uml.Class"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yicnADt5EeCRtrlPkIazJw" name="model" visibility="private" type="_ycGHYDt5EeCRtrlPkIazJw"/>
+        <ownedAttribute xmi:id="_yidOEDt5EeCRtrlPkIazJw" name="measurements" visibility="private">
+          <ownedComment xmi:id="_yid1IDt5EeCRtrlPkIazJw" annotatedElement="_yidOEDt5EeCRtrlPkIazJw">
+            <body>[x y vlin theta rot_vel]
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yidOEjt5EeCRtrlPkIazJw" name="" value="5"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yidOETt5EeCRtrlPkIazJw" name="" value="5"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yifqUDt5EeCRtrlPkIazJw" name="measurements_cov" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yifqUjt5EeCRtrlPkIazJw" name="" value="25"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yifqUTt5EeCRtrlPkIazJw" name="" value="25"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ykq0kDt5EeCRtrlPkIazJw" name="a" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_yig4cDt5EeCRtrlPkIazJw" name="getTransitionMatrix" visibility="public">
+          <ownedComment xmi:id="_yijUsTt5EeCRtrlPkIazJw" annotatedElement="_yig4cDt5EeCRtrlPkIazJw">
+            <body>for CORBA StateModel client /////////////////////////////////
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yiiGkTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'matrix%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yilw8Dt5EeCRtrlPkIazJw" name="getTransitionJacobian" visibility="public">
+          <ownedParameter xmi:id="_yimYATt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'matrix%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yiqCYDt5EeCRtrlPkIazJw" name="getInputMatrix" visibility="public">
+          <ownedParameter xmi:id="_yirQgTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'matrix%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yitswDt5EeCRtrlPkIazJw" name="getModelCovariance" visibility="public">
+          <ownedParameter xmi:id="_yiu64Dt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'matrix%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yiwwEDt5EeCRtrlPkIazJw" name="getMeasurementMatrix" visibility="public">
+          <ownedParameter xmi:id="_yix-MTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'matrix%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yi0acDt5EeCRtrlPkIazJw" name="getMeasurementJacobian" visibility="public">
+          <ownedParameter xmi:id="_yi1okTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'matrix%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yi4E0Dt5EeCRtrlPkIazJw" name="getMeasurementCovariance" visibility="public">
+          <ownedParameter xmi:id="_yi5S8Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'matrix%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yi7vMDt5EeCRtrlPkIazJw" name="getState" visibility="public">
+          <ownedParameter xmi:id="_yi89UTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'matrix%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yi-ygDt5EeCRtrlPkIazJw" name="getMeasurement" visibility="public">
+          <ownedParameter xmi:id="_yjAAoTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'matrix%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yjCc4Dt5EeCRtrlPkIazJw" name="getStateSize" visibility="public">
+          <ownedParameter xmi:id="_yjDrATt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPuabXEdqm1P7n_cTT_g?C++%20Types/short?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yjE5IDt5EeCRtrlPkIazJw" name="updateState" visibility="public">
+          <ownedParameter xmi:id="_yjGHQTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yjHVYDt5EeCRtrlPkIazJw" name="s" direction="inout">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'matrix%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yjJxoDt5EeCRtrlPkIazJw" name="updateMeasurement" visibility="public">
+          <ownedComment xmi:id="_yjK_wDt5EeCRtrlPkIazJw" annotatedElement="_yjJxoDt5EeCRtrlPkIazJw">
+            <body>update the measurements in the StateModel from those already available
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yjKYsTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yjM08Dt5EeCRtrlPkIazJw" name="setTstep" visibility="public">
+          <ownedParameter xmi:id="_yjODETt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yjPRMDt5EeCRtrlPkIazJw" name="t">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yjQfUDt5EeCRtrlPkIazJw" name="updateRobotModel" visibility="public">
+          <ownedComment xmi:id="_yjRtcjt5EeCRtrlPkIazJw" annotatedElement="_yjQfUDt5EeCRtrlPkIazJw">
+            <body>///////////////////////////////////////////////////////////
+methods for perceptors
+updates RobotStateModel accordingly to the current state
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yjRtcTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yjTioDt5EeCRtrlPkIazJw" name="updateRobotState" visibility="public">
+          <ownedComment xmi:id="_yjUwwjt5EeCRtrlPkIazJw" annotatedElement="_yjTioDt5EeCRtrlPkIazJw">
+            <body>not used
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yjUwwTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yjXNADt5EeCRtrlPkIazJw" name="s" direction="inout">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'RobotState%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yjZCMDt5EeCRtrlPkIazJw" name="setLaserReading" visibility="public">
+          <ownedParameter xmi:id="_yjaQUTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yjbecDt5EeCRtrlPkIazJw" name="lreadings" direction="inout">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'laser_data%5Ep=/LowLevelControl/src/laserC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yjd6sDt5EeCRtrlPkIazJw" name="setCompassReading" visibility="public">
+          <ownedComment xmi:id="_yjfI0Dt5EeCRtrlPkIazJw" annotatedElement="_yjd6sDt5EeCRtrlPkIazJw">
+            <body>Valor en radianes de la brújula. 0 North, pi/2 West, as defined in Arduino.idl
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yjehwTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yjg-ADt5EeCRtrlPkIazJw" name="a">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yjiMIDt5EeCRtrlPkIazJw" name="setOdometryReading" visibility="public">
+          <ownedComment xmi:id="_yjjaQTt5EeCRtrlPkIazJw" annotatedElement="_yjiMIDt5EeCRtrlPkIazJw">
+            <body>update in the WM the latest values of velocity coming from odometry
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yjjaQDt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yjlPcDt5EeCRtrlPkIazJw" name="linVel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yjmdkDt5EeCRtrlPkIazJw" name="rotVel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yjnrsDt5EeCRtrlPkIazJw" name="setUTMReading" visibility="public">
+          <ownedComment xmi:id="_yjo50Dt5EeCRtrlPkIazJw">
+            <body>do the actual math
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_yjoSwTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yjz48Dt5EeCRtrlPkIazJw" name="coords" direction="inout">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'GPS_coords_UTM%5Ep=/WorldModel/src/gpsC.h$uml.Class"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yj1uIDt5EeCRtrlPkIazJw" name="deviation" direction="inout">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'GPS_coords%5Ep=/LowLevelControl/src/gpsC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yj5YgDt5EeCRtrlPkIazJw" name="setUTMReference" visibility="public">
+          <ownedParameter xmi:id="_yj6moTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtKbXEdqm1P7n_cTT_g?C++%20Types/void?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yj70wDt5EeCRtrlPkIazJw" name="coords" direction="inout">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'GPS_coords_UTM%5Ep=/WorldModel/src/gpsC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yj-RADt5EeCRtrlPkIazJw" name="getCurrentRobotState" visibility="public">
+          <ownedParameter xmi:id="_yj_fIDt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'RobotState%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ykAtQDt5EeCRtrlPkIazJw" name="getLaserReading" visibility="public">
+          <ownedParameter xmi:id="_ykBUUTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'laser_data%5Ep=/LowLevelControl/src/laserC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ykDwkDt5EeCRtrlPkIazJw" name="getPosition" visibility="public">
+          <ownedParameter xmi:id="_ykE-sTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'Pose%5Ep=/WorldModel/src/HiggsTypesC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yktQ0Dt5EeCRtrlPkIazJw" name="darray2matrix" visibility="public">
+          <ownedComment xmi:id="_ykvGATt5EeCRtrlPkIazJw" annotatedElement="_yktQ0Dt5EeCRtrlPkIazJw">
+            <body>utility functions ////////////////////////////////////////////
+</body>
+          </ownedComment>
+          <ownedComment xmi:id="_ykw7MDt5EeCRtrlPkIazJw">
+            <body>utility functions ////////////////////////////////////////////
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_ykue8Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'matrix%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ykzXcDt5EeCRtrlPkIazJw" name="a">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yk1MoDt5EeCRtrlPkIazJw" name="size">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_yk2awDt5EeCRtrlPkIazJw" name="matrix2darray" visibility="public">
+          <ownedParameter xmi:id="_yk3o4Tt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPvqbXEdqm1P7n_cTT_g?C++%20Types/double?"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_yk6FIDt5EeCRtrlPkIazJw" name="m">
+            <type xmi:type="uml:Class" href="mmi:///#cdt.struct%5En=higgs'matrix%5Ep=/LowLevelControl/src/WorldModelC.h$uml.Class"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yhAckDt5EeCRtrlPkIazJw" name="LowLevelControl_server">
+      <ownedOperation xmi:id="_yhAckTt5EeCRtrlPkIazJw" name="main" visibility="public">
+        <ownedParameter xmi:id="_yhBqsTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_yhC40Dt5EeCRtrlPkIazJw" name="argc">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_yhDf4Dt5EeCRtrlPkIazJw" name="argv">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtabXEdqm1P7n_cTT_g?C++%20Types/char?"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yk-WkDt5EeCRtrlPkIazJw" name="WorldModel_server">
+      <ownedOperation xmi:id="_yk-WkTt5EeCRtrlPkIazJw" name="main" visibility="public">
+        <ownedParameter xmi:id="_yk_ksTt5EeCRtrlPkIazJw" name="ReturnParameter" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ylAy0Dt5EeCRtrlPkIazJw" name="argc">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPt6bXEdqm1P7n_cTT_g?C++%20Types/int?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ylCA8Dt5EeCRtrlPkIazJw" name="argv">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://TRANSFORM_CPP_LIBRARIES/CPPPrimitiveTypes.emx#_phDPtabXEdqm1P7n_cTT_g?C++%20Types/char?"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_9T9I5hAjEeC0DaEa5WeF9w">
+      <eAnnotations xmi:id="_9T9I5xAjEeC0DaEa5WeF9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_9T9I6BAjEeC0DaEa5WeF9w">
+      <eAnnotations xmi:id="_9T9I6RAjEeC0DaEa5WeF9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_9T9I6hAjEeC0DaEa5WeF9w">
+      <eAnnotations xmi:id="_9T9I6xAjEeC0DaEa5WeF9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_9T9I7BAjEeC0DaEa5WeF9w">
+      <eAnnotations xmi:id="_9T9I7RAjEeC0DaEa5WeF9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TRANSFORM_CPP_PROFILES/cpp_profile.epx#_502nEbP8Ed629f4CKZW4vg?CPPTransformation/CPPTransformation?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TRANSFORM_CPP_PROFILES/cpp_profile.epx#_X909IObqEdiRH5WDuCLaMw?CPPTransformation?"/>
+    </profileApplication>
+  </uml:Model>
+  <Default:Documentation xmi:id="_2--csDt5EeCRtrlPkIazJw" base_Comment="_yfJbYjt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2-_q0Dt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yh4mUTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_2_A48Dt5EeCRtrlPkIazJw" base_Operation="_yktQ0Dt5EeCRtrlPkIazJw" isGlobal="true"/>
+  <CPPTransformation:cpp_type xmi:id="_2_CHEDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yhkdQTt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_DVMDt5EeCRtrlPkIazJw" base_Comment="_ygNyYTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_EjUDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_ygxzETt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_2_FKYDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yjCc4Dt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_GYgDt5EeCRtrlPkIazJw" base_Comment="_ygPnkzt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_HmoDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yfeykTt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_I0wDt5EeCRtrlPkIazJw" base_Comment="_ygCzQTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_Jb0Dt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yfTMYDt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_Kp8Dt5EeCRtrlPkIazJw" base_Comment="_ygSD0Dt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_2_L4EDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_ykDwkDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_2_NGMDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yitswDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_OUUDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yi89UTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_O7YDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yh2KETt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_QJgDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yimYATt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_RXoDt5EeCRtrlPkIazJw" qualifier="*" base_Property="_yc6mwDt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_SlwDt5EeCRtrlPkIazJw" base_Comment="_yd6FQTt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_TM0Dt5EeCRtrlPkIazJw" base_Comment="_ycGucDt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_Ua8Dt5EeCRtrlPkIazJw" base_Comment="_ygs6kjt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_2_VpEDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_ygffMDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_W3MDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yhzt0Tt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_2_XeQDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yj5YgDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_YsYDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_ykzXcDt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_Z6gDt5EeCRtrlPkIazJw" base_Comment="_yePccTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_bIoDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yiPLoDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_body_comment xmi:id="_2_cWwDt5EeCRtrlPkIazJw" base_Comment="_yhK0oTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_c90Dt5EeCRtrlPkIazJw" qualifier="*" base_Property="_ydAtYDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_generalization xmi:id="_2_eL8Dt5EeCRtrlPkIazJw" base_Generalization="_ykl8ETt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_body_comment xmi:id="_2_faEDt5EeCRtrlPkIazJw" base_Comment="_yjo50Dt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_goMDt5EeCRtrlPkIazJw" base_Comment="_yd8hgTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_body_comment xmi:id="_2_h2UDt5EeCRtrlPkIazJw" base_Comment="_ydRMEjt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_2_idYDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yi4E0Dt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_jrgDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yhxRkTt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_k5oDt5EeCRtrlPkIazJw" base_Comment="_yd-WsTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_lgsDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_ydOv0Dt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_mu0Dt5EeCRtrlPkIazJw" base_Comment="_yjK_wDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_n88Dt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_ydoYcDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_pLEDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yiMvYTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_qZMDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yix-MTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_2_rnUDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yjd6sDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_body_comment xmi:id="_2_sOYDt5EeCRtrlPkIazJw" base_Comment="_ydZH4Tt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_tcgDt5EeCRtrlPkIazJw" base_Comment="_yeAL4Tt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_uqoDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yhDf4Dt5EeCRtrlPkIazJw" arrayDimensions="[]"/>
+  <Default:Documentation xmi:id="_2_v4wDt5EeCRtrlPkIazJw" base_Comment="_yeCoITt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_wf0Dt5EeCRtrlPkIazJw" base_Comment="_yeYmYjt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_xt8Dt5EeCRtrlPkIazJw" base_Comment="_yjRtcjt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_y8EDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_ylCA8Dt5EeCRtrlPkIazJw" arrayDimensions="[]"/>
+  <Default:Documentation xmi:id="_2_0KMDt5EeCRtrlPkIazJw" base_Comment="_yeEdUTt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_1YUDt5EeCRtrlPkIazJw" base_Comment="_yeGSgTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_1_YDt5EeCRtrlPkIazJw" qualifier="const" base_Parameter="_yjXNADt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_3NgDt5EeCRtrlPkIazJw" base_Comment="_yeIuwTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_4boDt5EeCRtrlPkIazJw" qualifier="*" base_Property="_ydE-0Dt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_5pwDt5EeCRtrlPkIazJw" qualifier="*" base_Property="_ykq0kDt5EeCRtrlPkIazJw" isGlobal="true"/>
+  <Default:Documentation xmi:id="_2_634Dt5EeCRtrlPkIazJw" base_Comment="_yiEzkTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_2_7e8Dt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yg02YDt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_2_8tEDt5EeCRtrlPkIazJw" base_Comment="_yc-4MTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_2_97MDt5EeCRtrlPkIazJw" base_Operation="_ydWroDt5EeCRtrlPkIazJw" isGlobal="true"/>
+  <CPPTransformation:cpp_type xmi:id="_2__JUDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yfL3oDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AAXcDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_ydLsgDt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3AA-gDt5EeCRtrlPkIazJw" base_Comment="_yeKj8Tt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3ACMoDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_ydmjQDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3ADawDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yjM08Dt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AEo4Dt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yjAAoTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AFP8Dt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_ykBUUTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AGeEDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yirQgTt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3AHsMDt5EeCRtrlPkIazJw" base_Comment="_yijUsTt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3AI6UDt5EeCRtrlPkIazJw" base_Comment="_yfZ6EDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3AKIcDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yjTioDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AKvgDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yiBJMTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3AL9oDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yjE5IDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3ANLwDt5EeCRtrlPkIazJw" qualifier="*" base_Property="_ygMkQDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3AOZ4Dt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yj-RADt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3APA8Dt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yfyUkTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AQPEDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yk3o4Tt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3ARdMDt5EeCRtrlPkIazJw" base_Comment="_ydjf8jt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3ASrUDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yiiGkTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_body_comment xmi:id="_3AT5cDt5EeCRtrlPkIazJw" base_Comment="_yei-cjt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3AUggDt5EeCRtrlPkIazJw" base_Comment="_ygpQMjt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AVuoDt5EeCRtrlPkIazJw" qualifier="const" base_Parameter="_yj1uIDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3AW8wDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yilw8Dt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_generalization xmi:id="_3AYK4Dt5EeCRtrlPkIazJw" base_Generalization="_yh7poDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AZZADt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yeyPADt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3AanIDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yi7vMDt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3Ab1QDt5EeCRtrlPkIazJw" base_Comment="_ykvGATt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3AccUDt5EeCRtrlPkIazJw" base_Comment="_yeR4sjt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AdqcDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yfv4UTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3Ae4kDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yddZUDt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3AgGsDt5EeCRtrlPkIazJw" base_Comment="_ygKvETt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3AhU0Dt5EeCRtrlPkIazJw" base_Comment="_yjjaQTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3Ah74Dt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yi1okTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_body_comment xmi:id="_3AjKADt5EeCRtrlPkIazJw" base_Comment="_yhbTUjt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AkYIDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yegiMDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AlmQDt5EeCRtrlPkIazJw" qualifier="const" base_Parameter="_yjz48Dt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3Am0YDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yevLsDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3AoCgDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_ygrscDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AopkDt5EeCRtrlPkIazJw" qualifier="const" base_Parameter="_yjbecDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3Ap3sDt5EeCRtrlPkIazJw" qualifier="*" base_Property="_yeO1YDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3ArF0Dt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_ykue8Tt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AsT8Dt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yfs1ATt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AtiEDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yda9EDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AuwMDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yede4Dt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3Av-UDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yjnrsDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3AwlYDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yerhUDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_body_comment xmi:id="_3AxzgDt5EeCRtrlPkIazJw" base_Comment="_yiGBsTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_body_comment xmi:id="_3AzBoDt5EeCRtrlPkIazJw" base_Comment="_ye5jwTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3A0PwDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yfq_0Dt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3A1d4Dt5EeCRtrlPkIazJw" base_Operation="_yiMIUDt5EeCRtrlPkIazJw" isGlobal="true"/>
+  <CPPTransformation:cpp_operation xmi:id="_3A2E8Dt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yjJxoDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3A3TEDt5EeCRtrlPkIazJw" qualifier="*" base_Property="_ydDJoDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3A4hMDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yiwwEDt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3A5vUDt5EeCRtrlPkIazJw" base_Comment="_yeMZITt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3A69cDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yjQfUDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_body_comment xmi:id="_3A7kgDt5EeCRtrlPkIazJw" base_Comment="_yhioETt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3A8yoDt5EeCRtrlPkIazJw" qualifier="*" base_Property="_yc9qEDt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3A-AwDt5EeCRtrlPkIazJw" base_Comment="_ygvW0jt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3A_O4Dt5EeCRtrlPkIazJw" base_Comment="_yfcWUDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_body_comment xmi:id="_3BAdADt5EeCRtrlPkIazJw" base_Comment="_yfOT4jt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3BBEEDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yeoeADt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3BCSMDt5EeCRtrlPkIazJw" base_Comment="_yggtUjt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3BDgUDt5EeCRtrlPkIazJw" qualifier="const" base_Parameter="_yj70wDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3BEucDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yfojkTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3BGjoDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yi-ygDt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3BHxwDt5EeCRtrlPkIazJw" base_Comment="_yid1IDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_body_comment xmi:id="_3BI_4Dt5EeCRtrlPkIazJw" base_Comment="_ydkHATt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3BK1EDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yhhZ8Tt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3BMDMDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yiqCYDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3BMqQDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_ykAtQDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3BN4YDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yekzoDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_generalization xmi:id="_3BPGgDt5EeCRtrlPkIazJw" base_Generalization="_yg35sDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3BQUoDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yhuOQTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3BRiwDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yi5S8Tt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3BSw4Dt5EeCRtrlPkIazJw" base_Operation="_yiAiIDt5EeCRtrlPkIazJw" isGlobal="true"/>
+  <Default:Documentation xmi:id="_3BTX8Dt5EeCRtrlPkIazJw" base_Comment="_yc704Tt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3BUmEDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yfmHUTt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3BV0MDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_ygk-wDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_body_comment xmi:id="_3BXCUDt5EeCRtrlPkIazJw" base_Comment="_ykw7MDt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3BYQcDt5EeCRtrlPkIazJw" base_Comment="_yjfI0Dt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3BY3gDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yhdvkDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3BassDt5EeCRtrlPkIazJw" base_Operation="_yk2awDt5EeCRtrlPkIazJw" isGlobal="true"/>
+  <CPPTransformation:cpp_generalization xmi:id="_3BbTwDt5EeCRtrlPkIazJw" base_Generalization="_ydsC0Dt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3Bch4Dt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yig4cDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3BdwADt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yhryATt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3Be-IDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_ygopIDt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3BgMQDt5EeCRtrlPkIazJw" base_Comment="_yfW2wjt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3BhaYDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yfjrETt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3BiBcDt5EeCRtrlPkIazJw" base_Operation="_yhAckTt5EeCRtrlPkIazJw" isGlobal="true"/>
+  <Default:Documentation xmi:id="_3BjPkDt5EeCRtrlPkIazJw" base_Comment="_ydHbEDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3BkdsDt5EeCRtrlPkIazJw" qualifier="*" base_Property="_ygJg8Dt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3Blr0Dt5EeCRtrlPkIazJw" base_Operation="_yk-WkTt5EeCRtrlPkIazJw" isGlobal="true"/>
+  <Default:Documentation xmi:id="_3Bm58Dt5EeCRtrlPkIazJw" base_Comment="_ydX5wjt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3BoIEDt5EeCRtrlPkIazJw" base_Comment="_yeVjEjt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3BpWMDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yi0acDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3BqkUDt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yjiMIDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3BrycDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yhpVwTt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3BtAkDt5EeCRtrlPkIazJw" base_Comment="_ygzBMTt5EeCRtrlPkIazJw"/>
+  <Default:Documentation xmi:id="_3BuOsDt5EeCRtrlPkIazJw" base_Comment="_yjUwwjt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3Bu1wDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yfVBkDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3B_7gDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yiId8Dt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3CBJoDt5EeCRtrlPkIazJw" qualifier="const" base_Parameter="_yjHVYDt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3CCXwDt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yfhO0Tt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_type xmi:id="_3CDl4Dt5EeCRtrlPkIazJw" qualifier="*" base_Parameter="_yiu64Dt5EeCRtrlPkIazJw"/>
+  <CPPTransformation:cpp_operation xmi:id="_3CE0ADt5EeCRtrlPkIazJw" isVirtual="true" base_Operation="_yjZCMDt5EeCRtrlPkIazJw"/>
+</xmi:XMI>

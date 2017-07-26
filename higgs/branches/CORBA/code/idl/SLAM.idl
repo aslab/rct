@@ -1,0 +1,25 @@
+  ///******** SLAM ***********///
+  struct SLAMPosition{
+  
+  double slamPosX;
+  double slamPosY;
+  double slamPosA;
+  
+  };
+  
+  struct SLAMMap{
+  
+  short nLandmarks;
+  double landmarks[10000]; /// Supondre que no hay mas de 5000 landmarks...
+  						  /// (hasta que aprenda a pasar vectores sin
+  						  /// un tamaño concreto :P)
+  
+  };
+  
+  interface SLAMCORBA{
+  
+    SLAMPosition getPosition();
+    SLAMMap getMap();
+    
+  };
+  

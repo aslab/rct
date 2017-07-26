@@ -1,0 +1,17 @@
+<package>
+  <description brief="higgs_setup_tf">
+
+     higgs_setup_tf
+
+  </description>
+  <author>Carlos Hernandez</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url></url>
+  <depend package="roscpp"/>
+  <depend package="tf"/>
+  <depend package="geometry_msgs"/>
+
+</package>
+
+

@@ -1,0 +1,18 @@
+<launch>
+
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find meta_controller)/map/sala_calculo_new.pgm 0.05" />
+     
+  <!-- localization -->
+  <param name="amcl/odom_frame_id" value="odom_combined"/>
+  <include file="$(find meta_controller)/config_nav/amcl_kinect.xml"/> 
+  
+  <!-- navigation -->
+  <include file="$(find meta_controller)/config_nav/move_base.xml" >
+  </include>
+  
+  <!-- mission manager -->
+  <node name="mission_manager" pkg="mission_manager" type="mission_manager.py" output="screen"/>  
+
+	
+</launch>
+

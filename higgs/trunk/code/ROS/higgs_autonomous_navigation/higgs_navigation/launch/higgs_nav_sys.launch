@@ -1,0 +1,28 @@
+<launch>
+
+  <!-- parameter for this launch file -->
+  <arg name="KIN" />
+  <arg name="KL" />
+  <arg name="ODOM_EKF" default="false" />
+  <arg name="KINECT" value="$(arg KIN)"/>
+  <arg name="KIN_LOC" value="$(arg KL)" />
+  <arg name="EKF" value="$(arg ODOM_EKF)"/>
+  
+  
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find higgs_navigation)/map/sala_calculo_new.pgm 0.05" />
+     
+  <!-- localization -->
+  <param if="$(arg EKF)" name="amcl/odom_frame_id" value="odom_combined"/>
+  <param unless="$(arg EKF)" name="amcl/odom_frame_id" value="odom"/>
+  <include unless="$(arg KIN_LOC)" file="$(find higgs_navigation)/config_nav/amcl_node.xml"/> 
+  <include if="$(arg KIN_LOC)" file="$(find higgs_navigation)/config_nav/amcl_kinect.xml"/> 
+  
+  <!-- navigation -->
+  <include file="$(find higgs_navigation)/config_nav/move_base.xml" >
+    <arg name="KIN_ALONE" value="$(arg KIN_LOC)" />
+    <arg name="ODOM_EKF" value="$(arg EKF)" />
+  </include>
+
+	
+</launch>
+

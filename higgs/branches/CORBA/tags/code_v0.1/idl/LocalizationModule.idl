@@ -1,0 +1,20 @@
+module higgs
+{
+
+	//Structure that represents the location of the robot(x,y) and its orientation (theta), in radians 
+	struct Position
+	{
+		double x; //X-axis position
+		double y; //Y-axis position
+		double theta; //Orientation relative to the (magnetic?) north, in radians 
+	};
+
+	//This module is responsible for providing the perceived localization of the robot
+	interface LocalizationModule{
+
+
+
+		//Returns the perceived position and orientation of the robot
+		Position getCurrentPosition(); 
+	};
+};

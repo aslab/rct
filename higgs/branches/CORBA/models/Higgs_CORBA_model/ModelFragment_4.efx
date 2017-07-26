@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_y7hL0A5qEeCo7JwALS5E6g" name="Software">
+  <eAnnotations xmi:id="_h0Ab0Q5rEeCo7JwALS5E6g" source="com.ibm.xtools.uml.msl.fragments">
+    <references xmi:type="uml:Package" href="ModelFragment_6.efx#_HHv0kA5rEeCo7JwALS5E6g?Higgs/Software/CORBAmodules?"/>
+  </eAnnotations>
+  <eAnnotations xmi:id="_h0Ab0A5rEeCo7JwALS5E6g" source="com.ibm.xtools.uml.msl.fragmentContainer">
+    <references xmi:type="uml:Package" href="Higgs.emx#_qcDsMA5qEeCo7JwALS5E6g?Higgs?"/>
+  </eAnnotations>
+  <eAnnotations xmi:id="_y7hy4A5qEeCo7JwALS5E6g" source="uml2.diagrams" references="_y7hy4Q5qEeCo7JwALS5E6g">
+    <contents xmi:type="notation:Diagram" xmi:id="_y7hy4Q5qEeCo7JwALS5E6g" type="Freeform" name="Main">
+      <children xmi:id="_q1ZtcBAkEeC0DaEa5WeF9w" element="_y7hL0A5qEeCo7JwALS5E6g">
+        <children xmi:id="_q1aUgBAkEeC0DaEa5WeF9w" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_q1aUgRAkEeC0DaEa5WeF9w" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_q1a7kBAkEeC0DaEa5WeF9w" type="Stereotype"/>
+        <children xmi:id="_q1a7kRAkEeC0DaEa5WeF9w" type="Name"/>
+        <children xmi:id="_q1a7khAkEeC0DaEa5WeF9w" type="Parent"/>
+        <children xmi:id="_q1bioBAkEeC0DaEa5WeF9w" type="PackageContents">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_q1bioRAkEeC0DaEa5WeF9w" canonical="false"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q1ZtcRAkEeC0DaEa5WeF9w" fontName="Sans" showStereotype="Label"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q1ZtchAkEeC0DaEa5WeF9w" x="10336" y="2261"/>
+      </children>
+      <children xmi:id="_rPWegBAkEeC0DaEa5WeF9w">
+        <children xmi:id="_rPXFkBAkEeC0DaEa5WeF9w" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_rPXFkRAkEeC0DaEa5WeF9w" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_rPXsoBAkEeC0DaEa5WeF9w" type="Stereotype"/>
+        <children xmi:id="_rPXsoRAkEeC0DaEa5WeF9w" type="Name"/>
+        <children xmi:id="_rPXsohAkEeC0DaEa5WeF9w" type="Parent"/>
+        <children xmi:id="_rPXsoxAkEeC0DaEa5WeF9w" type="PackageContents">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_rPXspBAkEeC0DaEa5WeF9w" canonical="false" collapsed="true"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_rPWegRAkEeC0DaEa5WeF9w" fontName="Sans" showStereotype="Label"/>
+        <element xmi:type="uml:Package" href="ModelFragment_6.efx#_HHv0kA5rEeCo7JwALS5E6g?Higgs/Software/CORBAmodules?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rPWeghAkEeC0DaEa5WeF9w" x="14212" y="6783"/>
+      </children>
+      <children xmi:id="_rx5K4BAkEeC0DaEa5WeF9w">
+        <children xmi:id="_rx5K4xAkEeC0DaEa5WeF9w" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_rx5K5BAkEeC0DaEa5WeF9w" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_rx5x8BAkEeC0DaEa5WeF9w" type="Stereotype"/>
+        <children xmi:id="_rx5x8RAkEeC0DaEa5WeF9w" type="Name"/>
+        <children xmi:id="_rx5x8hAkEeC0DaEa5WeF9w" type="Parent"/>
+        <children xmi:id="_rx5x8xAkEeC0DaEa5WeF9w" type="PackageContents">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_rx5x9BAkEeC0DaEa5WeF9w" canonical="false" collapsed="true"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_rx5K4RAkEeC0DaEa5WeF9w" fontName="Sans" showStereotype="Label"/>
+        <element xmi:type="uml:Model" href="HiggsSoftware.emx#_9T9I4BAjEeC0DaEa5WeF9w?HiggsSoftware?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rx5K4hAkEeC0DaEa5WeF9w" x="6137" y="6783"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_y7hy4g5qEeCo7JwALS5E6g"/>
+      <element xsi:nil="true"/>
+      <edges xmi:id="_rPYTsBAkEeC0DaEa5WeF9w" type="OwnedElement" source="_q1ZtcBAkEeC0DaEa5WeF9w" target="_rPWegBAkEeC0DaEa5WeF9w">
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rPYTsRAkEeC0DaEa5WeF9w" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+        <element xsi:nil="true"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rPYTshAkEeC0DaEa5WeF9w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      </edges>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Package" href="ModelFragment_6.efx#_HHv0kA5rEeCo7JwALS5E6g?Higgs/Software/CORBAmodules?"/>
+</uml:Package>

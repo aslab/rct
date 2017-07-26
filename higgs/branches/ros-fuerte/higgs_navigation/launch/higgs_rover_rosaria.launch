@@ -1,0 +1,37 @@
+<launch>
+
+  <!-- parameter for this launch file -->
+  <arg name="KINECT" default="false"/>
+  <arg name="KIN_LOC" default="false"/>
+  <arg name="LASER" default="true"/>
+  <arg name="EKF" default="false"/>
+
+  <machine name="higgs" address="higgs" env-loader="/opt/ros/fuerte/env.sh" />
+     
+  <!-- robot nodes -->
+  	<!-- ROBOT -->
+    <include file="$(find higgs_navigation)/launch/higgs_rosaria.launch"/>
+     
+    <!-- Higgs tfs for the sensory sources --> 
+ 	<!-- laser -->
+    <node pkg="tf" type="static_transform_publisher" name="higgs_laser1" args="0.248 0.0 0.35 0 0 0 1 /base_link /base_laser_link 100" />  
+    <node pkg="tf" type="static_transform_publisher" name="higgs_laser2" args="0.0 0.0 0.0 0 0 0 1 /base_footprint /base_link 100" />  
+    <node pkg="tf" type="static_transform_publisher" name="higgs_laser3" args="0.0 0.0 0.0 0 0 0 1 /base_laser_link /laser 100" />  
+    <!-- kinect -->
+    <node pkg="tf" type="static_transform_publisher" name="higgs_kinect1" args="0.250 0.020 0.580 0 0 0 1 /base_link /openni_camera 100" />
+    <node pkg="tf" type="static_transform_publisher" name="higgs_kinect2" args="0.250 0.020 0.580 0 0 0 1 /base_link /camera_link 100" />
+    
+    <!-- LASER -->
+    <include  if="$(arg LASER)" file="$(find higgs_laser)/launch/laser.launch"/>
+  
+
+  <!-- To teleoperate the robot
+  <node name="teleop_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen" >
+    <remap from="base_controller/command" to="pioneer/cmd_vel" />	
+  </node>
+  
+  <include file="$(find higgs_wiimote)/launch/higgs_wii.launch"/>
+  -->
+	
+</launch>
+

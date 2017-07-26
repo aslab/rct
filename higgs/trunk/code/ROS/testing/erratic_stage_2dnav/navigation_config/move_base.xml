@@ -1,0 +1,16 @@
+<launch>
+<!-- 
+  ASlab for erratic in stage
+-->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base_node" output="screen">
+  
+    <rosparam file="$(find erratic_stage_2dnav)/navigation_config/move_base_params.yaml" command="load" />
+
+    <rosparam file="$(find erratic_stage_2dnav)/navigation_config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find erratic_stage_2dnav)/navigation_config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find erratic_stage_2dnav)/navigation_global/config/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find erratic_stage_2dnav)/navigation_global/config/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find erratic_stage_2dnav)/navigation_global/config/base_local_planner_params.yaml" command="load" />
+
+  </node>
+</launch>

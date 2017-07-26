@@ -1,0 +1,24 @@
+#!/bin/sh
+# This script forces the CORBA servants listed in the configuration
+# directory to be always running, while disallowing other processes to run.
+
+# The config directory. Inside this directory there must be symlinks
+# to the actual executables.
+#SERVANTS_DIR=./
+SERVANTS_DIR=/etc/higgs/servants/
+
+while [ 1 ]
+do
+	EXECS=`ls $SERVANTS_DIR`
+	for EXEC in $EXECS; do
+		pidof -s $EXEC > /dev/null
+		if [ `ps -o pid -C $EXEC | wc -l` == 1 ]
+		then
+			echo "Starting $EXEC"
+			date >> /var/log/higgs/$EXEC.log
+			su -c ${SERVANTS_DIR}${EXEC} higgs >> /var/log/higgs/$EXEC.log 2>&1 &
+		fi
+	done
+
+	sleep 5
+done

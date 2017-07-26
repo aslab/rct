@@ -1,0 +1,7 @@
+<launch>
+
+<!-- mission manager -->
+  <node name="mission_manager" pkg="mission_manager" type="mission_manager.py" args="-f $(find mission_manager)/missions/patrol_mission_sala_calculo.mission" output="screen"/>  
+  
+
+</launch>

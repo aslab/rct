@@ -1,0 +1,34 @@
+<launch>
+
+  <arg name="KIN" default="true" />
+  <arg name="KL" default="false" />
+  <arg name="LAS" default="false" />
+  <arg name="ODOM_EKF" default="false" />
+  <arg name="RVIZ" default="all" />  <!-- values: "all" (default), "laser", "kinect", "kinect_loc" -->
+
+  <!-- launch onboard nodes and teleoperation -->
+  <include file="$(find higgs_navigation)/launch/higgs_rover.launch" >
+    <!-- <arg name="KINECT" value="$(arg KIN)" />
+    <arg name="KIN_LOC)" value="$(arg KL)" />
+    <arg name="EKF" value="$(arg ODOM_EKF)" />
+        <arg name="LASER" value="$(arg LAS)" /> -->
+  </include> 
+    
+  
+  <!-- navigation nodes -->
+  <include file="$(find higgs_navigation)/launch/higgs_nav_sys.launch" >
+    <arg name="KIN_LOC" value="false" />
+    <arg name="EKF" value="false" />
+  </include>
+  
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find higgs_navigation)/map/sala_calculo_new.yaml"/>
+  
+  
+
+  <!-- rviz configured depending on RVIZ argument -->
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find higgs_navigation)/config_rviz/$(arg RVIZ).vcg" >
+    <remap from="/goal" to="/move_base_simple/goal" />
+  </node>
+	
+</launch>
+

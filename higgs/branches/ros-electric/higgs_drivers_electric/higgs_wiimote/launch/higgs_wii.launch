@@ -1,0 +1,21 @@
+<launch>
+    <machine name="higgs" address="higgs2" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)"  user="higgs" default="false" >
+  	<env name="ROS_MASTER_URI" value="$(env ROS_MASTER_URI)" />
+  </machine>
+
+    <!-- joy node -->
+    <node respawn="true" pkg="wiimote"  type="wiimote_node.py" name="wii" output="screen" machine="higgs"/>
+    
+    <!-- Axes -->
+    <param name="axis_linear" value="1" type="int"/>
+    <param name="axis_angular" value="0" type="int"/>
+    <param name="scale_linear" value="2" type="double"/>
+    <param name="scale_angular" value="2" type="double"/>
+    
+    <node name="joy2teleop" pkg="higgs_wiimote" type="higgs_wiimote" output="screen" machine="higgs">
+      <remap from="Higgs/command_velocity" to="/pioneer/cmd_vel" />
+      <param name="scale_linear" value="0.01" type="double"/>
+      <param name="scale_angular" value="0.004" type="double"/>
+    </node>
+   
+</launch>

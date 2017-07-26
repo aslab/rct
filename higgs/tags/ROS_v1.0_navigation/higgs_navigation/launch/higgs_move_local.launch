@@ -1,0 +1,45 @@
+<launch>
+  <machine name="higgs" address="higgs2" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="root" password="ramadosmiltres"  default="false"/>
+
+  <group ns="robot">
+		    
+    <node pkg="ROSARIA" name="pioneer2AT8" type="RosAria" machine="higgs" /> 
+
+    <node pkg="Higgs_setup_tf" name="higgs_tf_broadcaster" type="higgs_tf_broadcaster" machine="higgs" />
+
+      <param name="sicklms/port" value="/dev/ttyUSB1" />
+      <param name="sicklms/baud" value="38400" />
+    <node name="sicklms" pkg="sicktoolbox_wrapper" type="sicklms" machine="higgs" />
+
+  </group> 
+
+  <machine name="local_alt" address="localhost" default="false" /> 
+
+
+  <!-- To teleoperate the robot -->
+  <node name="teleop_base_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen" machine="local_alt">
+    <remap from="base_controller/command" to="robot/pioneer2AT8/cmd_vel" />	
+  </node>
+
+
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find higgs_navigation)/navigation_global/higgs_nav.vcg" output="screen" machine="local_alt">
+    <remap from="/goal" to="/move_base_simple/goal" />
+  </node>
+    
+   <!-- for moving -->
+   <node pkg="move_base" type="move_base" respawn="false" name="move_base_node" output="screen">
+    <remap from="odom" to="/robot/pioneer2AT8/pose" />
+    <remap from="cmd_vel" to="/robot/pioneer2AT8/cmd_vel" />
+        
+        <!-- Load common configuration files -->
+        <rosparam file="$(find higgs_navigation)/navigation_config/move_base_params.yaml" command="load" />
+        <rosparam file="$(find higgs_navigation)/navigation_config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+        <rosparam file="$(find higgs_navigation)/navigation_config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+        <rosparam file="$(find higgs_navigation)/navigation_local/config_only_odom/base_local_planner_params.yaml" command="load" ns="TrajectoryPlannerROS" />
+
+        <!-- Load global navigation specific parameters -->
+        <rosparam file="$(find erratic_navigation)/navigation_local/config/move_base_params.yaml" command="load" />
+        <rosparam file="$(find erratic_navigation)/navigation_local/config/local_costmap_params.yaml" command="load" />
+        <rosparam file="$(find erratic_navigation)/navigation_local/config/global_costmap_params.yaml" command="load" />
+  </node>
+</launch>

@@ -1,0 +1,17 @@
+<package>
+  <description brief="aslab_stage_erratic">
+
+     aslab_stage_erratic the move_erratic.launcher can be used to launch stage with a simulation of the erratic robot in the willow garage, together with an amcl navigator node and a an aslab_simple_navigation_goal node from the higgs_goals package
+
+  </description>
+  <author>Carlos Hernandez Corbato</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url></url>
+  <depend package="move_base"/>
+  <depend package="stage"/>
+  <depend package="teleop_base"/>
+
+</package>
+
+

@@ -1,0 +1,20 @@
+<launch>
+
+  <!-- parameter for this launch file -->
+
+  <arg name="KIN_LOC" default="true"/>
+  <arg name="EKF" default="false"/>
+       
+  <!-- localization -->
+  <param if="$(arg EKF)" name="amcl/odom_frame_id" value="odom_combined"/>
+  <param unless="$(arg EKF)" name="amcl/odom_frame_id" value="odom"/>
+  <include unless="$(arg KIN_LOC)" file="$(find higgs_navigation)/config_nav/amcl_node.xml"/> 
+  <include if="$(arg KIN_LOC)" file="$(find higgs_navigation)/config_nav/amcl_kinect.xml"/> 
+  
+  <!-- navigation -->
+  <include file="$(find higgs_navigation)/config_nav/move_base.xml" >
+    <arg name="KIN_ALONE" value="$(arg KIN_LOC)" />
+    <arg name="ODOM_EKF" value="$(arg EKF)" />
+  </include>
+  
+  </launch>

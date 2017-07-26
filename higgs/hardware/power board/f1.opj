@@ -1,0 +1,45 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\higgs_~1.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\higgs_~1.dsn")
+      (Path "Design Resources" ".\higgs_~1.dsn" "board")
+      (Path "Design Resources" ".\higgs_~1.dsn" "relay")
+      (Select "Design Resources" ".\higgs_~1.dsn" "relay" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 0 200 0 470"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -30 44 1020 58 562")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/12V-0"))
+      (Path "C:\DOCUME~1\PACO\ESCRIT~1\ORCAD\HIGGS_~1.DSN")
+      (Schematic "relay")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 66 1042 87 591")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\DOCUME~1\PACO\ESCRIT~1\ORCAD\HIGGS_~1.DSN")
+      (Schematic "board")
+      (Page "PAGE1"))))

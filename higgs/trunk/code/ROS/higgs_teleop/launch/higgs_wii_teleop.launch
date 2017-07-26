@@ -1,0 +1,48 @@
+<launch>
+
+  <machine name="higgs" address="higgs2" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="root" password="ramadosmiltres"  default="false"/>
+
+  <group ns="robot">
+		    
+    <node pkg="ROSARIA" name="pioneer2AT8" type="RosAria" machine="higgs" /> 
+
+    <node pkg="Higgs_setup_tf" name="higgs_tf_broadcaster" type="higgs_tf_broadcaster" machine="higgs" />
+
+      <param name="sicklms/port" value="/dev/ttyUSB1" />
+      <param name="sicklms/baud" value="19200" />   
+    <node name="sicklms" pkg="sicktoolbox_wrapper" type="sicklms" machine="higgs" />
+
+    <!-- Wii node -->
+    <node respawn="true" pkg="wiimote"  type="wiimote_node.py" name="wii" output="screen" machine="higgs"/>
+        
+    <!-- Axes -->
+    <param name="axis_linear" value="1" type="int"/>
+    <param name="axis_angular" value="0" type="int"/>
+    <param name="scale_linear" value="2" type="double"/>
+    <param name="scale_angular" value="2" type="double"/>
+    
+    <node name="joy2teleop" pkg="higgs_wiimote" type="higgs_wiimote" machine="higgs">
+      <remap from="Higgs/command_velocity" to="/robot/pioneer2AT8/cmd_vel" />
+      <param name="scale_linear" value="0.02" type="double"/>
+      <param name="scale_angular" value="0.01" type="double"/>
+    </node>
+   
+  </group> 
+
+  <machine name="local_alt" address="localhost" default="false" /> 
+
+
+  <!-- To teleoperate the robot   -->
+  <node name="teleop_base_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen" machine="local_alt">
+    <remap from="base_controller/command" to="robot/pioneer2AT8/cmd_vel" />	
+  </node>
+
+
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find higgs_teleop)/higgs_observe_map.vcg" machine="local_alt"/>
+
+  <!-- To build the map with SLAM   -->
+  <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen" machine="local_alt">
+    <remap from="scan" to="/robot/scan" />
+  </node>
+
+</launch>

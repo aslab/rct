@@ -1,0 +1,24 @@
+<package>
+  <description brief="higgs_navigation">
+
+     higgs_navigation: mainly contains launchfiles and configuration files to run the navigation stack with Higgs (a pioneer 2AT8 with a sicklms 200)
+     there is also a ROS node driver_odom that provides for navigation using only odometry information. It is mainly an example, since the controller implemented should be improved
+
+  </description>
+  <author>admin</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://aslab.org/</url>
+  <depend package="roscpp"/>
+  <depend package="control_toolbox"/>
+  <depend package="tf"/>
+  <depend package="geometry_msgs"/>
+  <depend package="actionlib_msgs"/>
+  <depend package="amcl"/>
+  <depend package="move_base_msgs"/>
+  <depend package="move_base"/>
+  <depend package="rviz"/>
+
+</package>
+
+

@@ -1,0 +1,5 @@
+<launch>
+   <!-- joy node -->
+   <node respawn="true" pkg="wiimote"  type="wiimote_node.py" name="wii" output="screen"/>
+
+</launch>

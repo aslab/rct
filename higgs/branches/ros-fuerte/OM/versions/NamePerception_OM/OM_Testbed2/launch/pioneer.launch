@@ -1,0 +1,10 @@
+<launch>
+
+<machine name="higgs" address="higgs" env-loader="/opt/ros/fuerte/env.sh" user="higgs" />
+
+   <node pkg="pioneer_aria" name="pioneer" type="pioneer_aria" machine="higgs" >
+    <param name="port" value="/dev/ttyUSB1" />
+    <remap from="/pioneer/cmd_vel" to="/pioneer/cmd_vel" />
+  </node>
+
+</launch>

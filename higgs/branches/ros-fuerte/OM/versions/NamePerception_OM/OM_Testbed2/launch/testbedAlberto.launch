@@ -1,0 +1,13 @@
+<launch>
+
+  <param name="test" value="TestbedAlberto" />
+  
+  <!-- controlled plant or system -->
+  <include file="$(find OM_Testbed2)/launch/laser.launch" />
+  
+    
+  <!-- org.aslab.om.metacontrol -->
+  <include file="$(find OMRosDrivers_py)/launch/metacontrol.launch" />
+ 
+    
+</launch>

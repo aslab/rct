@@ -1,0 +1,26 @@
+// consumocorba.idl
+module higgs{
+	typedef double Dato;
+	interface BatteryModel{
+		void tensionIntensidad(in Dato tension,in Dato intensidad);/// Insert current voltage and current.
+		boolean error(); /// Returns 1 when batteries are discharged.
+		short errorTarea(); /// When tiempoRestante == 0, returns  the number of job on which the batteries discharge.
+		double tiempoRestante(); /// -1 when current voltage is greater than the model maximum voltage, 0 when the charge is not enough, and time to discharge in seconds when ok.
+		double tiempoRestanteMision();
+		double tiempoUltimo();
+		double ultimaIntensidad();
+		// These two methods are for inserting the job parameters, but are not well documented.
+		void agregarElemento(in Dato elemento);
+		void agregarTarea(in Dato elemento1,in Dato elemento2);
+		void reiniciarVector();
+	};
+
+	typedef short value;
+	interface CurrentMonitor{
+	//interface consumotestCorba{
+		void flag(in value f); /// 1 to start monitoring, 0 to stop.
+		double iPromedio(); /// Returns the measured current average.
+		double tiempo(); /// Returns the value of the total measurement's duration.
+		void salida(); /// Stops the monitoring thread, must restart program to reactivate.
+	};
+};

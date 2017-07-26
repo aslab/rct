@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 3.1.1 (248775)"/><meta name="keywords" content="OM, thesis"/><meta name="created" content="2012-06-14 12:54:43 +0200"/><meta name="updated" content="2012-06-14 19:34:20 +0200"/><title>OMFunctionsMetamodel-Perception</title></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;">
+<div><br/></div>
+<div style="font-size: 24px;">Perception Models:</div>
+<div><br/></div>
+<div>
+<hr/>
+<br/></div>
+<div style="font-size: 17px;">FunctionGrounding</div>
+<div><br/></div>
+<div><b>possible status:</b></div>
+<div>
+<ul>
+<li>OK</li>
+<li>ERROR - internal error</li>
+<li>FAILURE - external error</li>
+<li>PERMANENT_FAILURE - UNACHIEVABLE required objective (external dependency)</li>
+</ul>
+<div>perception model:</div>
+<div>    (internal)</div>
+<div>     - if any binding with the realiser (GoalAtomTracker) in error -> ERROR</div>
+<div>    (integration with external)</div>
+<div>     - if any required objective is UNACHIEVABLE -> PERMANENT_FAILURE</div>
+<div>     - if not ERROR &amp;&amp; not PERMANENT_FAILURE</div>
+<div>          if any required objective in ERROR -> FAILURE</div>
+<div>          else -> OK</div>
+<div><br/></div>
+<div><br/></div>
+<div>
+<hr/>
+<br/></div>
+<div style="font-size: 17px;">Objective</div>
+<div><br/></div>
+<div><b>possible status:</b></div>
+<div>
+<ul>
+<li>ADDRESSED - there is an associated fg in OK status</li>
+<li><i>ACHIEVED</i> - this is the ok status - not used!!!</li>
+<li>ERROR - current fg has not achieved it</li>
+<li>UNACHIEVABLE - its function status is UNAVAILABLE</li>
+</ul>
+<div><b>perception model:</b></div>
+</div>
+</div>
+<div>     - if the objective has no realiser or it is in ERROR -> ERROR<br/></div>
+<div>     - if its type (a function) is UNAVAILABLE and current realiser is in ERROR -> UNACHIEVABLE</div>
+<div>     - else -> ADDRESSED</div>
+<div><br/></div>
+<div>
+<hr/>
+<br/></div>
+<div style="font-size: 18px;">Function</div>
+<div><br/></div>
+<div><b>possible status:</b></div>
+<div>
+<ul>
+<li>AVAILABLE - here is at least one of its  FSpec REALISABLE</li>
+<li>UNAVAILABLE - no FSpec is REALISABLE</li>
+</ul>
+<div><b>perceptual model:</b></div>
+<div>     - if any realisation (fspec) REALISABLE -> AVAILABLE</div>
+<div>     - if none -> UNAVAILABLE</div>
+<div><br/></div>
+</div>
+<div>
+<hr/>
+<br/></div>
+<div style="font-size: 18px;">FunctionSpecification</div>
+<div><br/></div>
+<div><b>posible status:</b></div>
+<div>
+<ul>
+<li>REALISABLE</li>
+<li>UNREALISABLE</li>
+</ul>
+</div>
+<div><br/></div>
+<div><b>perceptual model:</b></div>
+<div>     - (internal) if any of the role types is unavailable -> UNREALISABLE</div>
+<div>     - (external) if any of the required functions is UNAVAILABLE -> UNREALISABLE</div>
+<div><br/></div>
+<div>
+<hr/>
+<hr/>
+<br/></div>
+<div><br/></div>
+<div style="font-size: 27px;"><br/></div>
+</body></html>

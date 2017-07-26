@@ -1,0 +1,13 @@
+<stack>
+  <description brief="metacontrol">
+
+	This stack contains all the metacontrol developed for the Higgs Autonomous Navigation Application
+
+  </description>
+  <author>Carlos Hernandez</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>svn+ssh://sagan/home/svn_repositories/Higgs/trunk/code/ROS/metacontrol</url>
+  <depend stack="ros" />
+
+</stack>

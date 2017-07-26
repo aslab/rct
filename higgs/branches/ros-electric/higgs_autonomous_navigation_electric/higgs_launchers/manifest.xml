@@ -1,0 +1,18 @@
+<package>
+  <description brief="higgs_launchers">
+
+     higgs_launchers
+
+  </description>
+  <author>chcorbato</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/higgs_launchers</url>
+  <depend package="higgs_stage_sim"/>
+  <depend package="higgs_navigation"/>
+  <depend package="rviz"/>
+  
+
+</package>
+
+

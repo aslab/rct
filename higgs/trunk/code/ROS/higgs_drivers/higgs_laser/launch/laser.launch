@@ -1,0 +1,11 @@
+<launch>
+
+   <include file="$(find higgs_navigation)/launch/aslab_machines.xml"/>
+
+     
+   <node name="laser" pkg="sicktoolbox_wrapper" type="sicklms" machine="higgs" >
+	<param name="port" value="/dev/ttyUSB1" />
+     <!-- <param name="sicklms/baud" value="38400" /> -->
+   </node>
+
+</launch>

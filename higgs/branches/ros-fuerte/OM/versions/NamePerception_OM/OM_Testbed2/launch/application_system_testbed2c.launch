@@ -1,0 +1,19 @@
+<launch>
+  
+  <!-- controlled plant -->
+  <include file="$(find OM_Testbed2)/launch/stageros.launch" />  
+  <include file="$(find OM_Testbed2)/launch/fake_laser.launch" />
+                    
+  <!-- navigation nodes -->
+  <include file="$(find OM_Testbed2)/launch/higgs_nav_sys.launch" >
+   
+    <param name="/amcl/initial_pose_x" value="1.042" />
+    <param name="/amcl/initial_pose_y" value="-0.979" />
+    <param name="/amcl/initial_pose_a" value="-0.003" />
+  </include>
+  
+  <!-- mission manager -->
+  <node name="mission_manager" pkg="mission_manager" type="mission_manager.py" args="-f $(find OM_Testbed2)/config/willow_room.yaml_patrol.mission" output="screen"/>  
+  <node name="initial_pose_node" pkg="OM_Testbed2" type="initial_pose.py" />
+    
+</launch>

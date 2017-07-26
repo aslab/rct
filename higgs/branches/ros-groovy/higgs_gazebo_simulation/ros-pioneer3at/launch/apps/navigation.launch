@@ -1,0 +1,21 @@
+<launch>
+	<node pkg="move_base" type="move_base" name="Pioneer3AT_move_base">
+		<rosparam file="$(find pioneer3at)/config/move_base/move_base_higgs.yaml" command="load"/>
+		<rosparam file="$(find pioneer3at)/config/move_base/costmap_common_higgs.yaml" command="load" ns="global_costmap" />
+		<rosparam file="$(find pioneer3at)/config/move_base/costmap_common_higgs.yaml" command="load" ns="local_costmap" />
+		<rosparam file="$(find pioneer3at)/config/move_base/costmap_global_higgs.yaml" command="load"  />
+		<rosparam file="$(find pioneer3at)/config/move_base/costmap_local_higgs.yaml" command="load"/>
+		
+		<remap from="cmd_vel"               to="/Pioneer3AT/move_base/cmd_vel"  />
+		<remap from="move_base/cancel"      to="/Pioneer3AT/move_base/cancel"   />
+		<remap from="move_base/feedback"    to="/Pioneer3AT/move_base/feedback" />
+		<remap from="move_base/goal"        to="/Pioneer3AT/move_base/goal" />
+		<remap from="move_base/result"      to="/Pioneer3AT/move_base/result" />
+		<remap from="move_base/status"      to="/Pioneer3AT/move_base/status" />
+		<remap from="move_base_simple/goal" to="/Pioneer3AT/move_base_simple/goal" />
+		
+		<param name="odom_frame_id" type="str" value="/Pioneer3AT/odom" />
+		<param name="base_frame_id" type="str" value="/Pioneer3AT/base_link" />
+	</node>
+
+</launch>

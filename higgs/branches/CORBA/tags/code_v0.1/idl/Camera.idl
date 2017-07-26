@@ -1,0 +1,44 @@
+module higgs {
+    typedef sequence<octet, 1228800> ImagenData;
+    enum CameraResolution {
+	Res_1280x960,
+	Res_1280x960_rgb,
+	Res_640x480,
+	Res_640x480_rgb, // Only for normal cameras.
+	Res_320x240 // Only for simulation.
+    };
+    interface Camera{
+	void init();
+
+	// Functions that return Vendor and Model of First Firewire camera
+	string<250> vendor();
+	string<250> model();
+
+	// camera: 1 for right, 2 for left.
+	// update: Wait for new frame(true) or return last in cache(false).
+	// returns: Image in Bayer coding. Use dc1394_bayer_decoding_8bit().
+	ImagenData getImagen(in unsigned short camera, in boolean update);
+	// returns: Image in JPEG coding. Use DevIL to decode.
+	ImagenData getJPEGImagen(in unsigned short camera, in boolean update);
+
+	// Function used to check if there is a new frame
+	// returns: Frame number from 0 to 100
+	unsigned short getFrame();
+
+	/// Size of image.
+	unsigned long getDeviceWidth();
+	unsigned long getDeviceHeight();
+
+	CameraResolution getRes(); /// Image Resolution
+	void changeRes(in CameraResolution res);
+	unsigned short getGain();
+	void setGain(in unsigned short gain);
+	unsigned short getBright();
+	void setBright(in unsigned short bright);
+	unsigned short getExpo();
+	void setExpo(in unsigned short bright);
+
+	void restart();	/// Reset the FireWire bus.
+	void finish(); /// Restart the servant.
+    };
+};

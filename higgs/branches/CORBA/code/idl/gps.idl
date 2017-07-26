@@ -1,0 +1,44 @@
+module higgs
+{
+    struct GPS_coords
+    {
+	double latitude;
+	double longitude;
+	double height; // In m over sea level.
+    };
+
+    struct GPS_coords_UTM
+    {
+	double northing;
+	double easting;
+	double height; // In m over sea level.
+	short zone;
+	boolean north;
+    };
+
+    struct GPS_speed
+    {
+	double celerity; // In m/s.
+	double heading; // 0 North, pi/2 West.
+	double height_speed; // In m/s.
+    };
+
+    enum GPS_solution_type
+    {
+	PENDING,
+	SINGLE,
+	SBAS,
+	DIFFERENTIAL,
+	UNKNOWN
+    };
+
+    interface GPS
+    {
+	GPS_coords position();
+	GPS_coords_UTM position_UTM();
+	GPS_coords std_deviation();
+	GPS_speed speed();
+	GPS_solution_type solution_type();
+	short satellites(); // Returns the number of satellites used for solving the position.
+    };
+};

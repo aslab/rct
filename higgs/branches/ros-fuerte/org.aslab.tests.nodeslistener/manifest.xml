@@ -1,0 +1,15 @@
+<package>
+  <description brief="rosjava_wiki_tutorial_pubsub">
+
+     rosjava_wiki_tutorial_pubsub
+
+  </description>
+  <author>Carlos Hernandez Corbato</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rosjava_wiki_tutorial_pubsub</url>
+  <depend package="meta_msgs" />
+
+</package>
+
+

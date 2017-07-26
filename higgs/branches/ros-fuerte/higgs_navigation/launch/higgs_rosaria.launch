@@ -1,0 +1,13 @@
+<launch>
+
+
+  <machine name="higgs" address="higgs" env-loader="/opt/ros/fuerte/env.sh" />
+  
+  <node pkg="ROSARIA" type="RosAria" name="pioneer" >
+  	<remap from="pose" to="odom" />
+  	<remap from="cmd_vel" to="cmd_vel" />
+  	<param name="port" value="/dev/ttyUSB1" />
+  </node>
+	
+</launch>
+

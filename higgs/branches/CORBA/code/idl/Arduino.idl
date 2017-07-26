@@ -1,0 +1,46 @@
+// arduino.idl
+module higgs{
+	typedef short Pin;
+	typedef double Referencia;
+	typedef short Indice;
+	enum Device
+	{
+	    DevWrist,
+	    DevLaser,
+	    DevCamera,
+	    DevGPS,
+	    DevServo,
+	    DevSensors
+	};
+	struct iv_data
+	{
+	    double current; // In Amperes.
+	    double volts; // In volts.
+	};
+	interface Arduino{
+		// PID del cabeceo del láser.
+		// FIXME: Servo controlled in open loop.
+		// Normal values 0 to 180; 0 is up, 180 is down, 90 is halfway (horizontal).
+		// Not calibrated!
+		void cambiarReferencia(in Referencia ref); // PID
+		// double getReference(); // PID
+		// double potenciometro(); // Lectura del potenciómetro del láser.
+		// void inicializarIncl();
+		// void activarPid(); // Servo y potenciómetro. Llamar primero inicializarIncl();
+
+		void encenderPin(in Pin p); //Salidas digitales.
+		void apagarPin(in Pin p); //Salidas digitales.
+
+
+		iv_data iv_motors();
+		iv_data iv_instrumentation();
+		iv_data iv_vaio(); // Volts is 0 to 1 charge remaining, current is estimated battery duration, in s.
+
+		double brujula(); // Valor en radianes de la brújula. 0 North, pi/2 West.
+		void acelerometro(out double x, out double y); // Lectura de los acelerometros, en g's.
+
+		// Encendido y apagado de dispositivos parte superior.
+		void TurnOn(in Device dev);
+		void TurnOff(in Device dev);
+	};
+};

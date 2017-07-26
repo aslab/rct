@@ -1,0 +1,5 @@
+Éstos son los errores encontrados en la placa que habría que corregir si se hace otro pedido:
+ - Los pines de los relés están demasiado separados. Además los pines de la bobina están invertidos si se usa el relé indicado en bom.txt (con polaridad)
+ - El conector de alimentación tiene desconectado el pin de positivo. En su lugar se ha conectado el pin de detección de inserción del conector.
+ - La serigrafía del conector 24VIN es incorrecta, tiene 12VIN, duplicada del conector de al lado.
+ - Los agujeros de los diodos 1N4004 no son suficientemente grandes.

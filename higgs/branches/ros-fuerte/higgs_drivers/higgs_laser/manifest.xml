@@ -1,0 +1,15 @@
+<package>
+  <description brief="higgs_laser">
+
+     higgs_laser
+
+  </description>
+  <author>admin</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/higgs_laser</url>
+  <depend package="sicktoolbox_wrapper"/>
+
+</package>
+
+

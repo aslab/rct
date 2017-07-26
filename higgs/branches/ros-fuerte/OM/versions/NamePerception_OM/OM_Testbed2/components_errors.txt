@@ -1,0 +1,166 @@
+
+======================================================================================
+ERROR text:
+Extrapolation Error: , when looking up transform from frame [/base_link] to frame [/map]
+
+Component: /move_base_node
+
+error model: the component is in an internal error and should be restarted
+
+----
+header: 
+  seq: 440598
+  stamp: 182.500000000
+  frame_id: 
+level: 8
+name: /move_base_node
+msg: Extrapolation Error: , when looking up transform from frame [/base_link] to frame [/map]
+
+file: /tmp/buildd/ros-electric-navigation-1.6.1/debian/ros-electric-navigation/opt/ros/electric/stacks/navigation/costmap_2d/src/costmap_2d_ros.cpp
+function: Costmap2DROS::getRobotPose
+line: 1241
+topics[]
+  topics[0]: /rosout
+  topics[1]: /pioneer/cmd_vel
+  topics[2]: /move_base_node/current_goal
+  topics[3]: /move_base/goal
+  topics[4]: /move_base_node/global_costmap/voxel_grid
+  topics[5]: /move_base_node/global_costmap/obstacles
+  topics[6]: /move_base_node/global_costmap/inflated_obstacles
+  topics[7]: /move_base_node/global_costmap/unknown_space
+  topics[8]: /move_base_node/global_costmap/robot_footprint
+  topics[9]: /move_base_node/global_costmap/parameter_descriptions
+  topics[10]: /move_base_node/global_costmap/parameter_updates
+  topics[11]: /move_base_node/NavfnROS/plan
+  topics[12]: /move_base_node/NavfnROS/NavfnROS_costmap/obstacles
+  topics[13]: /move_base_node/NavfnROS/NavfnROS_costmap/inflated_obstacles
+  topics[14]: /move_base_node/NavfnROS/NavfnROS_costmap/unknown_space
+  topics[15]: /move_base_node/NavfnROS/NavfnROS_costmap/robot_footprint
+  topics[16]: /move_base_node/local_costmap/voxel_grid
+  topics[17]: /move_base_node/local_costmap/obstacles
+  topics[18]: /move_base_node/local_costmap/inflated_obstacles
+  topics[19]: /move_base_node/local_costmap/unknown_space
+  topics[20]: /move_base_node/local_costmap/robot_footprint
+  topics[21]: /move_base_node/local_costmap/parameter_descriptions
+  topics[22]: /move_base_node/local_costmap/parameter_updates
+  topics[23]: /move_base_node/TrajectoryPlannerROS/global_plan
+  topics[24]: /move_base_node/TrajectoryPlannerROS/local_plan
+  topics[25]: /move_base_node/TrajectoryPlannerROS/cost_cloud
+  topics[26]: /move_base_node/TrajectoryPlannerROS/parameter_descriptions
+  topics[27]: /move_base_node/TrajectoryPlannerROS/parameter_updates
+  topics[28]: /move_base/result
+  topics[29]: /move_base/feedback
+  topics[30]: /move_base/status
+  topics[31]: /move_base_node/parameter_descriptions
+  topics[32]: /move_base_node/parameter_updates
+  
+===================================================================================================
+ERROR text:
+Could not get robot pose, cancelling reconfiguration
+
+Component: /move_base_node
+
+this is a ros warning log message
+
+error model: if in this state for some time, then the previous error occurs
+
+-----
+header: 
+  seq: 466190
+  stamp: 194.000000000
+  frame_id: 
+level: 4
+name: /move_base_node
+msg: Could not get robot pose, cancelling reconfiguration
+file: /tmp/buildd/ros-electric-navigation-1.6.1/debian/ros-electric-navigation/opt/ros/electric/stacks/navigation/costmap_2d/src/costmap_2d_ros.cpp
+function: Costmap2DROS::movementCB
+line: 408
+topics[]
+  topics[0]: /rosout
+  topics[1]: /pioneer/cmd_vel
+  topics[2]: /move_base_node/current_goal
+  topics[3]: /move_base/goal
+  topics[4]: /move_base_node/global_costmap/voxel_grid
+  topics[5]: /move_base_node/global_costmap/obstacles
+  topics[6]: /move_base_node/global_costmap/inflated_obstacles
+  topics[7]: /move_base_node/global_costmap/unknown_space
+  topics[8]: /move_base_node/global_costmap/robot_footprint
+  topics[9]: /move_base_node/global_costmap/parameter_descriptions
+  topics[10]: /move_base_node/global_costmap/parameter_updates
+  topics[11]: /move_base_node/NavfnROS/plan
+  topics[12]: /move_base_node/NavfnROS/NavfnROS_costmap/obstacles
+  topics[13]: /move_base_node/NavfnROS/NavfnROS_costmap/inflated_obstacles
+  topics[14]: /move_base_node/NavfnROS/NavfnROS_costmap/unknown_space
+  topics[15]: /move_base_node/NavfnROS/NavfnROS_costmap/robot_footprint
+  topics[16]: /move_base_node/local_costmap/voxel_grid
+  topics[17]: /move_base_node/local_costmap/obstacles
+  topics[18]: /move_base_node/local_costmap/inflated_obstacles
+  topics[19]: /move_base_node/local_costmap/unknown_space
+  topics[20]: /move_base_node/local_costmap/robot_footprint
+  topics[21]: /move_base_node/local_costmap/parameter_descriptions
+  topics[22]: /move_base_node/local_costmap/parameter_updates
+  topics[23]: /move_base_node/TrajectoryPlannerROS/global_plan
+  topics[24]: /move_base_node/TrajectoryPlannerROS/local_plan
+  topics[25]: /move_base_node/TrajectoryPlannerROS/cost_cloud
+  topics[26]: /move_base_node/TrajectoryPlannerROS/parameter_descriptions
+  topics[27]: /move_base_node/TrajectoryPlannerROS/parameter_updates
+  topics[28]: /move_base/result
+  topics[29]: /move_base/feedback
+  topics[30]: /move_base/status
+  topics[31]: /move_base_node/parameter_descriptions
+  topics[32]: /move_base_node/parameter_updates
+
+===================================================================================================
+This one is similar to the previous, and both lead to the ERROR message
+
+header: 
+  seq: 466304
+  stamp: 90.200000000
+  frame_id: 
+level: 4
+name: /move_base_node
+msg: Costmap2DROS transform timeout. Current time: 90.2000, global_pose stamp: 86.0000, tolerance: 2.0000
+file: /tmp/buildd/ros-electric-navigation-1.6.1/debian/ros-electric-navigation/opt/ros/electric/stacks/navigation/costmap_2d/src/costmap_2d_ros.cpp
+function: Costmap2DROS::getRobotPose
+line: 1247
+topics[]
+  topics[0]: /rosout
+  topics[1]: /pioneer/cmd_vel
+  topics[2]: /move_base_node/current_goal
+  topics[3]: /move_base/goal
+  topics[4]: /move_base_node/global_costmap/voxel_grid
+  topics[5]: /move_base_node/global_costmap/obstacles
+  topics[6]: /move_base_node/global_costmap/inflated_obstacles
+  topics[7]: /move_base_node/global_costmap/unknown_space
+  topics[8]: /move_base_node/global_costmap/robot_footprint
+  topics[9]: /move_base_node/global_costmap/parameter_descriptions
+  topics[10]: /move_base_node/global_costmap/parameter_updates
+  topics[11]: /move_base_node/NavfnROS/plan
+  topics[12]: /move_base_node/NavfnROS/NavfnROS_costmap/obstacles
+  topics[13]: /move_base_node/NavfnROS/NavfnROS_costmap/inflated_obstacles
+  topics[14]: /move_base_node/NavfnROS/NavfnROS_costmap/unknown_space
+  topics[15]: /move_base_node/NavfnROS/NavfnROS_costmap/robot_footprint
+  topics[16]: /move_base_node/local_costmap/voxel_grid
+  topics[17]: /move_base_node/local_costmap/obstacles
+  topics[18]: /move_base_node/local_costmap/inflated_obstacles
+  topics[19]: /move_base_node/local_costmap/unknown_space
+  topics[20]: /move_base_node/local_costmap/robot_footprint
+  topics[21]: /move_base_node/local_costmap/parameter_descriptions
+  topics[22]: /move_base_node/local_costmap/parameter_updates
+  topics[23]: /move_base_node/TrajectoryPlannerROS/global_plan
+  topics[24]: /move_base_node/TrajectoryPlannerROS/local_plan
+  topics[25]: /move_base_node/TrajectoryPlannerROS/cost_cloud
+  topics[26]: /move_base_node/TrajectoryPlannerROS/parameter_descriptions
+  topics[27]: /move_base_node/TrajectoryPlannerROS/parameter_updates
+  topics[28]: /move_base/result
+  topics[29]: /move_base/feedback
+  topics[30]: /move_base/status
+  topics[31]: /move_base_node/parameter_descriptions
+  topics[32]: /move_base_node/parameter_updates
+  
+===================================================================================================
+
+  
+  
+  
+  

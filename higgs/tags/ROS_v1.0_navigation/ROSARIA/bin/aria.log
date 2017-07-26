@@ -1,0 +1,27 @@
+Fri Mar 11 17:37:30 Could not connect to simulator, connecting to robot through serial port /dev/ttyUSB0.
+Fri Mar 11 17:37:30 ArSerialConnection::open: Connecting to serial port '/dev/ttyUSB0'
+Fri Mar 11 17:37:30 ArSerialConnection::open: Successfully opened and configured serial port '/dev/ttyUSB0'.
+Fri Mar 11 17:37:30 Syncing 0
+Fri Mar 11 17:37:31 No packet.
+Fri Mar 11 17:37:32 Syncing 0
+Fri Mar 11 17:37:33 No packet.
+Fri Mar 11 17:37:33 Trying to close possible old connection
+Fri Mar 11 17:37:33 Sent: comInt(2, 1)
+Fri Mar 11 17:37:33 Sent: comInt(2, 1)
+Fri Mar 11 17:37:33 Sent: comInt(2, 1)
+Fri Mar 11 17:37:33 Sent: comInt(2, 1)
+Fri Mar 11 17:37:33 Sent: comInt(2, 1)
+Fri Mar 11 17:37:33 Syncing 0
+Fri Mar 11 17:37:34 No packet.
+Fri Mar 11 17:37:34 Syncing 0
+Fri Mar 11 17:37:35 No packet.
+Fri Mar 11 17:37:35  Robot may be connected but not open, trying to dislodge.
+Fri Mar 11 17:37:35 Syncing 0
+Fri Mar 11 17:37:36 No packet.
+Fri Mar 11 17:37:36  Robot may be connected but not open, trying to dislodge.
+Fri Mar 11 17:37:36 Syncing 0
+Fri Mar 11 17:37:37 No packet.
+Fri Mar 11 17:37:37 Could not connect, no robot responding.
+Fri Mar 11 17:37:37 Failed to connect to robot.
+Fri Mar 11 17:37:37 ArSerialConnection::close: Successfully closed serial port.
+Fri Mar 11 17:37:37 rotate: Could not connect to robot! Exiting.

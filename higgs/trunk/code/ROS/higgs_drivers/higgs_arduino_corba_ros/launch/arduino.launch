@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find higgs_navigation)/launch/aslab_machines.xml"/>
+  
+	 <node name="higgs_arduino" pkg="higgs_arduino_corba_ros" type="higgs_arduino" output="screen" machine="higgs" >
+	 	<remap from="higgs_arduino/Imu" to="higgs_arduino/output_Imu"/>
+	 </node>
+	 <param name="/higgs_arduino/loop_rate_hz" value="10"/>
+</launch>

@@ -1,0 +1,21 @@
+<package>
+  <description brief="OM_Testbed2">
+
+     OM_Testbed2
+
+  </description>
+  <author>Carlos Hernandez Corbato</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/OM_Testbed2</url>
+  
+  <depend package="OMRosDrivers_py"/>
+  <depend package="sensor_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="rospy"/>
+  <depend package="rosjava"/>
+  
+
+</package>
+
+

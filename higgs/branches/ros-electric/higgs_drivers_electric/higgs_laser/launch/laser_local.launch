@@ -1,0 +1,8 @@
+<launch>
+
+     <!-- <param name="sicklms/baud" value="38400" /> -->
+   <node name="laser" pkg="sicktoolbox_wrapper" type="sicklms" >
+      <param name="~/port" value="/dev/ttyUSB0" />
+   </node>
+
+</launch>

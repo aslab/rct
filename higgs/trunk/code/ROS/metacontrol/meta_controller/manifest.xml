@@ -1,0 +1,20 @@
+<package>
+  <description brief="meta_controller">
+
+     meta_controller
+
+  </description>
+  <author>admin</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/meta_controller</url>
+  <depend package="rospy"/>
+  <depend package="rosgraph_msgs"/>
+  <depend package="std_msgs"/>
+  <depend package="actionlib"/>
+  <depend package="move_base_msgs"/>
+  <depend package="geometry_msgs"/>
+
+</package>
+
+

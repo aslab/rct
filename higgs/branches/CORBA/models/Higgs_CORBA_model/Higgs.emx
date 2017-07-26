@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_qcDsMA5qEeCo7JwALS5E6g" name="Higgs">
+  <eAnnotations xmi:id="_hz8xcQ5rEeCo7JwALS5E6g" source="com.ibm.xtools.uml.msl.fragments">
+    <references xmi:type="uml:Package" href="ModelFragment_4.efx#_y7hL0A5qEeCo7JwALS5E6g?Higgs/Software?"/>
+    <references xmi:type="uml:Package" href="ModelFragment_1.efx#_vYCeAA5qEeCo7JwALS5E6g?Higgs/SystemArchitecture?"/>
+    <references xmi:type="uml:Package" href="Hardware.efx#_W1a8cA5tEeCEtvugbZhpxA?Higgs/Hardware?"/>
+    <references xmi:type="uml:Package" href="Analysis.efx#_1K8mUBBjEeC0DaEa5WeF9w?Higgs/Analysis?"/>
+  </eAnnotations>
+  <eAnnotations xmi:id="_qcDsMQ5qEeCo7JwALS5E6g" source="uml2.diagrams" references="_NomScA5rEeCo7JwALS5E6g">
+    <contents xmi:type="notation:Diagram" xmi:id="_NomScA5rEeCo7JwALS5E6g" type="Class" name="model_organization">
+      <children xmi:id="_Q_nRkA5rEeCo7JwALS5E6g">
+        <children xmi:id="_Q_ofsA5rEeCo7JwALS5E6g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_Q_ofsQ5rEeCo7JwALS5E6g" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_Q_ofsg5rEeCo7JwALS5E6g" type="Stereotype"/>
+        <children xmi:id="_Q_ofsw5rEeCo7JwALS5E6g" type="Name"/>
+        <children xmi:id="_Q_pGwA5rEeCo7JwALS5E6g" type="Parent"/>
+        <children xmi:id="_Q_pGwQ5rEeCo7JwALS5E6g" type="PackageContents">
+          <children xmi:id="_R5_PIA5rEeCo7JwALS5E6g">
+            <children xmi:id="_R5_2MA5rEeCo7JwALS5E6g" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_R5_2MQ5rEeCo7JwALS5E6g" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_R5_2Mg5rEeCo7JwALS5E6g" type="Stereotype"/>
+            <children xmi:id="_R5_2Mw5rEeCo7JwALS5E6g" type="Name"/>
+            <children xmi:id="_R5_2NA5rEeCo7JwALS5E6g" type="Parent"/>
+            <children xmi:id="_R6AdQA5rEeCo7JwALS5E6g" type="PackageContents">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_R6AdQQ5rEeCo7JwALS5E6g" canonical="false" collapsed="true"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_R5_PIQ5rEeCo7JwALS5E6g" fontName="Sans" showStereotype="Label"/>
+            <element xmi:type="uml:Package" href="ModelFragment_2.efx#_1Z2PcA5qEeCo7JwALS5E6g?Higgs/SystemArchitecture/FunctionalArchitecture?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R5_PIg5rEeCo7JwALS5E6g" x="610" y="682"/>
+          </children>
+          <children xmi:id="_TRDvwA5rEeCo7JwALS5E6g">
+            <children xmi:id="_TREW0A5rEeCo7JwALS5E6g" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_TREW0Q5rEeCo7JwALS5E6g" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_TREW0g5rEeCo7JwALS5E6g" type="Stereotype"/>
+            <children xmi:id="_TREW0w5rEeCo7JwALS5E6g" type="Name"/>
+            <children xmi:id="_TRE94A5rEeCo7JwALS5E6g" type="Parent"/>
+            <children xmi:id="_TRE94Q5rEeCo7JwALS5E6g" type="PackageContents">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_TRE94g5rEeCo7JwALS5E6g" canonical="false" collapsed="true"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_TRDvwQ5rEeCo7JwALS5E6g" fontName="Sans" showStereotype="Label"/>
+            <element xmi:type="uml:Package" href="ModelFragment_3.efx#_3KwzcA5qEeCo7JwALS5E6g?Higgs/SystemArchitecture/MetaArchitecture?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TRDvwg5rEeCo7JwALS5E6g" x="641" y="2280" width="4387"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Q_pGwg5rEeCo7JwALS5E6g" canonical="false"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Q_nRkQ5rEeCo7JwALS5E6g" fontName="Sans" showStereotype="Label"/>
+        <element xmi:type="uml:Package" href="ModelFragment_1.efx#_vYCeAA5qEeCo7JwALS5E6g?Higgs/SystemArchitecture?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q_nRkg5rEeCo7JwALS5E6g" x="8820" y="3529" width="6353" height="5178"/>
+      </children>
+      <children xmi:id="_Vp4oUA5rEeCo7JwALS5E6g">
+        <children xmi:id="_Vp4oUw5rEeCo7JwALS5E6g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_Vp4oVA5rEeCo7JwALS5E6g" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_Vp5PYA5rEeCo7JwALS5E6g" type="Stereotype"/>
+        <children xmi:id="_Vp5PYQ5rEeCo7JwALS5E6g" type="Name"/>
+        <children xmi:id="_Vp5PYg5rEeCo7JwALS5E6g" type="Parent"/>
+        <children xmi:id="_Vp5PYw5rEeCo7JwALS5E6g" type="PackageContents">
+          <children xmi:id="_XidTgA5rEeCo7JwALS5E6g">
+            <children xmi:id="_Xid6kg5rEeCo7JwALS5E6g" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_Xid6kw5rEeCo7JwALS5E6g" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_Xid6lA5rEeCo7JwALS5E6g" type="Stereotype"/>
+            <children xmi:id="_XiehoA5rEeCo7JwALS5E6g" type="Name"/>
+            <children xmi:id="_XifIsA5rEeCo7JwALS5E6g" type="Parent"/>
+            <children xmi:id="_XifIsQ5rEeCo7JwALS5E6g" type="PackageContents">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_XifIsg5rEeCo7JwALS5E6g" canonical="false" collapsed="true"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Xid6kA5rEeCo7JwALS5E6g" fontName="Sans" showStereotype="Label"/>
+            <element xmi:type="uml:Package" href="ModelFragment_6.efx#_HHv0kA5rEeCo7JwALS5E6g?Higgs/Software/CORBAmodules?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xid6kQ5rEeCo7JwALS5E6g" x="695" y="713" width="3755"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Vp5PZA5rEeCo7JwALS5E6g" canonical="false"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Vp4oUQ5rEeCo7JwALS5E6g" fontName="Sans" lineColor="10265827" showStereotype="Label"/>
+        <element xmi:type="uml:Package" href="ModelFragment_4.efx#_y7hL0A5qEeCo7JwALS5E6g?Higgs/Software?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Vp4oUg5rEeCo7JwALS5E6g" x="8803" y="9270" width="6360" height="5254"/>
+      </children>
+      <children xmi:id="_fR71wA5tEeCEtvugbZhpxA">
+        <children xmi:id="_fR8c0A5tEeCEtvugbZhpxA" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_fR8c0Q5tEeCEtvugbZhpxA" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_fR9D4A5tEeCEtvugbZhpxA" type="Stereotype"/>
+        <children xmi:id="_fR9D4Q5tEeCEtvugbZhpxA" type="Name"/>
+        <children xmi:id="_fR9q8A5tEeCEtvugbZhpxA" type="Parent"/>
+        <children xmi:id="_fR9q8Q5tEeCEtvugbZhpxA" type="PackageContents">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_fR9q8g5tEeCEtvugbZhpxA" canonical="false" collapsed="true"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_fR71wQ5tEeCEtvugbZhpxA" fontName="Sans" showStereotype="Label"/>
+        <element xmi:type="uml:Package" href="Hardware.efx#_W1a8cA5tEeCEtvugbZhpxA?Higgs/Hardware?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fR71wg5tEeCEtvugbZhpxA" x="2191" y="11248"/>
+      </children>
+      <children xmi:id="_jL0RYA5tEeCEtvugbZhpxA" type="Note">
+        <children xmi:id="_jL04cA5tEeCEtvugbZhpxA" type="DiagramName">
+          <element xsi:nil="true"/>
+        </children>
+        <children xmi:id="_jL04cQ5tEeCEtvugbZhpxA" type="Description">
+          <element xsi:nil="true"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_jL0RYQ5tEeCEtvugbZhpxA" fontName="Sans" description="System Design&lt;br />&#xA;        (implementation-independent)&lt;br />" fillColor="13369343" lineColor="6737151" lineWidth="1"/>
+        <styles xmi:type="notation:TextStyle" xmi:id="_jL0RYg5tEeCEtvugbZhpxA"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_jL0RYw5tEeCEtvugbZhpxA"/>
+        <element xsi:nil="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jL0RZA5tEeCEtvugbZhpxA" x="17442" y="3553" width="4941"/>
+      </children>
+      <children xmi:id="_ovTIEA5tEeCEtvugbZhpxA" type="Note">
+        <children xmi:id="_ovTvIA5tEeCEtvugbZhpxA" type="DiagramName">
+          <element xsi:nil="true"/>
+        </children>
+        <children xmi:id="_ovTvIQ5tEeCEtvugbZhpxA" type="Description">
+          <element xsi:nil="true"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_ovTIEQ5tEeCEtvugbZhpxA" fontName="Sans" description="Architectural design regarding the domain functionality&lt;br />" fillColor="13369343" lineColor="6737151" lineWidth="1"/>
+        <styles xmi:type="notation:TextStyle" xmi:id="_ovTIEg5tEeCEtvugbZhpxA"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_ovTIEw5tEeCEtvugbZhpxA"/>
+        <element xsi:nil="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ovTIFA5tEeCEtvugbZhpxA" x="17442" y="5119" width="4941"/>
+      </children>
+      <children xmi:id="_ui6FcA5tEeCEtvugbZhpxA" type="Note">
+        <children xmi:id="_ui6sgA5tEeCEtvugbZhpxA" type="DiagramName">
+          <element xsi:nil="true"/>
+        </children>
+        <children xmi:id="_ui6sgQ5tEeCEtvugbZhpxA" type="Description">
+          <element xsi:nil="true"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_ui6FcQ5tEeCEtvugbZhpxA" fontName="Sans" description="meta-architecture for higgs&lt;br />" fillColor="13369343" lineColor="6737151" lineWidth="1"/>
+        <styles xmi:type="notation:TextStyle" xmi:id="_ui6Fcg5tEeCEtvugbZhpxA"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_ui6Fcw5tEeCEtvugbZhpxA"/>
+        <element xsi:nil="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ui6FdA5tEeCEtvugbZhpxA" x="17442" y="6684" width="4941"/>
+      </children>
+      <children xmi:id="_1JuBYA5tEeCEtvugbZhpxA" type="Note">
+        <children xmi:id="_1JuBZQ5tEeCEtvugbZhpxA" type="DiagramName">
+          <element xsi:nil="true"/>
+        </children>
+        <children xmi:id="_1JuBZg5tEeCEtvugbZhpxA" type="Description">
+          <element xsi:nil="true"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_1JuBYQ5tEeCEtvugbZhpxA" fontName="Sans" description="implementation of the SystemArchitecture at different levels of detail&lt;br />" fillColor="13369343" lineColor="6737151" lineWidth="1"/>
+        <styles xmi:type="notation:TextStyle" xmi:id="_1JuBYg5tEeCEtvugbZhpxA"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_1JuBYw5tEeCEtvugbZhpxA"/>
+        <element xsi:nil="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1JuBZA5tEeCEtvugbZhpxA" x="17442" y="9044" width="4942"/>
+      </children>
+      <children xmi:id="_6g9L0A5tEeCEtvugbZhpxA" type="Note">
+        <children xmi:id="_6g9y4A5tEeCEtvugbZhpxA" type="DiagramName">
+          <element xsi:nil="true"/>
+        </children>
+        <children xmi:id="_6g9y4Q5tEeCEtvugbZhpxA" type="Description">
+          <element xsi:nil="true"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_6g9L0Q5tEeCEtvugbZhpxA" fontName="Sans" description="CORBA design of the solution in terms of CORBA interfaces and objects&lt;br />" fillColor="13369343" lineColor="6737151" lineWidth="1"/>
+        <styles xmi:type="notation:TextStyle" xmi:id="_6g9L0g5tEeCEtvugbZhpxA"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_6g9L0w5tEeCEtvugbZhpxA"/>
+        <element xsi:nil="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6g9L1A5tEeCEtvugbZhpxA" x="17442" y="10755" width="4941"/>
+      </children>
+      <children xmi:id="_Fj2RgA5uEeCEtvugbZhpxA" type="Note">
+        <children xmi:id="_Fj24kA5uEeCEtvugbZhpxA" type="DiagramName">
+          <element xsi:nil="true"/>
+        </children>
+        <children xmi:id="_Fj3foA5uEeCEtvugbZhpxA" type="Description">
+          <element xsi:nil="true"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_Fj2RgQ5uEeCEtvugbZhpxA" fontName="Sans" description="final implementation of the CORBA objects in the corresponding programming languages&lt;br />&#xA;        &lt;br />&#xA;        for the moment this will be ni diagrams in the source directories&lt;br />" fillColor="13289982" lineColor="10265827" lineWidth="1"/>
+        <styles xmi:type="notation:TextStyle" xmi:id="_Fj2Rgg5uEeCEtvugbZhpxA"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_Fj2Rgw5uEeCEtvugbZhpxA"/>
+        <element xsi:nil="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Fj2RhA5uEeCEtvugbZhpxA" x="17442" y="12321" width="4942"/>
+      </children>
+      <children xmi:id="_YmR4QA58EeCEtvugbZhpxA">
+        <children xmi:id="_YmTGYA58EeCEtvugbZhpxA" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_YmTGYQ58EeCEtvugbZhpxA" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_YmTGYg58EeCEtvugbZhpxA" type="Stereotype"/>
+        <children xmi:id="_YmTGYw58EeCEtvugbZhpxA" type="Name"/>
+        <children xmi:id="_YmTtcA58EeCEtvugbZhpxA" type="Parent"/>
+        <children xmi:id="_YmTtcQ58EeCEtvugbZhpxA" type="PackageContents">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_YmTtcg58EeCEtvugbZhpxA" canonical="false" collapsed="true"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_YmR4QQ58EeCEtvugbZhpxA" fontName="Sans" showStereotype="Label"/>
+        <element xmi:type="uml:Package" href="ASysElements.efx#_RtQyAA58EeCEtvugbZhpxA?Higgs/SystemArchitecture/ASysElements?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YmR4Qg58EeCEtvugbZhpxA" x="10013" y="1615"/>
+      </children>
+      <children xmi:id="_bH5gcA58EeCEtvugbZhpxA" type="Note">
+        <children xmi:id="_bH6HgA58EeCEtvugbZhpxA" type="DiagramName">
+          <element xsi:nil="true"/>
+        </children>
+        <children xmi:id="_bH6HgQ58EeCEtvugbZhpxA" type="Description">
+          <element xsi:nil="true"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_bH5gcQ58EeCEtvugbZhpxA" fontName="Sans" description="this package is here temporarily&lt;br />&#xA;        &lt;br />&#xA;        as soon as it has consistent content it should be promoted to oasys project&lt;br />" fillColor="13369343" lineColor="6737151" lineWidth="1"/>
+        <styles xmi:type="notation:TextStyle" xmi:id="_bH5gcg58EeCEtvugbZhpxA"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_bH5gcw58EeCEtvugbZhpxA"/>
+        <element xsi:nil="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bH5gdA58EeCEtvugbZhpxA" x="17765" y="323" width="4520"/>
+      </children>
+      <children xmi:id="_jy0bgBAkEeC0DaEa5WeF9w">
+        <children xmi:id="_jy1CkBAkEeC0DaEa5WeF9w" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_jy1CkRAkEeC0DaEa5WeF9w" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_jy1poBAkEeC0DaEa5WeF9w" type="Stereotype"/>
+        <children xmi:id="_jy1poRAkEeC0DaEa5WeF9w" type="Name"/>
+        <children xmi:id="_jy1pohAkEeC0DaEa5WeF9w" type="Parent"/>
+        <children xmi:id="_jy1poxAkEeC0DaEa5WeF9w" type="PackageContents">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_jy1ppBAkEeC0DaEa5WeF9w" canonical="false" collapsed="true"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_jy0bgRAkEeC0DaEa5WeF9w" fontName="Sans" showStereotype="Label"/>
+        <element xmi:type="uml:Model" href="HiggsSoftware.emx#_9T9I4BAjEeC0DaEa5WeF9w?HiggsSoftware?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jy0bghAkEeC0DaEa5WeF9w" x="10013" y="12920"/>
+      </children>
+      <children xmi:id="_WAsl0BDcEeC0DaEa5WeF9w" type="Note">
+        <children xmi:id="_WAtM4BDcEeC0DaEa5WeF9w" type="DiagramName">
+          <element xsi:nil="true"/>
+        </children>
+        <children xmi:id="_WAtM4RDcEeC0DaEa5WeF9w" type="Description">
+          <element xsi:nil="true"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_WAsl0RDcEeC0DaEa5WeF9w" fontName="Sans" description="empty for the moment&lt;br />" fillColor="13353215" lineColor="6737151" lineWidth="1"/>
+        <styles xmi:type="notation:TextStyle" xmi:id="_WAsl0hDcEeC0DaEa5WeF9w"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_WAsl0xDcEeC0DaEa5WeF9w"/>
+        <element xsi:nil="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WAsl1BDcEeC0DaEa5WeF9w" x="4199" y="9367"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_NomScQ5rEeCo7JwALS5E6g"/>
+      <element xsi:nil="true"/>
+      <edges xmi:id="_jMF-MA5tEeCEtvugbZhpxA" type="NoteAttachment" source="_Q_nRkA5rEeCo7JwALS5E6g" target="_jL0RYA5tEeCEtvugbZhpxA">
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_jMF-MQ5tEeCEtvugbZhpxA" lineWidth="1"/>
+        <styles xmi:type="notation:ArrowStyle" xmi:id="_jMF-Mg5tEeCEtvugbZhpxA"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_jMF-Mw5tEeCEtvugbZhpxA"/>
+        <element xsi:nil="true"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jMF-NA5tEeCEtvugbZhpxA" points="[-152, -52, 503, 173]$[-655, -225, 0, 0]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ml4kgA5tEeCEtvugbZhpxA" id="(0.93868643,0.08159352)"/>
+      </edges>
+      <edges xmi:id="_ovWycA5tEeCEtvugbZhpxA" type="NoteAttachment" source="_R5_PIA5rEeCo7JwALS5E6g" target="_ovTIEA5tEeCEtvugbZhpxA">
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_ovXZgA5tEeCEtvugbZhpxA" lineWidth="1"/>
+        <styles xmi:type="notation:ArrowStyle" xmi:id="_ovXZgQ5tEeCEtvugbZhpxA"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_ovXZgg5tEeCEtvugbZhpxA"/>
+        <element xsi:nil="true"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ovXZgw5tEeCEtvugbZhpxA" points="[-87, -27, 567, 171]$[-654, -198, 0, 0]"/>
+      </edges>
+      <edges xmi:id="_ui-98A5tEeCEtvugbZhpxA" type="NoteAttachment" source="_TRDvwA5rEeCo7JwALS5E6g" target="_ui6FcA5tEeCEtvugbZhpxA">
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_ui-98Q5tEeCEtvugbZhpxA" lineWidth="1"/>
+        <styles xmi:type="notation:ArrowStyle" xmi:id="_ui-98g5tEeCEtvugbZhpxA"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_ui-98w5tEeCEtvugbZhpxA"/>
+        <element xsi:nil="true"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ui-99A5tEeCEtvugbZhpxA" points="[-59, -27, 595, 263]$[-654, -290, 0, 0]"/>
+      </edges>
+      <edges xmi:id="_1JxrwA5tEeCEtvugbZhpxA" type="NoteAttachment" source="_Vp4oUA5rEeCo7JwALS5E6g" target="_1JuBYA5tEeCEtvugbZhpxA">
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_1JxrwQ5tEeCEtvugbZhpxA" lineWidth="1"/>
+        <styles xmi:type="notation:ArrowStyle" xmi:id="_1Jxrwg5tEeCEtvugbZhpxA"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_1Jxrww5tEeCEtvugbZhpxA"/>
+        <element xsi:nil="true"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1JxrxA5tEeCEtvugbZhpxA" points="[-154, -131, 502, 429]$[-656, -560, 0, 0]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5Aih8A5tEeCEtvugbZhpxA" id="(0.98759633,0.12466735)"/>
+      </edges>
+      <edges xmi:id="_6hA2MA5tEeCEtvugbZhpxA" type="NoteAttachment" source="_XidTgA5rEeCo7JwALS5E6g" target="_6g9L0A5tEeCEtvugbZhpxA">
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_6hA2MQ5tEeCEtvugbZhpxA" lineWidth="1"/>
+        <styles xmi:type="notation:ArrowStyle" xmi:id="_6hA2Mg5tEeCEtvugbZhpxA"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_6hA2Mw5tEeCEtvugbZhpxA"/>
+        <element xsi:nil="true"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6hA2NA5tEeCEtvugbZhpxA" points="[-35, -27, 631, 485]$[-666, -512, 0, 0]"/>
+      </edges>
+      <edges xmi:id="_YmU7kA58EeCEtvugbZhpxA" type="OwnedElement" source="_Q_nRkA5rEeCo7JwALS5E6g" target="_YmR4QA58EeCEtvugbZhpxA">
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_YmU7kQ58EeCEtvugbZhpxA" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+        <element xsi:nil="true"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YmU7kg58EeCEtvugbZhpxA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      </edges>
+      <edges xmi:id="_bH9K0A58EeCEtvugbZhpxA" type="NoteAttachment" source="_YmR4QA58EeCEtvugbZhpxA" target="_bH5gcA58EeCEtvugbZhpxA">
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_bH9K0Q58EeCEtvugbZhpxA" lineWidth="1"/>
+        <styles xmi:type="notation:ArrowStyle" xmi:id="_bH9K0g58EeCEtvugbZhpxA"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_bH9K0w58EeCEtvugbZhpxA"/>
+        <element xsi:nil="true"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bH9K1A58EeCEtvugbZhpxA" points="[-34, -27, 251, 197]$[-285, -224, 0, 0]"/>
+      </edges>
+      <edges xmi:id="_loCQsBAkEeC0DaEa5WeF9w" type="NoteAttachment" source="_jy0bgBAkEeC0DaEa5WeF9w" target="_Fj2RgA5uEeCEtvugbZhpxA">
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_loCQsRAkEeC0DaEa5WeF9w" lineWidth="1"/>
+        <styles xmi:type="notation:ArrowStyle" xmi:id="_loCQshAkEeC0DaEa5WeF9w"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_loCQsxAkEeC0DaEa5WeF9w"/>
+        <element xsi:nil="true"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_loCQtBAkEeC0DaEa5WeF9w" points="[72, -6, -284, 10]$[249, -44, -107, -28]"/>
+      </edges>
+      <edges xmi:id="_WAzTgBDcEeC0DaEa5WeF9w" type="NoteAttachment" source="_Vp4oUA5rEeCo7JwALS5E6g" target="_WAsl0BDcEeC0DaEa5WeF9w">
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_WAzTgRDcEeC0DaEa5WeF9w" lineWidth="1"/>
+        <styles xmi:type="notation:ArrowStyle" xmi:id="_WAzTghDcEeC0DaEa5WeF9w"/>
+        <styles xmi:type="notation:LineTypeStyle" xmi:id="_WAzTgxDcEeC0DaEa5WeF9w"/>
+        <element xsi:nil="true"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WAzThBDcEeC0DaEa5WeF9w" points="[-115, -114, 404, 401]$[-519, -515, 0, 0]"/>
+      </edges>
+    </contents>
+  </eAnnotations>
+  <packageImport xmi:id="_qcDsNA5qEeCo7JwALS5E6g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" href="Analysis.efx#_1K8mUBBjEeC0DaEa5WeF9w?Higgs/Analysis?"/>
+  <packagedElement xmi:type="uml:Package" href="ModelFragment_1.efx#_vYCeAA5qEeCo7JwALS5E6g?Higgs/SystemArchitecture?"/>
+  <packagedElement xmi:type="uml:Package" href="ModelFragment_4.efx#_y7hL0A5qEeCo7JwALS5E6g?Higgs/Software?"/>
+  <packagedElement xmi:type="uml:Package" href="Hardware.efx#_W1a8cA5tEeCEtvugbZhpxA?Higgs/Hardware?"/>
+  <profileApplication xmi:id="_qcDsNQ5qEeCo7JwALS5E6g">
+    <eAnnotations xmi:id="_qcDsNg5qEeCo7JwALS5E6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_qcDsNw5qEeCo7JwALS5E6g">
+    <eAnnotations xmi:id="_qcDsOA5qEeCo7JwALS5E6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_qcDsOQ5qEeCo7JwALS5E6g">
+    <eAnnotations xmi:id="_qcDsOg5qEeCo7JwALS5E6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Package>

@@ -1,0 +1,24 @@
+<!-- Launch file to launch in Higgs computer, loads the node for the pioneer base the kinect as a sensor and the nodes required to obtain the scan form the points of the kinect one narrow for obtaining localization reference, and the other wider to obtain better obstacle detection -->
+
+<launch>
+	<!-- robot nodes -->
+  	<!-- ROBOT -->
+    <param name="pioneer/sonar" value="false" />
+    <include file="$(find pioneer_aria)/launch/pioneer.launch"/>
+	
+	<!-- Higgs tfs for kinect -->  
+	<node pkg="tf" type="static_transform_publisher" name="higgs_kinect1" args="0.250 0.020 0.580 0 0 0 1 /base_link /openni_camera 100" />
+	<node pkg="tf" type="static_transform_publisher" name="higgs_kinect2" args="0.250 0.020 0.580 0 0 0 1 /base_link /camera_link 100" />
+	<node pkg="tf" type="static_transform_publisher" name="higgs_kinect3" args="0.0 0.0 0.0 0 0 0 1 /base_footprint /base_link 100" /> 
+	
+	<!-- KINECT -->
+    <!-- <include file="$(find openni_launch)/launch/openni.launch"/> -->
+  	 <include file="$(find higgs_kinect)/launch/kinect_openni.launch"/>  --> 
+		
+		<!-- kinect perception -->
+	 <include file="$(find higgs_kinect)/launch/cloudthrottle.launch"/>
+  	 <include file="$(find higgs_kinect)/launch/kinect_obstacles.launch"/>
+ 	  <include file="$(find higgs_kinect)/launch/kinect_references.launch"/>
+ 	  
+	 <!-- -->
+</launch>

@@ -1,0 +1,22 @@
+#ifndef PP_IDL_H
+#define PP_IDL_H
+
+//#include "~/Workspaces_ASLAB/GPS_Navigation_Mission/path_planner/src/Navigator.idl"
+#include <HiggsTypes.idl>
+
+module higgs{
+	
+
+
+	//This module is responsible for the path planning, generation and for the invocation of the navigator to execute the 
+	//generated plan
+	interface PathPlanner{
+
+
+		//Orders the navigation module to navigate to each of the wayPoint  
+		//Returns "1" when it reaches the final WayPoint
+		short execMotionPlan(in higgs::MotionPlan plan); 
+	};
+};
+
+#endif

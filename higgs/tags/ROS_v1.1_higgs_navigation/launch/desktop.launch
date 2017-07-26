@@ -1,0 +1,21 @@
+<launch>
+
+ <include file="$(find higgs_navigation)/navigation_config/move_base_global.xml"/>
+
+ <node name="map_server" pkg="map_server" type="map_server" args="$(find higgs_navigation)/map/sala_completa.pgm 0.05" respawn="true" />
+
+ 
+  <!-- To teleoperate the robot -->
+  <node name="teleop_base_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen" >
+    <remap from="base_controller/command" to="robot/pioneer2AT8/cmd_vel" />	
+  </node>
+
+  <include file="$(find higgs_navigation)/navigation_global/amcl_node.xml"/> 
+
+
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find higgs_navigation)/navigation_global/higgs_nav.vcg" >
+    <remap from="/goal" to="/move_base_simple/goal" />
+  </node>
+
+	
+</launch>

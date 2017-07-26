@@ -1,0 +1,23 @@
+<launch>
+	
+  <master auto="start"/>  
+
+  <param name="sicklms/port" value="/dev/ttyUSB1"/>
+  <param name="sicklms/baud" value="19200"/> 
+  
+  <node pkg="ROSARIA" name="Higgs" type="RosAria" /> 
+
+  <node pkg="Higgs_setup_tf" name="higgs_tf_broadcaster" type="higgs_tf_broadcaster" />
+ 
+  <!-- To teleoperate the robot -->
+  <node name="teleop_base_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen">
+    <remap from="base_controller/command" to="Higgs/cmd_vel" />	
+  </node>
+
+  <node name="sicklms" pkg="sicktoolbox_wrapper" type="sicklms" />
+
+  <!-- To build the map with SLAM -->
+  <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen"/>		
+
+</launch>
+

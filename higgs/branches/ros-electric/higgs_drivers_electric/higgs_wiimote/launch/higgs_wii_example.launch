@@ -1,0 +1,9 @@
+<launch>
+  <machine name="higgs" address="higgs2" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="higgs" default="false"/>
+		    
+    <node pkg="pioneer_aria" name="pioneer" type="pioneer_aria" machine="higgs" /> 
+
+    <include file="$(find higgs_wiimote)/launch/higgs_wii.launch"/>
+
+   
+</launch>

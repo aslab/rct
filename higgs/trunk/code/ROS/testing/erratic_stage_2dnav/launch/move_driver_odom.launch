@@ -1,0 +1,15 @@
+<launch>
+  <param name="/use_sim_time" value="true"/>
+  
+  <node pkg="stage" type="stageros" name="stageros" args="$(find stage)/world/willow-erratic.world" respawn="false" >
+    <param name="base_watchdog_timeout" value="0.2"/>
+  </node>
+  
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find erratic_stage_2dnav)/navigation_local/erratic_odom.vcg" output="screen">
+    <remap from="/goal" to="odom_driver_simple/goal" />
+  </node>
+   
+  <!-- for moving -->
+  <node pkg="higgs_navigation" name="odom_driver" respawn="false" type="driver_odom" output="screen" />
+
+</launch>

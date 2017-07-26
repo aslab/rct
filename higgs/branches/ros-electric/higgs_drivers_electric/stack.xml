@@ -1,0 +1,9 @@
+<stack>
+  <description brief="higgs_drivers">higgs_drivers contains all the nodes and configuration files to access the devices in the Higgs mobile platform from ROS</description>
+  <author>Carlos Hernandez</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>svn+ssh://sagan/home/svn_repositories/Higgs/trunk/code/ROS/higgs_drivers</url>
+  <depend stack="ros" />
+
+</stack>

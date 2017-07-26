@@ -1,0 +1,25 @@
+This file contains the bill of materials for duplicating the power board.
+The last three components are not strictly for the power board, but for
+connecting it.
+
+
+RS Reference	Qty	Description
+
+332-818		9	Right angle small switch
+317-695		1	Right angle switch with lever
+294-312		9	Low signal NPN transistor
+670-5715	12	MiniFit connector, male PCB
+544-3503	9	Zener diode 2V4
+188-3036	9	Capacitor, 1,5uF electrolythic
+542-8784	1	Ribbon connector 10way PCB header
+466-4260	10	Right angle LED
+369-781		9	DPST Relay
+487-836		1	Power Jack connector, male PCB
+131-299		3	Resistor 2K2
+131-255		7	Resistor 1K
+131-378		9	Resistor 10K
+628-9029	18	1N2004 Diode
+426-3722	3	Ribbon 10way plug
+679-5776	20	MiniFit connector, female plug
+172-9134	1	MiniFit connector, bag with 100 terminals
+

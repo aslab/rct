@@ -1,0 +1,13 @@
+<package>
+  <description brief="higgs_kinect">
+
+  </description>
+  <author>Alberto Gonzalez, Carlos Hernandez</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url></url>
+  <depend package="openni_camera"/>
+
+</package>
+
+

@@ -1,0 +1,17 @@
+<package>
+  <description brief="manager_nav_goals">
+
+     manager_nav_goals
+
+  </description>
+  <author>admin</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/manager_nav_goals</url>
+  <depend package="move_base_msgs"/>
+  <depend package="actionlib"/>
+  <depend package="roscpp"/>
+
+</package>
+
+

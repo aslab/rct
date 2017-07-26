@@ -1,0 +1,19 @@
+<package>
+  <description brief="higgs_kinect">
+
+    Contains:
+	- a driver for the kinect accelerometers and tilt motor, to be used in conjunction with the NI driver, based on kinect_aux but modified to publish IMU data with frame="base_kinect_link"
+	- launch files for using openni_node for higgs
+
+  </description>
+  <author>Carlos Hernandez</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url></url>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="sensor_msgs"/>
+
+</package>
+
+

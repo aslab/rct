@@ -1,0 +1,38 @@
+<!-- Launch file to launch in Higgs Computer launching pionner and laser nodes, plus the tf transformations needed for our robot -->
+
+<launch>
+
+
+  <machine name="higgs" address="higgs" env-loader="/opt/ros/fuerte/env.sh" />
+     
+  <!-- robot nodes -->
+  	<!-- ROBOT -->
+    	<param name="pioneer/sonar" value="false" />
+    	<include file="$(find pioneer_aria)/launch/pioneer.launch"/>
+    
+    <!-- Higgs tfs for the sensory sources --> 
+ 	<!-- laser -->
+    	<node pkg="tf" type="static_transform_publisher" name="higgs_laser1" args="0.248 0.0 0.35 0 0 0 1 /base_link /base_laser_link 100" />  
+    	<node pkg="tf" type="static_transform_publisher" name="higgs_laser2" args="0.0 0.0 0.0 0 0 0 1 /base_footprint /base_link 100" />  
+    	<node pkg="tf" type="static_transform_publisher" name="higgs_laser3" args="0.0 0.0 0.0 0 0 0 1 /base_laser_link /laser 100" />  
+    <!-- kinect -->  
+		<node pkg="tf" type="static_transform_publisher" name="higgs_kinect1" args="0.250 0.020 0.580 0 0 0 1 /base_link /openni_camera 100" />
+		<node pkg="tf" type="static_transform_publisher" name="higgs_kinect2" args="0.250 0.020 0.580 0 0 0 1 /base_link /camera_link 100" />
+		<node pkg="tf" type="static_transform_publisher" name="higgs_kinect3" args="0.0 0.0 0.0 0 0 0 1 /base_footprint /base_link 100" /> 
+	
+    
+    <!-- LASER -->
+    	<include file="$(find higgs_laser)/launch/laser.launch"/>
+    
+    <!-- KINECT -->
+    	<!-- <include file="$(find openni_launch)/launch/openni.launch"/> -->
+  	 	<include file="$(find higgs_kinect)/launch/kinect_openni.launch"/>  --> 
+		
+		<!-- kinect perception -->
+	 	<include file="$(find higgs_kinect)/launch/cloudthrottle.launch"/>
+  	 	<include file="$(find higgs_kinect)/launch/kinect_obstacles.launch"/>
+ 	  	<include file="$(find higgs_kinect)/launch/kinect_references.launch"/>
+
+	
+</launch>
+

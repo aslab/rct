@@ -1,0 +1,11 @@
+# base_local_planner parameters
+TrajectoryPlannerROS:
+    # Robot Configuration Parameters
+    acc_lim_x: 0.8 #Max linear acceleration in the x direction
+    acc_lim_y: 0.8 #Max linear acceleration in the y direction
+    acc_lim_th: 2.0 #Max angular acceleration
+    max_vel_x: 0.25 #Max linear velocity of the robot m/s
+    min_vel_x: 0.1 # Min linear velocity of the robot
+    max_rotational_vel: 0.3 # Max rotational vel
+    min_in_place_rotational_vel: 0.1 # Minimun rotational velocity allowed for the base while performing in-place rotations in radians/sec
+    

@@ -1,0 +1,11 @@
+<launch>
+
+  <include file="$(find higgs_navigation)/launch/aslab_machines.xml"/>
+     
+  <node pkg="higgs_kinect" name="kinect_tilt" type="tilt_kinect" machine="higgs" >
+  	<remap from="imu" to="kinect_imu" />
+  </node>
+  
+	
+</launch>
+

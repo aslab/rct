@@ -1,0 +1,29 @@
+<launch>
+
+  <machine name="higgs" address="higgs2" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)" user="root" password="ramadosmiltres"  default="false"/>
+
+  <group ns="robot">
+		    
+    <node pkg="ROSARIA" name="pioneer2AT8" type="RosAria" output="screen" machine="higgs" /> 
+
+    <node pkg="higgs_setup_tf" name="higgs_tf_broadcaster" type="higgs_tf_broadcaster" machine="higgs" />
+
+      <param name="sicklms/port" value="/dev/ttyUSB1" />
+      <param name="sicklms/baud" value="19200" />   
+    <node name="sicklms" pkg="sicktoolbox_wrapper" type="sicklms" machine="higgs" />
+
+
+  </group> 
+
+  <machine name="local_alt" address="localhost" default="false" /> 
+
+
+  <!-- To teleoperate the robot -->
+  <node name="teleop_base_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen" machine="local_alt">
+    <remap from="base_controller/command" to="robot/pioneer2AT8/cmd_vel" />	
+  </node>
+
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find higgs_teleop)/higgs.vcg" machine="local_alt">
+	
+  </node>
+</launch>

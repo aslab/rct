@@ -1,0 +1,20 @@
+<package>
+  <description brief="higgs_stage_sim">
+
+     higgs_stage_sim contains configuration files and resources to simulate higgs in stage
+	needs the teleop_base, which doesn't build in electric, but works just copying it built from diamondback
+     
+  </description>
+  <author>Carlos Hernandez Corbato</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url></url>
+  <depend package="move_base"/>
+  <depend package="stage"/>
+  <depend package="higgs_navigation"/>
+  <depend package="rospy"/>
+  <depend package="sensor_msgs"/>
+
+</package>
+
+

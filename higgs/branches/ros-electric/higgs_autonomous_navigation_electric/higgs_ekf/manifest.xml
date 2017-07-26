@@ -1,0 +1,19 @@
+<package>
+  <description brief="higgs_ekf">
+
+     higgs_ekf and utilities
+
+  </description>
+  <author>Carlos Hernandez Corbato</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/higgs_ekf</url>
+  <depend package="robot_pose_ekf"/>
+  <depend package="sensor_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="nav_msgs"/>
+  <depend package="rospy"/>
+
+</package>
+
+

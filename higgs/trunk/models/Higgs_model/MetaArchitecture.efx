@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3KwzcA5qEeCo7JwALS5E6g" name="MetaArchitecture">
+    <eAnnotations xmi:id="_h0EGMA5rEeCo7JwALS5E6g" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_h0DfIA5rEeCo7JwALS5E6g" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="SystemArchitecture.efx#_vYCeAA5qEeCo7JwALS5E6g?HiggsEngineeringModel/Design/SystemArchitecture?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_3KxagA5qEeCo7JwALS5E6g" source="uml2.diagrams" references="_3KxagQ5qEeCo7JwALS5E6g">
+      <contents xmi:type="notation:Diagram" xmi:id="_3KxagQ5qEeCo7JwALS5E6g" type="Freeform" name="Main">
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_3Kxagg5qEeCo7JwALS5E6g"/>
+        <element xsi:nil="true"/>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_9GzHwDxDEeCIlKbBJKBR4A" annotatedElement="_3KwzcA5qEeCo7JwALS5E6g">
+      <body>this package contains the design of the meta-control architecture&lt;br /></body>
+    </ownedComment>
+  </uml:Package>
+  <Default:Documentation xmi:id="_9G3ZMDxDEeCIlKbBJKBR4A" base_Comment="_9GzHwDxDEeCIlKbBJKBR4A"/>
+</xmi:XMI>

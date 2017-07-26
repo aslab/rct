@@ -1,0 +1,12 @@
+//MissionManager.idl
+module higgs{
+	
+
+	//This module is responsible for the control of the GPS Navigation Mission
+	interface MissionManager {
+
+		//Orders the module to start a Navigation Mission with the target location 
+		//specified in "target"
+		void startMission(in higgs::LocalizationModule::Position target); 
+	};
+};

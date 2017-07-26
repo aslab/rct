@@ -1,0 +1,29 @@
+<launch>
+
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base_node" >
+    <remap from="odom" to="/pioneer/odom" />
+    <remap from="cmd_vel" to="/pioneer/cmd_vel" />
+  
+    <rosparam file="$(find higgs_navigation)/config_nav/move_base_params.yaml" command="load" />
+
+    <rosparam file="$(find higgs_navigation)/config_nav/costmap_robot_model.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find higgs_navigation)/config_nav/costmap_robot_model.yaml" command="load" ns="local_costmap" />
+
+    <rosparam file="$(find higgs_navigation)/config_nav/costmap_common.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find higgs_navigation)/config_nav/costmap_common.yaml" command="load" ns="local_costmap" />
+  
+    <rosparam file="$(find higgs_navigation)/config_nav/costmap_sensors_laser.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find higgs_navigation)/config_nav/costmap_sensors_laser.yaml" command="load" ns="local_costmap" />
+    
+    <rosparam file="$(find higgs_navigation)/config_nav/global_costmap_params.yaml" command="load" />
+    
+    <!-- global frame for local_costmap depends on use of ekf -->
+    <rosparam file="$(find higgs_navigation)/config_nav/local_costmap_params.yaml" command="load" />
+    <param name="local_costmap/global_frame" value="odom" />
+        
+    <rosparam file="$(find higgs_navigation)/config_nav/base_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find higgs_navigation)/config_nav/base_local_planner_laser.yaml" command="load" />
+    
+
+  </node>
+</launch>

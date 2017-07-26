@@ -1,0 +1,29 @@
+<launch>
+
+
+
+  <group ns="robot">
+		    
+    <node pkg="ROSARIA" name="pioneer2AT8" type="RosAria" output="screen" /> 
+
+    <node pkg="higgs_setup_tf" name="higgs_tf_broadcaster" type="higgs_tf_broadcaster" />
+
+      <param name="sicklms/port" value="/dev/ttyUSB1" />
+      <param name="sicklms/baud" value="19200" />   
+    <node name="sicklms" pkg="sicktoolbox_wrapper" type="sicklms" />
+
+
+  </group> 
+
+  <machine name="local_alt" address="localhost" default="false" /> 
+
+
+  <!-- To teleoperate the robot -->
+  <node name="teleop_base_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen">
+    <remap from="base_controller/command" to="robot/pioneer2AT8/cmd_vel" />	
+  </node>
+
+
+	
+
+</launch>

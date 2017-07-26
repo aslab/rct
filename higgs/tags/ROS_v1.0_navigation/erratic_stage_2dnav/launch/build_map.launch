@@ -1,0 +1,27 @@
+<launch>
+  <master auto="start"/>  
+  <param name="/use_sim_time" value="true"/>
+  
+  <node pkg="stage" type="stageros" name="stageros" args="$(find stage)/world/willow-erratic.world" respawn="false" >
+    <param name="base_watchdog_timeout" value="0.2"/>
+  </node>
+  
+  <!-- To teleoperate the robot -->
+  <node name="teleop_base_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen">
+    <remap from="base_controller/command" to="cmd_vel" />
+  </node>
+  
+  <!-- To build the map with SLAM -->
+  <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
+    <remap from="scan" to="base_scan" />
+  </node>
+  
+  <!-- for the moment by hand
+	terminal 2:
+		erratic_stage_2dnav$ rosrun map_server map_saver  
+   -->
+  
+
+
+
+</launch>

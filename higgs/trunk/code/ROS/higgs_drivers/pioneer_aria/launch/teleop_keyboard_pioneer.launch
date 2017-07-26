@@ -1,0 +1,13 @@
+<launch>
+
+  <include file="$(find higgs_navigation)/launch/aslab_machines.xml"/>
+     
+  <node pkg="pioneer_aria" name="pioneer" type="pioneer_aria" required="true" machine="higgs" />
+  
+  <!-- To teleoperate the robot -->
+  <node name="teleop_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen" >
+    <remap from="base_controller/command" to="pioneer/cmd_vel" />	
+  </node>
+	
+</launch>
+

@@ -1,0 +1,60 @@
+# for Higgs @ ASLab
+
+#configure the costmap in voxel-grid mode
+map_type: voxel
+
+
+#Voxel grid specific parameters
+origin_z: 0.0
+z_resolution: 0.2
+z_voxels: 10
+unknown_threshold: 9
+mark_threshold: 0
+
+#Set the tolerance we're willing to have for tf transforms
+transform_tolerance: 1.0
+
+#Obstacle marking parameters
+obstacle_range: 2.5
+raytrace_range: 3.0
+
+footprint: [[0.16, 0.2],
+            [0.25, 0.13],
+            [0.25, -0.13],
+            [0.16, -0.2],
+            [-0.16, -0.2],
+            [-0.25, -0.13],
+            [-0.25, 0.13],
+            [-0.16, 0.2]]
+footprint_padding: 0.01
+
+#Cost function parameters
+inflation_radius: 0.55
+clearing_radius: 0.59
+cost_scaling_factor: 10.0
+
+#The cost at which a cell is considered an obstacle when a map is read from the map_server
+lethal_cost_threshold: 100
+
+#Configuration for the sensors that the costmap will use to update a map
+observation_sources: kinect
+
+kinect: {sensor_frame: /openni_depth_optical_frame,
+                    data_type: PointCloud,
+                    topic: /robot/camera/rgb/points_PointCloud,
+                    expected_update_rate: 4,
+                    observation_persistence: 10,
+                    marking: true,
+                    clearing: true,
+                    min_obstacle_height: 0.3,
+                    max_obstacle_height: 2.0}
+                    
+laser: {sensor_frame: base_laser_link,
+            data_type: LaserScan,
+            topic: /robot/scan,
+            expected_update_rate: 0.5,
+            observation_persistence: 0.0,
+            marking: true,
+            clearing: true,
+            min_obstacle_height: -0.10,
+            max_obstacle_height: 2.0}

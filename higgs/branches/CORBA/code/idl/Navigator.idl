@@ -1,0 +1,34 @@
+#ifndef NAV_IDL_H
+#define NAV_IDL_H
+
+#include <HiggsTypes.idl>
+
+//This module orders the navigation of the robot to a certain given waypoint,
+//according to its position and the obstacles nearby 
+module higgs{
+	
+
+	interface Navigator{
+		
+
+
+		
+		typedef double prox_thr;  //Proximity threshold. For distances equal or lower to the goal Waypoint, robot will
+									 //consider itself "in" the waypoint
+
+
+		//Controls the robot movement in order to get near to the "goal" wayPoint
+		//returns "1" when the robot reaches the vicinity of the waypoint
+		void setGoalWayPoint(in WayPoint goal); 
+
+
+		//Disable the movement of the robot
+		void stop();
+	};
+
+
+};
+
+#endif
+
+

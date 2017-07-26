@@ -1,0 +1,18 @@
+<launch>
+<!-- 
+  ASlab for Higgs
+-->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base_node" output="screen" machine="local_alt" >
+    <remap from="odom" to="/robot/pioneer2AT8/pose" />
+    <remap from="cmd_vel" to="/robot/pioneer2AT8/cmd_vel" />
+  
+    <rosparam file="$(find higgs_navigation)/navigation_config/move_base_params.yaml" command="load" />
+
+    <rosparam file="$(find higgs_navigation)/navigation_config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find higgs_navigation)/navigation_config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find higgs_navigation)/navigation_global/config/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find higgs_navigation)/navigation_global/config/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find higgs_navigation)/navigation_global/config/base_local_planner_params.yaml" command="load" />
+
+  </node>
+</launch>

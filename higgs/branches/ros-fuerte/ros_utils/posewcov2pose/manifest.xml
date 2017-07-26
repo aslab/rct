@@ -1,0 +1,16 @@
+<package>
+  <description brief="posewcov2pose">
+
+     posewcov2pose : node that converts the messages of type geometry_msgs/PoseWithCovarianceStamped it is subscribed in topic pose_cov into geometry_msgs/Pose in the topic pose it publishes
+
+  </description>
+  <author>Carlos Hernandez Corbato</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/posewcov2pose</url>
+  <depend package="roscpp"/>
+  <depend package="geometry_msgs"/>
+
+</package>
+
+

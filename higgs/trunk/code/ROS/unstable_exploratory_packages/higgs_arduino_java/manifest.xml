@@ -1,0 +1,11 @@
+<package>
+  <description brief="higgs_arduino_java">Tests for rosjava</description>
+  <author>Jaime F. Fisac @ ASLab</author>
+  <license>BSD</license>
+  <review status="experimental" notes=""/>
+  <depend package="roslib"/>
+  <depend package="rosjava"/>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <url>http://pr.willowgarage.com/wiki/test_rosjava</url>
+</package>

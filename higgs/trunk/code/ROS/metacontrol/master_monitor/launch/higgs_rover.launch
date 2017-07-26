@@ -1,0 +1,46 @@
+<launch>
+
+  <machine name="higgs" address="higgs2" ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)"  user="higgs" default="false" >
+  	<env name="ROS_MASTER_URI" value="$(env ROS_MASTER_URI)" />
+  </machine>
+     
+  <!-- robot nodes -->
+  	<!-- ROBOT -->
+  	<param name="pioneer/tf_odom_broadcast" value="false" />
+    <param name="pioneer/odom_frame" value="odom_combined" />
+    <param name="pioneer/sonar" value="false" />
+    <include file="$(find pioneer_aria)/launch/pioneer.launch"/>
+
+ 
+    <!-- COMPASS -->
+    <node name="higgs_arduino" pkg="higgs_arduino_corba_ros" type="higgs_arduino" output="screen" machine="higgs">
+	 	<remap from="higgs_arduino/Imu" to="higgs_arduino/output_Imu"/>
+	 	<param name="loop_rate_hz" value="10"/>
+	</node>   
+    <!-- EKF filter for better odometry -->
+    <include file="$(find higgs_ekf)/launch/pose_ekf.launch"/>
+    
+    <node pkg="higgs_setup_tf" name="tf_robot_geometry" type="higgs_tf_broadcaster" machine="higgs" />
+    
+    <!-- LASER -->
+    <include  file="$(find higgs_laser)/launch/laser.launch"/>
+
+	<!-- KINECT -->
+    <include file="$(find higgs_kinect)/launch/kinect_full.launch"/>      
+	<!-- kinect perception -->
+	<include file="$(find higgs_kinect)/launch/cloudthrottle.launch"/>
+    <include file="$(find higgs_kinect)/launch/kinect_obstacles.launch"/>
+    <!-- -->
+    		
+  <!--  -->
+  
+
+  <!-- To teleoperate the robot -->
+  <node name="teleop_keyboard" pkg="teleop_base" type="teleop_base_keyboard" output="screen" >
+    <remap from="base_controller/command" to="pioneer/cmd_vel" />	
+  </node>
+  
+<!--  <include file="$(find higgs_wiimote)/launch/higgs_wii.launch"/> -->
+	
+</launch>
+

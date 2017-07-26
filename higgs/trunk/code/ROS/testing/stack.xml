@@ -1,0 +1,13 @@
+<stack>
+  <description brief="testing">
+
+	This stack contains packages used to test parts of the Higgs system
+
+  </description>
+  <author>Carlos Hernandez</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>svn+ssh://sagan/home/svn_repositories/Higgs/trunk/code/ROS/testing</url>
+  <depend stack="ros" />
+
+</stack>

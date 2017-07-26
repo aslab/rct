@@ -1,0 +1,5 @@
+geometry_msgs/PoseStamped target_pose # goal
+---
+# no feedback
+---
+geometry_msgs/PoseStamped base_position # result

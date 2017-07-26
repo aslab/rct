@@ -1,0 +1,24 @@
+<!-- Launch file to launch in Higgs Computer launching pionner and laser nodes, plus the tf transformations needed for our robot -->
+
+<launch>
+
+
+  <machine name="higgs" address="higgs" env-loader="/opt/ros/fuerte/env.sh" />
+     
+  <!-- robot nodes -->
+  	<!-- ROBOT -->
+    <param name="pioneer/sonar" value="false" />
+    <include file="$(find pioneer_aria)/launch/pioneer.launch"/>
+    
+    <!-- Higgs tfs for the sensory sources --> 
+ 	<!-- laser -->
+    <node pkg="tf" type="static_transform_publisher" name="higgs_laser1" args="0.248 0.0 0.35 0 0 0 1 /base_link /base_laser_link 100" />  
+    <node pkg="tf" type="static_transform_publisher" name="higgs_laser2" args="0.0 0.0 0.0 0 0 0 1 /base_footprint /base_link 100" />  
+    <node pkg="tf" type="static_transform_publisher" name="higgs_laser3" args="0.0 0.0 0.0 0 0 0 1 /base_laser_link /laser 100" />  
+    
+    <!-- LASER -->
+    <include file="$(find higgs_laser)/launch/laser.launch"/>
+
+	
+</launch>
+

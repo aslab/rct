@@ -1,0 +1,226 @@
+# Desc: Device and world definitions for higgs robot.
+# Author: Alberto Gonzalez @ aslab.org
+# Date: 27/feb/2013
+# This is a definition of the world and devices for the simulation of our higgs robot, we use
+# the pioneer.inc and the sick.inc templates for the accurate descriptions.
+# But we prefer to declare all descriptions only in this file for helping 
+# any future maintenance. See Stage manual for references.
+
+
+# time to pause (in GUI mode) or quit (in headless mode (-g)) the simulation
+quit_time 3600 # 1 hour of simulated time
+paused 0
+resolution 0.05 #The resolution (in meters) of the underlying bitmap model
+
+# configure the GUI window
+window
+(
+  size [ 745.000 448.000 ]  # in pixels
+  #Camera options
+  scale 28.806   # pixels per meter
+  center [ -0.45  -16 ]
+  rotate [ 0.000 -1.560 ]
+  #GUI options			
+  show_data 1              # 1=on 0=off
+)
+
+#We define our models for our world
+
+define floorplan model #Map model
+(
+  # sombre, sensible, artistic
+  color "gray30"
+
+  # most maps will need a bounding box
+  boundary 1	# Limits the robot to move only inside our map.
+
+  gui_nose 0
+  gui_grid 0
+  gui_move 0
+  gui_outline 0
+  gripper_return 0
+  fiducial_return 0
+#Returns laser and rangers information
+  laser_return 1
+  ranger_return 1
+)
+
+define zone model #Define borders of map not sensible to sensors
+(
+  color	"orange"
+  size [ 2 2 0.02 ]
+
+  gui_nose 0
+  gui_grid 0
+  gui_move 0
+  gui_outline 0
+
+  # insensible to collision and range sensors
+  obstacle_return 0
+  laser_return 0
+  ranger_return 0  
+)
+
+
+
+define pioneer_base position #Simulates model robot odometry
+(
+  color "red"			# Default color.
+  drive "diff"		 	# Differential steering model.
+  gui_nose 1                  	# Draw a nose on the robot so we can see which way it points
+  obstacle_return 1           	# Can hit things.
+  laser_return 1                 # reflects laser beams
+  ranger_return 1             	# reflects sonar beams
+  blob_return 1               	# Seen by blobfinders  
+  fiducial_return 1           	# Seen as "1" fiducial finders
+
+  localization "gps"         	  
+  localization_origin [0 0 0 0] 	# Start odometry at (0, 0, 0).
+
+  # alternative odometric localization with simple error model
+  # localization "odom"         		# Change to "gps" to have impossibly perfect, global odometry
+  #  odom_error [ 0.05 0.05 0.1 ]   	# Odometry error or slip in X, Y and Theta
+                                   	# (Uniform random distribution)   
+)
+
+define sicklaser model # Simulates model of laser SICKLMS200
+(
+
+ #sensor(
+  # laser-specific properties
+  # factory settings for LMS200	
+  #range_max 8.0
+  #range [0.35 180] # minimun distance range, max angle range used for sensor info
+  #fov 180 # The FOV variable is only used to display the picture in stage
+  #samples 361
+ #)
+
+  #samples 90 # still useful but much faster to compute
+
+  # generic model properties
+  color "blue"
+  size [ 0.156 0.155 0.19 ] # dimensions from LMS200 data sheet	
+)
+define fancysicklaser sicklaser #Defines a better looking model of sicklaser
+(
+  # bottom
+  block( 
+    points 4
+    point[0] [ -0.02 -0.077 313]
+    point[1] [  0.078 -0.077 ]
+    point[2] [  0.078  0.077 ]
+    point[3] [ -0.02  0.077 ]
+    z [0 0.02 ]
+  )
+
+  # backquired for each simulated robot.
+But in the patched file stageros.cc Line217, has little bug .Make stageros fail to detect the when the stage robot has no camera with it. And the result is segment fault after running stageros.
+Here is the fix
+origional patch
+  block(
+    points 4
+    point[0] [ -0.078 -0.077 ]
+    point[1] [ -0.02  -0.077 ]
+    point[2] [ -0.02   0.077 ]
+    point[3] [ -0.078  0.077 ]
+    z [0 0.21 ]
+  )
+
+  # top
+  block( 
+  	points 4
+    point[0] [ -0.02 -0.077 ]
+    point[1] [  0.078 -0.077 ]
+    point[2] [  0.078  0.077 ]
+    point[3] [ -0.02  0.077 ]
+    z [0.12 0.21 ]  
+  )
+
+  # laser bit
+  block( points 4
+    point[0] [ -0.02 -0.05 ]
+	 point[1] [  0.06 -0.05 ]
+	 point[2] [  0.06  0.05 ]
+	 point[3] [ -0.02  0.05 ]
+	 z [0.02 0.12 ]  
+   color "gray10"
+  )
+)
+
+define kinect ranger # Simulates a Kinect camera
+(
+	sensor(
+		# resolution [640 480]
+		range [0.40 54]
+		fov 54
+		samples 640
+		)
+	size [0.03 0.28 0.03]
+		
+	 # Kinect form
+  block( 
+  	points 4
+    point[0] [ -0.019 0.14]
+    point[1] [ -0.019 -0.14]
+    point[2] [  0.019 -0.14]
+    point[3] [ 	0.019  0.14]
+    z [0 0.03]
+    )
+    
+   color "black"
+    
+	
+)
+
+
+define higgs pioneer_base #Simulates our higgs model based on type pioneer base defined above
+(
+  # Actual size
+  size [0.68 0.50 0.22]
+
+  # The pioneer's center of rotation is offset from its center of area
+  origin [-0.04465 0.0 0.0 0.0]
+
+  # Estimated mass in KG
+  mass 40.0 
+
+  # We define the Body shape of higg's base. A pioneer 2AT-8 robot 
+  block( 
+    points 8	#The shape is consists of 8 points (x,y)
+    point[0] [-0.30 0.25]
+    point[1] [-0.34 0.15]
+    point[2] [-0.34 -0.15]
+    point[3] [-0.30 -0.25]
+    point[4] [0.30 -0.25]
+    point[5] [0.34 -0.15]
+    point[6] [0.34 0.15]
+    point[7] [0.30 0.25]
+    z [0 0.22] #Position relative in the Z axis. Our robot is on the ground (0) and its height is 0.22
+  )
+
+  # Now we add the sensors defined above in our robot model
+  # To add the sonar array defined in pioneer.inc Needs to add pioneer.inc as an include at the beginning of file.
+  # p3at_sonar( pose [ 0 0 -0.03 0 ] ) 
+  # Use the laser defined in sick.inc
+  fancysicklaser(pose [ 0.248 0 0 0.35] )
+  kinect(pose [ 0.248 0 0.19 0])
+)
+
+#End of model defines.
+
+# Now we declare the real objects for our simulation based on the above definitions.
+# Declares floorplan object with parameters. Creates our map in the world.
+floorplan
+( 
+  name "willow"
+  size [54.0 58.7 0.5]	#In meters
+  pose [0 0 0 0]
+  bitmap "willow-full.pgm" #loads map. Can be changed to load another map
+)
+
+higgs # Creates our robot in the world.
+(
+  # can refer to the robot by this name
+  name "higgs"
+  pose [-5 -14 0 45] #position for the creation of the robot
+)

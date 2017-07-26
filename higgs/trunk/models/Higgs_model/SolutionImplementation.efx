@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Standard="http://www.eclipse.org/uml2/schemas/Standard/1" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Standard/1 pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w">
+  <uml:Package xmi:id="_3nArgKGfEeCxLZhEn2s9Ag" name="SolutionImplementation" clientDependency="_P7aNMK7KEeCxLZhEn2s9Ag">
+    <eAnnotations xmi:id="_cw7BcKMhEeCxLZhEn2s9Ag" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Design.efx#_VoHLsKMhEeCxLZhEn2s9Ag?HiggsEngineeringModel/Design?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_9JJeYKGfEeCxLZhEn2s9Ag" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="Software.efx#_y7hL0A5qEeCo7JwALS5E6g?HiggsEngineeringModel/Design/SolutionImplementation/SoftwareModel?"/>
+      <references xmi:type="uml:Package" href="Hardware.efx#_W1a8cA5tEeCEtvugbZhpxA?HiggsEngineeringModel/Design/SolutionImplementation/Hardware?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_3nDHwKGfEeCxLZhEn2s9Ag" source="uml2.diagrams" references="_3nDHwaGfEeCxLZhEn2s9Ag">
+      <contents xmi:type="notation:Diagram" xmi:id="_3nDHwaGfEeCxLZhEn2s9Ag" type="Freeform" name="Main">
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_3nDHwqGfEeCxLZhEn2s9Ag"/>
+        <element xsi:nil="true"/>
+      </contents>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Package" href="Hardware.efx#_W1a8cA5tEeCEtvugbZhpxA?HiggsEngineeringModel/Design/SolutionImplementation/Hardware?"/>
+    <packagedElement xmi:type="uml:Package" href="Software.efx#_y7hL0A5qEeCo7JwALS5E6g?HiggsEngineeringModel/Design/SolutionImplementation/SoftwareModel?"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_P7aNMK7KEeCxLZhEn2s9Ag" client="_3nArgKGfEeCxLZhEn2s9Ag">
+      <supplier xmi:type="uml:Package" href="SystemArchitecture.efx#_vYCeAA5qEeCo7JwALS5E6g?HiggsEngineeringModel/Design/SystemArchitecture?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_XUUVsMGoEeCN_rIGOgwH0A" name="ComponentImplementation">
+      <eAnnotations xmi:id="_XUU8wMGoEeCN_rIGOgwH0A" source="uml2.diagrams" references="_XUVj0MGoEeCN_rIGOgwH0A">
+        <contents xmi:type="notation:Diagram" xmi:id="_XUVj0MGoEeCN_rIGOgwH0A" type="Freeform" name="Main">
+          <children xmi:id="_cA4LcMGoEeCN_rIGOgwH0A">
+            <children xmi:id="_cA4ygMGoEeCN_rIGOgwH0A" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_cA4ygcGoEeCN_rIGOgwH0A" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_cA4ygsGoEeCN_rIGOgwH0A" type="Stereotype"/>
+            <children xmi:id="_cA5ZkMGoEeCN_rIGOgwH0A" type="Name"/>
+            <children xmi:id="_cA6AoMGoEeCN_rIGOgwH0A" type="Parent"/>
+            <children xmi:id="_cA6AocGoEeCN_rIGOgwH0A" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_cA6AosGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_cA6Ao8GoEeCN_rIGOgwH0A" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_cA6ApMGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_cA6nsMGoEeCN_rIGOgwH0A" visible="false" type="SignalCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_cA6nscGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_cA6nssGoEeCN_rIGOgwH0A" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_cA6ns8GoEeCN_rIGOgwH0A"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_cA4LccGoEeCN_rIGOgwH0A" fontName="Sans" showStereotype="Label"/>
+            <element xmi:type="uml:Class" href="DomainArchitecture.efx#_EwiqwMGjEeCN_rIGOgwH0A?HiggsEngineeringModel/Design/SystemArchitecture/DomainArchitecture/LogicalComponents/LaserDevice?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cA4LcsGoEeCN_rIGOgwH0A" x="309" y="1854"/>
+          </children>
+          <children xmi:id="_c_uZUMGoEeCN_rIGOgwH0A">
+            <children xmi:id="_c_vAYMGoEeCN_rIGOgwH0A" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_c_vAYcGoEeCN_rIGOgwH0A" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_c_vncMGoEeCN_rIGOgwH0A" type="Stereotype"/>
+            <children xmi:id="_c_vnccGoEeCN_rIGOgwH0A" type="Name"/>
+            <children xmi:id="_c_vncsGoEeCN_rIGOgwH0A" type="Parent"/>
+            <children xmi:id="_c_vnc8GoEeCN_rIGOgwH0A" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_c_vndMGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_c_wOgMGoEeCN_rIGOgwH0A" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_c_wOgcGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_c_w1kMGoEeCN_rIGOgwH0A" visible="false" type="SignalCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_c_w1kcGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_c_w1ksGoEeCN_rIGOgwH0A" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_c_w1k8GoEeCN_rIGOgwH0A"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_c_uZUcGoEeCN_rIGOgwH0A" fontName="Sans" showStereotype="Label"/>
+            <element xmi:type="uml:Class" href="DomainArchitecture.efx#_-wo90MGiEeCN_rIGOgwH0A?HiggsEngineeringModel/Design/SystemArchitecture/DomainArchitecture/LogicalComponents/LaserDriver?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_uZUsGoEeCN_rIGOgwH0A" x="6489" y="1854"/>
+          </children>
+          <children xmi:id="_h9NnAMGoEeCN_rIGOgwH0A">
+            <children xmi:id="_h9OOEMGoEeCN_rIGOgwH0A" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_h9OOEcGoEeCN_rIGOgwH0A" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_h9O1IMGoEeCN_rIGOgwH0A" type="Stereotype"/>
+            <children xmi:id="_h9PcMMGoEeCN_rIGOgwH0A" type="Kind"/>
+            <children xmi:id="_h9PcMcGoEeCN_rIGOgwH0A" type="Name"/>
+            <children xmi:id="_h9PcMsGoEeCN_rIGOgwH0A" type="Parent"/>
+            <children xmi:id="_h9PcM8GoEeCN_rIGOgwH0A" visible="false" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_h9PcNMGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_h9QDQMGoEeCN_rIGOgwH0A" visible="false" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_h9QDQcGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_h9QDQsGoEeCN_rIGOgwH0A" visible="false" type="RealizationListCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_h9QDQ8GoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_h9QDRMGoEeCN_rIGOgwH0A" type="RequiredInterfaceListCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_h9QDRcGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_h9QqUMGoEeCN_rIGOgwH0A" type="ProvidedInterfaceListCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_h9QqUcGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_h9QqUsGoEeCN_rIGOgwH0A" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_h9QqU8GoEeCN_rIGOgwH0A"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLComponentStyle" xmi:id="_h9NnAcGoEeCN_rIGOgwH0A" fontName="Sans" showStereotype="Label"/>
+            <element xmi:type="uml:Component" href="platform:/resource/DomainModelLibraries/ROS_ModelLibrary.emx#_eAk1oJQyEeCfPbyqr0mGOg?ROS_library/nodes/sicklms?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9NnAsGoEeCN_rIGOgwH0A" x="6798" y="5253"/>
+          </children>
+          <children xmi:id="_nXWUcMGoEeCN_rIGOgwH0A">
+            <children xmi:id="_nXXikMGoEeCN_rIGOgwH0A" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_nXXikcGoEeCN_rIGOgwH0A" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_nXXiksGoEeCN_rIGOgwH0A" type="Stereotype"/>
+            <children xmi:id="_nXXik8GoEeCN_rIGOgwH0A" type="Kind"/>
+            <children xmi:id="_nXYJoMGoEeCN_rIGOgwH0A" type="Name"/>
+            <children xmi:id="_nXYJocGoEeCN_rIGOgwH0A" type="Parent"/>
+            <children xmi:id="_nXYJosGoEeCN_rIGOgwH0A" type="TaggedValueSet"/>
+            <children xmi:id="_nXYwsMGoEeCN_rIGOgwH0A" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nXYwscGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_nXYwssGoEeCN_rIGOgwH0A" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nXYws8GoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_nXYwtMGoEeCN_rIGOgwH0A" visible="false" type="DeploymentListCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nXYwtcGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_nXihsMGoEeCN_rIGOgwH0A" visible="false" type="DeploymentShapeCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nXihscGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_nXihssGoEeCN_rIGOgwH0A" visible="false" type="NestedNodeListCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nXihs8GoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_nXjIwMGoEeCN_rIGOgwH0A" visible="false" type="NestedNodeShapeCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nXjIwcGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_nXjIwsGoEeCN_rIGOgwH0A" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nXjIw8GoEeCN_rIGOgwH0A"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nXW7gMGoEeCN_rIGOgwH0A" fontName="Sans" showStereotype="Image"/>
+            <element xmi:type="uml:Device" href="Hardware.efx#_2A7w8DxGEeCIlKbBJKBR4A?HiggsEngineeringModel/Design/SolutionImplementation/Hardware/PhysicalComponents/SickLMS200?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nXW7gcGoEeCN_rIGOgwH0A" x="309" y="5562"/>
+          </children>
+          <children xmi:id="_zVndQMGoEeCN_rIGOgwH0A">
+            <children xmi:id="_zVoEUMGoEeCN_rIGOgwH0A" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_zVoEUcGoEeCN_rIGOgwH0A" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_zVoEUsGoEeCN_rIGOgwH0A" type="Stereotype"/>
+            <children xmi:id="_zVorYMGoEeCN_rIGOgwH0A" type="Name"/>
+            <children xmi:id="_zVorYcGoEeCN_rIGOgwH0A" type="Parent"/>
+            <children xmi:id="_zVorYsGoEeCN_rIGOgwH0A" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zVorY8GoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_zVpScMGoEeCN_rIGOgwH0A" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zVpSccGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_zVpScsGoEeCN_rIGOgwH0A" visible="false" type="SignalCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zVpSc8GoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_zVpSdMGoEeCN_rIGOgwH0A" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zVpSdcGoEeCN_rIGOgwH0A"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zVndQcGoEeCN_rIGOgwH0A" fontName="Sans" showStereotype="Label"/>
+            <element xmi:type="uml:Class" href="DomainArchitecture.efx#_pB8nUMGjEeCN_rIGOgwH0A?HiggsEngineeringModel/Design/SystemArchitecture/DomainArchitecture/LogicalComponents/LocalisationComponent?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zVndQsGoEeCN_rIGOgwH0A" x="13889" y="1952"/>
+          </children>
+          <children xmi:id="_0IvjUMGoEeCN_rIGOgwH0A">
+            <children xmi:id="_0IwKYMGoEeCN_rIGOgwH0A" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_0IwKYcGoEeCN_rIGOgwH0A" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_0IwKYsGoEeCN_rIGOgwH0A" type="Stereotype"/>
+            <children xmi:id="_0IwKY8GoEeCN_rIGOgwH0A" type="Kind"/>
+            <children xmi:id="_0IwxcMGoEeCN_rIGOgwH0A" type="Name"/>
+            <children xmi:id="_0IwxccGoEeCN_rIGOgwH0A" type="Parent"/>
+            <children xmi:id="_0Ix_kMGoEeCN_rIGOgwH0A" visible="false" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_0Ix_kcGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_0Ix_ksGoEeCN_rIGOgwH0A" visible="false" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_0Ix_k8GoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_0IymoMGoEeCN_rIGOgwH0A" visible="false" type="RealizationListCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_0IymocGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_0IymosGoEeCN_rIGOgwH0A" type="RequiredInterfaceListCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_0Iymo8GoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_0IympMGoEeCN_rIGOgwH0A" type="ProvidedInterfaceListCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_0IympcGoEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_0IzNsMGoEeCN_rIGOgwH0A" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_0IzNscGoEeCN_rIGOgwH0A"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLComponentStyle" xmi:id="_0IvjUcGoEeCN_rIGOgwH0A" fontName="Sans" showStereotype="Label"/>
+            <element xmi:type="uml:Component" href="platform:/resource/DomainModelLibraries/ROS_ModelLibrary.emx#_jZcXwJQyEeCfPbyqr0mGOg?ROS_library/nodes/amcl?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0IvjUsGoEeCN_rIGOgwH0A" x="14832" y="5562"/>
+          </children>
+          <children xmi:id="_JX5osMGpEeCN_rIGOgwH0A">
+            <children xmi:id="_JX6PwMGpEeCN_rIGOgwH0A" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_JX6PwcGpEeCN_rIGOgwH0A" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_JX6PwsGpEeCN_rIGOgwH0A" type="Stereotype"/>
+            <children xmi:id="_JX6Pw8GpEeCN_rIGOgwH0A" type="Kind"/>
+            <children xmi:id="_JX620MGpEeCN_rIGOgwH0A" type="Name"/>
+            <children xmi:id="_JX620cGpEeCN_rIGOgwH0A" type="Parent"/>
+            <children xmi:id="_JX620sGpEeCN_rIGOgwH0A" visible="false" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_JX6208GpEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_JX7d4MGpEeCN_rIGOgwH0A" visible="false" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_JX7d4cGpEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_JX7d4sGpEeCN_rIGOgwH0A" visible="false" type="RealizationListCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_JX7d48GpEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_JX7d5MGpEeCN_rIGOgwH0A" type="RequiredInterfaceListCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_JX7d5cGpEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_JX8sAMGpEeCN_rIGOgwH0A" type="ProvidedInterfaceListCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_JX8sAcGpEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_JX8sAsGpEeCN_rIGOgwH0A" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_JX8sA8GpEeCN_rIGOgwH0A"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLComponentStyle" xmi:id="_JX5oscGpEeCN_rIGOgwH0A" fontName="Sans" showStereotype="Label"/>
+            <element xmi:type="uml:Component" href="platform:/resource/DomainModelLibraries/ROS_ModelLibrary.emx#_kryJYJQyEeCfPbyqr0mGOg?ROS_library/nodes/move_base?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JX5ossGpEeCN_rIGOgwH0A" x="22798" y="5978"/>
+          </children>
+          <children xmi:id="_LTzUsMGpEeCN_rIGOgwH0A">
+            <children xmi:id="_LTz7wMGpEeCN_rIGOgwH0A" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_LTz7wcGpEeCN_rIGOgwH0A" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_LTz7wsGpEeCN_rIGOgwH0A" type="Stereotype"/>
+            <children xmi:id="_LTz7w8GpEeCN_rIGOgwH0A" type="Name"/>
+            <children xmi:id="_LTz7xMGpEeCN_rIGOgwH0A" type="Parent"/>
+            <children xmi:id="_LT0i0MGpEeCN_rIGOgwH0A" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_LT0i0cGpEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_LT0i0sGpEeCN_rIGOgwH0A" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_LT0i08GpEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_LT0i1MGpEeCN_rIGOgwH0A" visible="false" type="SignalCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_LT0i1cGpEeCN_rIGOgwH0A"/>
+            </children>
+            <children xmi:id="_LT1J4MGpEeCN_rIGOgwH0A" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_LT1J4cGpEeCN_rIGOgwH0A"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_LTzUscGpEeCN_rIGOgwH0A" fontName="Sans" showStereotype="Label"/>
+            <element xmi:type="uml:Class" href="DomainArchitecture.efx#_txBlkMGjEeCN_rIGOgwH0A?HiggsEngineeringModel/Design/SystemArchitecture/DomainArchitecture/LogicalComponents/NavigationComponent?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LTzUssGpEeCN_rIGOgwH0A" x="21630" y="1854"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_XUVj0cGoEeCN_rIGOgwH0A"/>
+          <element xsi:nil="true"/>
+          <edges xmi:id="_i-zm4MGoEeCN_rIGOgwH0A" source="_h9NnAMGoEeCN_rIGOgwH0A" target="_c_uZUMGoEeCN_rIGOgwH0A">
+            <children xmi:id="_i-0N8MGoEeCN_rIGOgwH0A" type="KindLabel">
+              <children xmi:id="_i-0N8sGoEeCN_rIGOgwH0A" type="Stereotype"/>
+              <children xmi:id="_i-0N9MGoEeCN_rIGOgwH0A" type="Kind"/>
+              <children xmi:id="_i-0N88GoEeCN_rIGOgwH0A" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i-0N8cGoEeCN_rIGOgwH0A" y="-217"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_i-zm4cGoEeCN_rIGOgwH0A" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+            <element xmi:type="uml:Realization" href="platform:/resource/DomainModelLibraries/ROS_ModelLibrary.emx#_i-qc8MGoEeCN_rIGOgwH0A?ROS_library/nodes/%3CRealization%3E?"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_i-zm4sGoEeCN_rIGOgwH0A" points="[-53, 23, 96, -46]$[-126, 45, 23, -24]"/>
+          </edges>
+          <edges xmi:id="_oWkVwMGoEeCN_rIGOgwH0A" source="_nXWUcMGoEeCN_rIGOgwH0A" target="_cA4LcMGoEeCN_rIGOgwH0A">
+            <children xmi:id="_oWk80MGoEeCN_rIGOgwH0A" type="KindLabel">
+              <children xmi:id="_oWk80sGoEeCN_rIGOgwH0A" type="Stereotype"/>
+              <children xmi:id="_oWk81MGoEeCN_rIGOgwH0A" type="Kind"/>
+              <children xmi:id="_oWk808GoEeCN_rIGOgwH0A" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oWk80cGoEeCN_rIGOgwH0A" y="-217"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_oWkVwcGoEeCN_rIGOgwH0A" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+            <element xmi:type="uml:Realization" href="Hardware.efx#_oWgrYMGoEeCN_rIGOgwH0A?HiggsEngineeringModel/Design/SolutionImplementation/Hardware/PhysicalComponents/%3CRealization%3E?"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oWkVwsGoEeCN_rIGOgwH0A" points="[-2, -36, -6, 100]$[-21, -160, -25, -24]"/>
+          </edges>
+          <edges xmi:id="_42H4cMGoEeCN_rIGOgwH0A" source="_0IvjUMGoEeCN_rIGOgwH0A" target="_zVndQMGoEeCN_rIGOgwH0A">
+            <children xmi:id="_42IfgMGoEeCN_rIGOgwH0A" type="KindLabel">
+              <children xmi:id="_42IfgsGoEeCN_rIGOgwH0A" type="Stereotype"/>
+              <children xmi:id="_42IfhMGoEeCN_rIGOgwH0A" type="Kind"/>
+              <children xmi:id="_42Ifg8GoEeCN_rIGOgwH0A" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_42IfgcGoEeCN_rIGOgwH0A" y="-217"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_42H4ccGoEeCN_rIGOgwH0A" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+            <element xmi:type="uml:Realization" href="platform:/resource/DomainModelLibraries/ROS_ModelLibrary.emx#_42C_8MGoEeCN_rIGOgwH0A?ROS_library/nodes/%3CRealization%3E?"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_42H4csGoEeCN_rIGOgwH0A" points="[-2, -43, -5, 93]$[-21, -160, -24, -24]"/>
+          </edges>
+          <edges xmi:id="_MC52YMGpEeCN_rIGOgwH0A" source="_JX5osMGpEeCN_rIGOgwH0A" target="_LTzUsMGpEeCN_rIGOgwH0A">
+            <children xmi:id="_MC6dcMGpEeCN_rIGOgwH0A" type="KindLabel">
+              <children xmi:id="_MC6dcsGpEeCN_rIGOgwH0A" type="Stereotype"/>
+              <children xmi:id="_MC6ddMGpEeCN_rIGOgwH0A" type="Kind"/>
+              <children xmi:id="_MC6dc8GpEeCN_rIGOgwH0A" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MC6dccGpEeCN_rIGOgwH0A" y="-217"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_MC52YcGpEeCN_rIGOgwH0A" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+            <element xmi:type="uml:Realization" href="platform:/resource/DomainModelLibraries/ROS_ModelLibrary.emx#_MC2zEMGpEeCN_rIGOgwH0A?ROS_library/nodes/%3CRealization%3E?"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MC52YsGpEeCN_rIGOgwH0A" points="[0, -31, -12, 99]$[-12, -154, -24, -24]"/>
+          </edges>
+        </contents>
+      </eAnnotations>
+    </packagedElement>
+  </uml:Package>
+  <Standard:Instantiate xmi:id="_P7cCYK7KEeCxLZhEn2s9Ag" base_Usage="_P7aNMK7KEeCxLZhEn2s9Ag"/>
+</xmi:XMI>

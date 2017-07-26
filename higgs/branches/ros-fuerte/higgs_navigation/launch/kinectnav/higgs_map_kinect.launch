@@ -1,0 +1,15 @@
+<!-- Launch file for the map server node and rviz with a configuration to visualize the pertinent data -->
+
+<launch>
+
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find higgs_navigation)/map/sala_calculo_new.yaml"/>
+  
+  <!-- rviz configured depending on RVIZ argument -->
+  <node name="rviz" pkg="rviz" type="rviz" args=" -d $(find higgs_navigation)/config_rviz/higgs_nav_kinect.vcg" >
+    <remap from="/goal" to="/move_base_simple/goal" />
+  </node>
+  
+  <!-- mission manager of our office-->
+  <node name="mission_manager" pkg="mission_manager" type="mission_manager.py" args="-f $(find mission_manager)/missions/patrol_mission_sala_calculo.mission" output="screen"/>  
+  	
+</launch>

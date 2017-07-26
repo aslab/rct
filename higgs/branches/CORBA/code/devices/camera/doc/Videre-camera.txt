@@ -1,0 +1,18 @@
+------ Camera information ------
+Vendor                            :     VIDERE_DESIGN
+Model                             :     MDS-STH
+Unit                              :     0
+Specifications ID                 :     0xa02d
+Software revision                 :     0x102
+IIDC version code                 :     547
+Unit directory offset             :     0x434
+Unit dependent directory offset   :     0x444
+Commands registers base           :     0xf00000
+Unique ID                         :     0x0055050100083765
+Vendor ID                         :     0x5505
+Model ID                          :     0x0
+1394b mode capable (>=800Mbit/s)  :     No
+Platform backend                  :     juju
+------ Camera platform-specific information ------
+Device filename                   :     /dev/fw1
+
