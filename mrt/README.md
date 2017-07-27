@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-Final version of the testbed for the simulation of a UAV and a UGV in Gazebo, controlling the UAV with Aerostack.
+First version of the testbed for the simulation of a UAV and a UGV in Gazebo, controlling the UAV with Aerostack.
 =============
 
 =======
@@ -78,11 +76,3 @@ EXAMPLE OF CONTROLLING THE UGV:
     ```
     rostopic pub -1 /sim_p3at/cmd_vel geometry_msgs/Twist -- '[0.8, 0.0, 0.0]' '[0.0, 0.0, 0.3]'
     ```
-<<<<<<< HEAD
-
-=======
->>>>>>> bb5990477fc972842454d6106966f528362854e7
-=======
-# rct
-Robot Control Testbed
->>>>>>> 2999eb5a116f2d9c4c7fdfd1683d7b1f526f6ea2
