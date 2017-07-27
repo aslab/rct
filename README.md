@@ -17,18 +17,18 @@ Appart from that, a launchfile has been created that spawn both robots in the sa
 This launchfile is:
 		uav_ugv_example_world.launch
 And it is settled in:
-		/tfm_ws/src/amr-ros-config/gazebo
+		/rct/mrt/src/amr-ros-config/gazebo
 
 Also, a final_setup file has been created that also translates the other topics needed for the control of the simulated AR Drone with Aerostack. This final setup file does roslaunch to the simulation of the UAV and the UGV (uav_ugv_example_world.launch), so that roscore is started, and then uses the relay tool (from topic_tools) over the rest of the topics (navdata, imu, magnetic, cameras and cmd_vel).
 
 This file is:
 		final_setup.sh
 And it is settled in:
-		/tfm_ws
+		/rct/mrt
 
 To install and use this package, the following steps have to be followed:
 
-1. Clone the metapackage "tfm_ws" from the repository:
+1. Clone the metapackage "/rct/mrt" from the repository:
 
     ```
     git clone https://github.com/aslab/rct
@@ -36,7 +36,7 @@ To install and use this package, the following steps have to be followed:
 2. Use the catkin tool to build the package
 
     ```
-    cd ~/tfm_ws
+    cd ~//rct/mrt
     catkin_make
     ```
 3. Source the new setup.*sh file:
