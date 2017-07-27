@@ -1,13 +1,6 @@
-First version of the testbed for the simulation of a UAV and a UGV in Gazebo, controlling the UAV with Aerostack.
+First version of the package of the testbed for the simulation of a UAV and a UGV in Gazebo, controlling the UAV with Aerostack.
 =============
 
-=======
-# tfm_test1
-Trial for testing how to upload files to Git
-=============
-Final version of the testbed for the simulation of a UAV and a UGV in Gazebo, controlling the UAV with Aerostack.
-=============
->>>>>>> bb5990477fc972842454d6106966f528362854e7
 In this metapackage (tfm_ws), there are included 3 packages:
 
 1. amr-ros-config: A package for the simulation of the UGV. In this case the used UGV is the Pioneer 3AT, but there are chances to simulate other UGVs such as the Pioneer 3DX or the Pioneer LX, with this same package.
