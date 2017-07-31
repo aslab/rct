@@ -1,6 +1,4 @@
-# rct
-Robot Control Testbed
-=============
+# rct - Robot Control Testbed
 
 The Robot Control Testbed (RCT) is a collection of robotics research platforms that are developed inside the the ASLab ASys project. These platforms are used to deply and evaluate different classes of developments in robotic system autonomy. 
 
